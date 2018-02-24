@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
+import Scatterplot from './components/Scatterplot.jsx';
 import BarChart from './components/BarChart.jsx';
 import './App.css';
 
@@ -15,6 +16,7 @@ class App extends Component {
           stuff <code>src/App.js</code> and save to reload.
         </p>
         <BarChart />
+        <Scatterplot />
       </div>
     );
   }
