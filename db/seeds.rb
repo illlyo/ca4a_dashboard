@@ -5,38 +5,33 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
-require 'csv'
-
-csv_text = File.read(Rails.root.join('lib', 'seeds', 'MasterlistData.csv'))
-csv = CSV.parse(csv_text, :headers => true, :encoding => 'ISO-8859-1')
-csv.each do |row|
-  t = ca4_a_school.new
-  t.dbn = row['DBN']
-  t.location_name = row['Location Name']
-  t.cohort = row['Cohort']
-  t.coach = row['CA4A Coach']
-  t.location_type_description = row['Location Type Description']
-  t.building_code = row['Building Code']
-  t.lcgms_name = row['LCGMS Name']
-  t.first_name = row['First Name']
-  t.last_name = row['Last Name']
-  t.principal_email = row['Principal Email']
-  t.principal_phone_number = row['Principal Phone Number']
-  t.address = row['Address']
-  t.superintendent = row['Superintendent']
-  t.session = row['Session']
-  t.year_attended = row['Year Attended']
-  t.attendance_flag = row['Attendance Flag']
-  t.sixteen_seventeen_allocation = row[' 2016-17 Allocation ']
-  t.fsf_proj_enroll_2017_2018 = row['FSF Proj Enroll 2017-18']
-  t.seventeen_eighteen_allocation = row['2017-18 Allocation']
-  t.note = row['Note']
-  t.principal_name_LCGMS = row['Principal Name (LCGMS)']
-  t.column1 = row['Column1']
-  t.column2 = row['Column2']
-  t.dbn2 = row['DBN 2']
-  t.save
-  puts "#{t.location_name} saved"
+data = ActiveSupport::JSON.decode(File.read(Rails.root.join('lib', 'seeds', 'MasterlistData.json')))
+data = data[0]
+data.each do |key, value|
+  Ca4ASchool.create!(
+    DBN: value[0],
+    location_name: value[1],
+    cohort: value[2],
+    coach: value[3],
+    location_type_description: value[4],
+    building_code: value[5],
+    lcgms_name: value[6],
+    first_name: value[7],
+    last_name: value[8],
+    principal_email: value[9],
+    principal_phone_number: value[10],
+    address: value[11],
+    superintendent: value[12],
+    session: value[13],
+    year_attended: value[14],
+    attendance_flag: value[15],
+    sixteen_seventeen_allocation: value[16],
+    fsf_proj_enroll_2017_2018: value[17],
+    seventeen_eighteen_allocation: value[18],
+    note: value[19],
+    principal_name_LCGMS: value[20],
+    column1: value[21],
+    column2: value[22],
+    dbn2: value[23]
+  )
 end
-
-puts "There are now #{ca4_a_school.count} rows in the table"

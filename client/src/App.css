@@ -8,10 +8,9 @@
 }
 
 .App-header {
-  background-color: #222;
   height: 150px;
   padding: 20px;
-  color: white;
+  color: black;
 }
 
 .App-title {
@@ -22,9 +21,20 @@
   font-size: large;
 }
 
-@keyframes App-logo-spin {
+/* @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
+} */
+
+form{
+  display: flex;
+  flex-direction: column;
+}
+.charts {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
 .brush .extent {
@@ -35,4 +45,9 @@
 
 .brush .background {
   fill: #ddd;
+}
+
+text {
+    white-space: wrap;
+    padding-right: 10px;
 }
