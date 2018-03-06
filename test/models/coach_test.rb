@@ -1,6 +1,6 @@
 require 'test_helper'
 
-class Ca4ASchoolTest < ActiveSupport::TestCase
+class CoachTest < ActiveSupport::TestCase
   # test "the truth" do
   #   assert true
   # end

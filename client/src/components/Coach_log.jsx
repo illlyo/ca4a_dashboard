@@ -11,7 +11,7 @@ class CoachLog extends React.Component{
           </label>
           <label>
           Date of visit
-          <input type="text" />
+          <input type="date" />
           </label>
           <label>
           Time visit began

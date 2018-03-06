@@ -5,33 +5,48 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
-data = ActiveSupport::JSON.decode(File.read(Rails.root.join('lib', 'seeds', 'MasterlistData.json')))
-data = data[0]
-data.each do |key, value|
-  Ca4ASchool.create!(
-    DBN: value[0],
-    location_name: value[1],
-    cohort: value[2],
-    coach: value[3],
-    location_type_description: value[4],
-    building_code: value[5],
-    lcgms_name: value[6],
-    first_name: value[7],
-    last_name: value[8],
-    principal_email: value[9],
-    principal_phone_number: value[10],
-    address: value[11],
-    superintendent: value[12],
-    session: value[13],
-    year_attended: value[14],
-    attendance_flag: value[15],
-    sixteen_seventeen_allocation: value[16],
-    fsf_proj_enroll_2017_2018: value[17],
-    seventeen_eighteen_allocation: value[18],
-    note: value[19],
-    principal_name_LCGMS: value[20],
-    column1: value[21],
-    column2: value[22],
-    dbn2: value[23]
+allschools = ActiveSupport::JSON.decode(File.read(Rails.root.join('lib', 'seeds', 'nycschools.json')))
+allschools.each do |key|
+  School.create!(
+    DBN: key['DBN'],
+    location_code: key['Location Code'],
+    location_name: key['Location Name'],
+    beds_number: key['BEDS Number'],
+    managed_by_name: key['Managed By Name'],
+    location_type_description: key['Location Type Description'],
+    location_category_description: key['Location Category Description'],
+    grades: key['Grades'],
+    grades_final: key['Grades Final'],
+    open_date: key['Open Date'],
+    status_description: key['Status Description'],
+    building_code: key['Building Code'],
+    address: key['Primary Address'],
+    city: key['City'],
+    state_code: key['State Code'],
+    zip: key['Zip'],
+    borough_block_lot: key['Borough Block Lot'],
+    census_tract: key['Census Tract'],
+    community_district: key['Community District'],
+    council_district: key['Council District'],
+    nta: key['NTA'],
+    nta_name: key['NTA_Name'],
+    principal_name: key['Principal Name'],
+    principal_title: key['Principal Title'],
+    principal_phone_number: key['Principal Phone Number'],
+    fax_number: key['Fax Number'],
+    geographical_district_code: key['Geographical District Code'],
+    administrative_district_code: key['Administrative District Code'],
+    administrative_district_location_code: key['Administrative District Location Code'],
+    administrative_district_name: key['Administrative District Name'],
+    superintendent: key['Superintendent'],
+    superintendent_location_code: key['Superintendent Location Code'],
+    community_school_sup_name: key['Community School Sup Name'],
+    bfsc_location_code: key['BFSC Location Code'],
+    bfsc_director_name: key['BFSC Director Name'],
+    bfsc_director_title: key['BFSC Director Title'],
+    bfsc_director_phone: key['BFSC Director Phone'],
+    hs_network_location_code: key['HighSchool Network Location Code'],
+    hs_network_name: key['HighSchool Network Name'],
+    hs_network_superintendent: key['HighSchool Network Superintendent']
   )
 end

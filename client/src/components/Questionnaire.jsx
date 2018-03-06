@@ -9,7 +9,7 @@ class Questionnaire extends React.Component{
       <form>
         <label>
           DBN:
-          <input type="text" pattern=".+@nyc.edu" />
+          <input type="text" pattern=".+@school.nyc.gov" />
         </label>
         <label>
           Location Name:
