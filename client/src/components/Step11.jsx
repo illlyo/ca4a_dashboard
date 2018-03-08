@@ -74,38 +74,39 @@ class Step11 extends Component {
                         <h1>Step 11: Form Validation using "react-validation-mixin" Example</h1>
                     </label>
                   </div>
-                  <div className="form-group col-md-12 content form-block-holder">
-                    <label className="control-label col-md-4">
-                        Your Emergency Email Address
-                    </label>
-                    <div className={notValidClasses.emailEmergencyCls}>
-                        <input
-                            ref="emailEmergency"
-                            name="emailEmergency"
-                            autoComplete="off"
-                            type="email"
-                            className="form-control"
-                            placeholder="john.smith@example.com"
-                            required
-                            defaultValue={this.state.emailEmergency}
-                            onBlur={this.props.handleValidation('emailEmergency')}
-                            onChange={this.onChange.bind(this)}
-                        />
 
-                        {this.props.getValidationMessages('emailEmergency').map(this.renderHelpText)}
+
+
+                  <div className="form-style-10">
+                  <h1>*Coach Name Here*<span>*School Name*</span></h1>
+                  <form>
+                    <div className="form-group col-md-12 content form-block-holder">
+                      <label className="control-label col-md-4">
+                          Your Emergency Email Address
+                      </label>
+                      <div className={notValidClasses.emailEmergencyCls}>
+                          <input
+                              ref="emailEmergency"
+                              name="emailEmergency"
+                              autoComplete="off"
+                              type="email"
+                              className="form-control"
+                              placeholder="john.smith@example.com"
+                              required
+                              defaultValue={this.state.emailEmergency}
+                              onBlur={this.props.handleValidation('emailEmergency')}
+                              onChange={this.onChange.bind(this)}
+                          />
+
+                          {this.props.getValidationMessages('emailEmergency').map(this.renderHelpText)}
+                      </div>
                     </div>
-                  </div>
-                  <div className="form-group hoc-alert col-md-12 form-block-holder">
-                    <label className="col-md-12 control-label">
-                      <h4>As shown in this example, you can also use <a href="https://github.com/jurassix/react-validation-mixin" target="_blank">react-validation-mixin</a> to handle your validations as well! (as of v4.3.2)!</h4>
-                    </label>
-                    <br />
-                    <div className="green">... so StepZilla step Components can either use basic JS validation or Higer Order Component (HOC) based validation with react-validation-mixin.</div>
                       <div className="button-section">
                        <input type="submit" value="Back" onClick={() => this.props.jumpToStep(9)} />
                        <input type="submit" value="Next" onClick={() => this.props.jumpToStep(11)} />
                       </div>
-                  </div>
+                      </form>
+                    </div>
                 </form>
             </div>
         </div>

@@ -28,7 +28,7 @@ const Step1 = (props) => (
 
                         <div className="section"><span>3</span>What were the objectives of today's visit?</div>
                             <div className="inner-wrap">
-                            <label><textarea type="string" name="field5" /><br></br>(ex. to share internal data and discuss observations, to design something small to try, to reflect on the team's first try etc.)</label>
+                            <label><textarea type="string" name="field5" rows="4" cols="100" /><br></br>(ex. to share internal data and discuss observations, to design something small to try, to reflect on the team's first try etc.)</label>
                         </div>
 
                         <div className="section"><span>4</span>During today's visit I interacted with my school in the following ways </div>

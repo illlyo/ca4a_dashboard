@@ -18,8 +18,7 @@ class Results extends React.Component{
          Date: MM/DD/YYY<br></br>
          Length of visit:<br></br>
          Objectives: *Interpolate objectives here* </p>
-
-      <div className="charts">
+      <div >
         <h3>Interaction Methods</h3>
           <ThisPieChart />
         <h3>Roles</h3>

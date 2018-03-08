@@ -35,9 +35,6 @@ const Step9 = (props) => (
                   </div>
                 </div>
               </div>
-              <div className="col-md-12 eg-jump-lnk">
-                <a href="#" onClick={() => props.jumpToStep(0)}>e.g. showing how we use the jumpToStep method helper method to jump back to step 1</a>
-              </div>
             </div>
         </form>
         </div>
