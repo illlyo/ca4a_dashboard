@@ -5,6 +5,9 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+billy = Coach.create!(username: 'billy', password: 'billy', email: 'billy@test.com', name: 'Billy')
+
 allschools = ActiveSupport::JSON.decode(File.read(Rails.root.join('lib', 'seeds', 'nycschools.json')))
 allschools.each do |key|
   School.create!(

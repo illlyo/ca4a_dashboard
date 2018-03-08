@@ -11,6 +11,7 @@ class CreateIntervisitationLogs < ActiveRecord::Migration[5.1]
       t.string :thinking_about
       t.string :plan_to_try
       t.string :share_with_team
+      t.belongs_to :coach
 
       t.timestamps
     end

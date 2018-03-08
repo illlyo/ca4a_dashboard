@@ -10,12 +10,90 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180227205741) do
+ActiveRecord::Schema.define(version: 20180306012804) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
-  create_table "ca4_a_schools", force: :cascade do |t|
+  create_table "coach_logs", force: :cascade do |t|
+    t.string "cancelled"
+    t.date "date_of_visit"
+    t.string "length_of_visit"
+    t.string "objectives_of_visit"
+    t.boolean "interact_facilitated_meeting", null: false
+    t.boolean "interact_observed_practice", null: false
+    t.boolean "interact_checked_leadership", null: false
+    t.boolean "interact_checked_team_lead", null: false
+    t.boolean "interact_facilitated_pd", null: false
+    t.integer "interact_other"
+    t.string "interact_other_explained"
+    t.integer "interact_teachers"
+    t.integer "interact_guidance_counselors"
+    t.integer "interact_college_couselors"
+    t.integer "interact_assistant_principals"
+    t.integer "interact_principals"
+    t.string "next_step_notes"
+    t.boolean "academic_skills", null: false
+    t.boolean "academic_personal_behavior", null: false
+    t.boolean "academic_programming", null: false
+    t.boolean "college_career_access", null: false
+    t.boolean "learning_trajectory_discussion"
+    t.string "activity_inquiry_institute"
+    t.string "activity_research"
+    t.string "activity_design"
+    t.string "activity_pdsa"
+    t.string "activity_synthesize"
+    t.string "activity_scale"
+    t.string "forward_work"
+    t.string "goals_met"
+    t.string "rate_learning_trajectory"
+    t.string "rate_learning_trajectory_explained"
+    t.string "learning_trajectory_success_challenge"
+    t.string "in_between_steps"
+    t.boolean "learning_trajectory_inquiry_institute", null: false
+    t.boolean "learning_trajectory_research", null: false
+    t.boolean "learning_trajectory_design", null: false
+    t.boolean "learning_trajectory_pdsa", null: false
+    t.boolean "learning_trajectory_synthesize", null: false
+    t.boolean "learning_trajectory_scale", null: false
+    t.string "supervision_lab_to_bring"
+    t.boolean "highlight_planning"
+    t.string "highlight_planning_explained"
+    t.bigint "coach_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["coach_id"], name: "index_coach_logs_on_coach_id"
+  end
+
+  create_table "coaches", force: :cascade do |t|
+    t.string "username"
+    t.string "password_digest"
+    t.string "email"
+    t.string "name"
+    t.string "auth_token"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["username"], name: "index_coaches_on_username"
+  end
+
+  create_table "intervisitation_logs", force: :cascade do |t|
+    t.date "date_of_visit"
+    t.string "visit_coach"
+    t.string "school_visited"
+    t.string "feedback_instructed_from_coach"
+    t.string "hoping_to_learn"
+    t.string "areas_of_strength"
+    t.string "areas_of_growth"
+    t.string "thinking_about"
+    t.string "plan_to_try"
+    t.string "share_with_team"
+    t.bigint "coach_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["coach_id"], name: "index_intervisitation_logs_on_coach_id"
+  end
+
+  create_table "schools", force: :cascade do |t|
     t.string "DBN"
     t.string "location_code"
     t.string "location_name"
@@ -59,14 +137,11 @@ ActiveRecord::Schema.define(version: 20180227205741) do
     t.string "cohort"
     t.string "coach"
     t.string "principal_email"
-    t.string "sixteen_seventeen_allocation"
+    t.string "allocation_2016_17"
+    t.string "session"
+    t.string "attendance_flag"
     t.integer "fsf_proj_enroll_2017_2018"
-    t.string "seventeen_eighteen_allocation"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
-  create_table "schools", force: :cascade do |t|
+    t.string "allocation_2017_18"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
