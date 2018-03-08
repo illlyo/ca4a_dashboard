@@ -12,11 +12,28 @@ class Results extends React.Component{
 
   render(){
     return(
+      <div>
+      <h1>Coach's(name) Log</h1><br></br>
+      <p>School: School Name here<br></br>
+         Date: MM/DD/YYY<br></br>
+         Length of visit:<br></br>
+         Objectives: *Interpolate objectives here* </p>
+
       <div className="charts">
-      <Scatterplot />
-      <LineChartBrush />
-      <ThisPieChart />
-      <GroupedBarChart />
+        <h3>Interaction Methods</h3>
+          <ThisPieChart />
+        <h3>Roles</h3>
+          <Scatterplot />
+        <p>Notes: *Interpolate notes here*</p>
+          <LineChartBrush />
+          <GroupedBarChart />
+      </div>
+
+    <h2>School Team Engagment in Learning Trajectory</h2>
+    <p>Insert more quantitative charts here</p>
+
+      <h2>Goals Preparation</h2>
+      <p>Insert more quantitative charts here</p>
       </div>
     )
   }
