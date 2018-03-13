@@ -1,5 +1,5 @@
 class CoachLogsController < ApiController
-  before_action :require_login
+  before_action :require_login, except: [:index, :show]
 
   def index
     coach_logs = CoachLog.all
@@ -18,7 +18,7 @@ class CoachLogsController < ApiController
     if coach_log.save
       render json: {
         message: 'ok',
-        coach_log: coach_log,
+        coach_log: coach_log
       }
     else
       render json: { message: 'Could not create monster' }

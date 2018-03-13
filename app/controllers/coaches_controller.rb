@@ -1,5 +1,5 @@
 class CoachesController < ApiController
-  before_action :require_login, except: [:create]
+  before_action :require_login, except: [:create, :profile]
 
   def create
   coach = Coach.create!(coach_params)
