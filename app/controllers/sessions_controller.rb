@@ -21,7 +21,7 @@ class SessionsController < ApiController
     render json: { token: coach.auth_token }
   end
 
-  def allow_token_to_be_used_only_once_for
+  def allow_token_to_be_used_only_once_for(coach)
     coach.regenerate_auth_token
   end
 

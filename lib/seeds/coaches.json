@@ -1,0 +1,80 @@
+[
+  {
+    "login": "aboyle@eskolta.org",
+    "Password": "test",
+    "Email": "aboyle@eskolta.org",
+    "Name": "Aaron Boyle"
+  },
+  {
+    "login": "aburke2@strongschools.nyc.gov",
+    "Password": "test",
+    "Email": "aburke2@strongschools.nyc.gov",
+    "Name": "Allison Burke"
+  },
+  {
+    "login": "Dcopeland@strongschools.nyc.gov",
+    "Password": "test",
+    "Email": "Dcopeland@strongschools.nyc.gov",
+    "Name": "Denise Copeland"
+  },
+  {
+    "login": "Fmulcahy@strongschools.nyc.gov",
+    "Password": "test",
+    "Email": "Fmulcahy@strongschools.nyc.gov",
+    "Name": "Fiona Mulcahy"
+  },
+  {
+    "login": "Jgrunin@strongschools.nyc.gov",
+    "Password": "test",
+    "Email": "Jgrunin@strongschools.nyc.gov",
+    "Name": "Jen Grunin"
+  },
+  {
+    "login": "Jsteckel@strongschools.nyc.gov",
+    "Password": "test",
+    "Email": "Jsteckel@strongschools.nyc.gov",
+    "Name": "Josh Steckel"
+  },
+  {
+    "login": "Khall@strongschools.nyc.gov",
+    "Password": "test",
+    "Email": "Khall@strongschools.nyc.gov",
+    "Name": "Kim Hall"
+  },
+  {
+    "login": "MCastillo8@strongschools.nyc.gov",
+    "Password": "test",
+    "Email": "MCastillo8@strongschools.nyc.gov",
+    "Name": "Marisa Castillo"
+  },
+  {
+    "login": "ndefino@eskolta.org",
+    "Password": "test",
+    "Email": "ndefino@eskolta.org",
+    "Name": "Nicole DeFino"
+  },
+  {
+    "login": "NFerizGordon@strongschools.nyc.gov",
+    "Password": "test",
+    "Email": "NFerizGordon@strongschools.nyc.gov",
+    "Name": "Norma Feriz Gordon"
+  },
+  {
+    "login": "RJohnson28@strongschools.nyc.gov",
+    "Password": "test",
+    "Email": "RJohnson28@strongschools.nyc.gov",
+    "Name": "Raymond Johnson"
+  },
+  {
+    "login": "Smikolich@strongschools.nyc.gov",
+    "Password": "test",
+    "Email": "Smikolich@strongschools.nyc.gov",
+    "Name": "Simone Mikolich"
+  },
+  {
+    "login": "ZSantiago2@strongschools.nyc.gov",
+    "Password": "test",
+    "Email": "ZSantiago2@strongschools.nyc.gov",
+    "Name": "Zee Santiago"
+  }
+]
