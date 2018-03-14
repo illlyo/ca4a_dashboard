@@ -48,6 +48,8 @@ ActiveRecord::Schema.define(version: 20180306012804) do
     t.boolean "highlight_planning"
     t.string "highlight_planning_explained"
     t.bigint "coach_id"
+    t.string "coach_name"
+    t.string "school_visited"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["coach_id"], name: "index_coach_logs_on_coach_id"

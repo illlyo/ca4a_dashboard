@@ -34,6 +34,8 @@ class CreateCoachLogs < ActiveRecord::Migration[5.1]
       t.string :supervision_lab_to_bring
       t.boolean :highlight_planning
       t.string :highlight_planning_explained
+      t.string :coach_name
+      t.string :school_visited
       t.belongs_to :coach, index: true
 
 

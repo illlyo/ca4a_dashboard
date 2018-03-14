@@ -95,6 +95,8 @@ previouslogs.each do |key|
     supervision_lab_to_bring: key["What's something you would like to bring to supervision or lab?"],
     highlight_planning: key['Would you like to highlight any work this school is doing around the College and Career Planning Calendar this month?'],
     highlight_planning_explained: key["What would you like to highlight related to the College and Career Planning Calendar and this school's work?"],
-    coach_id: key["coach"]
+    coach_id: key["coach"],
+    coach_name: key["Select your name"],
+    school_visited: key["School Visited"]
   )
 end

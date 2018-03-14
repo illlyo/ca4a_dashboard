@@ -1,7 +1,7 @@
 import React from 'react';
-import BarChart from './BarChart.jsx';
+import BarChart from './Charts/BarChart.jsx';
 import * as d3 from 'd3';
-import { COLORS } from './const';
+import { COLORS } from './Charts/const';
 
 class SchoolData extends React.Component{
   constructor(){

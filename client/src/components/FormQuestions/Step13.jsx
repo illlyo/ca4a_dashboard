@@ -1,20 +1,20 @@
 'use strict';
 
 import React, { Component } from 'react';
-import Results from './Results.jsx'
+import Results from '../Results.jsx'
+
 
 export default class Step13 extends Component {
   constructor(props) {
     super(props);
 
     this.state = {
-      savedToCloud: props.getStore().savedToCloud
+      savedToCloud: props.getStore().savedToCloud,
+
     };
   }
 
-  componentDidMount() {}
 
-  componentWillUnmount() {}
 
   // not required as this component has no forms or user entry
   // isValidated() {}

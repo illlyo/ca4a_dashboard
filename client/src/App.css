@@ -482,3 +482,27 @@ input[type="checkbox"]:hover {
     border: 1px solid #88D5E9;
 
 }
+
+.chart-org{
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 1vw;
+
+}
+/*  Dashboard result desgin */
+.result{
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.top-div-dash{
+  display: flex;
+  flex-direction: row;
+}
+.top-div-dash>div{
+flex: 1;
+border-top-width: 2px;
+border-top-color: grey;
+border-top-style: outset;
+
+}

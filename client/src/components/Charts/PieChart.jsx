@@ -21,7 +21,7 @@ class ThisPieChart extends Component {
                                  {x: 'Facilitated a PD', y: 0},
                                  {x: 'Other', y: 1}]
                 }}
-                width={600}
+                width={400}
                 height={400}
                 margin={{top: 10, bottom: 10, left: 100, right: 100}}
                 sort={null}

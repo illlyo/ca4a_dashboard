@@ -2,7 +2,7 @@ class CoachLogsController < ApiController
   before_action :require_login, except: [:index, :show]
 
   def index
-    coach_logs = CoachLog.all
+    coach_logs = CoachLog.last
     render json: { coach_logs: coach_logs }
   end
 
