@@ -9,7 +9,7 @@ class Coach < ApplicationRecord
   end
 
   def self.validate_login(username, password)
-    coach = find_by(username: username)
+    coach = Coach.find_by(username: username)
     if coach && coach.authenticate(password)
       coach
     end
