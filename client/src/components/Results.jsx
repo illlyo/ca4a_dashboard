@@ -24,8 +24,8 @@ class Results extends React.Component{
     fetch('/profile', {
       method: 'GET',
       headers: {
-        token: '7LNYyFfCQfw2Vdg8eTeYTFj9' ,
-        'Authorization': `Token 7LNYyFfCQfw2Vdg8eTeYTFj9`,
+        token: Auth.getToken(),
+        'Authorization': `Token ${Auth.getToken()}`,
       }
     })
     .then(res => res.json())
@@ -102,20 +102,12 @@ class Results extends React.Component{
       <div>
          {(this.state.coachLogResultsLoaded) ?
             this.renderResults() : <p>Loading...</p>}
-      <div >
         <h3>Interaction Methods</h3>
         <h3>Roles</h3>
           <Scatterplot />
         <p>Notes: *Interpolate notes here*</p>
           <LineChartBrush />
           <GroupedBarChart />
-      </div>
-
-    <h2>School Team Engagment in Learning Trajectory</h2>
-    <p>Insert more quantitative charts here</p>
-
-      <h2>Goals Preparation</h2>
-      <p>Insert more quantitative charts here</p>
       </div>
     )
   }
