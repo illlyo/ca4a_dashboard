@@ -19,8 +19,9 @@ class ApiController < ApplicationController
 
     def authenticate_token
       authenticate_with_http_token do | token, options |
-        Coach.find_by(auth_token: token)
+      Coach.find_by(auth_token: token)
       end
     end
 
   end
+# find_by_auth_token!(request.headers[:token])
