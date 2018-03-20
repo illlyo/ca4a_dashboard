@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Link, Redirect, Route } from 'react-router-dom';
 import Auth from './modules/Auth';
-import logo from './components/nyc_doe_logo.png';
+import Nav from './components/Nav';
 import SchoolData from './components/SchoolData';
 import Charted from './components/Charts/Charted.jsx';
 import Login from './components/Login.jsx';
@@ -81,14 +81,7 @@ class App extends Component {
       <Router>
         <div>
           <div className="App">
-            <header className="App-header">
-              <img src={logo} className="nyc-doe-logo" alt="logo" />
-              <h1 className="App-title">BETA DASHBOARD</h1>
-              <h2 logoutUser={this.logoutUser}>Logout</h2>
-              <br></br>
-              <br></br>
-              <br></br>
-            </header>
+            <Nav handleLogout={this.handleLogout} />
             <Route exact path="/" render={() => (this.state.auth) ?
                            <Redirect to="/dashboard" />
                            :

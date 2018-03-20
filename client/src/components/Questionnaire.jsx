@@ -18,9 +18,76 @@ import Step14 from './FormQuestions/Step14';
 class Questionnaire extends React.Component{
   constructor(props) {
     super(props);
-    this.state = {};
+    this.state = {
+      cancelled: '',
+      date_of_visit: '',
+      length_of_visit: '',
+      objectives_of_visit: '',
+      interact_in_these_ways: '',
+      interact_other_explained: '',
+      interact_teachers: 0,
+      interact_guidance_counselors: 0,
+      interact_college_couselors: 0,
+      interact_assistant_principals: 0,
+      interact_principals: 0,
+      interact_other: 0,
+      next_step_notes: '',
+      college_career_readiness_domains: '',
+      learning_trajectory_discussion: false,
+      activity_inquiry_institute: '',
+      activity_research: '',
+      activity_design: '',
+      activity_pdsa: '',
+      activity_synthesize: '',
+      activity_scale: '',
+      forward_work: '',
+      goals_met: '',
+      rate_learning_trajectory: '',
+      rate_learning_trajectory_explained: '',
+      learning_trajectory_success_challenge: '',
+      in_between_steps: '',
+      learning_trajectory_next_meeting: '',
+      supervision_lab_to_bring: '',
+      highlight_planning: null,
+      highlight_planning_explained: '',
+      coach_name: '',
+      school_visited: '',
+    };
 
     this.sampleStore = {
+      cancelled: '',
+      date_of_visit: '',
+      length_of_visit: '',
+      objectives_of_visit: '',
+      interact_in_these_ways: '',
+      interact_other_explained: '',
+      interact_teachers: 0,
+      interact_guidance_counselors: 0,
+      interact_college_couselors: 0,
+      interact_assistant_principals: 0,
+      interact_principals: 0,
+      interact_other: 0,
+      next_step_notes: '',
+      college_career_readiness_domains: '',
+      learning_trajectory_discussion: false,
+      activity_inquiry_institute: '',
+      activity_research: '',
+      activity_design: '',
+      activity_pdsa: '',
+      activity_synthesize: '',
+      activity_scale: '',
+      forward_work: '',
+      goals_met: '',
+      rate_learning_trajectory: '',
+      rate_learning_trajectory_explained: '',
+      learning_trajectory_success_challenge: '',
+      in_between_steps: '',
+      learning_trajectory_next_meeting: '',
+      supervision_lab_to_bring: '',
+      highlight_planning: null,
+      highlight_planning_explained: '',
+      coach_name: '',
+      school_visited: '',
       email: '',
       gender: '',
       savedToCloud: false
@@ -68,7 +135,7 @@ class Questionnaire extends React.Component{
             steps={steps}
             preventEnterSubmission={true}
             nextTextOnFinalActionStep={"Save"}
-            hocValidationAppliedTo={[3]}
+            hocValidationAppliedTo={[]}
             startAtStep={window.sessionStorage.getItem('step') ? parseFloat(window.sessionStorage.getItem('step')) : 0}
             onStepChange={(step) => window.sessionStorage.setItem('step', step)}
            />

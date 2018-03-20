@@ -13,6 +13,11 @@
   color: black;
 }
 
+.logout-link{
+  float: right;
+  top: 0;
+}
+
 .App-title {
   font-size: 1.5em;
 }
@@ -222,7 +227,7 @@ select{
 .form-style-1 .field-textarea{
     height: 100px;
 }
-.form-style-1 input[type=submit], .form-style-1 input[type=button]{
+.form-style-1 input[type=submit], .form-style-1 input[type=button], #prev-button, #next-button{
     background: #2A88AD;
     padding: 8px 20px 8px 20px;
     border-radius: 5px;
@@ -237,7 +242,7 @@ select{
     border: 1px solid #257C9E;
     font-size: 15px;
 }
-.form-style-1 input[type=submit]:hover, .form-style-1 input[type=button]:hover{
+.form-style-1 input[type=submit]:hover, .form-style-1 input[type=button]:hover, #prev-button:hover, #next-button:hover{
     background: #4691A4;
     box-shadow:none;
     -moz-box-shadow:none;
