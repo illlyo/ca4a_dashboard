@@ -21,12 +21,9 @@ constructor(props){
     next_step_notes: props.getStore().next_step_notes,
   }
 
-
   this._validateOnDemand = true; // this flag enables onBlur validation as user fills forms
-
   this.validationCheck = this.validationCheck.bind(this);
   this.isValidated = this.isValidated.bind(this);
-
   }
 
   componentDidMount() {}
@@ -57,24 +54,20 @@ constructor(props){
             savedToCloud: false // use this to notify step4 that some changes took place and prompt the user to save again
           });  // Update store here (this is just an example, in reality you will do it via redux or flux)
         }
-
         isDataValid = true;
     }
     else {
         // if anything fails then update the UI validation state but NOT the UI Data State
         this.setState(Object.assign(userInput, validateNewInput, this._validationErrors(validateNewInput)));
     }
-
     return isDataValid;
   }
 
   validationCheck() {
     if (!this._validateOnDemand)
       return;
-
     const userInput = this._grabUserInput(); // grab user entered vals
     const validateNewInput = this._validateData(userInput); // run the new input against the validator
-
     this.setState(Object.assign(userInput, validateNewInput, this._validationErrors(validateNewInput)));
   }
 
@@ -239,103 +232,127 @@ render(){
                         <h1>*Coach Name Here*<span>*School Name*</span></h1>
                         <form>
                             <div className="section"><span>1</span>Date of visit</div>
-                            <div className="inner-wrap">
+                              <div className="inner-wrap">
                                 <label>Select Date:</label><br></br>
-                                <div className={notValidClasses.date_of_visitCls}>
-                                  <input type="date" name="field1" className="form-control" ref="date_of_visit" defaultValue={this.state.date_of_visit} onBlur={this.validationCheck} />
-                                    <div className={notValidClasses.date_of_visitValGrpCls}>{this.state.date_of_visitValMsg}</div>
-                                </div>
-                            </div>
+                                  <div className={notValidClasses.date_of_visitCls}>
+                                    <input type="date"
+                                           name="field1"
+                                           className="form-control"
+                                           ref="date_of_visit"
+                                           defaultValue={this.state.date_of_visit}
+                                           onBlur={this.validationCheck} />
+                                      <div className={notValidClasses.date_of_visitValGrpCls}>{this.state.date_of_visitValMsg}</div>
+                                  </div>
+                              </div>
                             <div className="section"><span>2</span>How long was your visit?</div>
-                            <div className="inner-wrap">
-                                <label><input type="string" name="field3" className="form-control" ref="length_of_visit" defaultValue={this.state.length_of_visit} onBlur={this.validationCheck} /><br></br>(ex. 1 hour 30 minutes)</label>
-                              <div className={notValidClasses.length_of_visitValGrpCls}>{this.state.length_of_visitValMsg}</div>
+                              <div className="inner-wrap">
+                                <div className={notValidClasses.length_of_visitCls}>
+                                 <input type="string"
+                                        name="field3"
+                                        className="form-control"
+                                        ref="length_of_visit"
+                                        defaultValue={this.state.length_of_visit}
+                                        onBlur={this.validationCheck} /><br></br>
+                                    <label>(ex. 1 hour 30 minutes)</label>
+                                <div className={notValidClasses.length_of_visitValGrpCls}>{this.state.length_of_visitValMsg}</div>
+                              </div>
                             </div>
                             <div className="section"><span>3</span>What were the objectives of today's visit?</div>
-                                <div className="inner-wrap">
-                                <label><textarea type="string" name="field5" rows="4" cols="100" className="form-control" ref="objectives_of_visit" defaultValue={this.state.objectives_of_visit} onBlur={this.validationCheck} /><br></br>(ex. to share internal data and discuss observations, to design something small to try, to reflect on the team's first try etc.)</label>
-                                  <div className={notValidClasses.objectives_of_visitValGrpCls}>{this.state.objectives_of_visitValMsg}</div>
-                            </div>
+                             <div className="inner-wrap">
+                               <div className={notValidClasses.objectives_of_visitCls}>
+                                  <textarea type="string"
+                                            name="field5"
+                                            rows="4"
+                                            cols="100"
+                                            className="form-control"
+                                            ref="objectives_of_visit"
+                                            defaultValue={this.state.objectives_of_visit}
+                                            onBlur={this.validationCheck} /><br></br>
+                                  <label>(ex. to share internal data and discuss observations, to design something small to try, to reflect on the team's first try etc.)</label>
+                                 <div className={notValidClasses.objectives_of_visitValGrpCls}>{this.state.objectives_of_visitValMsg}</div>
+                                </div>
+                             </div>
 
                             <div className="section"><span>4</span>During today's visit I interacted with my school in the following ways </div>
-                                <div className="inner-wrap">
+                              <div className="inner-wrap">
+                                <div className={notValidClasses.interact_in_these_waysCls}>
                                   <label><i>(select all that apply)*</i></label><br></br>
-                                    <input type="checkbox" className="form-control" ref="interact_in_these_ways" defaultValue={this.state.interact_in_these_ways} onBlur={this.validationCheck} value="Facilitated meeting with team" />Facilitated meeting with team<br></br>
-                                    <input type="checkbox" className="form-control" ref="interact_in_these_ways" defaultValue={this.state.interact_in_these_ways} onBlur={this.validationCheck} value="Observed Practice" />Observed Practice<br></br>
-                                    <input type="checkbox" className="form-control" ref="interact_in_these_ways" defaultValue={this.state.interact_in_these_ways} onBlur={this.validationCheck} value="Checked in with leadership" />Checked in with leadership<br></br>
-                                    <input type="checkbox" className="form-control" ref="interact_in_these_ways" defaultValue={this.state.interact_in_these_ways} onBlur={this.validationCheck} value ="Checked in with Team Lead" />Checked in with Team Lead<br></br>
-                                    <input type="checkbox" className="form-control" ref="interact_in_these_ways" defaultValue={this.state.interact_in_these_ways} onBlur={this.validationCheck} value="Facilitated a PD" />Facilitated a PD<br></br>
-                                    <input type="checkbox" className="form-control" ref="interact_in_these_ways" defaultValue={this.state.interact_in_these_ways} onBlur={this.validationCheck} value="Other" />Other: <input type="string" className="form-control" ref="interact_other_explained" defaultValue={this.state.interact_other_explained} onBlur={this.validationCheck} /><br></br>
+                                      <input type="checkbox" className="form-control" ref="interact_in_these_ways" defaultValue={this.state.interact_in_these_ways}
+                                             onBlur={this.validationCheck} value="Facilitated meeting with team" />Facilitated meeting with team<br></br>
+                                      <input type="checkbox" className="form-control" ref="interact_in_these_ways" defaultValue={this.state.interact_in_these_ways}
+                                             onBlur={this.validationCheck} value="Observed Practice" />Observed Practice<br></br>
+                                      <input type="checkbox" className="form-control" ref="interact_in_these_ways" defaultValue={this.state.interact_in_these_ways}
+                                             onBlur={this.validationCheck} value="Checked in with leadership" />Checked in with leadership<br></br>
+                                      <input type="checkbox" className="form-control" ref="interact_in_these_ways" defaultValue={this.state.interact_in_these_ways}
+                                             onBlur={this.validationCheck} value ="Checked in with Team Lead" />Checked in with Team Lead<br></br>
+                                      <input type="checkbox" className="form-control" ref="interact_in_these_ways" defaultValue={this.state.interact_in_these_ways}
+                                             onBlur={this.validationCheck} value="Facilitated a PD" />Facilitated a PD<br></br>
+                                      <input type="checkbox" className="form-control" ref="interact_in_these_ways" defaultValue={this.state.interact_in_these_ways}
+                                             onBlur={this.validationCheck} value="Other" />Other: <input type="string"
+                                                                                                         className="form-control"
+                                                                                                         ref="interact_other_explained"
+                                                                                                         defaultValue={this.state.interact_other_explained}
+                                                                                                         onBlur={this.validationCheck} /><br></br>
                                     <div className={notValidClasses.interact_in_these_waysValGrpCls}>{this.state.interact_in_these_waysValMsg}</div>
                                     <div className={notValidClasses.interact_other_explainedValGrpCls}>{this.state.interact_other_explainedValMsg}</div>
                                 </div>
-
+                              </div>
                             <div className="section"><span>5</span>Thinking about today's visit, how many of each role did you interact with?</div>
-                            <div className="inner-wrap">
-                                <label></label>
-                                        Teachers
-                                        <select className="form-control" ref="interact_teachers" defaultValue={this.state.interact_teachers} onBlur={this.validationCheck} >
-                                          <option value="0" >0</option>
-                                          <option value="1" >1</option>
-                                          <option value="2" >2</option>
-                                          <option value="3" >3</option>
-                                          <option value="4" >4</option>
-                                          <option value="5" >5 or more</option>
-                                        </select><br></br>
-                                Guidance Counselors
-                                        <select className="form-control" ref="interact_guidance_counselors" defaultValue={this.state.interact_guidance_counselors} onBlur={this.validationCheck} >
-                                          <option value="0" >0</option>
-                                          <option value="1" >1</option>
-                                          <option value="2" >2</option>
-                                          <option value="3" >3</option>
-                                          <option value="4" >4</option>
-                                          <option value="5" >5 or more</option>
-                                        </select><br></br>
-                                College Counselors
-                                        <select className="form-control" ref="interact_college_couselors" defaultValue={this.state.interact_college_couselors} onBlur={this.validationCheck} >
-                                          <option value="0" >0</option>
-                                          <option value="1" >1</option>
-                                          <option value="2" >2</option>
-                                          <option value="3" >3</option>
-                                          <option value="4" >4</option>
-                                          <option value="5" >5 or more</option>
-                                        </select><br></br>
-                                Assistant Principals
-                                        <select className="form-control" ref="interact_assistant_principals" defaultValue={this.state.interact_assistant_principals} onBlur={this.validationCheck} >
-                                          <option value="0" >0</option>
-                                          <option value="1" >1</option>
-                                          <option value="2" >2</option>
-                                          <option value="3" >3</option>
-                                          <option value="4" >4</option>
-                                          <option value="5" >5 or more</option>
-                                        </select><br></br>
-                                Principals
-                                        <select className="form-control" ref="interact_principals" defaultValue={this.state.interact_principals} onBlur={this.validationCheck} >
-                                          <option value="0" >0</option>
-                                          <option value="1" >1</option>
-                                          <option value="2" >2</option>
-                                          <option value="3" >3</option>
-                                          <option value="4" >4</option>
-                                          <option value="5" >5 or more</option>
-                                        </select><br></br>
-                                Other
-                                        <select className="form-control" ref="interact_other" defaultValue={this.state.interact_other} onBlur={this.validationCheck} >
-                                          <option value="0" >0</option>
-                                          <option value="1" >1</option>
-                                          <option value="2" >2</option>
-                                          <option value="3" >3</option>
-                                          <option value="4" >4</option>
-                                          <option value="5" >5 or more</option>
-                                        </select><br></br>
-                                        <div className={notValidClasses.interact_otherValGrpCls}>{this.state.interact_otherValMsg}</div>
+                              <div className="inner-wrap">
+                                  <label></label>
+                                    <select className="form-control" ref="interact_teachers" defaultValue={this.state.interact_teachers} onBlur={this.validationCheck} >
+                                      <option value="0" >0</option>
+                                      <option value="1" >1</option>
+                                      <option value="2" >2</option>
+                                      <option value="3" >3</option>
+                                      <option value="4" >4</option>
+                                      <option value="5" >5 or more</option>
+                                    </select>Teachers<br></br>
+                                    <select className="form-control" ref="interact_guidance_counselors" defaultValue={this.state.interact_guidance_counselors} onBlur={this.validationCheck} >
+                                      <option value="0" >0</option>
+                                      <option value="1" >1</option>
+                                      <option value="2" >2</option>
+                                      <option value="3" >3</option>
+                                      <option value="4" >4</option>
+                                      <option value="5" >5 or more</option>
+                                    </select>Guidance Counselors<br></br>
+                                    <select className="form-control" ref="interact_college_couselors" defaultValue={this.state.interact_college_couselors} onBlur={this.validationCheck} >
+                                      <option value="0" >0</option>
+                                      <option value="1" >1</option>
+                                      <option value="2" >2</option>
+                                      <option value="3" >3</option>
+                                      <option value="4" >4</option>
+                                      <option value="5" >5 or more</option>
+                                    </select>College Counselors<br></br>
+                                    <select className="form-control" ref="interact_assistant_principals" defaultValue={this.state.interact_assistant_principals} onBlur={this.validationCheck} >
+                                      <option value="0" >0</option>
+                                      <option value="1" >1</option>
+                                      <option value="2" >2</option>
+                                      <option value="3" >3</option>
+                                      <option value="4" >4</option>
+                                      <option value="5" >5 or more</option>
+                                    </select>Assistant Principals<br></br>
+                                    <select className="form-control" ref="interact_principals" defaultValue={this.state.interact_principals} onBlur={this.validationCheck} >
+                                      <option value="0" >0</option>
+                                      <option value="1" >1</option>
+                                      <option value="2" >2</option>
+                                      <option value="3" >3</option>
+                                      <option value="4" >4</option>
+                                      <option value="5" >5 or more</option>
+                                    </select>Principals<br></br>
+                                    <select className="form-control" ref="interact_other" defaultValue={this.state.interact_other} onBlur={this.validationCheck} >
+                                      <option value="0" >0</option>
+                                      <option value="1" >1</option>
+                                      <option value="2" >2</option>
+                                      <option value="3" >3</option>
+                                      <option value="4" >4</option>
+                                      <option value="5" >5 or more</option>
+                                    </select>Other<br></br>
                             </div>
                             <div className="section"><span>6</span>(For your notes) - Feel free to include any next steps or notes from this visit
-                            <div className="inner-wrap">
-                                <label> <textarea type="string" name="field3" className="form-control" ref="next_step_notes" defaultValue={this.state.next_step_notes} onBlur={this.validationCheck} /></label>
-                            </div>
-                            <div className="button-section">
-                             <input type="submit" value="Next" onClick={() => this.props.jumpToStep(1)} />
-                            </div>
+                              <div className="inner-wrap">
+                                  <label> <textarea type="string" name="field3" className="form-control" ref="next_step_notes" defaultValue={this.state.next_step_notes} onBlur={this.validationCheck} /></label>
+                              </div>
                           </div>
                         </form>
                       </div>

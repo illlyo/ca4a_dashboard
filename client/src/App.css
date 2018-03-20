@@ -509,5 +509,7 @@ flex: 1;
 border-top-width: 2px;
 border-top-color: grey;
 border-top-style: outset;
-
+}
+.val-err-tooltip{
+  color: red
 }
