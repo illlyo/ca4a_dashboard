@@ -37,7 +37,7 @@ constructor(props){
   }
 
   componentDidMount() {
-    console.log(this.state.interact_with_pd)
+
   }
 
   componentWillUnmount() {}
@@ -131,14 +131,14 @@ constructor(props){
      interact_with_team_leadVal: (data.interact_with_team_lead != null),
      interact_with_pdVal: (data.interact_with_pd != null),
      interact_with_otherVal: (data.interact_with_other != null),
-     interact_other_explainedVal: (data.interact_other_explained != 0),
+     interact_other_explainedVal: (data.interact_other_explained != ''),
      interact_teachersVal: (data.interact_teachers != null),
      interact_guidance_counselorsVal: (data.interact_guidance_counselors != null),
      interact_college_couselorsVal: (data.interact_college_couselors != null),
      interact_assistant_principalsVal: (data.interact_assistant_principals != null),
      interact_principalsVal: (data.interact_principals != null),
      interact_otherVal: (data.interact_other != null),
-     next_step_notesVal: (data.next_step_notes != 0)
+     next_step_notesVal: (data.next_step_notes != '')
    }
  }
 
@@ -147,14 +147,12 @@ constructor(props){
      date_of_visitValMsg: val.date_of_visitVal ? '' : 'Response required',
      length_of_visitValMsg: val.length_of_visitVal ? '' : 'Response required',
      objectives_of_visitValMsg: val.objectives_of_visitVal ? '' : 'Response required',
-
-     interact_meeting_with_teamValMsg: val.interact_meeting_with_teamVal ? [] : 'Response required',
-     interact_observed_practiceValMsg: val.interact_observed_practiceVal ? [] : 'Response required',
-     interact_with_leadershipValMsg: val.interact_with_leadershipVal ? [] : 'Response required',
-     interact_with_team_leadValMsg: val.interact_with_team_leadVal ? [] : 'Response required',
-     interact_with_pdValMsg: val.interact_with_pdVal ? [] : 'Response required',
-     interact_with_otherValMsg: val.interact_with_otherVal ? [] : 'Response required',
-
+     interact_meeting_with_teamValMsg: val.interact_meeting_with_teamVal ? '' : 'Response required',
+     interact_observed_practiceValMsg: val.interact_observed_practiceVal ? '' : 'Response required',
+     interact_with_leadershipValMsg: val.interact_with_leadershipVal ? '' : 'Response required',
+     interact_with_team_leadValMsg: val.interact_with_team_leadVal ? '' : 'Response required',
+     interact_with_pdValMsg: val.interact_with_pdVal ? '' : 'Response required',
+     interact_with_otherValMsg: val.interact_with_otherVal ? '' : 'Response required',
      interact_other_explainedValMsg: val.interact_other_explainedVal ? '' : 'Response required',
      interact_teachersValMsg: val.interact_teachersVal ? '' : 'Response required',
      interact_guidance_counselorsValMsg: val.interact_guidance_counselorsVal ? '' : 'Response required',
@@ -388,10 +386,10 @@ render(){
                                            <input type="checkbox" className="form-control" id="interact_with_pd" ref="interact_with_pd" defaultValue={this.state.interact_with_pd}
                                              onBlur={this.validationCheck}  onChange={this.onChangeFour} />Facilitated a PD<br></br>
                                            <input type="checkbox" className="form-control" id="interact_with_other" ref="interact_with_other" defaultValue={this.state.interact_with_other}
-                                             onBlur={this.validationCheck}  onChange={this.onChangeFive} />Other: <input type="string"
-                                                                                                         className="form-control"
-                                                                                                         ref="interact_other_explained"
-                                                                                                         defaultValue={this.state.interact_other_explained} /><br></br>
+                                             onBlur={this.validationCheck}  onChange={this.onChangeFive} />Other: <div className="no-error col-md-8"><input type="string"
+                                                                                                className="form-control"
+                                                                                                ref="interact_other_explained"
+                                                                                                defaultValue={this.state.interact_other_explained} /></div>
                               </div>
                             <div className="section"><span>5</span>Thinking about today's visit, how many of each role did you interact with?</div>
                               <div className="inner-wrap">
@@ -447,8 +445,10 @@ render(){
                             </div>
                             <div className="section"><span>6</span>(For your notes) - Feel free to include any next steps or notes from this visit
                               <div className="inner-wrap">
+                                <div className="no-error col-md-8">
                                   <label> <textarea type="string" name="field3" className="form-control" ref="next_step_notes" defaultValue={this.state.next_step_notes} /></label>
                               </div>
+                            </div>
                           </div>
                       </div>
                     </div>
