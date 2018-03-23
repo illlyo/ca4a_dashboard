@@ -21,6 +21,12 @@ ActiveRecord::Schema.define(version: 20180306012804) do
     t.string "length_of_visit"
     t.string "objectives_of_visit"
     t.string "interact_in_these_ways"
+    t.integer "interact_meeting_with_team"
+    t.integer "interact_observed_practice"
+    t.integer "interact_with_leadership"
+    t.integer "interact_with_team_lead"
+    t.integer "interact_with_pd"
+    t.integer "interact_with_other"
     t.string "interact_other_explained"
     t.integer "interact_teachers"
     t.integer "interact_guidance_counselors"
@@ -47,12 +53,14 @@ ActiveRecord::Schema.define(version: 20180306012804) do
     t.string "supervision_lab_to_bring"
     t.boolean "highlight_planning"
     t.string "highlight_planning_explained"
-    t.bigint "coach_id"
     t.string "coach_name"
     t.string "school_visited"
+    t.bigint "coach_id"
+    t.bigint "school_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["coach_id"], name: "index_coach_logs_on_coach_id"
+    t.index ["school_id"], name: "index_coach_logs_on_school_id"
   end
 
   create_table "coaches", force: :cascade do |t|

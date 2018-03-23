@@ -6,9 +6,13 @@ class CreateCoachLogs < ActiveRecord::Migration[5.1]
       t.string :length_of_visit
       t.string :objectives_of_visit
       t.string :interact_in_these_ways
-
+      t.integer :interact_meeting_with_team
+      t.integer :interact_observed_practice
+      t.integer :interact_with_leadership
+      t.integer :interact_with_team_lead
+      t.integer :interact_with_pd
+      t.integer :interact_with_other
       t.string :interact_other_explained
-
       t.integer :interact_teachers
       t.integer :interact_guidance_counselors
       t.integer :interact_college_couselors
@@ -37,6 +41,7 @@ class CreateCoachLogs < ActiveRecord::Migration[5.1]
       t.string :coach_name
       t.string :school_visited
       t.belongs_to :coach, index: true
+      t.belongs_to :school, index: true
 
 
       t.timestamps

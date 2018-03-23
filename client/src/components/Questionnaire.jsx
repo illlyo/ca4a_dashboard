@@ -23,7 +23,12 @@ class Questionnaire extends React.Component{
       date_of_visit: '',
       length_of_visit: '',
       objectives_of_visit: '',
-      interact_in_these_ways: '',
+      interact_meeting_with_team: 0,
+      interact_observed_practice: 0,
+      interact_with_leadership: 0,
+      interact_with_team_lead: 0,
+      interact_with_pd: 0,
+      interact_with_other: 0,
       interact_other_explained: '',
       interact_teachers: 0,
       interact_guidance_counselors: 0,
@@ -32,6 +37,7 @@ class Questionnaire extends React.Component{
       interact_principals: 0,
       interact_other: 0,
       next_step_notes: '',
+
       college_career_readiness_domains: '',
       learning_trajectory_discussion: false,
       activity_inquiry_institute: '',
@@ -59,7 +65,12 @@ class Questionnaire extends React.Component{
       date_of_visit: '',
       length_of_visit: '',
       objectives_of_visit: '',
-      interact_in_these_ways: '',
+      interact_meeting_with_team: 0,
+      interact_observed_practice: 0,
+      interact_with_leadership: 0,
+      interact_with_team_lead: 0,
+      interact_with_pd: 0,
+      interact_with_other: 0,
       interact_other_explained: '',
       interact_teachers: 0,
       interact_guidance_counselors: 0,
@@ -68,6 +79,7 @@ class Questionnaire extends React.Component{
       interact_principals: 0,
       interact_other: 0,
       next_step_notes: '',
+
       college_career_readiness_domains: '',
       learning_trajectory_discussion: false,
       activity_inquiry_institute: '',
@@ -88,9 +100,6 @@ class Questionnaire extends React.Component{
       highlight_planning_explained: '',
       coach_name: '',
       school_visited: '',
-      email: '',
-      gender: '',
-      savedToCloud: false
     };
   }
 
@@ -100,6 +109,7 @@ class Questionnaire extends React.Component{
 
   getStore() {
     return this.sampleStore;
+    console.log(this.sampleStore);
   }
 
   updateStore(update) {
@@ -107,6 +117,7 @@ class Questionnaire extends React.Component{
       ...this.sampleStore,
       ...update,
     }
+    console.log(this.sampleStore)
   }
 
   render() {

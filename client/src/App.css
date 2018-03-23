@@ -198,6 +198,7 @@ select{
     -ms-transition: all 0.30s ease-in-out;
     -o-transition: all 0.30s ease-in-out;
     outline: none;
+
 }
 .form-style-1 input[type=text]:focus,
 .form-style-1 input[type=date]:focus,
@@ -295,7 +296,6 @@ select{
     display: block;
     font: 13px Arial, Helvetica, sans-serif;
     color: #888;
-    margin-bottom: 15px;
 }
 .form-style-10 input[type="text"],
 .form-style-10 input[type="datetime"],
@@ -308,6 +308,7 @@ select{
 .form-style-10 select {
     display: inline;
     box-sizing: border-box;
+    margin-bottom: 3px;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     width: 20%;
