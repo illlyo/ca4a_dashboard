@@ -20,6 +20,11 @@ class CreateCoachLogs < ActiveRecord::Migration[5.1]
       t.integer :interact_principals
       t.integer :interact_other
       t.string :next_step_notes
+      t.integer :academic_skills
+      t.integer :academic_personal_behavior
+      t.integer :academic_programming
+      t.integer :college_career_access
+      t.integer :college_career_readiness
       t.string :college_career_readiness_domains
       t.boolean :learning_trajectory_discussion
       t.string :activity_inquiry_institute
@@ -34,6 +39,12 @@ class CreateCoachLogs < ActiveRecord::Migration[5.1]
       t.string :rate_learning_trajectory_explained
       t.string :learning_trajectory_success_challenge
       t.string :in_between_steps
+      t.integer :inquiry_institute
+      t.integer :research
+      t.integer :design
+      t.integer :pdsa
+      t.integer :synthesize
+      t.integer :scale
       t.string :learning_trajectory_next_meeting
       t.string :supervision_lab_to_bring
       t.boolean :highlight_planning

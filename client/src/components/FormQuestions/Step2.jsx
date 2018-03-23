@@ -7,7 +7,10 @@ class Step2 extends React.Component {
     super(props);
 
     this.state = {
-      college_career_readiness_domains: props.getStore().college_career_readiness_domains ,
+      academic_skills: props.getStore().academic_skills,
+      academic_personal_behavior: props.getStore().academic_personal_behavior,
+      academic_programming: props.getStore().academic_programming,
+      college_career_access: props.getStore().college_career_access,
       learning_trajectory_discussion: props.getStore().learning_trajectory_discussion ,
       activity_inquiry_institute: props.getStore().activity_inquiry_institute ,
       activity_research: props.getStore().activity_research ,
@@ -20,11 +23,52 @@ class Step2 extends React.Component {
     this._validateOnDemand = true; // this flag enables onBlur validation as user fills forms
     this.validationCheck = this.validationCheck.bind(this);
     this.isValidated = this.isValidated.bind(this);
+    this.onChangeOne = this.onChangeOne.bind(this);
+    this.onChangeTwo = this.onChangeTwo.bind(this);
+    this.onChangeThree = this.onChangeThree.bind(this);
+    this.onChangeFour = this.onChangeFour.bind(this);
+    this.handleOptionChangeYes = this.handleOptionChangeYes.bind(this);
+    this.handleOptionChangeNo = this.handleOptionChangeNo.bind(this);
     }
 
-    componentDidMount() {}
+    componentDidMount() {
+      console.log(this.state.learning_trajectory_discussion)
+    }
 
     componentWillUnmount() {}
+
+    handleOptionChangeYes(e){
+      this.setState({
+        learning_trajectory_discussion: true
+    });
+    }
+
+    handleOptionChangeNo(e){
+      this.setState({
+        learning_trajectory_discussion: false
+    });
+    console.log(e.target.value)
+    }
+
+    onChangeOne(e) {
+      this.setState({
+        academic_skills: 1
+      })}
+
+    onChangeTwo(e) {
+      this.setState({
+        academic_personal_behavior: 1
+      })}
+
+    onChangeThree(e) {
+      this.setState({
+        academic_programming: 1
+      })}
+
+    onChangeFour(e) {
+      this.setState({
+        college_career_access: 1
+      })}
 
     isValidated() {
       const userInput = this._grabUserInput(); // grab user entered vals
@@ -33,7 +77,10 @@ class Step2 extends React.Component {
 
       // if full validation passes then save to store and pass as valid
       if (Object.keys(validateNewInput).every((k) => { return validateNewInput[k] === true })) {
-          if (this.props.getStore().college_career_readiness_domains != userInput.college_career_readiness_domains ||
+          if (this.props.getStore().academic_skills != userInput.academic_skills ||
+              this.props.getStore().academic_personal_behavior != userInput.academic_personal_behavior ||
+              this.props.getStore().academic_programming != userInput.academic_programming ||
+              this.props.getStore().college_career_access != userInput.college_career_access ||
               this.props.getStore().learning_trajectory_discussion != userInput.learning_trajectory_discussion ||
               this.props.getStore().activity_inquiry_institute != userInput.activity_inquiry_institute ||
               this.props.getStore().activity_research != userInput.activity_research ||
@@ -59,28 +106,35 @@ class Step2 extends React.Component {
     validationCheck() {
       if (!this._validateOnDemand)
         return;
-      const userInput = this._grabUserInput(); // grab user entered vals
+      const userInput = this._grabUserInput();
+      console.log(userInput)// grab user entered vals
       const validateNewInput = this._validateData(userInput); // run the new input against the validator
       this.setState(Object.assign(userInput, validateNewInput, this._validationErrors(validateNewInput)));
     }
 
     _validateData(data) {
      return  {
-       college_career_readiness_domainsVal: (data.college_career_readiness_domains != 0) ,
-       learning_trajectory_discussionVal: (data.learning_trajectory_discussion != 0) ,
-       activity_inquiry_instituteVal: (data.activity_inquiry_institute != 0) ,
-       activity_researchVal: (data.activity_research != 0) ,
-       activity_designVal: (data.activity_design != 0) ,
-       activity_pdsaVal: (data.activity_pdsa != 0) ,
-       activity_synthesizeVal: (data.activity_synthesize != 0) ,
-       activity_scaleVal: (data.activity_scale != 0) ,
+       academic_skillsVal: (data.academic_skills != null),
+       academic_personal_behaviorVal: (data.academic_personal_behavior != null),
+       academic_programmingVal: (data.academic_programming != null),
+       college_career_accessVal: (data.college_career_access != null),
+       learning_trajectory_discussionVal: (data.learning_trajectory_discussion != 0),
+       activity_inquiry_instituteVal: (data.activity_inquiry_institute != 0),
+       activity_researchVal: (data.activity_research != 0),
+       activity_designVal: (data.activity_design != 0),
+       activity_pdsaVal: (data.activity_pdsa != 0),
+       activity_synthesizeVal: (data.activity_synthesize != 0),
+       activity_scaleVal: (data.activity_scale != 0),
        forward_workVal: (data.forward_work != 0)
      }
    }
 
    _validationErrors(val) {
      const errMsgs = {
-       college_career_readiness_domainsValMsg: val.college_career_readiness_domainsVal ? '' : 'Response required',
+       academic_skillsValMsg: val.academic_skillsVal ? '' : 'Response required',
+       academic_personal_behaviorValMsg: val.academic_personal_behaviorVal ? '' : 'Response required',
+       academic_programmingValMsg: val.academic_programmingVal ? '' : 'Response required',
+       college_career_accessValMsg: val.college_career_accessVal ? '' : 'Response required',
        learning_trajectory_discussionValMsg: val.learning_trajectory_discussionVal ? '' : 'Response required',
        activity_inquiry_instituteValMsg: val.activity_inquiry_instituteVal ? '' : 'Response required',
        activity_researchValMsg: val.activity_researchVal ? '' : 'Response required',
@@ -96,7 +150,10 @@ class Step2 extends React.Component {
 
    _grabUserInput() {
      return {
-       college_career_readiness_domains: this.refs.college_career_readiness_domains.value,
+       academic_skills: this.refs.academic_skills.value,
+       academic_personal_behavior: this.refs.academic_personal_behavior.value,
+       academic_programming: this.refs.academic_programming.value,
+       college_career_access: this.refs.college_career_access.value,
        learning_trajectory_discussion: this.refs.learning_trajectory_discussion.value,
        activity_inquiry_institute: this.refs.activity_inquiry_institute.value,
        activity_research: this.refs.activity_research.value,
@@ -112,12 +169,33 @@ class Step2 extends React.Component {
 
         let notValidClasses = {};
 
-    if (typeof this.state.college_career_readiness_domainsVal == 'undefined' || this.state.college_career_readiness_domainsVal) {
-      notValidClasses.college_career_readiness_domainsCls = 'no-error col-md-8';
+    if (typeof this.state.academic_skillsVal == 'undefined' || this.state.academic_skillsVal) {
+      notValidClasses.academic_skillsCls = 'no-error col-md-8';
     }
     else {
-       notValidClasses.college_career_readiness_domainsCls = 'has-error col-md-8';
-       notValidClasses.college_career_readiness_domainsValGrpCls = 'val-err-tooltip';
+       notValidClasses.academic_skillsCls = 'has-error col-md-8';
+       notValidClasses.academic_skillsValGrpCls = 'val-err-tooltip';
+    }
+    if (typeof this.state.academic_personal_behaviorVal == 'undefined' || this.state.academic_personal_behaviorVal) {
+      notValidClasses.academic_personal_behaviorCls = 'no-error col-md-8';
+    }
+    else {
+       notValidClasses.academic_personal_behaviorCls = 'has-error col-md-8';
+       notValidClasses.academic_personal_behaviorValGrpCls = 'val-err-tooltip';
+    }
+    if (typeof this.state.academic_programmingVal == 'undefined' || this.state.academic_programmingVal) {
+      notValidClasses.academic_programmingCls = 'no-error col-md-8';
+    }
+    else {
+       notValidClasses.academic_programmingCls = 'has-error col-md-8';
+       notValidClasses.academic_programmingValGrpCls = 'val-err-tooltip';
+    }
+    if (typeof this.state.college_career_accessVal == 'undefined' || this.state.college_career_accessVal) {
+      notValidClasses.college_career_accessCls = 'no-error col-md-8';
+    }
+    else {
+       notValidClasses.college_career_accessCls = 'has-error col-md-8';
+       notValidClasses.college_career_accessValGrpCls = 'val-err-tooltip';
     }
     if (typeof this.state.learning_trajectory_discussionVal == 'undefined' || this.state.learning_trajectory_discussionVal) {
       notValidClasses.learning_trajectory_discussionCls = 'no-error col-md-8';
@@ -190,34 +268,31 @@ class Step2 extends React.Component {
                     <h1>*Coach Name Here*<span>*School Name*</span></h1>
                     <div className="section"><span>7</span>In general, under which College and Career readiness domain(s) did today's visit fall?</div>
                         <div className="inner-wrap">
-                          <div className={notValidClasses.college_career_readiness_domainsCls}>
                             <label>Check all that apply*</label>
                               <input type="checkbox"
                                      className="form-control"
-                                     ref="college_career_readiness_domains"
-                                     defaultValue={this.state.college_career_readiness_domains}
+                                     ref="academic_skills"
+                                     defaultValue={this.state.academic_skills}
                                      onBlur={this.validationCheck}
-                                     value="Academic Skills" />Academic Skills<br></br>
+                                     onChange={this.onChangeOne} />Academic Skills<br></br>
                               <input type="checkbox"
                                      className="form-control"
-                                     ref="college_career_readiness_domains"
-                                     defaultValue={this.state.college_career_readiness_domains}
+                                     ref="academic_personal_behavior"
+                                     defaultValue={this.state.academic_personal_behavior}
                                      onBlur={this.validationCheck}
-                                     value="Academic and personal behaviors" />Academic and personal behaviors<br></br>
+                                     onChange={this.onChangeTwo} />Academic and personal behaviors<br></br>
                               <input type="checkbox"
                                      className="form-control"
-                                     ref="college_career_readiness_domains"
-                                     defaultValue={this.state.college_career_readiness_domains}
+                                     ref="academic_programming"
+                                     defaultValue={this.state.academic_programming}
                                      onBlur={this.validationCheck}
-                                     value="Academic programming" />Academic programming<br></br>
+                                     onChange={this.onChangeThree} />Academic programming<br></br>
                               <input type="checkbox"
                                      className="form-control"
-                                     ref="college_career_readiness_domains"
-                                     defaultValue={this.state.college_career_readiness_domains}
+                                     ref="college_career_access"
+                                     defaultValue={this.state.college_career_access}
                                      onBlur={this.validationCheck}
-                                     value="College and career access" />College and career access<br></br>
-                            <div className={notValidClasses.college_career_readiness_domainsValGrpCls}>{this.state.college_career_readiness_domainsValMsg}</div>
-                          </div>
+                                     onChange={this.onChangeFour} />College and career access<br></br>
                         </div>
 
                       <div className="section"><span>8</span>Did this school discuss their Learning Trajectory in this meeting?</div>
@@ -227,15 +302,14 @@ class Step2 extends React.Component {
                                    name="field1"
                                    className="form-control"
                                    ref="learning_trajectory_discussion"
-                                   defaultValue={this.state.learning_trajectory_discussion}
-                                   onBlur={this.validationCheck}
-                                   value="yes" />Yes
+                                   onChange={this.handleOptionChangeYes}
+                                   onBlur={this.validationCheck} />Yes
                             <input type="radio"
                                    name="field1"
                                    className="form-control"
                                    ref="learning_trajectory_discussion"
-                                   defaultValue={this.state.learning_trajectory_discussion}
-                                   onBlur={this.validationCheck} value="no" />No
+                                   onChange={this.handleOptionChangeNo}
+                                   onBlur={this.validationCheck} />No
                               <div className={notValidClasses.learning_trajectory_discussionValGrpCls}>{this.state.learning_trajectory_discussionValMsg}</div>
                           </div>
                         </div>

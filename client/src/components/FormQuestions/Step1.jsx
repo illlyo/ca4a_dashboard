@@ -375,18 +375,48 @@ render(){
                             <div className="section"><span>4</span>During today's visit I interacted with my school in the following ways </div>
                               <div className="inner-wrap">
                                   <label><i>(select all that apply)*</i></label><br></br>
-                                      <input type="checkbox" className="form-control" id="interact_meeting_with_team" ref="interact_meeting_with_team" defaultValue={this.state.interact_meeting_with_team}
-                                             onBlur={this.validationCheck}  onChange={this.onChangeOne} />Facilitated meeting with team<br></br>
-                                           <input type="checkbox" className="form-control" id="interact_observed_practice" ref="interact_observed_practice" defaultValue={this.state.interact_observed_practice}
-                                             onBlur={this.validationCheck}  onChange={this.onChangeTwo} />Observed Practice<br></br>
-                                           <input type="checkbox" className="form-control" id="interact_with_leadership" ref="interact_with_leadership" defaultValue={this.state.interact_with_leadership}
-                                             onBlur={this.validationCheck}  onChange={this.onChangeThree} />Checked in with leadership<br></br>
-                                           <input type="checkbox" className="form-control" id="interact_with_team_lead" ref="interact_with_team_lead" defaultValue={this.state.interact_with_team_lead}
-                                             onBlur={this.validationCheck}  onChange={this.onChangeSix} />Checked in with Team Lead<br></br>
-                                           <input type="checkbox" className="form-control" id="interact_with_pd" ref="interact_with_pd" defaultValue={this.state.interact_with_pd}
-                                             onBlur={this.validationCheck}  onChange={this.onChangeFour} />Facilitated a PD<br></br>
-                                           <input type="checkbox" className="form-control" id="interact_with_other" ref="interact_with_other" defaultValue={this.state.interact_with_other}
-                                             onBlur={this.validationCheck}  onChange={this.onChangeFive} />Other: <div className="no-error col-md-8"><input type="string"
+                                      <input type="checkbox"
+                                             className="form-control"
+                                             id="interact_meeting_with_team"
+                                             ref="interact_meeting_with_team"
+                                             defaultValue={this.state.interact_meeting_with_team}
+                                             onBlur={this.validationCheck}
+                                             onChange={this.onChangeOne} />Facilitated meeting with team<br></br>
+                                      <input type="checkbox"
+                                             className="form-control"
+                                             id="interact_observed_practice"
+                                             ref="interact_observed_practice"
+                                             defaultValue={this.state.interact_observed_practice}
+                                             onBlur={this.validationCheck}  
+                                             onChange={this.onChangeTwo} />Observed Practice<br></br>
+                                      <input type="checkbox"
+                                             className="form-control"
+                                             id="interact_with_leadership"
+                                             ref="interact_with_leadership"
+                                             defaultValue={this.state.interact_with_leadership}
+                                             onBlur={this.validationCheck}
+                                             onChange={this.onChangeThree} />Checked in with leadership<br></br>
+                                      <input type="checkbox"
+                                             className="form-control"
+                                              id="interact_with_team_lead"
+                                              ref="interact_with_team_lead"
+                                              defaultValue={this.state.interact_with_team_lead}
+                                              onBlur={this.validationCheck}
+                                              onChange={this.onChangeSix} />Checked in with Team Lead<br></br>
+                                       <input type="checkbox"
+                                              className="form-control"
+                                              id="interact_with_pd"
+                                              ref="interact_with_pd"
+                                              defaultValue={this.state.interact_with_pd}
+                                              onBlur={this.validationCheck}
+                                              onChange={this.onChangeFour} />Facilitated a PD<br></br>
+                                       <input type="checkbox"
+                                              className="form-control"
+                                              id="interact_with_other"
+                                              ref="interact_with_other"
+                                              defaultValue={this.state.interact_with_other}
+                                              onBlur={this.validationCheck}
+                                              onChange={this.onChangeFive} />Other: <div className="no-error col-md-8"><input type="string"
                                                                                                 className="form-control"
                                                                                                 ref="interact_other_explained"
                                                                                                 defaultValue={this.state.interact_other_explained} /></div>
