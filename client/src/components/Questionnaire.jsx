@@ -64,7 +64,7 @@ class Questionnaire extends React.Component{
       scale: 0,
       learning_trajectory_next_meeting: '',
       supervision_lab_to_bring: '',
-      highlight_planning: null,
+      highlight_planning: '',
       highlight_planning_explained: '',
       coach_name: '',
       school_visited: '',

@@ -16,6 +16,7 @@ class Results extends React.Component{
     super(props);
     this.state = {
       coachLogResults: null,
+      coachLogRecentResult: null,
       coachLogResultsLoaded: false,
     }
   }
@@ -32,14 +33,16 @@ class Results extends React.Component{
     .then(res => {
       this.setState({
         coachLogResults: res.coach_logs,
+        coachLogRecentResult: [res.coach_logs[res.coach_logs.length-1]],
         coachLogResultsLoaded: true,
       })
-      console.log(res.coach_logs);
+      console.log(this.state.coachLogRecentResult);
     }).catch(err => console.log(err));
   }
 
+
   renderResults(){
-    return this.state.coachLogResults.map(res => {
+    return this.state.coachLogRecentResult.map(res => {
       return(
         <div className="result" key={res.id} >
           <h1>{res.coach_name}'s Log</h1>
@@ -93,8 +96,7 @@ class Results extends React.Component{
            <h3>Highlighting School's Work:</h3>
             _____________________________________________End Here*
         </div>
-      )
-    })
+    )})
   }
 
   render(){
