@@ -2,7 +2,171 @@
 
 import React from 'react';
 
-const Step3 = (props) => (
+class Step3 extends React.Component {
+  constructor(props){
+    super(props);
+    this.state = {
+      goals_met: props.getStore().goals_met,
+      rate_learning_trajectory: props.getStore().rate_learning_trajectory,
+      rate_learning_trajectory_explained: props.getStore().rate_learning_trajectory_explained
+    }
+    this._validateOnDemand = true; // this flag enables onBlur validation as user fills forms
+    this.validationCheck = this.validationCheck.bind(this);
+    this.isValidated = this.isValidated.bind(this);
+    this.handleOptionChangeOne = this.handleOptionChangeOne.bind(this);
+    this.handleOptionChangeTwo = this.handleOptionChangeTwo.bind(this);
+    this.handleOptionChangeThree = this.handleOptionChangeThree.bind(this);
+    this.handleOptionChangeFour = this.handleOptionChangeFour.bind(this);
+    this.handleOptionChangeFive = this.handleOptionChangeFive.bind(this);
+    this.handleOptionChangeA = this.handleOptionChangeA.bind(this);
+    this.handleOptionChangeB = this.handleOptionChangeB.bind(this);
+    this.handleOptionChangeC = this.handleOptionChangeC.bind(this);
+    this.handleOptionChangeD = this.handleOptionChangeD.bind(this);
+    this.handleOptionChangeE = this.handleOptionChangeE.bind(this);
+  }
+
+  componentDidMount() {}
+
+  componentWillUnmount() {}
+
+  handleOptionChangeOne(e){
+    this.setState({
+      goals_met: '5'
+  });
+  }
+  handleOptionChangeTwo(e){
+    this.setState({
+      goals_met: '4'
+  });
+  }
+  handleOptionChangeThree(e){
+    this.setState({
+      goals_met: '3'
+  });
+  }
+  handleOptionChangeFour(e){
+    this.setState({
+      goals_met: '2'
+  });
+  }
+  handleOptionChangeFive(e){
+    this.setState({
+      goals_met: '1'
+  });
+  }
+
+  handleOptionChangeA(e){
+    this.setState({
+      rate_learning_trajectory: '5'
+  });
+  }
+  handleOptionChangeB(e){
+    this.setState({
+      rate_learning_trajectory: '4'
+  });
+  }
+  handleOptionChangeC(e){
+    this.setState({
+      rate_learning_trajectory: '3'
+  });
+  }
+  handleOptionChangeD(e){
+    this.setState({
+      rate_learning_trajectory: '2'
+  });
+  }
+  handleOptionChangeE(e){
+    this.setState({
+      rate_learning_trajectory: '1'
+  });
+  }
+
+  isValidated() {
+    const userInput = this._grabUserInput(); // grab user entered vals
+    const validateNewInput = this._validateData(userInput); // run the new input against the validator
+    let isDataValid = false;
+
+  // if full validation passes then save to store and pass as valid
+  if (Object.keys(validateNewInput).every((k) => { return validateNewInput[k] === true })) {
+      if (this.props.getStore().goals_met != userInput.goals_met ||
+          this.props.getStore().rate_learning_trajectory != userInput.rate_learning_trajectory ||
+          this.props.getStore().rate_learning_trajectory_explained != userInput.rate_learning_trajectory_explained ) { // only update store of something changed
+        this.props.updateStore({
+          ...userInput,
+          savedToCloud: false // use this to notify step4 that some changes took place and prompt the user to save again
+        });  // Update store here (this is just an example, in reality you will do it via redux or flux)
+      }
+      isDataValid = true;
+  }
+  else {
+      // if anything fails then update the UI validation state but NOT the UI Data State
+      this.setState(Object.assign(userInput, validateNewInput, this._validationErrors(validateNewInput)));
+  }
+  return isDataValid;
+  }
+
+  validationCheck() {
+    if (!this._validateOnDemand)
+      return;
+    const userInput = this._grabUserInput();
+    console.log(userInput) // grab user entered vals
+    const validateNewInput = this._validateData(userInput); // run the new input against the validator
+    this.setState(Object.assign(userInput, validateNewInput, this._validationErrors(validateNewInput)));
+  }
+
+  _validateData(data) {
+   return  {
+     goals_metVal: (data.goals_met != 0),
+     rate_learning_trajectoryVal: (data.rate_learning_trajectory != 0),
+     rate_learning_trajectory_explainedVal: (data.rate_learning_trajectory_explained != 0)
+   }
+  }
+
+  _validationErrors(val) {
+    const errMsgs = {
+      goals_metValMsg: val.goals_metVal ? '' : 'Response required',
+      rate_learning_trajectoryValMsg: val.rate_learning_trajectoryVal ? '' : 'Response required',
+      rate_learning_trajectory_explainedValMsg: val.rate_learning_trajectory_explainedVal ? '' : 'Response required'
+    }
+    console.log(errMsgs)
+    return errMsgs;
+  }
+
+  _grabUserInput() {
+    return {
+      goals_met: this.refs.goals_met.value,
+      rate_learning_trajectory: this.refs.rate_learning_trajectory.value,
+      rate_learning_trajectory_explained: this.refs.rate_learning_trajectory_explained.value
+    };
+  }
+
+render(){
+
+  let notValidClasses = {};
+
+  if (typeof this.state.goals_metVal == 'undefined' || this.state.goals_metVal) {
+    notValidClasses.goals_metCls = 'no-error col-md-8';
+  }
+  else {
+     notValidClasses.goals_metCls = 'has-error col-md-8';
+     notValidClasses.goals_metValGrpCls = 'val-err-tooltip';
+  }
+
+  if (typeof this.state.rate_learning_trajectoryVal == 'undefined' || this.state.rate_learning_trajectoryVal) {
+      notValidClasses.rate_learning_trajectoryCls = 'no-error col-md-8';
+  }
+  else {
+     notValidClasses.rate_learning_trajectoryCls = 'has-error col-md-8';
+     notValidClasses.rate_learning_trajectoryValGrpCls = 'val-err-tooltip';
+  }
+  if (typeof this.state.rate_learning_trajectory_explainedVal == 'undefined' || this.state.rate_learning_trajectory_explainedVal) {
+    notValidClasses.rate_learning_trajectory_explainedCls = 'no-error col-md-8';
+  }
+  else {
+     notValidClasses.rate_learning_trajectory_explainedCls = 'has-error col-md-8';
+     notValidClasses.rate_learning_trajectory_explainedValGrpCls = 'val-err-tooltip';
+  }
+return(
     <div className="step step2">
       <div className="row">
         <form id="Form" className="form-horizontal">
@@ -17,31 +181,81 @@ const Step3 = (props) => (
                 <form>
                   <div className="section"><span>11</span>Were the goal(s) for today's visit met?</div>
                     <div className="inner-wrap">
-                      <input type="range" min="0" max="100" list="number" />
-                      <datalist id="number">
-                        <option>10</option>
-                        <option label="30">30</option>
-                        <option>50</option>
-                        <option>70</option>
-                        <option>90</option>
-                      </datalist>
+                      <div className={notValidClasses.goals_metCls}>
+                      <input type="radio"
+                             ref="goals_met"
+                             defaultValue={this.state.goals_met}
+                             onChange={this.handleOptionChangeOne}
+                             onBlur={this.validationCheck}
+                             />Goals were exceeded<br></br>
+                      <input type="radio"
+                             ref="goals_met"
+                             defaultValue={this.state.goals_met}
+                             onChange={this.handleOptionChangeTwo}
+                             onBlur={this.validationCheck}
+                             />Goals were sufficiently met<br></br>
+                     <input type="radio"
+                            ref="goals_met"
+                            defaultValue={this.state.goals_met}
+                            onChange={this.handleOptionChangeThree}
+                            onBlur={this.validationCheck}
+                            />Goals were somewhat met<br></br>
+                     <input type="radio"
+                            ref="goals_met"
+                            defaultValue={this.state.goals_met}
+                            onChange={this.handleOptionChangeFour}
+                            onBlur={this.validationCheck}
+                            />Goals were not at all met<br></br>
+                      <input type="radio"
+                             ref="goals_met"
+                             defaultValue={this.state.goals_met}
+                             onChange={this.handleOptionChangeFive}
+                             onBlur={this.validationCheck}
+                             />Goals were not defined<br></br>
+                      <div className={notValidClasses.goals_metValGrpCls}>{this.state.goals_metValMsg}</div>
+                    </div>
                     </div>
                     <div className="section"><span>12</span>Rate this school's overall progress on their Learning Trajectory since your last visit.</div>
                     <div className="inner-wrap">
-                        <label></label><input type="radio" name="field3" />Substantial
-                        <label></label><input type="radio" name="field3" />Some
-                        <label></label><input type="radio" name="field3" />A little
-                        <label></label><input type="radio" name="field3" />No progress
-                        <label></label><input type="radio" name="field3" />N/A
+                      <div className={notValidClasses.rate_learning_trajectoryCls}>
+                        <input type="radio" name="field3"
+                              ref="rate_learning_trajectory"
+                               defaultValue={this.state.rate_learning_trajectory}
+                               onBlur={this.validationCheck}
+                               onChange={this.handleOptionChangeA} />Substantial<br></br>
+                        <input type="radio" name="field3"
+                              ref="rate_learning_trajectory"
+                               defaultValue={this.state.rate_learning_trajectory}
+                               onBlur={this.validationCheck}
+                               onChange={this.handleOptionChangeB} />Some<br></br>
+                        <input type="radio" name="field3"
+                              ref="rate_learning_trajectory"
+                               defaultValue={this.state.rate_learning_trajectory}
+                               onBlur={this.validationCheck}
+                               onChange={this.handleOptionChangeC} />A little<br></br>
+                        <input type="radio" name="field3"
+                               ref="rate_learning_trajectory"
+                               defaultValue={this.state.rate_learning_trajectory}
+                               onBlur={this.validationCheck}
+                               onChange={this.handleOptionChangeD} />No progress<br></br>
+                        <input type="radio" name="field3"
+                               ref="rate_learning_trajectory"
+                               defaultValue={this.state.rate_learning_trajectory}
+                               onBlur={this.validationCheck}
+                               onChange={this.handleOptionChangeE} />N/A<br></br>
+                        </div>
                     </div>
 
                     <div className="section"><span>13</span>Explain your answer to the progress question above.</div>
                     <div className="inner-wrap">
-                        <label><textarea type="string" name="field3" /></label>
-                    </div>
-                    <div className="button-section">
-                     <input type="submit" value="Back" onClick={() => props.jumpToStep(1)} />
-                     <input type="submit" value="Next" onClick={() => props.jumpToStep(3)} />
+                      <div className={notValidClasses.rate_learning_trajectory_explainedCls}>
+                        <label><textarea type="string"
+                                         onBlur={this.validationCheck}
+                                         ref="rate_learning_trajectory_explained"
+                                         defaultValue={this.state.rate_learning_trajectory_explained}
+                                         name="field3" /></label>
+                          <div className={notValidClasses.rate_learning_trajectory_explainedValGrpCls}>{this.state.rate_learning_trajectory_explainedValMsg}</div>
+                      </div>
                     </div>
                     </form>
                   </div>
@@ -51,6 +265,8 @@ const Step3 = (props) => (
         </form>
         </div>
       </div>
-)
+    )
+  }
+}
 
 export default Step3;

@@ -39,13 +39,13 @@ class Step2 extends React.Component {
 
     handleOptionChangeYes(e){
       this.setState({
-        learning_trajectory_discussion: true
+        learning_trajectory_discussion: 'yes'
     });
     }
 
     handleOptionChangeNo(e){
       this.setState({
-        learning_trajectory_discussion: false
+        learning_trajectory_discussion: 'no'
     });
     console.log(e.target.value)
     }
@@ -118,7 +118,7 @@ class Step2 extends React.Component {
        academic_personal_behaviorVal: (data.academic_personal_behavior != null),
        academic_programmingVal: (data.academic_programming != null),
        college_career_accessVal: (data.college_career_access != null),
-       learning_trajectory_discussionVal: (data.learning_trajectory_discussion != 0),
+       learning_trajectory_discussionVal: (data.learning_trajectory_discussion != null),
        activity_inquiry_instituteVal: (data.activity_inquiry_institute != 0),
        activity_researchVal: (data.activity_research != 0),
        activity_designVal: (data.activity_design != 0),
@@ -302,12 +302,14 @@ class Step2 extends React.Component {
                                    name="field1"
                                    className="form-control"
                                    ref="learning_trajectory_discussion"
+                                   defaultValue={this.state.learning_trajectory_discussion}
                                    onChange={this.handleOptionChangeYes}
                                    onBlur={this.validationCheck} />Yes
                             <input type="radio"
                                    name="field1"
                                    className="form-control"
                                    ref="learning_trajectory_discussion"
+                                   defaultValue={this.state.learning_trajectory_discussion}
                                    onChange={this.handleOptionChangeNo}
                                    onBlur={this.validationCheck} />No
                               <div className={notValidClasses.learning_trajectory_discussionValGrpCls}>{this.state.learning_trajectory_discussionValMsg}</div>
