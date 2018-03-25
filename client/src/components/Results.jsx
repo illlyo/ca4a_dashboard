@@ -9,6 +9,11 @@ import ArcPie from './Charts/ArcPie.jsx';
 import SideBarChart from './Charts/SideBarChart.jsx';
 import PieInteractive from './Charts/PieInteractive.jsx';
 import SimplePieGraph from './Charts/SimplePieGraph.jsx';
+import PieChartTwo from './Charts/PieChartTwo.jsx';
+import BarChartProg from './Charts/BarChartProg.jsx';
+import Speedometer from './Charts/Speedometer.jsx';
+import SpeedometerTwo from './Charts/SpeedometerTwo.jsx';
+
 import Auth from '../modules/Auth';
 
 class Results extends React.Component{
@@ -62,7 +67,7 @@ class Results extends React.Component{
           <div className="top-div-dash">
             <div className="flex-column">
               <div className="mod-header-row">
-                <h3>Interaction methods used:</h3>
+                <h2>Interaction methods used:</h2>
               </div>
                 <div className="chart-org">
                   <ThisPieChart coachLogResults={this.state.coachLogRecentResult} /><Bar coachLogResults={this.state.coachLogRecentResult} />
@@ -75,23 +80,24 @@ class Results extends React.Component{
             <h2>School's Engagment in Activities</h2>
           </div>
               <div className="chart-org">
-                <h3>Have Not Yet Reached || In the process of completing || Completed</h3>
-                <SideBarChart />
-                <LineBarChart />
+                <PieChartTwo coachLogResults={this.state.coachLogRecentResult} />
+                <BarChartProg coachLogResults={this.state.coachLogRecentResult} />
               </div>
                   <p><b>Tools Used:</b>{res.forward_work}</p>
             <div className="mod-header-row">
-               <h3>Goals, Preparation & Progress:</h3>
+               <h2>Goals, Preparation & Progress:</h2>
             </div>
                    <div className="chart-org">
-                    <ArcPie />
-                    <PieInteractive />
+                    <Speedometer coachLogResults={this.state.coachLogRecentResult} />
+                    <SpeedometerTwo coachLogResults={this.state.coachLogRecentResult} />
                   </div>
                 <p><b>Progress explained:</b>{res.rate_learning_trajectory_explained}</p>
             <div className="mod-header-row">
-              <h3>Thinking Ahead:</h3>
+              <h2>Thinking Ahead:</h2>
             </div>
+                <h3>What successes/challenges are you experiencing in moving this team through their Learning Trajectory?</h3><br></br>
                 <p>{res.learning_trajectory_success_challenge}</p>
+                <h3>What are the "in-between" steps you can take before your next meeting to move this team's work forward?</h3>
                 <p>{res.in_between_steps}</p>
                 <div className="chart-org">
                     <SimplePieGraph />

@@ -1,31 +1,42 @@
-import React, { Component } from 'react';
-import { PieChart,Legend } from 'react-easy-chart';
-
+import React, {Component} from 'react';
+import {PieChart, Legend, ToolTip} from 'react-easy-chart';
 
 class PieChartTwo extends Component {
   constructor(props) {
-      super(props);
-     this.state = {
-       coachLogRecentResult: props.coachLogResults,
-       data: {
-         values: [{x: 'Facilitated Meeting With Team', y: props.coachLogResults[0].interact_meeting_with_team},
-                  {x: 'Observed Practice', y: props.coachLogResults[0].interact_observed_practice},
-                  {x: 'Checked in With Leadership', y: props.coachLogResults[0].interact_with_leadership},
-                  {x: 'Checked in With Team Lead', y: props.coachLogResults[0].interact_with_team_lead},
-                {x: 'Facilitated a PD', y: props.coachLogResults[0].interact_with_pd},
-              {x: 'Other', y: props.coachLogResults[0].interact_with_other}]
-     }
-   }
+    super(props);
+    this.state = {
+      coachLogRecentResult: props.coachLogResults,
+      showToolTip: false,
+      top: null,
+      left: null,
+      value: null,
+      key: null,
+      data: {
+        values: [
+          {
+            key: 'Academic Skills',
+            value: props.coachLogResults[0].academic_skills
+          }, {
+            key: 'Academic & Personal Behaviors',
+            value: props.coachLogResults[0].academic_personal_behavior
+          }, {
+            key: 'Academic Programming',
+            value: props.coachLogResults[0].academic_programming
+          }, {
+            key: 'College & Career Access',
+            value: props.coachLogResults[0].college_career_access
+          }
+        ]
+      }
+    }
+    this.mouseOverHandler = this.mouseOverHandler.bind(this);
+    this.mouseMoveHandler = this.mouseMoveHandler.bind(this);
+    this.mouseOutHandler = this.mouseOutHandler.bind(this);
 
-}
+  }
 
-mouseOverHandler(d, e) {
-    this.setState({
-      showToolTip: true,
-      top: e.y,
-      left: e.x,
-      value: d.value,
-      key: d.data.key});
+  mouseOverHandler(d, e) {
+    this.setState({showToolTip: true, top: e.y, left: e.x, value: d.value, key: d.data.key});
   }
 
   mouseMoveHandler(e) {
@@ -40,47 +51,30 @@ mouseOverHandler(d, e) {
 
   createTooltip() {
     if (this.state.showToolTip) {
-      return (
-        <ToolTip
-          top={this.state.top}
-          left={this.state.left}
-        >
-          The value of {this.state.key} is {this.state.value}
-        </ToolTip>
-      );
+      return (<ToolTip top={this.state.top} left={this.state.left}>
+        The value of {this.state.key}
+        is {this.state.value}
+      </ToolTip>);
     }
     return false;
   }
-  render() {
-    const customStyle = {
-      '.legend': {
-        backgroundColor: '#f9f9f9',
-        border: '1px solid #e5e5e5',
-        borderRadius: '12px',
-        fontSize: '.9em',
-        maxWidth: '180px',
-        padding: '3px'
-      }
+render() {
+  const customStyle = {
+    '.legend': {
+      backgroundColor: '#f9f9f9',
+      border: '1px solid #e5e5e5',
+      borderRadius: '12px',
+      fontSize: '.9em',
+      maxWidth: '200px',
+      padding: '3px'
     }
-    return(
-  <PieChart
-    data={[
-      { key: 'A', value: 100, color: '#aaac84' },
-      { key: 'B', value: 200, color: '#dce7c5' },
-      { key: 'C', value: 50, color: '#e3a51a' }
-    ]}
-    innerHoleSize={200}
-    mouseOverHandler={this.mouseOverHandler}
-    mouseOutHandler={this.mouseOutHandler.bind(this)}
-    mouseMoveHandler={this.mouseMoveHandler.bind(this)}
-    padding={10}
-    styles={this.styles}
-  />
-  <Legend data={this.state.data.values}
-          dataId={'x'}
-          styles={customStyle} />
-  </div>)
+  }
+  return (
+    <div>
+    <PieChart size={150} data={this.state.data.values} mouseOverHandler={this.mouseOverHandler} mouseOutHandler={this.mouseOutHandler.bind(this)} mouseMoveHandler={this.mouseMoveHandler.bind(this)} padding={10} styles={this.styles}/>
+  <Legend data={this.state.data.values} dataId={'key'} styles={customStyle} />
+</div>)
 }
 };
 
-export default ThisPieChart;
+export default PieChartTwo;
