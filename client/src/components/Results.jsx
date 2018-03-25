@@ -75,7 +75,6 @@ class Results extends React.Component{
                   <ThisPieChart coachLogResults={this.state.coachLogRecentResult} /><Bar coachLogResults={this.state.coachLogRecentResult} />
                   </div>
                 </div><br></br><br></br>
-                  <h3>Notes and Next Steps:</h3>
                   <p>{res.next_step_notes}</p>
             </div>
           </div>
@@ -114,12 +113,10 @@ class Results extends React.Component{
                     <PieChartThree coachLogResults={this.state.coachLogRecentResult} />
                 </div>
               </div>
-              <div className="flex-row">
         <div className="mod-header-row">
            <h3>Highlighting School's Work:</h3>
+          </div>
            <p>{res.highlight_planning_explained}</p>
-        </div>
-        </div>
       </div>
     )})
   }

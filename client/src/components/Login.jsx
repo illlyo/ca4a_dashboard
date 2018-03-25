@@ -19,16 +19,8 @@ const Login = props => {
               <input type="password"
                      name="password"
                      onChange={props.handleChange}
-                     class="field-long" 
+                     class="field-long"
                      value={props.password} />
-            </li>
-            <li>
-              <label>Type of visit:</label>
-                <select name="field4" class="field-select">
-                  <option value="">Select here</option>
-                  <option value="coach visit">Coach Visit</option>
-                  <option value="intervisitation">Intervisitation</option>
-               </select>
             </li>
             <li>
               <div className="button-section">

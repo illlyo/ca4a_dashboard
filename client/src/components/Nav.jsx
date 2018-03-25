@@ -8,8 +8,8 @@ const Nav = props => {
     <header>
     <div className="App-header">
       <img src={logo} className="nyc-doe-logo" alt="logo" />
-      <h1 className="App-title">BETA DASHBOARD</h1>
-      <span onClick={props.handleLogout} className="logout-link" >Logout</span>
+        <h1 className="App-title">BETA DASHBOARD</h1>
+        <span onClick={props.handleLogout} className="logout-link" >Logout</span>
     </div>
     </header>
   )

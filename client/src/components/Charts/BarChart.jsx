@@ -97,7 +97,6 @@ render() {
   return (
     <div>
       <BarChart
-          axisLabels={{x: 'My x Axis', y: 'My y Axis'}}
           axes
           grid
           colorBars

@@ -1,12 +1,15 @@
 import React, { Component } from 'react';
-import { BrowserRouter as Router, Link, Redirect, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Switch, Link, Redirect, Route } from 'react-router-dom';
 import Auth from './modules/Auth';
+import DashNav from './components/DashNav.jsx';
 import Nav from './components/Nav';
-import SchoolData from './components/SchoolData';
 import Charted from './components/Charts/Charted.jsx';
 import Login from './components/Login.jsx';
+
 import Questionnaire from './components/Questionnaire.jsx';
+import SchoolData from './components/SchoolData';
 import Results from './components/Results.jsx';
+
 import './App.css';
 
 class App extends Component {
@@ -82,21 +85,33 @@ class App extends Component {
         <div>
           <div className="App">
             <Nav handleLogout={this.handleLogout} />
-            <Route exact path="/" render={() => (this.state.auth) ?
-                           <Redirect to="/dashboard" />
-                           :
-                           <Login handleLoginSubmit={this.handleLoginSubmit}
-                                  handleChange={this.handleChange}
-                                  auth={this.state.auth}
-                                  username={this.state.username}
-                                  password={this.state.password}
-                                  />} />
-            <Route exact path="/dashboard" render={() =>
-                          <Questionnaire />} />
-            <Route exact path="/schools" render={() =>
-                          <SchoolData />} />
-            <Route exact path="/results" render={() =>
-                          <Results />} />
+            <Switch>
+              <Route exact path="/" render={() => (this.state.auth) ?
+                             <Redirect to="/dash-nav" />
+                             :
+                             <Login handleLoginSubmit={this.handleLoginSubmit}
+                                    handleChange={this.handleChange}
+                                    auth={this.state.auth}
+                                    username={this.state.username}
+                                    password={this.state.password}
+                                    />} />
+              <Route exact path="/dash-nav" render={() =>
+                            <DashNav />} />
+              <Route exact path="/dashboard" render={() => (this.state.auth) ?
+                             <Questionnaire />
+                             :
+                             <Login handleLoginSubmit={this.handleLoginSubmit}
+                                    handleChange={this.handleChange}
+                                    auth={this.state.auth}
+                                    username={this.state.username}
+                                    password={this.state.password}
+                                    />} />
+              <Route exact path="/schools" render={() =>
+                            <SchoolData />} />
+              <Route exact path="/results" render={() =>
+                            <Results />} />
+            </Switch>
+
             </div>
         </div>
       </Router>
