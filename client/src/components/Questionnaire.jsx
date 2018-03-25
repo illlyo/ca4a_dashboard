@@ -58,12 +58,14 @@ class Questionnaire extends React.Component{
       rate_learning_trajectory_explained: '',
       learning_trajectory_success_challenge: '',
       in_between_steps: '',
+
       inquiry_institute: 0,
       research: 0,
       design: 0,
       pdsa: 0,
       synthesize: 0,
       scale: 0,
+
       learning_trajectory_next_meeting: '',
       supervision_lab_to_bring: '',
       highlight_planning: '',

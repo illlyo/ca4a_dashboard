@@ -44,7 +44,7 @@ class ThisPieChart extends Component {
         border: '1px solid #e5e5e5',
         borderRadius: '12px',
         fontSize: '.9em',
-        maxWidth: '180px',
+        maxWidth: '200px',
         padding: '3px'
       }
     }

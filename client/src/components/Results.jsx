@@ -10,6 +10,7 @@ import SideBarChart from './Charts/SideBarChart.jsx';
 import PieInteractive from './Charts/PieInteractive.jsx';
 import SimplePieGraph from './Charts/SimplePieGraph.jsx';
 import PieChartTwo from './Charts/PieChartTwo.jsx';
+import PieChartThree from './Charts/PieChartThree.jsx';
 import BarChartProg from './Charts/BarChartProg.jsx';
 import Speedometer from './Charts/Speedometer.jsx';
 import SpeedometerTwo from './Charts/SpeedometerTwo.jsx';
@@ -100,13 +101,12 @@ class Results extends React.Component{
                 <h3>What are the "in-between" steps you can take before your next meeting to move this team's work forward?</h3>
                 <p>{res.in_between_steps}</p>
                 <div className="chart-org">
-                    <SimplePieGraph />
+                    <PieChartThree coachLogResults={this.state.coachLogRecentResult} />
                 </div>
-
         <div className="mod-header-row">
            <h3>Highlighting School's Work:</h3>
+           <p>{res.highlight_planning_explained}</p>
         </div>
-            _____________________________________________End Here*
         </div>
     )})
   }
@@ -116,12 +116,6 @@ class Results extends React.Component{
       <div>
          {(this.state.coachLogResultsLoaded) ?
             this.renderResults() : <p>Loading...</p>}
-        <h3>Interaction Methods</h3>
-        <h3>Roles</h3>
-          <Scatterplot />
-        <p>Notes: *Interpolate notes here*</p>
-          <LineChartBrush />
-          <GroupedBarChart />
       </div>
     )
   }
