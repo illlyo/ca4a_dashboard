@@ -71,8 +71,10 @@ class Results extends React.Component{
                 <h2>Interaction methods used:</h2>
               </div>
                 <div className="chart-org">
+                  <div className="flex-row">
                   <ThisPieChart coachLogResults={this.state.coachLogRecentResult} /><Bar coachLogResults={this.state.coachLogRecentResult} />
-                </div>
+                  </div>
+                </div><br></br><br></br>
                   <h3>Notes and Next Steps:</h3>
                   <p>{res.next_step_notes}</p>
             </div>
@@ -81,33 +83,44 @@ class Results extends React.Component{
             <h2>School's Engagment in Activities</h2>
           </div>
               <div className="chart-org">
+                            <div className="flex-row">
                 <PieChartTwo coachLogResults={this.state.coachLogRecentResult} />
                 <BarChartProg coachLogResults={this.state.coachLogRecentResult} />
+                </div>
               </div>
                   <p><b>Tools Used:</b>{res.forward_work}</p>
             <div className="mod-header-row">
                <h2>Goals, Preparation & Progress:</h2>
             </div>
                    <div className="chart-org">
+                    <div className="flex-row">
                     <Speedometer coachLogResults={this.state.coachLogRecentResult} />
                     <SpeedometerTwo coachLogResults={this.state.coachLogRecentResult} />
+                    </div>
                   </div>
                 <p><b>Progress explained:</b>{res.rate_learning_trajectory_explained}</p>
+
             <div className="mod-header-row">
               <h2>Thinking Ahead:</h2>
             </div>
+            <div className="flex-row">
+              <div className="sometext">
                 <h3>What successes/challenges are you experiencing in moving this team through their Learning Trajectory?</h3><br></br>
                 <p>{res.learning_trajectory_success_challenge}</p>
                 <h3>What are the "in-between" steps you can take before your next meeting to move this team's work forward?</h3>
                 <p>{res.in_between_steps}</p>
+              </div>
                 <div className="chart-org">
                     <PieChartThree coachLogResults={this.state.coachLogRecentResult} />
                 </div>
+              </div>
+              <div className="flex-row">
         <div className="mod-header-row">
            <h3>Highlighting School's Work:</h3>
            <p>{res.highlight_planning_explained}</p>
         </div>
         </div>
+      </div>
     )})
   }
 
