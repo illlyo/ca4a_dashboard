@@ -1,8 +1,21 @@
 'use strict';
 
-import React from 'react';
+import React, { Component } from 'react';
 
-const Step7 = (props) => (
+class Step7 extends Component{
+
+  constructor(props){
+    super(props);
+    this.state = {}
+  }
+
+    componentDidMount() {}
+
+    componentWillUnmount() {}
+
+    render(){
+      return(
+
     <div className="step step2">
       <div className="row">
         <form id="Form" className="form-horizontal">
@@ -14,7 +27,6 @@ const Step7 = (props) => (
               <div className="col-md-12">
                 <div className="form-style-10">
                 <h1>*Coach Name Here*<span>*School Name*</span></h1>
-                <form>
                   <div className="section"><span>1</span>Date of visit</div>
                   <div className="inner-wrap">
                       <label>Select Date:<br></br><input type="date" name="field1" /></label>
@@ -44,10 +56,9 @@ const Step7 = (props) => (
                         <label><textarea type="string" name="field3" /></label>
                     </div>
                     <div className="button-section">
-                     <input type="submit" value="Back" onClick={() => props.jumpToStep(5)} />
-                     <input type="submit" value="Next" onClick={() => props.jumpToStep(7)} />
+                     <input type="submit" value="Back" onClick={() => this.props.jumpToStep(5)} />
+                     <input type="submit" value="Next" onClick={() => this.props.jumpToStep(7)} />
                     </div>
-                    </form>
                   </div>
                 </div>
               </div>
@@ -55,6 +66,6 @@ const Step7 = (props) => (
         </form>
         </div>
       </div>
-)
+)}}
 
 export default Step7;

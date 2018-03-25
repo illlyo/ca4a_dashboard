@@ -1,8 +1,8 @@
 'use strict';
 
-import React from 'react';
+import React, { Component } from 'react';
 
-class Step6 extends React.Component{
+class Step6 extends Component{
 
   constructor(props){
     super(props);

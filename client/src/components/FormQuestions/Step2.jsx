@@ -296,7 +296,6 @@ class Step2 extends React.Component {
 
                       <div className="section"><span>8</span>Did this school discuss their Learning Trajectory in this meeting?</div>
                         <div className="inner-wrap">
-              // RADIO BUTTONS HEREE
                           <div className={notValidClasses.learning_trajectory_discussionCls}>
                             <input type="radio"
                                    name="field1"

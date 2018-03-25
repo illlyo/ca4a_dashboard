@@ -13,7 +13,7 @@ import Step10 from './FormQuestions/Step10';
 import Step11 from './FormQuestions/Step11';
 import Step12 from './FormQuestions/Step12';
 import Step13 from './FormQuestions/Step13';
-import Step14 from './FormQuestions/Step14';
+
 
 class Questionnaire extends React.Component{
   constructor(props) {
@@ -23,12 +23,14 @@ class Questionnaire extends React.Component{
       date_of_visit: '',
       length_of_visit: '',
       objectives_of_visit: '',
+
       interact_meeting_with_team: 0,
       interact_observed_practice: 0,
       interact_with_leadership: 0,
       interact_with_team_lead: 0,
       interact_with_pd: 0,
       interact_with_other: 0,
+
       interact_other_explained: '',
       interact_teachers: 0,
       interact_guidance_counselors: 0,
@@ -122,7 +124,9 @@ class Questionnaire extends React.Component{
     };
   }
 
-  componentDidMount() {}
+  componentDidMount(){
+  }
+
 
   componentWillUnmount() {}
 

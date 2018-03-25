@@ -187,30 +187,35 @@ return(
                              defaultValue={this.state.goals_met}
                              onChange={this.handleOptionChangeOne}
                              onBlur={this.validationCheck}
+                             name="field2"
                              />Goals were exceeded<br></br>
                       <input type="radio"
                              ref="goals_met"
                              defaultValue={this.state.goals_met}
                              onChange={this.handleOptionChangeTwo}
                              onBlur={this.validationCheck}
+                             name="field2"
                              />Goals were sufficiently met<br></br>
                      <input type="radio"
                             ref="goals_met"
                             defaultValue={this.state.goals_met}
                             onChange={this.handleOptionChangeThree}
                             onBlur={this.validationCheck}
+                            name="field2"
                             />Goals were somewhat met<br></br>
                      <input type="radio"
                             ref="goals_met"
                             defaultValue={this.state.goals_met}
                             onChange={this.handleOptionChangeFour}
                             onBlur={this.validationCheck}
+                            name="field2"
                             />Goals were not at all met<br></br>
                       <input type="radio"
                              ref="goals_met"
                              defaultValue={this.state.goals_met}
                              onChange={this.handleOptionChangeFive}
                              onBlur={this.validationCheck}
+                             name="field2"
                              />Goals were not defined<br></br>
                       <div className={notValidClasses.goals_metValGrpCls}>{this.state.goals_metValMsg}</div>
                     </div>

@@ -1,12 +1,16 @@
 'use strict'
 
 import React from 'react';
+import Auth from '../../modules/Auth';
 
 class Step1 extends React.Component {
 constructor(props){
   super(props);
 
   this.state = {
+    coachLogResults: null,
+    coachLogRecentResult: null,
+    coachLogResultsLoaded: false,
     date_of_visit: props.getStore().date_of_visit,
     length_of_visit: props.getStore().length_of_visit,
     objectives_of_visit: props.getStore().objectives_of_visit,
@@ -37,7 +41,22 @@ constructor(props){
   }
 
   componentDidMount() {
-
+    fetch('/profile', {
+      method: 'GET',
+      headers: {
+        token: Auth.getToken(),
+        'Authorization': `Token ${Auth.getToken()}`,
+      }
+    })
+    .then(res => res.json())
+    .then(res => {
+      this.setState({
+        coachLogResults: res.coach_logs,
+        coachLogRecentResult: [res.coach_logs[res.coach_logs.length-1]],
+        coachLogResultsLoaded: true,
+      })
+          console.log(this.state.coachLogRecentResult[0].coach_name)
+    }).catch(err => console.log(err));
   }
 
   componentWillUnmount() {}
@@ -329,7 +348,7 @@ render(){
                     <div className="col-md-12">
                       <div className="col-md-6">
                         <div className="form-style-10">
-                        <h1>*Coach Name Here*<span>*School Name*</span></h1>
+                        <h1>{this.state.coachLogResultsLoaded ? (this.state.coachLogRecentResult[0].coach_name) : (' ') }'s Log</h1>
                             <div className="section"><span>1</span>Date of visit</div>
                               <div className="inner-wrap">
                                 <label>Select Date:</label><br></br>
@@ -387,7 +406,7 @@ render(){
                                              id="interact_observed_practice"
                                              ref="interact_observed_practice"
                                              defaultValue={this.state.interact_observed_practice}
-                                             onBlur={this.validationCheck}  
+                                             onBlur={this.validationCheck}
                                              onChange={this.onChangeTwo} />Observed Practice<br></br>
                                       <input type="checkbox"
                                              className="form-control"

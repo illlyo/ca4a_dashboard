@@ -10,7 +10,6 @@ export default class Step13 extends Component {
 
     this.state = {
       savedToCloud: props.getStore().savedToCloud,
-
     };
   }
 
