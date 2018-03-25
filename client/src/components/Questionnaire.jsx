@@ -10,9 +10,6 @@ import Step7 from './FormQuestions/Step7';
 import Step8 from './FormQuestions/Step8';
 import Step9 from './FormQuestions/Step9';
 import Step10 from './FormQuestions/Step10';
-import Step11 from './FormQuestions/Step11';
-import Step12 from './FormQuestions/Step12';
-import Step13 from './FormQuestions/Step13';
 
 
 class Questionnaire extends React.Component{
@@ -157,11 +154,7 @@ class Questionnaire extends React.Component{
       {name: 'Step7', component: <Step7 getStore={() => (this.getStore())} updateStore={(u) => {this.updateStore(u)}} />},
       {name: 'Step8', component: <Step8 getStore={() => (this.getStore())} updateStore={(u) => {this.updateStore(u)}} />},
       {name: 'Step9', component: <Step9 getStore={() => (this.getStore())} updateStore={(u) => {this.updateStore(u)}} />},
-      {name: 'Step10', component: <Step10 getStore={() => (this.getStore())} updateStore={(u) => {this.updateStore(u)}} />},
-      {name: 'Step11', component: <Step11 getStore={() => (this.getStore())} updateStore={(u) => {this.updateStore(u)}} />},
-      {name: 'Step12', component: <Step12 getStore={() => (this.getStore())} updateStore={(u) => {this.updateStore(u)}} />},
-      {name: 'Step13', component: <Step13 getStore={() => (this.getStore())} updateStore={(u) => {this.updateStore(u)}} />}
-      // {name: 'Step14', component: <Step14 getStore={() => (this.getStore())} updateStore={(u) => {this.updateStore(u)}} />}
+      {name: 'Step10', component: <Step10 getStore={() => (this.getStore())} updateStore={(u) => {this.updateStore(u)}} />}
     ]
 
     return (

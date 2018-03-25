@@ -5,7 +5,7 @@ import DashNav from './components/DashNav.jsx';
 import Nav from './components/Nav';
 import Charted from './components/Charts/Charted.jsx';
 import Login from './components/Login.jsx';
-
+import IntervisitationQuestionnaire from './components/IntervisitationQuestionnaire.jsx';
 import Questionnaire from './components/Questionnaire.jsx';
 import SchoolData from './components/SchoolData';
 import Results from './components/Results.jsx';
@@ -106,6 +106,8 @@ class App extends Component {
                                     username={this.state.username}
                                     password={this.state.password}
                                     />} />
+                                  <Route exact path="/intervisitation-log" render={() =>
+                            <IntervisitationQuestionnaire />} />
               <Route exact path="/schools" render={() =>
                             <SchoolData />} />
               <Route exact path="/results" render={() =>

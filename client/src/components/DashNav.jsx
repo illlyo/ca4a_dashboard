@@ -21,7 +21,9 @@ class DashNav extends React.Component {
               Create New Coach Log
               </div>
             </Link>
-            <div className="select-dash-nav">Create Intervisitation Log</div>
+            <Link to="/intervisitation-log">
+              <div className="select-dash-nav">Create Intervisitation Log</div>
+            </Link>
             <Link to="/results">
               <div className="select-dash-nav">View Previous Logs</div>
             </Link>
