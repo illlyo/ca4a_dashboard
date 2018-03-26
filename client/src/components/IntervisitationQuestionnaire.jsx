@@ -3,52 +3,39 @@ import StepZilla from 'react-stepzilla';
 import Step1 from './Intervisitation/Step1';
 import Step2 from './Intervisitation/Step2';
 import Step3 from './Intervisitation/Step3';
+import Step4 from './Intervisitation/Step4';
 
 class IntervisitationOuestionnaire extends React.Component{
   constructor(props) {
     super(props);
     this.state = {
-      cancelled: '',
-      date_of_visit: '',
-      length_of_visit: '',
-      objectives_of_visit: '',
-
-      interact_meeting_with_team: 0,
-      interact_observed_practice: 0,
-      interact_with_leadership: 0,
-      interact_with_team_lead: 0,
-      interact_with_pd: 0,
-      interact_with_other: 0,
-
-      interact_other_explained: '',
-      interact_teachers: 0,
-      interact_guidance_counselors: 0,
-      interact_college_couselors: 0,
-      interact_assistant_principals: 0,
-      interact_principals: 0,
-      interact_other: 0,
-      next_step_notes: ''
+      date_visit: '',
+      visit_type: '',
+      coach_visited: '',
+      school: '',
+      feedback: '',
+      hoping_to_learn: '',
+      areas_of_strength: '',
+      areas_for_growth: '',
+      thinking_about: '',
+      plan_to_tryout: '',
+      share_with_team: '',
+      coach_name: ''
     };
 
     this.sampleStore = {
-      cancelled: '',
-      date_of_visit: '',
-      length_of_visit: '',
-      objectives_of_visit: '',
-      interact_meeting_with_team: 0,
-      interact_observed_practice: 0,
-      interact_with_leadership: 0,
-      interact_with_team_lead: 0,
-      interact_with_pd: 0,
-      interact_with_other: 0,
-      interact_other_explained: '   ',
-      interact_teachers: 0,
-      interact_guidance_counselors: 0,
-      interact_college_couselors: 0,
-      interact_assistant_principals: 0,
-      interact_principals: 0,
-      interact_other: 0,
-      next_step_notes: '  '
+      date_visit: '',
+      visit_type: '',
+      coach_visited: '',
+      school: '',
+      feedback: '',
+      hoping_to_learn: '',
+      areas_of_strength: '',
+      areas_for_growth: '',
+      thinking_about: '',
+      plan_to_tryout: '',
+      share_with_team: '',
+      coach_name: ''
     };
   }
 
@@ -76,7 +63,8 @@ class IntervisitationOuestionnaire extends React.Component{
     [
       {name: 'Step1', component: <Step1 getStore={() => (this.getStore())} updateStore={(u) => {this.updateStore(u)}} />},
       {name: 'Step2', component: <Step2 getStore={() => (this.getStore())} updateStore={(u) => {this.updateStore(u)}} />},
-      {name: 'Step3', component: <Step3 getStore={() => (this.getStore())} updateStore={(u) => {this.updateStore(u)}} />}
+      {name: 'Step3', component: <Step3 getStore={() => (this.getStore())} updateStore={(u) => {this.updateStore(u)}} />},
+      {name: 'Step4', component: <Step4 getStore={() => (this.getStore())} updateStore={(u) => {this.updateStore(u)}} />}
     ]
 
     return (

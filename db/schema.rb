@@ -86,16 +86,18 @@ ActiveRecord::Schema.define(version: 20180306012804) do
   end
 
   create_table "intervisitation_logs", force: :cascade do |t|
-    t.date "date_of_visit"
-    t.string "visit_coach"
-    t.string "school_visited"
-    t.string "feedback_instructed_from_coach"
+    t.date "date_visit"
+    t.string "visit_type"
+    t.string "coach_visited"
+    t.string "school"
+    t.string "feedback"
     t.string "hoping_to_learn"
     t.string "areas_of_strength"
-    t.string "areas_of_growth"
+    t.string "areas_for_growth"
     t.string "thinking_about"
-    t.string "plan_to_try"
+    t.string "plan_to_tryout"
     t.string "share_with_team"
+    t.string "coach_name"
     t.bigint "coach_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false

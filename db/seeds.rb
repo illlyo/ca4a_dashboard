@@ -62,6 +62,25 @@ coaches.each do |key|
     )
 end
 
+previousintervisitlogs = ActiveSupport::JSON.decode(File.read(Rails.root.join('lib', 'seeds', 'recentintervisitationlog.json')))
+previousintervisitlogs.each do |key|
+  IntervisitationLog.create!(
+    date_visit: key['Date of Visit'],
+    visit_type: key['Which type of visit are you logging today?'],
+    coach_visited: key['Who did you visit?'],
+    school: key['Which school did you visit?'],
+    feedback: key["The facilitating coach asked me to look for/give feedback on...."],
+    hoping_to_learn: key["I entered this visit hoping to learn more about...."],
+    areas_of_strength: key["Areas of Strength:  What were the best parts of this visit?"],
+    areas_for_growth: key["Areas for Growth:  What are some specific suggestions for development?"],
+    thinking_about: key["I'm thinking about..."],
+    plan_to_tryout: key["Something I plan to tryout is..."],
+    share_with_team: key["One thing we want to share with the whole team is..."],
+    coach_name: key["Select your name"],
+    coach_id: key["coach"]
+  )
+end
+
 previouslogs = ActiveSupport::JSON.decode(File.read(Rails.root.join('lib', 'seeds', 'recentcoachlog.json')))
 previouslogs.each do |key|
   CoachLog.create!(

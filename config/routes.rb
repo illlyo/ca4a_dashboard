@@ -6,5 +6,6 @@ Rails.application.routes.draw do
 
   resources :coaches
   resources :coach_logs
+  resources :intervisitation_logs
   resources :schools
 end
