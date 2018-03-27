@@ -10,4 +10,9 @@ class SchoolsController < ApplicationController
     render json: { school: school }
   end
 
+  def coachlogadmin
+    coachlogadmin = CoachLog.all
+    render json: { coachlogs: coachlogadmin }
+  end
+
 end

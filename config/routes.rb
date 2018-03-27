@@ -4,6 +4,7 @@ Rails.application.routes.draw do
   delete '/logout' => "sessions#destroy"
   get '/profile' => 'coaches#profile'
   get '/school-profile' => 'coaches#schoolprofile'
+  get '/coachlogs' => 'schools#coachlogadmin'
 
   resources :coaches
   resources :coach_logs
