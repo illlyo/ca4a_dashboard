@@ -511,6 +511,16 @@ input[type="checkbox"]:hover {
   flex-wrap: wrap;
   font-size: 1vw;
   height: auto;
+  margin: 10px 10px;
+  background: #FFF;
+  background-color: white;
+  border-radius: 10px;
+  -webkit-border-radius:10px;
+  -moz-border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.13);
+  -moz-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.13);
+  -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.13);
+  border-radius: 5px;
 
 }
 /*  Dashboard result desgin */
@@ -528,6 +538,17 @@ input[type="checkbox"]:hover {
 .top-div-dash{
   display: flex;
   flex-direction: row;
+  height: auto;
+  margin: 10px 10px;
+  background: #FFF;
+  background-color: white;
+  border-radius: 10px;
+  -webkit-border-radius:10px;
+  -moz-border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.13);
+  -moz-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.13);
+  -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.13);
+  border-radius: 5px;
 }
 
 .flex-column{
@@ -608,4 +629,50 @@ a{
 .school-visit-info{
   text-align: left;
     width: 200px;
+}
+.filterResults-chart-org{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+flex-wrap: wrap;
+max-width: 600px;
+margin: auto;
+}
+.filterResults-chart-org-div{
+  display: flex;
+  flex-direction: row;
+}
+.filterResults-chart-org-div-each{
+  margin: 10px 10px;
+  background: #FFF;
+  background-color: white;
+  border-radius: 10px;
+  -webkit-border-radius:10px;
+  -moz-border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.13);
+  -moz-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.13);
+  -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.13);
+  width: 550px;
+  display: flex;
+  justify-content: center;
+  border-radius: 5px;
+}
+
+.filterResults-chart-org-div-each{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+.search-div{
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  border:1px solid #BEBEBE;
+  padding: 7px;
+  margin:0px;
+  -webkit-transition: all 0.30s ease-in-out;
+  -moz-transition: all 0.30s ease-in-out;
+  -ms-transition: all 0.30s ease-in-out;
+  -o-transition: all 0.30s ease-in-out;
+  outline: none;
 }

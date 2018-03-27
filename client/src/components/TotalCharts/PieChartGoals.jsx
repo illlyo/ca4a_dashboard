@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import {PieChart, Legend, ToolTip} from 'react-easy-chart';
 
-class Pie extends Component {
+class PieChartGoals extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -48,7 +48,7 @@ class Pie extends Component {
     return (<div>
       <PieChart size={250} data={this.state.data.values}
         clickHandler={(d) => this.setState({dataDisplay: `Total number of ${d.value} ${d.data.key} were engaged.`})
-} padding={10} styles={this.styles}/>
+          } padding={10} styles={this.styles}/>
       <Legend data={this.state.data.values} dataId={'key'} styles={customStyle}/>
       <div>
         {
@@ -61,4 +61,4 @@ class Pie extends Component {
   }
 };
 
-export default Pie;
+export default PieChartGoals;

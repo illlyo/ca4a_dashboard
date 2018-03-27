@@ -3,11 +3,13 @@ import Auth from '../modules/Auth';
 
 import Pie from './TotalCharts/PieChart.jsx';
 import Bar from './TotalCharts/BarChart.jsx';
+import PieChartGoals from './TotalCharts/PieChartGoals.jsx';
+import BarChartTwo from './TotalCharts/BarChartTwo.jsx';
+
+
 
 import ThisPieChart from './Charts/PieChart.jsx';
-
 import BarChartCohort from './Charts/BarChartCohort.jsx';
-import PieChartTwo from './Charts/PieChartTwo.jsx';
 import BarChartProg from './Charts/BarChartProg.jsx';
 import Speedometer from './Charts/Speedometer.jsx';
 import SpeedometerTwo from './Charts/SpeedometerTwo.jsx';
@@ -78,14 +80,46 @@ class FilteredResults extends React.Component {
     return(
       <div>
         {(this.state.coachLogResultsLoaded) ?
-             <div>
-              <BarChartCohort schoolData={this.state.schoolData} />
-                <h3>Total number of staff engaged</h3>
-                <Pie coachLogResults={this.state.coachLogResults} />
-                <p>college and career domains?</p>
-                <p>Schools were engaged in the following activities</p>
-                  <Bar coachLogResults={this.state.coachLogResults} />
-                <p>goals met, pie chart</p>
+             <div className="filterResults-chart-org">
+               <h1>Total Results</h1>
+                 <div className="search-div">
+                 <p>Search By Coach:</p>
+                 <select>{this.state.coachLogResults.map(res => {
+                   return(
+                     <option>{res.coach_name}</option>
+                   )
+                 })}
+                   </select>
+                   <p>Search By School:</p>
+                   <select>
+                   {this.state.coachLogResults.map(res => {
+                     return(
+                       <option>{res.school_visited}</option>
+                     )
+                   })}
+                     </select>
+                   </div>
+                 <div className="filterResults-chart-org-div">
+                   <div className="filterResults-chart-org-div-each">
+                     <h2>Cohorts</h2>
+                  <BarChartCohort schoolData={this.state.schoolData} />
+                  </div>
+                  <div className="filterResults-chart-org-div-each">
+                    <h3>Total number of staff engaged</h3>
+                    <Pie coachLogResults={this.state.coachLogResults} />
+                  </div>
+                </div>
+                <div className="filterResults-chart-org-div">
+                  <div className="filterResults-chart-org-div-each">
+                  <h3>College and Career domains</h3>
+                    <BarChartTwo coachLogResults={this.state.coachLogResults} />
+                  </div>
+                    <div className="filterResults-chart-org-div-each">
+                  <h3>Schools were engaged in the following activities:</h3>
+                    <Bar coachLogResults={this.state.coachLogResults} />
+                    </div>
+                </div>
+                <PieChartGoals coachLogResults={this.state.coachLogResults} />
 
               </div> : <p>Loading...</p>}
 

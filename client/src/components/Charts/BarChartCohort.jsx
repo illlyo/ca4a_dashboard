@@ -16,8 +16,8 @@ class BarChartCohort extends React.Component {
           x: null,
           dataDisplay: null,
           data: [{
-            values: [{x: 'Cohort 1', y: 5},
-                     {x: 'Cohort 2', y: 3}]
+            values: [{x: 'Cohort 1', y: 99},
+                     {x: 'Cohort 2', y: 170}]
         }]
       }
       this.mouseOverHandler = this.mouseOverHandler.bind(this);
@@ -94,8 +94,6 @@ render() {
   return (
     <div>
       <BarChart
-        yType={'text'}
-        xType={'text'}
           axes
           grid
           colorBars
@@ -108,7 +106,6 @@ render() {
           mouseOverHandler={this.mouseOverHandler}
           mouseOutHandler={this.mouseOutHandler}
           mouseMoveHandler={this.mouseMoveHandler}
-          yDomainRange={['Allot', 'Middle', 'Less']}
         />
       <Legend data={this.state.data[0].values}
         dataId={'x'} horizontal
