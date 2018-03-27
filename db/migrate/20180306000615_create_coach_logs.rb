@@ -54,7 +54,6 @@ class CreateCoachLogs < ActiveRecord::Migration[5.1]
       t.belongs_to :coach, index: true
       t.belongs_to :school, index: true
 
-
       t.timestamps
     end
   end

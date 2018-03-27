@@ -3,24 +3,21 @@ import { WIDTH, VB_WIDTH, COLORS } from './const.js';
 import * as d3 from 'd3';
 import { BarChart, Legend} from 'react-easy-chart';
 
-class Bar extends React.Component {
+class BarChartCohort extends React.Component {
     constructor(props) {
         super(props);
-         console.log(props.coachLogResults[0].interact_teachers)
+         console.log(props.schoolData)
         this.state = {
-          coachLogRecentResult: props.coachLogResults,
+          schoolData: props.schoolData,
           showToolTip: false,
           top: null,
           left: null,
           y: null,
           x: null,
+          dataDisplay: null,
           data: [{
-            values: [{x: 'Teachers', y: props.coachLogResults[0].interact_teachers},
-                     {x: 'Guidance Councelors', y: props.coachLogResults[0].guidance_counselors},
-                     {x: 'College Counselors', y: props.coachLogResults[0].college_counselors},
-                     {x: 'Assistant Principals', y: props.coachLogResults[0].assistant_principals},
-                   {x: 'Principals', y: props.coachLogResults[0].interact_principals},
-                 {x: 'Other', y: 0}]
+            values: [{x: 'Cohort 1', y: 5},
+                     {x: 'Cohort 2', y: 3}]
         }]
       }
       this.mouseOverHandler = this.mouseOverHandler.bind(this);
@@ -97,6 +94,8 @@ render() {
   return (
     <div>
       <BarChart
+        yType={'text'}
+        xType={'text'}
           axes
           grid
           colorBars
@@ -104,17 +103,22 @@ render() {
           width={460}
           data={this.state.data[0].values}
           yTickNumber={5}
+          clickHandler={(d) => this.setState({
+                                dataDisplay: `${d.x} has ${d.y} schools `})}
           mouseOverHandler={this.mouseOverHandler}
           mouseOutHandler={this.mouseOutHandler}
           mouseMoveHandler={this.mouseMoveHandler}
-          yDomainRange={[0, 5]}
+          yDomainRange={['Allot', 'Middle', 'Less']}
         />
       <Legend data={this.state.data[0].values}
-        dataId={'x'}
+        dataId={'x'} horizontal
         styles={customStyle} />
+        <div style={{display: 'inline-block', verticalAlign: 'top', paddingLeft: '20px'}}>
+      {this.state.dataDisplay ? this.state.dataDisplay : 'Click on a bar to show the value'}
+    </div>
       </div>
 )
 
 }}
 
-export default Bar;
+export default BarChartCohort;

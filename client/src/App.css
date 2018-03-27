@@ -21,6 +21,12 @@ h1{
   top: 0;
   position: absolute;
   cursor: pointer;
+  background-color: #2A88AD;
+  padding: 4px 5px;
+  border: 1px solid black;
+  border-radius: 5px;
+  margin: 5px;
+  color: white;
 }
 
 .App-title {
@@ -265,7 +271,7 @@ select{
 }
 
 .form-style-10{
-    max-width: 800px;
+    max-width: 700px;
     width:80%;
     padding:30px;
     margin:40px auto;
@@ -504,7 +510,7 @@ input[type="checkbox"]:hover {
   display: flex;
   flex-wrap: wrap;
   font-size: 1vw;
-  height: 400px;
+  height: auto;
 
 }
 /*  Dashboard result desgin */
@@ -546,15 +552,17 @@ border-top-style: outset;
   color: red
 }
 
-.speedometer{
-  max-height: 200px;
+svg.speedometer{
+  /* max-height: 200px; */
+  height: 200px;
 }
+
 .sometext{
   max-width: 400px;
 }
 .dash-nav-div{
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
@@ -563,8 +571,8 @@ border-top-style: outset;
 }
 .select-dash-nav{
   background: #2A88AD;
-  width: 150px;
-  height: 150px;
+  width: 270px;
+  height: 50px;
   padding: 8px 20px 8px 20px;
   border-radius: 5px;
   -webkit-border-radius: 5px;
@@ -576,14 +584,28 @@ border-top-style: outset;
   -webkit-box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.17);
   box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.17);
   border: 1px solid #257C9E;
-  font-size: 30px;
-  margin: auto;
+  font-size: 22px;
+  margin: 10px;
+  padding-top: 30px;
   cursor: pointer;
   text-align: center;
+}
+a{
+  text-decoration: none;
 }
 .select-dash-nav:hover{
   background: #2A6881;
   -moz-box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.28);
   -webkit-box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.28);
   box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.28);
+}
+.p-tag{
+  height: auto;
+  text-align: left;
+  max-width: 600px;
+  margin: 10px auto;
+}
+.school-visit-info{
+  text-align: left;
+    width: 200px;
 }

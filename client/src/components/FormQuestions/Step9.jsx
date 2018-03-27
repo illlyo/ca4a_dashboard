@@ -49,7 +49,7 @@ export default class Step9 extends Component {
         // ... only then will it move to the next step. reject() will indicate a fail
         resolve();
         // reject(); // or reject
-      }, 5000);
+      }, 2000);
     });
   }
 
@@ -77,7 +77,8 @@ export default class Step9 extends Component {
                     *Populate all answers here*
                   </div>
                   <div className="col-md-4">
-                    {this.props.getStore().gender}
+                    {this.props.getStore().rate_learning_trajectory_explained}
+
                   </div>
                 </div>
                 <div className="col-md-12 txt">
@@ -93,12 +94,7 @@ export default class Step9 extends Component {
                     {this.props.getStore().emailEmergency}
                   </div>
                 </div>
-                <h2 className={savingCls}>Saving to Cloud, pls wait (by the way, we are using a Promise to do this :)...</h2>
-                  <div className="button-section">
-                   <input type="submit" value="Back" onClick={() => this.props.jumpToStep(7)} />
-                   <input type="submit" value="Next" onClick={() => this.props.jumpToStep(9)} />
-                  </div>
-
+                <h2 className={savingCls}>Saving to Cloud, pls wait</h2>
               </div>
             </div>
           </form>

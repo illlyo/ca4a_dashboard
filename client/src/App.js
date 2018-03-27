@@ -9,6 +9,7 @@ import IntervisitationQuestionnaire from './components/IntervisitationQuestionna
 import Questionnaire from './components/Questionnaire.jsx';
 import SchoolData from './components/SchoolData';
 import Results from './components/Results.jsx';
+import FilteredResults from './components/FilteredResults';
 
 import './App.css';
 
@@ -111,7 +112,7 @@ class App extends Component {
               <Route exact path="/schools" render={() =>
                             <SchoolData />} />
               <Route exact path="/results" render={() =>
-                            <Results />} />
+                            <FilteredResults />} />
             </Switch>
 
             </div>

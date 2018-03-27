@@ -1,11 +1,16 @@
 'use strict';
 
 import React from 'react';
+import Auth from '../../modules/Auth';
+
 
 class Step4 extends React.Component {
   constructor(props){
     super(props);
     this.state = {
+      coachLogResults: null,
+      coachLogRecentResult: null,
+      coachLogResultsLoaded: false,
       learning_trajectory_success_challenge: props.getStore().learning_trajectory_success_challenge,
       in_between_steps: props.getStore().in_between_steps,
       inquiry_institute: props.getStore().inquiry_institute,
@@ -26,7 +31,24 @@ class Step4 extends React.Component {
     this.onChangeSix = this.onChangeSix.bind(this);
   }
 
-  componentDidMount() {}
+  componentDidMount() {
+    fetch('/profile', {
+      method: 'GET',
+      headers: {
+        token: Auth.getToken(),
+        'Authorization': `Token ${Auth.getToken()}`,
+      }
+    })
+    .then(res => res.json())
+    .then(res => {
+      this.setState({
+        coachLogResults: res.coach_logs,
+        coachLogRecentResult: [res.coach_logs[res.coach_logs.length-1]],
+        coachLogResultsLoaded: true,
+      })
+          console.log(this.state.coachLogRecentResult[0].coach_name)
+    }).catch(err => console.log(err));
+  }
 
   componentWillUnmount() {}
 
@@ -212,7 +234,7 @@ class Step4 extends React.Component {
             <div className="row content">
               <div className="col-md-12">
                 <div className="form-style-10">
-                <h1>*Coach Name Here*<span>*School Name*</span></h1>
+                  <h1>{this.state.coachLogResultsLoaded ? (this.state.coachLogRecentResult[0].coach_name) : (' ') }'s Log</h1>
                   <div className="section"><span>14</span>What successes/challenges are you experiencing in moving this team through their Learning Trajectory?</div>
                     <div className="inner-wrap">
                       <div className={notValidClasses.learning_trajectory_success_challengeCls}>

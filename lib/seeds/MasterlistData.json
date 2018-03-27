@@ -4,6 +4,8 @@
     "Location Name": "Explorations Academy H.S.",
     "Cohort": "Cohort 1",
     "CA4A Coach": "Simone Mikolich",
+    "admin_id":1,
+    "coach_id": 12,
     "Location Type Description": "General Academic",
     "Building Code": "X098",
     "LCGMS Name": "Susana Hernandez",
@@ -21,15 +23,15 @@
     "2017-18 Allocation": "$30,000.00",
     "Note": "",
     "Principal Name (LCGMS)": "SUSANA HERNANDEZ",
-    "Column1": "Susana Hernandez",
-    "Column2": "TRUE",
-    "DBN 2": "12X251"
+    "Column1": "Susana Hernandez"
   },
   {
     "DBN": "24Q455",
     "Location Name": "Newtown High School",
     "Cohort": "Cohort 1",
     "CA4A Coach": "Norma Feriz Gordon",
+    "admin_id":1,
+    "coach_id": 10,
     "Location Type Description": "General Academic",
     "Building Code": "Q455",
     "LCGMS Name": "John Ficalora",
@@ -47,15 +49,15 @@
     "2017-18 Allocation": "$65,000.00",
     "Note": "",
     "Principal Name (LCGMS)": "JOHN FICALORA",
-    "Column1": "John Ficalora",
-    "Column2": "TRUE",
-    "DBN 2": "24Q455"
+    "Column1": "John Ficalora"
   },
   {
     "DBN": "19K504",
     "Location Name": "High School for Civil Rights",
     "Cohort": "Cohort 1",
     "CA4A Coach": "Jen Grunin",
+    "admin_id":1,
+    "coach_id": 5,
     "Location Type Description": "General Academic",
     "Building Code": "K435",
     "LCGMS Name": "Michael Steele",
@@ -73,15 +75,15 @@
     "2017-18 Allocation": "$30,000.00",
     "Note": "",
     "Principal Name (LCGMS)": "MICHAEL STEELE",
-    "Column1": "Michael Steele",
-    "Column2": "TRUE",
-    "DBN 2": "19K504"
+    "Column1": "Michael Steele"
   },
   {
     "DBN": "19K507",
     "Location Name": "Performing Arts and Technology High School",
     "Cohort": "Cohort 1",
     "CA4A Coach": "Jen Grunin",
+    "admin_id":1,
+    "coach_id": 5,
     "Location Type Description": "General Academic",
     "Building Code": "K435",
     "LCGMS Name": "Franklin Encarnacion",
@@ -99,15 +101,15 @@
     "2017-18 Allocation": "$30,000.00",
     "Note": "",
     "Principal Name (LCGMS)": "Franklin Encarnacion",
-    "Column1": "Franklin Encarnacion",
-    "Column2": "TRUE",
-    "DBN 2": "19K507"
+    "Column1": "Franklin Encarnacion"
   },
   {
     "DBN": "19K510",
     "Location Name": "World Academy for Total Community Health High School",
     "Cohort": "Cohort 1",
     "CA4A Coach": "Jen Grunin",
+    "admin_id":1,
+    "coach_id": 5,
     "Location Type Description": "General Academic",
     "Building Code": "K435",
     "LCGMS Name": "Claudette Christie",
@@ -125,15 +127,15 @@
     "2017-18 Allocation": "$30,000.00",
     "Note": "",
     "Principal Name (LCGMS)": "Claudette Christie",
-    "Column1": "Claudette Christie",
-    "Column2": "TRUE",
-    "DBN 2": "19K510"
+    "Column1": "Claudette Christie"
   },
   {
     "DBN": "07X334",
     "Location Name": "International Community High School",
     "Cohort": "Cohort 1",
     "CA4A Coach": "Simone Mikolich",
+    "admin_id":1,
+    "coach_id": 12,
     "Location Type Description": "General Academic",
     "Building Code": "X139",
     "LCGMS Name": "Berena Cabarcas",
@@ -151,15 +153,15 @@
     "2017-18 Allocation": "$30,000.00",
     "Note": "",
     "Principal Name (LCGMS)": "BERENA CABARCAS",
-    "Column1": "Berena Cabarcas",
-    "Column2": "TRUE",
-    "DBN 2": "07X334"
+    "Column1": "Berena Cabarcas"
   },
   {
     "DBN": "19K615",
     "Location Name": "Transit Tech Career and Technical Education High School",
     "Cohort": "Cohort 1",
     "CA4A Coach": "Marisa Castillo",
+    "admin_id":1,
+    "coach_id": 8,
     "Location Type Description": "Career Technical",
     "Building Code": "K615",
     "LCGMS Name": "Marlon Bynum",
@@ -177,15 +179,15 @@
     "2017-18 Allocation": "$45,000.00",
     "Note": "",
     "Principal Name (LCGMS)": "Marlon Bynum",
-    "Column1": "Marlon Bynum",
-    "Column2": "TRUE",
-    "DBN 2": "19K615"
+    "Column1": "Marlon Bynum"
   },
   {
     "DBN": "19K618",
     "Location Name": "Academy of Innovative Technology",
     "Cohort": "Cohort 1",
     "CA4A Coach": "Raymond Johnson",
+    "admin_id":1,
+    "coach_id": 11,
     "Location Type Description": "Career Technical",
     "Building Code": "K420",
     "LCGMS Name": "Meghan Lynch",
@@ -203,15 +205,15 @@
     "2017-18 Allocation": "$30,000.00",
     "Note": "Case Study School - Leadership Change - 07.02.17",
     "Principal Name (LCGMS)": "Meghan Lynch",
-    "Column1": "Meghan Lynch",
-    "Column2": "TRUE",
-    "DBN 2": "19K618"
+    "Column1": "Meghan Lynch"
   },
   {
     "DBN": "19K639",
     "Location Name": "Brooklyn Lab School",
     "Cohort": "Cohort 1",
     "CA4A Coach": "Raymond Johnson",
+    "admin_id":1,
+    "coach_id": 11,
     "Location Type Description": "General Academic",
     "Building Code": "K420",
     "LCGMS Name": "Gerard Henry",
@@ -229,15 +231,15 @@
     "2017-18 Allocation": "$30,000.00",
     "Note": "Leadership Change - 09.19.16",
     "Principal Name (LCGMS)": "GERARD HENRY",
-    "Column1": "Gerard Henry",
-    "Column2": "TRUE",
-    "DBN 2": "19K639"
+    "Column1": "Gerard Henry"
   },
   {
     "DBN": "19K660",
     "Location Name": "W. H. Maxwell Career and Technical Education High School",
     "Cohort": "Cohort 1",
     "CA4A Coach": "Josh Steckel",
+    "admin_id":1,
+    "coach_id": 6,
     "Location Type Description": "Career Technical",
     "Building Code": "K660",
     "LCGMS Name": "Jocelyn Badette",
@@ -255,15 +257,15 @@
     "2017-18 Allocation": "$30,000.00",
     "Note": "",
     "Principal Name (LCGMS)": "JOCELYN BADETTE",
-    "Column1": "Jocelyn Badette",
-    "Column2": "TRUE",
-    "DBN 2": "19K660"
+    "Column1": "Jocelyn Badette"
   },
   {
     "DBN": "01M292",
     "Location Name": "Orchard Collegiate Academy",
     "Cohort": "Cohort 1",
     "CA4A Coach": "Fiona Mulcahy",
+    "admin_id":1,
+    "coach_id": 4,
     "Location Type Description": "General Academic",
     "Building Code": "M056",
     "LCGMS Name": "Miles Doyle",
@@ -281,15 +283,15 @@
     "2017-18 Allocation": "$25,000.00",
     "Note": "School renamed from:  Henry Street School for International Studies",
     "Principal Name (LCGMS)": "MILES DOYLE",
-    "Column1": "Miles Doyle",
-    "Column2": "TRUE",
-    "DBN 2": "01M292"
+    "Column1": "Miles Doyle"
   },
   {
     "DBN": "12X372",
     "Location Name": "Urban Assembly School for Wildlife Conservation",
     "Cohort": "Cohort 1",
     "CA4A Coach": "Zee Santiago",
+    "admin_id":1,
+    "coach_id": 13,
     "Location Type Description": "General Academic",
     "Building Code": "X067",
     "LCGMS Name": "Astrid Jacobo",
@@ -307,15 +309,15 @@
     "2017-18 Allocation": "$30,000.00",
     "Note": "",
     "Principal Name (LCGMS)": "Astrid Jacobo",
-    "Column1": "Astrid Jacobo",
-    "Column2": "TRUE",
-    "DBN 2": "12X372"
+    "Column1": "Astrid Jacobo"
   },
   {
     "DBN": "06M552",
     "Location Name": "Gregorio Luperon High School for Science and Mathematics",
     "Cohort": "Cohort 1",
     "CA4A Coach": "Denise Copeland",
+    "admin_id":1,
+    "coach_id": 3,
     "Location Type Description": "General Academic",
     "Building Code": "M876",
     "LCGMS Name": "Yecenia Cardoza",
@@ -333,15 +335,15 @@
     "2017-18 Allocation": "$30,000.00",
     "Note": "Leadership Change - 11.02.16 - Principal's Last Name Changed (Delarosa to Cardoza)",
     "Principal Name (LCGMS)": "YECENIA CARDOZA",
-    "Column1": "Yecenia Cardoza",
-    "Column2": "TRUE",
-    "DBN 2": "06M552"
+    "Column1": "Yecenia Cardoza"
   },
   {
     "DBN": "09X350",
     "Location Name": "New Directions Secondary School",
     "Cohort": "Cohort 1",
     "CA4A Coach": "Kim Hall",
+    "admin_id":1,
+    "coach_id": 7,
     "Location Type Description": "General Academic",
     "Building Code": "X410",
     "LCGMS Name": "James Waslawski",
@@ -359,15 +361,15 @@
     "2017-18 Allocation": "$25,000.00",
     "Note": "",
     "Principal Name (LCGMS)": "James Waslawski",
-    "Column1": "James Waslawski",
-    "Column2": "TRUE",
-    "DBN 2": "09X350"
+    "Column1": "James Waslawski"
   },
   {
     "DBN": "12X248",
     "Location Name": "Metropolitan High School, The",
     "Cohort": "Cohort 1",
     "CA4A Coach": "Kim Hall",
+    "admin_id":1,
+    "coach_id": 7,
     "Location Type Description": "General Academic",
     "Building Code": "X099",
     "LCGMS Name": "Latoya Key",
@@ -385,15 +387,15 @@
     "2017-18 Allocation": "$30,000.00",
     "Note": "Leadership Change - 09.19.16 - Leadership change 09.01.17",
     "Principal Name (LCGMS)": "Latoya Key",
-    "Column1": "Latoya Key",
-    "Column2": "TRUE",
-    "DBN 2": "12X248"
+    "Column1": "Latoya Key"
   },
   {
     "DBN": "21K690",
     "Location Name": "Brooklyn Studio Secondary School",
     "Cohort": "Cohort 1",
     "CA4A Coach": "Marisa Castillo",
+    "admin_id":1,
+    "coach_id": 8,
     "Location Type Description": "General Academic",
     "Building Code": "K721",
     "LCGMS Name": "Andrea Ciliotta",
@@ -411,15 +413,15 @@
     "2017-18 Allocation": "$35,000.00",
     "Note": "",
     "Principal Name (LCGMS)": "ANDREA CILIOTTA",
-    "Column1": "Andrea Ciliotta",
-    "Column2": "TRUE",
-    "DBN 2": "21K690"
+    "Column1": "Andrea Ciliotta"
   },
   {
     "DBN": "09X404",
     "Location Name": "School for Excellence",
     "Cohort": "Cohort 1",
     "CA4A Coach": "Kim Hall",
+    "admin_id":1,
+    "coach_id": 7,
     "Location Type Description": "General Academic",
     "Building Code": "X400",
     "LCGMS Name": "Jeffrey Houston",
@@ -437,15 +439,15 @@
     "2017-18 Allocation": "$30,000.00",
     "Note": "Leadership Change - 10.27.16",
     "Principal Name (LCGMS)": "JEFFREY HOUSTON",
-    "Column1": "Jeffrey Houston",
-    "Column2": "TRUE",
-    "DBN 2": "09X404"
+    "Column1": "Jeffrey Houston"
   },
   {
     "DBN": "22K630",
     "Location Name": "Professional Pathways High School",
     "Cohort": "Cohort 1",
     "CA4A Coach": "Denise Copeland",
+    "admin_id":1,
+    "coach_id": 3,
     "Location Type Description": "Transfer School",
     "Building Code": "K495",
     "LCGMS Name": "David Decamp",
@@ -463,15 +465,15 @@
     "2017-18 Allocation": "$25,000.00",
     "Note": "",
     "Principal Name (LCGMS)": "David Decamp",
-    "Column1": "David Decamp",
-    "Column2": "TRUE",
-    "DBN 2": "22K630"
+    "Column1": "David Decamp"
   },
   {
     "DBN": "14K454",
     "Location Name": "The Williamsburg High School of Art and Technology",
     "Cohort": "Cohort 1",
     "CA4A Coach": "Marisa Castillo",
+    "admin_id":1,
+    "coach_id": 8,
     "Location Type Description": "General Academic",
     "Building Code": "K049",
     "LCGMS Name": "Cara Tait",
@@ -489,15 +491,15 @@
     "2017-18 Allocation": "$25,000.00",
     "Note": "Case Study School",
     "Principal Name (LCGMS)": "CARA TAIT",
-    "Column1": "Cara Tait",
-    "Column2": "TRUE",
-    "DBN 2": "14K454"
+    "Column1": "Cara Tait"
   },
   {
     "DBN": "11X514",
     "Location Name": "The Bronxwood Preparatory Academy",
     "Cohort": "Cohort 1",
     "CA4A Coach": "Allison Burke",
+    "admin_id":1,
+    "coach_id": 2,
     "Location Type Description": "General Academic",
     "Building Code": "X362",
     "LCGMS Name": "Janet Gallardo",
@@ -515,15 +517,15 @@
     "2017-18 Allocation": "$30,000.00",
     "Note": "",
     "Principal Name (LCGMS)": "JANET GALLARDO",
-    "Column1": "Janet Gallardo",
-    "Column2": "TRUE",
-    "DBN 2": "11X514"
+    "Column1": "Janet Gallardo"
   },
   {
     "DBN": "07X522",
     "Location Name": "Bronx Design and Construction Academy",
     "Cohort": "Cohort 1",
     "CA4A Coach": "Allison Burke",
+    "admin_id":1,
+    "coach_id": 2,
     "Location Type Description": "Career Technical",
     "Building Code": "X600",
     "LCGMS Name": "Joyce Pulphus",
@@ -541,15 +543,15 @@
     "2017-18 Allocation": "$35,000.00",
     "Note": "Leadership Change - 10.11.16",
     "Principal Name (LCGMS)": "JOYCE PULPHUS",
-    "Column1": "Joyce Pulphus",
-    "Column2": "TRUE",
-    "DBN 2": "07X522"
+    "Column1": "Joyce Pulphus"
   },
   {
     "DBN": "23K697",
     "Location Name": "Teachers Preparatory High School",
     "Cohort": "Cohort 1",
     "CA4A Coach": "Josh Steckel",
+    "admin_id":1,
+    "coach_id": 6,
     "Location Type Description": "General Academic",
     "Building Code": "K175",
     "LCGMS Name": "Carmen Simon",
@@ -567,15 +569,15 @@
     "2017-18 Allocation": "$25,000.00",
     "Note": "",
     "Principal Name (LCGMS)": "Carmen Simon",
-    "Column1": "Carmen Simon",
-    "Column2": "TRUE",
-    "DBN 2": "23K697"
+    "Column1": "Carmen Simon"
   },
   {
     "DBN": "11X509",
     "Location Name": "High School of Language and Innovation",
     "Cohort": "Cohort 1",
     "CA4A Coach": "Allison Burke",
+    "admin_id":1,
+    "coach_id": 2,
     "Location Type Description": "General Academic",
     "Building Code": "X415",
     "LCGMS Name": "Julie Nariman",
@@ -593,15 +595,15 @@
     "2017-18 Allocation": "$30,000.00",
     "Note": "",
     "Principal Name (LCGMS)": "Julie Nariman",
-    "Column1": "Julie Nariman",
-    "Column2": "TRUE",
-    "DBN 2": "11X509"
+    "Column1": "Julie Nariman"
   },
   {
     "DBN": "09X517",
     "Location Name": "Frederick Douglass Academy III Secondary School",
     "Cohort": "Cohort 1",
     "CA4A Coach": "Simone Mikolich",
+    "admin_id":1,
+    "coach_id": 12,
     "Location Type Description": "General Academic",
     "Building Code": "X148",
     "LCGMS Name": "Jumel Carlos",
@@ -619,15 +621,15 @@
     "2017-18 Allocation": "$30,000.00",
     "Note": "",
     "Principal Name (LCGMS)": "JUMEL CARLOS",
-    "Column1": "Jumel Carlos",
-    "Column2": "TRUE",
-    "DBN 2": "09X517"
+    "Column1": "Jumel Carlos"
   },
   {
     "DBN": "04M555",
     "Location Name": "Central Park East High School",
     "Cohort": "Cohort 1",
     "CA4A Coach": "",
+    "admin_id":1,
+    "coach_id": "",
     "Location Type Description": "General Academic",
     "Building Code": "M013",
     "LCGMS Name": "Bennett Lieberman",
@@ -645,15 +647,15 @@
     "2017-18 Allocation": "$30,000.00",
     "Note": "School added 10.11.16",
     "Principal Name (LCGMS)": "BENNETT LIEBERMAN",
-    "Column1": "Bennett Lieberman",
-    "Column2": "TRUE",
-    "DBN 2": "04M555"
+    "Column1": "Bennett Lieberman"
   },
   {
     "DBN": "20K505",
     "Location Name": "Franklin Delano Roosevelt High School",
     "Cohort": "Cohort 1",
     "CA4A Coach": "Raymond Johnson",
+    "admin_id":1,
+    "coach_id": 11,
     "Location Type Description": "General Academic",
     "Building Code": "K505",
     "LCGMS Name": "Melanie Katz",
@@ -671,15 +673,15 @@
     "2017-18 Allocation": "$80,000.00",
     "Note": "",
     "Principal Name (LCGMS)": "Melanie Katz",
-    "Column1": "Melanie Katz",
-    "Column2": "TRUE",
-    "DBN 2": "20K505"
+    "Column1": "Melanie Katz"
   },
   {
     "DBN": "16K688",
     "Location Name": "The Brooklyn Academy of Global Finance",
     "Cohort": "Cohort 1",
     "CA4A Coach": "Raymond Johnson",
+    "admin_id":1,
+    "coach_id": 11,
     "Location Type Description": "General Academic",
     "Building Code": "K057",
     "LCGMS Name": "Dannielle Darbee",
@@ -697,15 +699,15 @@
     "2017-18 Allocation": "$25,000.00",
     "Note": "",
     "Principal Name (LCGMS)": "Dannielle Darbee",
-    "Column1": "Dannielle Darbee",
-    "Column2": "TRUE",
-    "DBN 2": "16K688"
+    "Column1": "Dannielle Darbee"
   },
   {
     "DBN": "14K474",
     "Location Name": "PROGRESS High School for Professional Careers",
     "Cohort": "Cohort 1",
     "CA4A Coach": "Josh Steckel",
+    "admin_id":1,
+    "coach_id": 6,
     "Location Type Description": "General Academic",
     "Building Code": "K450",
     "LCGMS Name": "William Jusino",
@@ -723,15 +725,15 @@
     "2017-18 Allocation": "$45,000.00",
     "Note": "",
     "Principal Name (LCGMS)": "WILLIAM JUSINO",
-    "Column1": "William Jusino",
-    "Column2": "TRUE",
-    "DBN 2": "14K474"
+    "Column1": "William Jusino"
   },
   {
     "DBN": "14K586",
     "Location Name": "Lyons Community School",
     "Cohort": "Cohort 1",
     "CA4A Coach": "Marisa Castillo",
+    "admin_id":1,
+    "coach_id": 8,
     "Location Type Description": "General Academic",
     "Building Code": "K049",
     "LCGMS Name": "Karen Onishi",
@@ -749,15 +751,15 @@
     "2017-18 Allocation": "$30,000.00",
     "Note": "",
     "Principal Name (LCGMS)": "KAREN ONISHI",
-    "Column1": "Karen Onishi",
-    "Column2": "TRUE",
-    "DBN 2": "14K586"
+    "Column1": "Karen Onishi"
   },
   {
     "DBN": "14K610",
     "Location Name": "Automotive High School",
     "Cohort": "Cohort 1",
     "CA4A Coach": "Jen Grunin",
+    "admin_id":1,
+    "coach_id": 5,
     "Location Type Description": "Career Technical",
     "Building Code": "K610",
     "LCGMS Name": "Kevin Bryant",
@@ -775,15 +777,15 @@
     "2017-18 Allocation": "$30,000.00",
     "Note": "School added 09.20.16",
     "Principal Name (LCGMS)": "Kevin Bryant",
-    "Column1": "Kevin Bryant",
-    "Column2": "TRUE",
-    "DBN 2": "14K610"
+    "Column1": "Kevin Bryant"
   },
   {
     "DBN": "13K605",
     "Location Name": "George Westinghouse Career and Technical Education High School",
     "Cohort": "Cohort 1",
     "CA4A Coach": "Jen Grunin",
+    "admin_id":1,
+    "coach_id": 5,
     "Location Type Description": "Career Technical",
     "Building Code": "K580",
     "LCGMS Name": "Joey Arzuaga",
@@ -801,15 +803,15 @@
     "2017-18 Allocation": "$45,000.00",
     "Note": "Leadership Change - 09.30.17",
     "Principal Name (LCGMS)": "JOEY ARZUAGA",
-    "Column1": "Joey Arzuaga",
-    "Column2": "TRUE",
-    "DBN 2": "13K605"
+    "Column1": "Joey Arzuaga"
   },
   {
     "DBN": "08X376",
     "Location Name": "Antonia Pantoja Preparatory Academy: A College Board School",
     "Cohort": "Cohort 1",
     "CA4A Coach": "Kim Hall",
+    "admin_id":1,
+    "coach_id": 7,
     "Location Type Description": "General Academic",
     "Building Code": "X450",
     "LCGMS Name": "Nalini Singh",
@@ -827,15 +829,15 @@
     "2017-18 Allocation": "$25,000.00",
     "Note": "",
     "Principal Name (LCGMS)": "Nalini Singh",
-    "Column1": "Nalini Singh",
-    "Column2": "TRUE",
-    "DBN 2": "08X376"
+    "Column1": "Nalini Singh"
   },
   {
     "DBN": "15K462",
     "Location Name": "John Jay School for Law",
     "Cohort": "Cohort 1",
     "CA4A Coach": "Marisa Castillo",
+    "admin_id":1,
+    "coach_id": 8,
     "Location Type Description": "General Academic",
     "Building Code": "K460",
     "LCGMS Name": "Deborah Glauner",
@@ -853,15 +855,15 @@
     "2017-18 Allocation": "$30,000.00",
     "Note": "School renamed from:  Secondary School for Law",
     "Principal Name (LCGMS)": "Deborah Glauner",
-    "Column1": "Deborah Glauner",
-    "Column2": "TRUE",
-    "DBN 2": "15K462"
+    "Column1": "Deborah Glauner"
   },
   {
     "DBN": "08X367",
     "Location Name": "Archimedes Academy for Math, Science and Technology Applications",
     "Cohort": "Cohort 1",
     "CA4A Coach": "Simone Mikolich",
+    "admin_id":1,
+    "coach_id": 12,
     "Location Type Description": "General Academic",
     "Building Code": "X174",
     "LCGMS Name": "Miriam Lazar",
@@ -879,15 +881,15 @@
     "2017-18 Allocation": "$30,000.00",
     "Note": "",
     "Principal Name (LCGMS)": "MIRIAM LAZAR",
-    "Column1": "Miriam Lazar",
-    "Column2": "TRUE",
-    "DBN 2": "08X367"
+    "Column1": "Miriam Lazar"
   },
   {
     "DBN": "15K519",
     "Location Name": "Cobble Hill School of American Studies",
     "Cohort": "Cohort 1",
     "CA4A Coach": "Marisa Castillo",
+    "admin_id":1,
+    "coach_id": 8,
     "Location Type Description": "General Academic",
     "Building Code": "K804",
     "LCGMS Name": "Annamaria Mule",
@@ -905,15 +907,15 @@
     "2017-18 Allocation": "$35,000.00",
     "Note": "",
     "Principal Name (LCGMS)": "Annamaria Mule",
-    "Column1": "Annamaria Mule",
-    "Column2": "TRUE",
-    "DBN 2": "15K519"
+    "Column1": "Annamaria Mule"
   },
   {
     "DBN": "15K698",
     "Location Name": "South Brooklyn Community High School",
     "Cohort": "Cohort 1",
     "CA4A Coach": "Denise Copeland",
+    "admin_id":1,
+    "coach_id": 3,
     "Location Type Description": "Transfer School",
     "Building Code": "K825",
     "LCGMS Name": "Latoya Kittrell",
@@ -931,15 +933,15 @@
     "2017-18 Allocation": "$25,000.00",
     "Note": "",
     "Principal Name (LCGMS)": "Latoya Kittrell",
-    "Column1": "Latoya Kittrell",
-    "Column2": "TRUE",
-    "DBN 2": "15K698"
+    "Column1": "Latoya Kittrell"
   },
   {
     "DBN": "16K498",
     "Location Name": "Brooklyn High School for Law and Technology",
     "Cohort": "Cohort 1",
     "CA4A Coach": "Raymond Johnson",
+    "admin_id":1,
+    "coach_id": 11,
     "Location Type Description": "General Academic",
     "Building Code": "K987",
     "LCGMS Name": "Vernon Johnson",
@@ -957,15 +959,15 @@
     "2017-18 Allocation": "$35,000.00",
     "Note": "",
     "Principal Name (LCGMS)": "Vernon Johnson",
-    "Column1": "Vernon Johnson",
-    "Column2": "TRUE",
-    "DBN 2": "16K498"
+    "Column1": "Vernon Johnson"
   },
   {
     "DBN": "19K502",
     "Location Name": "FDNY - Captain Vernon A. Richards High School for Fire and Life Safety",
     "Cohort": "Cohort 1",
     "CA4A Coach": "Jen Grunin",
+    "admin_id":1,
+    "coach_id": 5,
     "Location Type Description": "General Academic",
     "Building Code": "K435",
     "LCGMS Name": "James Anderson",
@@ -983,15 +985,15 @@
     "2017-18 Allocation": "$30,000.00",
     "Note": "",
     "Principal Name (LCGMS)": "JAMES ANDERSON",
-    "Column1": "James Anderson",
-    "Column2": "TRUE",
-    "DBN 2": "19K502"
+    "Column1": "James Anderson"
   },
   {
     "DBN": "13K419",
     "Location Name": "Science Skills Center High School for Science, Technology and the Creative Arts",
     "Cohort": "Cohort 1",
     "CA4A Coach": "Marisa Castillo",
+    "admin_id":1,
+    "coach_id": 8,
     "Location Type Description": "General Academic",
     "Building Code": "K805",
     "LCGMS Name": "Dahlia Mcgregor",
@@ -1009,15 +1011,15 @@
     "2017-18 Allocation": "$35,000.00",
     "Note": "",
     "Principal Name (LCGMS)": "Dahlia Mcgregor",
-    "Column1": "Dahlia Mcgregor",
-    "Column2": "TRUE",
-    "DBN 2": "13K419"
+    "Column1": "Dahlia Mcgregor"
   },
   {
     "DBN": "09X505",
     "Location Name": "Bronx School for Law, Government and Justice",
     "Cohort": "Cohort 1",
     "CA4A Coach": "Allison Burke",
+    "admin_id":1,
+    "coach_id": 2,
     "Location Type Description": "General Academic",
     "Building Code": "X460",
     "LCGMS Name": "Johanie Hernandez",
@@ -1035,15 +1037,15 @@
     "2017-18 Allocation": "$30,000.00",
     "Note": "",
     "Principal Name (LCGMS)": "Johanie Hernandez",
-    "Column1": "Johanie Hernandez",
-    "Column2": "TRUE",
-    "DBN 2": "09X505"
+    "Column1": "Johanie Hernandez"
   },
   {
     "DBN": "17K122",
     "Location Name": "Pathways in Technology Early College High School (P-Tech)",
     "Cohort": "Cohort 1",
     "CA4A Coach": "Josh Steckel",
+    "admin_id":1,
+    "coach_id": 6,
     "Location Type Description": "Career Technical",
     "Building Code": "K625",
     "LCGMS Name": "Rashid Davis",
@@ -1061,15 +1063,15 @@
     "2017-18 Allocation": "$35,000.00",
     "Note": "",
     "Principal Name (LCGMS)": "Rashid Davis",
-    "Column1": "Rashid Davis",
-    "Column2": "TRUE",
-    "DBN 2": "17K122"
+    "Column1": "Rashid Davis"
   },
   {
     "DBN": "13K412",
     "Location Name": "Brooklyn Community Arts & Media High School (BCAM)",
     "Cohort": "Cohort 1",
     "CA4A Coach": "Raymond Johnson",
+    "admin_id":1,
+    "coach_id": 11,
     "Location Type Description": "General Academic",
     "Building Code": "K117",
     "LCGMS Name": "James Obrien",
@@ -1087,15 +1089,15 @@
     "2017-18 Allocation": "$30,000.00",
     "Note": "",
     "Principal Name (LCGMS)": "JAMES OBRIEN",
-    "Column1": "James Obrien",
-    "Column2": "TRUE",
-    "DBN 2": "13K412"
+    "Column1": "James Obrien"
   },
   {
     "DBN": "09X263",
     "Location Name": "Validus Preparatory Academy",
     "Cohort": "Cohort 1",
     "CA4A Coach": "Kim Hall",
+    "admin_id":1,
+    "coach_id": 7,
     "Location Type Description": "General Academic",
     "Building Code": "X970",
     "LCGMS Name": "Christophe Hibbert",
@@ -1113,15 +1115,15 @@
     "2017-18 Allocation": "$30,000.00",
     "Note": "",
     "Principal Name (LCGMS)": "Christophe Hibbert",
-    "Column1": "Christophe Hibbert",
-    "Column2": "TRUE",
-    "DBN 2": "09X263"
+    "Column1": "Christophe Hibbert"
   },
   {
     "DBN": "07X670",
     "Location Name": "Health Opportunities High School",
     "Cohort": "Cohort 1",
     "CA4A Coach": "Simone Mikolich",
+    "admin_id":1,
+    "coach_id": 12,
     "Location Type Description": "General Academic",
     "Building Code": "X884",
     "LCGMS Name": "Julie Mchedlishvili",
@@ -1139,15 +1141,15 @@
     "2017-18 Allocation": "$30,000.00",
     "Note": "",
     "Principal Name (LCGMS)": "Julie Mchedlishvili",
-    "Column1": "Julie Mchedlishvili",
-    "Column2": "TRUE",
-    "DBN 2": "07X670"
+    "Column1": "Julie Mchedlishvili"
   },
   {
     "DBN": "17K528",
     "Location Name": "The High School for Global Citizenship",
     "Cohort": "Cohort 1",
     "CA4A Coach": "Marisa Castillo",
+    "admin_id":1,
+    "coach_id": 8,
     "Location Type Description": "General Academic",
     "Building Code": "K440",
     "LCGMS Name": "Michelle Rochon",
@@ -1165,15 +1167,15 @@
     "2017-18 Allocation": "$25,000.00",
     "Note": "",
     "Principal Name (LCGMS)": "Michelle Rochon",
-    "Column1": "Michelle Rochon",
-    "Column2": "TRUE",
-    "DBN 2": "17K528"
+    "Column1": "Michelle Rochon"
   },
   {
     "DBN": "17K537",
     "Location Name": "High School for Youth and Community Development at Erasmus",
     "Cohort": "Cohort 1",
     "CA4A Coach": "Josh Steckel",
+    "admin_id":1,
+    "coach_id": 6,
     "Location Type Description": "General Academic",
     "Building Code": "K465",
     "LCGMS Name": "Mary Prendergast",
@@ -1191,15 +1193,15 @@
     "2017-18 Allocation": "$35,000.00",
     "Note": "",
     "Principal Name (LCGMS)": "Mary Prendergast",
-    "Column1": "Mary Prendergast",
-    "Column2": "TRUE",
-    "DBN 2": "17K537"
+    "Column1": "Mary Prendergast"
   },
   {
     "DBN": "07X551",
     "Location Name": "The Urban Assembly Bronx Academy of Letters",
     "Cohort": "Cohort 1",
     "CA4A Coach": "Zee Santiago",
+    "admin_id":1,
+    "coach_id": 13,
     "Location Type Description": "General Academic",
     "Building Code": "X183",
     "LCGMS Name": "Brandon Cardet Hernande",
@@ -1217,15 +1219,15 @@
     "2017-18 Allocation": "$30,000.00",
     "Note": "",
     "Principal Name (LCGMS)": "BRANDON CARDET HERNANDE",
-    "Column1": "Brandon Cardet Hernande",
-    "Column2": "TRUE",
-    "DBN 2": "07X551"
+    "Column1": "Brandon Cardet Hernande"
   },
   {
     "DBN": "09X329",
     "Location Name": "DreamYard Preparatory School",
     "Cohort": "Cohort 1",
     "CA4A Coach": "",
+    "admin_id":1,
+    "coach_id": "",
     "Location Type Description": "General Academic",
     "Building Code": "X410",
     "LCGMS Name": "Alicia Wargo",
@@ -1243,15 +1245,15 @@
     "2017-18 Allocation": "$30,000.00",
     "Note": "School added 10.11.16",
     "Principal Name (LCGMS)": "Alicia Wargo",
-    "Column1": "Alicia Wargo",
-    "Column2": "TRUE",
-    "DBN 2": "09X329"
+    "Column1": "Alicia Wargo"
   },
   {
     "DBN": "18K567",
     "Location Name": "Brooklyn Theatre Arts High School",
     "Cohort": "Cohort 1",
     "CA4A Coach": "Raymond Johnson",
+    "admin_id":1,
+    "coach_id": 11,
     "Location Type Description": "General Academic",
     "Building Code": "K515",
     "LCGMS Name": "David Ward",
@@ -1269,15 +1271,15 @@
     "2017-18 Allocation": "$30,000.00",
     "Note": "",
     "Principal Name (LCGMS)": "DAVID WARD",
-    "Column1": "David Ward",
-    "Column2": "TRUE",
-    "DBN 2": "18K567"
+    "Column1": "David Ward"
   },
   {
     "DBN": "18K576",
     "Location Name": "Victory Collegiate High School",
     "Cohort": "Cohort 1",
     "CA4A Coach": "Raymond Johnson",
+    "admin_id":1,
+    "coach_id": 11,
     "Location Type Description": "General Academic",
     "Building Code": "K515",
     "LCGMS Name": "Claubentz Dieujuste",
@@ -1295,15 +1297,15 @@
     "2017-18 Allocation": "$30,000.00",
     "Note": "",
     "Principal Name (LCGMS)": "Claubentz Dieujuste",
-    "Column1": "Claubentz Dieujuste",
-    "Column2": "TRUE",
-    "DBN 2": "18K576"
+    "Column1": "Claubentz Dieujuste"
   },
   {
     "DBN": "10X374",
     "Location Name": "Knowledge and Power Preparatory Academy International High School (Kappa)",
     "Cohort": "Cohort 1",
     "CA4A Coach": "Allison Burke",
+    "admin_id":1,
+    "coach_id": 2,
     "Location Type Description": "General Academic",
     "Building Code": "X435",
     "LCGMS Name": "Panorea Panagiosoulis",
@@ -1321,15 +1323,15 @@
     "2017-18 Allocation": "$30,000.00",
     "Note": "",
     "Principal Name (LCGMS)": "PANOREA PANAGIOSOULIS",
-    "Column1": "Panorea Panagiosoulis",
-    "Column2": "TRUE",
-    "DBN 2": "10X374"
+    "Column1": "Panorea Panagiosoulis"
   },
   {
     "DBN": "08X312",
     "Location Name": "Millennium Art Academy",
     "Cohort": "Cohort 1",
     "CA4A Coach": "Kim Hall",
+    "admin_id":1,
+    "coach_id": 7,
     "Location Type Description": "General Academic",
     "Building Code": "X450",
     "LCGMS Name": "Herman Guy",
@@ -1347,15 +1349,15 @@
     "2017-18 Allocation": "$30,000.00",
     "Note": "",
     "Principal Name (LCGMS)": "HERMAN GUY",
-    "Column1": "Herman Guy",
-    "Column2": "TRUE",
-    "DBN 2": "08X312"
+    "Column1": "Herman Guy"
   },
   {
     "DBN": "30Q555",
     "Location Name": "Newcomers High School",
     "Cohort": "Cohort 1",
     "CA4A Coach": "Norma Feriz Gordon",
+    "admin_id":1,
+    "coach_id": 10,
     "Location Type Description": "General Academic",
     "Building Code": "Q450",
     "LCGMS Name": "Orlando Sarmiento",
@@ -1373,15 +1375,15 @@
     "2017-18 Allocation": "$45,000.00",
     "Note": "",
     "Principal Name (LCGMS)": "Orlando Sarmiento",
-    "Column1": "Orlando Sarmiento",
-    "Column2": "TRUE",
-    "DBN 2": "30Q555"
+    "Column1": "Orlando Sarmiento"
   },
   {
     "DBN": "29Q248",
     "Location Name": "Queens Preparatory Academy",
     "Cohort": "Cohort 1",
     "CA4A Coach": "Denise Copeland",
+    "admin_id":1,
+    "coach_id": 3,
     "Location Type Description": "General Academic",
     "Building Code": "Q420",
     "LCGMS Name": "Tashon Haywood",
@@ -1399,15 +1401,15 @@
     "2017-18 Allocation": "$30,000.00",
     "Note": "",
     "Principal Name (LCGMS)": "TASHON HAYWOOD",
-    "Column1": "Tashon Haywood",
-    "Column2": "TRUE",
-    "DBN 2": "29Q248"
+    "Column1": "Tashon Haywood"
   },
   {
     "DBN": "29Q265",
     "Location Name": "Excelsior Preparatory High School",
     "Cohort": "Cohort 1",
     "CA4A Coach": "Denise Copeland",
+    "admin_id":1,
+    "coach_id": 3,
     "Location Type Description": "General Academic",
     "Building Code": "Q420",
     "LCGMS Name": "Lilly Lucas",
@@ -1425,15 +1427,15 @@
     "2017-18 Allocation": "$30,000.00",
     "Note": "",
     "Principal Name (LCGMS)": "LILLY LUCAS",
-    "Column1": "Lilly Lucas",
-    "Column2": "TRUE",
-    "DBN 2": "29Q265"
+    "Column1": "Lilly Lucas"
   },
   {
     "DBN": "10X524",
     "Location Name": "Crotona International High School",
     "Cohort": "Cohort 1",
     "CA4A Coach": "Allison Burke",
+    "admin_id":1,
+    "coach_id": 2,
     "Location Type Description": "Career Technical",
     "Building Code": "X660",
     "LCGMS Name": "Shweta Ratra",
@@ -1451,15 +1453,15 @@
     "2017-18 Allocation": "$30,000.00",
     "Note": "",
     "Principal Name (LCGMS)": "SHWETA RATRA",
-    "Column1": "Shweta Ratra",
-    "Column2": "TRUE",
-    "DBN 2": "10X524"
+    "Column1": "Shweta Ratra"
   },
   {
     "DBN": "24Q485",
     "Location Name": "Grover Cleveland High School",
     "Cohort": "Cohort 1",
     "CA4A Coach": "Norma Feriz Gordon",
+    "admin_id":1,
+    "coach_id": 10,
     "Location Type Description": "General Academic",
     "Building Code": "Q485",
     "LCGMS Name": "Denise Vittor",
@@ -1477,15 +1479,15 @@
     "2017-18 Allocation": "$70,000.00",
     "Note": "",
     "Principal Name (LCGMS)": "Denise Vittor",
-    "Column1": "Denise Vittor",
-    "Column2": "TRUE",
-    "DBN 2": "24Q485"
+    "Column1": "Denise Vittor"
   },
   {
     "DBN": "02M427",
     "Location Name": "MANHATTAN ACADEMY FOR ARTS & LANGUAGE",
     "Cohort": "Cohort 1",
     "CA4A Coach": "Fiona Mulcahy",
+    "admin_id":1,
+    "coach_id": 4,
     "Location Type Description": "General Academic",
     "Building Code": "M620",
     "LCGMS Name": "Siv Boletsis",
@@ -1503,15 +1505,15 @@
     "2017-18 Allocation": "$30,000.00",
     "Note": "",
     "Principal Name (LCGMS)": "Siv Boletsis",
-    "Column1": "Siv Boletsis",
-    "Column2": "TRUE",
-    "DBN 2": "02M427"
+    "Column1": "Siv Boletsis"
   },
   {
     "DBN": "05M369",
     "Location Name": "Urban Assembly School for the Performing Arts",
     "Cohort": "Cohort 1",
     "CA4A Coach": "Zee Santiago",
+    "admin_id":1,
+    "coach_id": 13,
     "Location Type Description": "General Academic",
     "Building Code": "M043",
     "LCGMS Name": "Meghan Mcmahon",
@@ -1529,15 +1531,15 @@
     "2017-18 Allocation": "$30,000.00",
     "Note": "",
     "Principal Name (LCGMS)": "Meghan Mcmahon",
-    "Column1": "Meghan Mcmahon",
-    "Column2": "TRUE",
-    "DBN 2": "05M369"
+    "Column1": "Meghan Mcmahon"
   },
   {
     "DBN": "29Q492",
     "Location Name": "Mathematics, Science Research and Technology Magnet High School",
     "Cohort": "Cohort 1",
     "CA4A Coach": "Denise Copeland",
+    "admin_id":1,
+    "coach_id": 3,
     "Location Type Description": "General Academic",
     "Building Code": "Q490",
     "LCGMS Name": "Jose Cruz",
@@ -1555,15 +1557,15 @@
     "2017-18 Allocation": "$30,000.00",
     "Note": "",
     "Principal Name (LCGMS)": "JOSE CRUZ",
-    "Column1": "Jose Cruz",
-    "Column2": "TRUE",
-    "DBN 2": "29Q492"
+    "Column1": "Jose Cruz"
   },
   {
     "DBN": "02M399",
     "Location Name": "The High School For Language And Diplomacy",
     "Cohort": "Cohort 1",
     "CA4A Coach": "Zee Santiago",
+    "admin_id":1,
+    "coach_id": 13,
     "Location Type Description": "General Academic",
     "Building Code": "M460",
     "LCGMS Name": "Sarah Hernandez",
@@ -1581,15 +1583,15 @@
     "2017-18 Allocation": "$30,000.00",
     "Note": "",
     "Principal Name (LCGMS)": "Sarah Hernandez",
-    "Column1": "Sarah Hernandez",
-    "Column2": "TRUE",
-    "DBN 2": "02M399"
+    "Column1": "Sarah Hernandez"
   },
   {
     "DBN": "02M394",
     "Location Name": "Emma Lazarus High School",
     "Cohort": "Cohort 1",
     "CA4A Coach": "Denise Copeland",
+    "admin_id":1,
+    "coach_id": 3,
     "Location Type Description": "Transfer School",
     "Building Code": "M131",
     "LCGMS Name": "Melody Kellogg",
@@ -1607,15 +1609,15 @@
     "2017-18 Allocation": "$30,000.00",
     "Note": "",
     "Principal Name (LCGMS)": "MELODY KELLOGG",
-    "Column1": "Melody Kellogg",
-    "Column2": "TRUE",
-    "DBN 2": "02M394"
+    "Column1": "Melody Kellogg"
   },
   {
     "DBN": "30Q445",
     "Location Name": "William Cullen Bryant High School",
     "Cohort": "Cohort 1",
     "CA4A Coach": "Norma Feriz Gordon",
+    "admin_id":1,
+    "coach_id": 10,
     "Location Type Description": "General Academic",
     "Building Code": "Q445",
     "LCGMS Name": "Namita Dwarka",
@@ -1633,15 +1635,15 @@
     "2017-18 Allocation": "$75,000.00",
     "Note": "",
     "Principal Name (LCGMS)": "Namita Dwarka",
-    "Column1": "Namita Dwarka",
-    "Column2": "TRUE",
-    "DBN 2": "30Q445"
+    "Column1": "Namita Dwarka"
   },
   {
     "DBN": "02M529",
     "Location Name": "Jacqueline Kennedy Onassis High School",
     "Cohort": "Cohort 1",
     "CA4A Coach": "Fiona Mulcahy",
+    "admin_id":1,
+    "coach_id": 4,
     "Location Type Description": "General Academic",
     "Building Code": "M486",
     "LCGMS Name": "Edward Demeo",
@@ -1659,15 +1661,15 @@
     "2017-18 Allocation": "$35,000.00",
     "Note": "",
     "Principal Name (LCGMS)": "EDWARD DEMEO",
-    "Column1": "Edward Demeo",
-    "Column2": "TRUE",
-    "DBN 2": "02M529"
+    "Column1": "Edward Demeo"
   },
   {
     "DBN": "30Q502",
     "Location Name": "Information Technology High School",
     "Cohort": "Cohort 1",
     "CA4A Coach": "Jen Grunin",
+    "admin_id":1,
+    "coach_id": 5,
     "Location Type Description": "General Academic",
     "Building Code": "Q725",
     "LCGMS Name": "Joseph Reed",
@@ -1685,15 +1687,15 @@
     "2017-18 Allocation": "$50,000.00",
     "Note": "",
     "Principal Name (LCGMS)": "Joseph Reed",
-    "Column1": "Joseph Reed",
-    "Column2": "TRUE",
-    "DBN 2": "30Q502"
+    "Column1": "Joseph Reed"
   },
   {
     "DBN": "29Q283",
     "Location Name": "Preparatory Academy for Writers: A College Board School",
     "Cohort": "Cohort 1",
     "CA4A Coach": "Denise Copeland",
+    "admin_id":1,
+    "coach_id": 3,
     "Location Type Description": "General Academic",
     "Building Code": "Q420",
     "LCGMS Name": "Charles Anderson",
@@ -1711,15 +1713,15 @@
     "2017-18 Allocation": "$30,000.00",
     "Note": "",
     "Principal Name (LCGMS)": "CHARLES ANDERSON",
-    "Column1": "Charles Anderson",
-    "Column2": "TRUE",
-    "DBN 2": "29Q283"
+    "Column1": "Charles Anderson"
   },
   {
     "DBN": "10X342",
     "Location Name": "International School for Liberal Arts",
     "Cohort": "Cohort 1",
     "CA4A Coach": "Simone Mikolich",
+    "admin_id":1,
+    "coach_id": 12,
     "Location Type Description": "General Academic",
     "Building Code": "X430",
     "LCGMS Name": "Francine Cruz",
@@ -1737,15 +1739,15 @@
     "2017-18 Allocation": "$30,000.00",
     "Note": "",
     "Principal Name (LCGMS)": "Francine Cruz",
-    "Column1": "Francine Cruz",
-    "Column2": "TRUE",
-    "DBN 2": "10X342"
+    "Column1": "Francine Cruz"
   },
   {
     "DBN": "02M316",
     "Location Name": "Urban Assembly School of Business for Young Women, the",
     "Cohort": "Cohort 1",
     "CA4A Coach": "Zee Santiago",
+    "admin_id":1,
+    "coach_id": 13,
     "Location Type Description": "General Academic",
     "Building Code": "M282",
     "LCGMS Name": "Patricia Minaya",
@@ -1763,15 +1765,15 @@
     "2017-18 Allocation": "$30,000.00",
     "Note": "",
     "Principal Name (LCGMS)": "PATRICIA MINAYA",
-    "Column1": "Patricia Minaya",
-    "Column2": "TRUE",
-    "DBN 2": "02M316"
+    "Column1": "Patricia Minaya"
   },
   {
     "DBN": "31R600",
     "Location Name": "Ralph R. McKee Career and Technical Education High School",
     "Cohort": "Cohort 1",
     "CA4A Coach": "Jen Grunin",
+    "admin_id":1,
+    "coach_id": 5,
     "Location Type Description": "Career Technical",
     "Building Code": "R600",
     "LCGMS Name": "Sharon Henry",
@@ -1789,15 +1791,15 @@
     "2017-18 Allocation": "$45,000.00",
     "Note": "",
     "Principal Name (LCGMS)": "SHARON HENRY",
-    "Column1": "Sharon Henry",
-    "Column2": "TRUE",
-    "DBN 2": "31R600"
+    "Column1": "Sharon Henry"
   },
   {
     "DBN": "02M303",
     "Location Name": "Facing History School, The",
     "Cohort": "Cohort 1",
     "CA4A Coach": "Zee Santiago",
+    "admin_id":1,
+    "coach_id": 13,
     "Location Type Description": "General Academic",
     "Building Code": "M535",
     "LCGMS Name": "Dana Panagot",
@@ -1815,15 +1817,15 @@
     "2017-18 Allocation": "$30,000.00",
     "Note": "",
     "Principal Name (LCGMS)": "Dana Panagot",
-    "Column1": "Dana Panagot",
-    "Column2": "TRUE",
-    "DBN 2": "02M303"
+    "Column1": "Dana Panagot"
   },
   {
     "DBN": "02M300",
     "Location Name": "Urban Assembly School of Design and Construction, The",
     "Cohort": "Cohort 1",
     "CA4A Coach": "Zee Santiago",
+    "admin_id":1,
+    "coach_id": 13,
     "Location Type Description": "General Academic",
     "Building Code": "M535",
     "LCGMS Name": "Matthew Willoughby",
@@ -1841,15 +1843,15 @@
     "2017-18 Allocation": "$30,000.00",
     "Note": "",
     "Principal Name (LCGMS)": "MATTHEW WILLOUGHBY",
-    "Column1": "Matthew Willoughby",
-    "Column2": "TRUE",
-    "DBN 2": "02M300"
+    "Column1": "Matthew Willoughby"
   },
   {
     "DBN": "32K556",
     "Location Name": "Bushwick Leaders High School for Academic Excellence",
     "Cohort": "Cohort 1",
     "CA4A Coach": "Raymond Johnson",
+    "admin_id":1,
+    "coach_id": 11,
     "Location Type Description": "General Academic",
     "Building Code": "K865",
     "LCGMS Name": "Catherine Reilly",
@@ -1867,15 +1869,15 @@
     "2017-18 Allocation": "$30,000.00",
     "Note": "",
     "Principal Name (LCGMS)": "CATHERINE REILLY",
-    "Column1": "Catherine Reilly",
-    "Column2": "TRUE",
-    "DBN 2": "32K556"
+    "Column1": "Catherine Reilly"
   },
   {
     "DBN": "10X353",
     "Location Name": "World View High School",
     "Cohort": "Cohort 1",
     "CA4A Coach": "Zee Santiago",
+    "admin_id":1,
+    "coach_id": 13,
     "Location Type Description": "General Academic",
     "Building Code": "X440",
     "LCGMS Name": "Martin Hernandez",
@@ -1893,15 +1895,15 @@
     "2017-18 Allocation": "$35,000.00",
     "Note": "",
     "Principal Name (LCGMS)": "Martin Hernandez",
-    "Column1": "Martin Hernandez",
-    "Column2": "TRUE",
-    "DBN 2": "10X353"
+    "Column1": "Martin Hernandez"
   },
   {
     "DBN": "01M650",
     "Location Name": "Cascades High School",
     "Cohort": "Cohort 1",
     "CA4A Coach": "Denise Copeland",
+    "admin_id":1,
+    "coach_id": 3,
     "Location Type Description": "Transfer School",
     "Building Code": "M510",
     "LCGMS Name": "Claire Sheehan",
@@ -1919,15 +1921,15 @@
     "2017-18 Allocation": "$25,000.00",
     "Note": "Leadership Change - 07.02.17",
     "Principal Name (LCGMS)": "Claire Sheehan",
-    "Column1": "Claire Sheehan",
-    "Column2": "TRUE",
-    "DBN 2": "01M650"
+    "Column1": "Claire Sheehan"
   },
   {
     "DBN": "01M509",
     "Location Name": "Marta Valle High School",
     "Cohort": "Cohort 1",
     "CA4A Coach": "Fiona Mulcahy",
+    "admin_id":1,
+    "coach_id": 4,
     "Location Type Description": "General Academic",
     "Building Code": "M025",
     "LCGMS Name": "Steven Aragona",
@@ -1945,15 +1947,15 @@
     "2017-18 Allocation": "$25,000.00",
     "Note": "",
     "Principal Name (LCGMS)": "Steven Aragona",
-    "Column1": "Steven Aragona",
-    "Column2": "TRUE",
-    "DBN 2": "01M509"
+    "Column1": "Steven Aragona"
   },
   {
     "DBN": "10X433",
     "Location Name": "High School for Teaching and the Professions",
     "Cohort": "Cohort 1",
     "CA4A Coach": "Simone Mikolich",
+    "admin_id":1,
+    "coach_id": 12,
     "Location Type Description": "General Academic",
     "Building Code": "X430",
     "LCGMS Name": "Roberto Hernandez",
@@ -1971,15 +1973,15 @@
     "2017-18 Allocation": "$30,000.00",
     "Note": "Principal Name is Wrong",
     "Principal Name (LCGMS)": "Hernandez, Roberto",
-    "Column1": "Roberto Hernandez",
-    "Column2": "FALSE",
-    "DBN 2": "10X433"
+    "Column1": "Roberto Hernandez"
   },
   {
     "DBN": "10X397",
     "Location Name": "English Language Learners and International Support Preparatory Academy (ELLIS)",
     "Cohort": "Cohort 1",
     "CA4A Coach": "",
+    "admin_id":1,
+    "coach_id": "",
     "Location Type Description": "Transfer School",
     "Building Code": "X475",
     "LCGMS Name": "Norma Vega",
@@ -1997,15 +1999,15 @@
     "2017-18 Allocation": "$30,000.00",
     "Note": "School added 10.11.16",
     "Principal Name (LCGMS)": "NORMA VEGA",
-    "Column1": "Norma Vega",
-    "Column2": "TRUE",
-    "DBN 2": "10X397"
+    "Column1": "Norma Vega"
   },
   {
     "DBN": "10X284",
     "Location Name": "Bronx School of Law and Finance",
     "Cohort": "Cohort 1",
     "CA4A Coach": "Kim Hall",
+    "admin_id":1,
+    "coach_id": 7,
     "Location Type Description": "General Academic",
     "Building Code": "X475",
     "LCGMS Name": "Jessica Goring",
@@ -2023,15 +2025,15 @@
     "2017-18 Allocation": "$30,000.00",
     "Note": "",
     "Principal Name (LCGMS)": "Jessica Goring",
-    "Column1": "Jessica Goring",
-    "Column2": "TRUE",
-    "DBN 2": "10X284"
+    "Column1": "Jessica Goring"
   },
   {
     "DBN": "11X290",
     "Location Name": "Bronx Academy of Health Careers",
     "Cohort": "Cohort 1",
     "CA4A Coach": "Allison Burke",
+    "admin_id":1,
+    "coach_id": 2,
     "Location Type Description": "General Academic",
     "Building Code": "X425",
     "LCGMS Name": "Dawn Santiago",
@@ -2049,15 +2051,15 @@
     "2017-18 Allocation": "$30,000.00",
     "Note": "",
     "Principal Name (LCGMS)": "Dawn Santiago",
-    "Column1": "Dawn Santiago",
-    "Column2": "TRUE",
-    "DBN 2": "11X290"
+    "Column1": "Dawn Santiago"
   },
   {
     "DBN": "11X455",
     "Location Name": "Harry S Truman High School",
     "Cohort": "Cohort 1",
     "CA4A Coach": "Simone Mikolich",
+    "admin_id":1,
+    "coach_id": 12,
     "Location Type Description": "General Academic",
     "Building Code": "X455",
     "LCGMS Name": "Keri Alfano",
@@ -2075,15 +2077,15 @@
     "2017-18 Allocation": "$70,000.00",
     "Note": "",
     "Principal Name (LCGMS)": "Keri Alfano",
-    "Column1": "Keri Alfano",
-    "Column2": "TRUE",
-    "DBN 2": "11X455"
+    "Column1": "Keri Alfano"
   },
   {
     "DBN": "24Q600",
     "Location Name": "Queens Vocational and Technical High School",
     "Cohort": "Cohort 1",
     "CA4A Coach": "Norma Feriz Gordon",
+    "admin_id":1,
+    "coach_id": 10,
     "Location Type Description": "Career Technical",
     "Building Code": "Q600",
     "LCGMS Name": "Melissa Burg",
@@ -2101,15 +2103,15 @@
     "2017-18 Allocation": "$65,000.00",
     "Note": "",
     "Principal Name (LCGMS)": "Melissa Burg",
-    "Column1": "Melissa Burg",
-    "Column2": "TRUE",
-    "DBN 2": "24Q600"
+    "Column1": "Melissa Burg"
   },
   {
     "DBN": "11X299",
     "Location Name": "Astor Collegiate Academy",
     "Cohort": "Cohort 1",
     "CA4A Coach": "Allison Burke",
+    "admin_id":1,
+    "coach_id": 2,
     "Location Type Description": "General Academic",
     "Building Code": "X415",
     "LCGMS Name": "Sandra Burgos",
@@ -2127,15 +2129,15 @@
     "2017-18 Allocation": "$30,000.00",
     "Note": "Case Study School",
     "Principal Name (LCGMS)": "Sandra Burgos",
-    "Column1": "Sandra Burgos",
-    "Column2": "TRUE",
-    "DBN 2": "11X299"
+    "Column1": "Sandra Burgos"
   },
   {
     "DBN": "03M494",
     "Location Name": "High School of Arts and Technology",
     "Cohort": "Cohort 1",
     "CA4A Coach": "Fiona Mulcahy",
+    "admin_id":1,
+    "coach_id": 4,
     "Location Type Description": "General Academic",
     "Building Code": "M490",
     "LCGMS Name": "Mariela Graham",
@@ -2153,15 +2155,15 @@
     "2017-18 Allocation": "$35,000.00",
     "Note": "",
     "Principal Name (LCGMS)": "MARIELA GRAHAM",
-    "Column1": "Mariela Graham",
-    "Column2": "TRUE",
-    "DBN 2": "03M494"
+    "Column1": "Mariela Graham"
   },
   {
     "DBN": "25Q263",
     "Location Name": "Flushing International High School",
     "Cohort": "Cohort 1",
     "CA4A Coach": "",
+    "admin_id":1,
+    "coach_id": "",
     "Location Type Description": "General Academic",
     "Building Code": "Q189",
     "LCGMS Name": "Lara Evangelista",
@@ -2179,15 +2181,15 @@
     "2017-18 Allocation": "$30,000.00",
     "Note": "School added 11.07.16",
     "Principal Name (LCGMS)": "Lara Evangelista",
-    "Column1": "Lara Evangelista",
-    "Column2": "TRUE",
-    "DBN 2": "25Q263"
+    "Column1": "Lara Evangelista"
   },
   {
     "DBN": "03M492",
     "Location Name": "High School for Law, Advocacy and Community Justice",
     "Cohort": "Cohort 1",
     "CA4A Coach": "Fiona Mulcahy",
+    "admin_id":1,
+    "coach_id": 4,
     "Location Type Description": "General Academic",
     "Building Code": "M490",
     "LCGMS Name": "Doreen Conwell",
@@ -2205,15 +2207,15 @@
     "2017-18 Allocation": "$30,000.00",
     "Note": "",
     "Principal Name (LCGMS)": "Doreen Conwell",
-    "Column1": "Doreen Conwell",
-    "Column2": "TRUE",
-    "DBN 2": "03M492"
+    "Column1": "Doreen Conwell"
   },
   {
     "DBN": "02M425",
     "Location Name": "Leadership and Public Service High School",
     "Cohort": "Cohort 1",
     "CA4A Coach": "Fiona Mulcahy",
+    "admin_id":1,
+    "coach_id": 4,
     "Location Type Description": "General Academic",
     "Building Code": "M894",
     "LCGMS Name": "Philip Santos",
@@ -2231,15 +2233,15 @@
     "2017-18 Allocation": "$35,000.00",
     "Note": "",
     "Principal Name (LCGMS)": "Philip Santos",
-    "Column1": "Philip Santos",
-    "Column2": "TRUE",
-    "DBN 2": "02M425"
+    "Column1": "Philip Santos"
   },
   {
     "DBN": "25Q540",
     "Location Name": "Queens Academy High School",
     "Cohort": "Cohort 1",
     "CA4A Coach": "Denise Copeland",
+    "admin_id":1,
+    "coach_id": 3,
     "Location Type Description": "Transfer School",
     "Building Code": "Q023",
     "LCGMS Name": "James Memola Jr.",
@@ -2257,15 +2259,15 @@
     "2017-18 Allocation": "$30,000.00",
     "Note": "Leadership Change - 07.02.17",
     "Principal Name (LCGMS)": "James Memola",
-    "Column1": "James Memola Jr.",
-    "Column2": "FALSE",
-    "DBN 2": "25Q540"
+    "Column1": "James Memola Jr."
   },
   {
     "DBN": "27Q260",
     "Location Name": "Frederick Douglass Academy VI High School",
     "Cohort": "Cohort 1",
     "CA4A Coach": "Jen Grunin",
+    "admin_id":1,
+    "coach_id": 5,
     "Location Type Description": "General Academic",
     "Building Code": "Q465",
     "LCGMS Name": "Charles Ogundimu, Ph.D.",
@@ -2283,15 +2285,15 @@
     "2017-18 Allocation": "$30,000.00",
     "Note": "",
     "Principal Name (LCGMS)": "Charles Ogundimu, Ph.D.",
-    "Column1": "Charles Ogundimu, Ph.D.",
-    "Column2": "TRUE",
-    "DBN 2": "27Q260"
+    "Column1": "Charles Ogundimu, Ph.D."
   },
   {
     "DBN": "03M403",
     "Location Name": "The Global Learning Collaborative",
     "Cohort": "Cohort 1",
     "CA4A Coach": "Fiona Mulcahy",
+    "admin_id":1,
+    "coach_id": 4,
     "Location Type Description": "General Academic",
     "Building Code": "M470",
     "LCGMS Name": "Karla Chiluiza",
@@ -2309,15 +2311,15 @@
     "2017-18 Allocation": "$30,000.00",
     "Note": "",
     "Principal Name (LCGMS)": "Karla Chiluiza",
-    "Column1": "Karla Chiluiza",
-    "Column2": "TRUE",
-    "DBN 2": "03M403"
+    "Column1": "Karla Chiluiza"
   },
   {
     "DBN": "27Q302",
     "Location Name": "Queens High School for Information, Research, and Technology",
     "Cohort": "Cohort 1",
     "CA4A Coach": "Jen Grunin",
+    "admin_id":1,
+    "coach_id": 5,
     "Location Type Description": "General Academic",
     "Building Code": "Q465",
     "LCGMS Name": "Carl Manalo",
@@ -2335,15 +2337,15 @@
     "2017-18 Allocation": "$30,000.00",
     "Note": "",
     "Principal Name (LCGMS)": "Carl Manalo",
-    "Column1": "Carl Manalo",
-    "Column2": "TRUE",
-    "DBN 2": "27Q302"
+    "Column1": "Carl Manalo"
   },
   {
     "DBN": "03M307",
     "Location Name": "Urban Assembly School for Media Studies, The",
     "Cohort": "Cohort 1",
     "CA4A Coach": "Zee Santiago",
+    "admin_id":1,
+    "coach_id": 13,
     "Location Type Description": "General Academic",
     "Building Code": "M490",
     "LCGMS Name": "Cordelia Veve",
@@ -2361,15 +2363,15 @@
     "2017-18 Allocation": "$30,000.00",
     "Note": "Case Study School",
     "Principal Name (LCGMS)": "CORDELIA VEVE",
-    "Column1": "Cordelia Veve",
-    "Column2": "TRUE",
-    "DBN 2": "03M307"
+    "Column1": "Cordelia Veve"
   },
   {
     "DBN": "02M600",
     "Location Name": "The High School of Fashion Industries",
     "Cohort": "Cohort 1",
     "CA4A Coach": "",
+    "admin_id":1,
+    "coach_id": "",
     "Location Type Description": "Career Technical",
     "Building Code": "M600",
     "LCGMS Name": "Daryl Blank",
@@ -2387,15 +2389,15 @@
     "2017-18 Allocation": "$65,000.00",
     "Note": "School added 10.11.16",
     "Principal Name (LCGMS)": "Daryl Blank",
-    "Column1": "Daryl Blank",
-    "Column2": "TRUE",
-    "DBN 2": "02M600"
+    "Column1": "Daryl Blank"
   },
   {
     "DBN": "10X225",
     "Location Name": "Theatre Arts Production Company School",
     "Cohort": "Cohort 1",
     "CA4A Coach": "Kim Hall",
+    "admin_id":1,
+    "coach_id": 7,
     "Location Type Description": "General Academic",
     "Building Code": "X137",
     "LCGMS Name": "Ron Link",
@@ -2413,15 +2415,15 @@
     "2017-18 Allocation": "$30,000.00",
     "Note": "",
     "Principal Name (LCGMS)": "Ron Link",
-    "Column1": "Ron Link",
-    "Column2": "TRUE",
-    "DBN 2": "10X225"
+    "Column1": "Ron Link"
   },
   {
     "DBN": "02M551",
     "Location Name": "Urban Assembly New York Harbor School",
     "Cohort": "Cohort 1",
     "CA4A Coach": "Zee Santiago",
+    "admin_id":1,
+    "coach_id": 13,
     "Location Type Description": "Career Technical",
     "Building Code": "M877",
     "LCGMS Name": "Jeffrey Chetirko",
@@ -2439,15 +2441,15 @@
     "2017-18 Allocation": "$30,000.00",
     "Note": "",
     "Principal Name (LCGMS)": "JEFFREY CHETIRKO",
-    "Column1": "Jeffrey Chetirko",
-    "Column2": "TRUE",
-    "DBN 2": "02M551"
+    "Column1": "Jeffrey Chetirko"
   },
   {
     "DBN": "10X213",
     "Location Name": "Bronx Engineering and Technology Academy",
     "Cohort": "Cohort 1",
     "CA4A Coach": "Kim Hall",
+    "admin_id":1,
+    "coach_id": 7,
     "Location Type Description": "General Academic",
     "Building Code": "X475",
     "LCGMS Name": "Karalyne Sperling",
@@ -2465,15 +2467,15 @@
     "2017-18 Allocation": "$30,000.00",
     "Note": "",
     "Principal Name (LCGMS)": "Karalyne Sperling",
-    "Column1": "Karalyne Sperling",
-    "Column2": "TRUE",
-    "DBN 2": "10X213"
+    "Column1": "Karalyne Sperling"
   },
   {
     "DBN": "11X270",
     "Location Name": "Academy for Scholarship and Entrepreneurship: A College Board School",
     "Cohort": "Cohort 1",
     "CA4A Coach": "Allison Burke",
+    "admin_id":1,
+    "coach_id": 2,
     "Location Type Description": "General Academic",
     "Building Code": "X362",
     "LCGMS Name": "Zenobia White",
@@ -2491,15 +2493,15 @@
     "2017-18 Allocation": "$30,000.00",
     "Note": "",
     "Principal Name (LCGMS)": "ZENOBIA WHITE",
-    "Column1": "Zenobia White",
-    "Column2": "TRUE",
-    "DBN 2": "11X270"
+    "Column1": "Zenobia White"
   },
   {
     "DBN": "28Q690",
     "Location Name": "High School for Law Enforcement and Public Safety",
     "Cohort": "Cohort 1",
     "CA4A Coach": "Norma Feriz Gordon",
+    "admin_id":1,
+    "coach_id": 10,
     "Location Type Description": "General Academic",
     "Building Code": "Q690",
     "LCGMS Name": "Laura Van Deren",
@@ -2517,15 +2519,15 @@
     "2017-18 Allocation": "$35,000.00",
     "Note": "Case Study School",
     "Principal Name (LCGMS)": "Laura Van Deren",
-    "Column1": "Laura Van Deren",
-    "Column2": "TRUE",
-    "DBN 2": "28Q690"
+    "Column1": "Laura Van Deren"
   },
   {
     "DBN": "27Q351",
     "Location Name": "Rockaway Collegiate High School",
     "Cohort": "Cohort 1",
     "CA4A Coach": "Norma Feriz Gordon",
+    "admin_id":1,
+    "coach_id": 10,
     "Location Type Description": "General Academic",
     "Building Code": "Q410",
     "LCGMS Name": "Frances DeSanctis",
@@ -2543,15 +2545,15 @@
     "2017-18 Allocation": "$30,000.00",
     "Note": "",
     "Principal Name (LCGMS)": "Frances Desanctis",
-    "Column1": "Frances DeSanctis",
-    "Column2": "TRUE",
-    "DBN 2": "27Q351"
+    "Column1": "Frances DeSanctis"
   },
   {
     "DBN": "11X275",
     "Location Name": "High School of Computers and Technology",
     "Cohort": "Cohort 1",
     "CA4A Coach": "Allison Burke",
+    "admin_id":1,
+    "coach_id": 2,
     "Location Type Description": "Career Technical",
     "Building Code": "X425",
     "LCGMS Name": "Bruce Abramowitz",
@@ -2569,15 +2571,15 @@
     "2017-18 Allocation": "$35,000.00",
     "Note": "",
     "Principal Name (LCGMS)": "BRUCE ABRAMOWITZ",
-    "Column1": "Bruce Abramowitz",
-    "Column2": "TRUE",
-    "DBN 2": "11X275"
+    "Column1": "Bruce Abramowitz"
   },
   {
     "DBN": "08X558",
     "Location Name": "Westchester Square Academy",
     "Cohort": "Cohort 2",
     "CA4A Coach": "",
+    "admin_id":1,
+    "coach_id": "",
     "Location Type Description": "General Academic",
     "Building Code": "X405",
     "LCGMS Name": "Yira Salcedo",
@@ -2595,15 +2597,15 @@
     "2017-18 Allocation": "$35,000.00",
     "Note": "",
     "Principal Name (LCGMS)": "Yira Salcedo",
-    "Column1": "Yira Salcedo",
-    "Column2": "TRUE",
-    "DBN 2": "08X558"
+    "Column1": "Yira Salcedo"
   },
   {
     "DBN": "08X559",
     "Location Name": "School for Tourism and Hospitality",
     "Cohort": "Cohort 2",
     "CA4A Coach": "Fiona Mulcahy",
+    "admin_id":1,
+    "coach_id": 4,
     "Location Type Description": "Career Technical",
     "Building Code": "X650",
     "LCGMS Name": "Avis Terrell",
@@ -2621,15 +2623,15 @@
     "2017-18 Allocation": "$30,000.00",
     "Note": "",
     "Principal Name (LCGMS)": "Avis Terrell",
-    "Column1": "Avis Terrell",
-    "Column2": "TRUE",
-    "DBN 2": "08X559"
+    "Column1": "Avis Terrell"
   },
   {
     "DBN": "10X351",
     "Location Name": "Bronx Collaborative High School",
     "Cohort": "Cohort 2",
     "CA4A Coach": "Zee Santiago",
+    "admin_id":1,
+    "coach_id": 13,
     "Location Type Description": "General Academic",
     "Building Code": "X440",
     "LCGMS Name": "Brett Schneider",
@@ -2647,15 +2649,15 @@
     "2017-18 Allocation": "$35,000.00",
     "Note": "",
     "Principal Name (LCGMS)": "Brett Schneider",
-    "Column1": "Brett Schneider",
-    "Column2": "TRUE",
-    "DBN 2": "10X351"
+    "Column1": "Brett Schneider"
   },
   {
     "DBN": "08X537",
     "Location Name": "Bronx Arena High School",
     "Cohort": "Cohort 2",
     "CA4A Coach": "Aaron Boyle",
+    "admin_id":1,
+    "coach_id": "",
     "Location Type Description": "Transfer School",
     "Building Code": "X972",
     "LCGMS Name": "Ty Cesene",
@@ -2673,15 +2675,15 @@
     "2017-18 Allocation": "$25,000.00",
     "Note": "Eskolta Coach",
     "Principal Name (LCGMS)": "Ty Cesene",
-    "Column1": "Ty Cesene",
-    "Column2": "TRUE",
-    "DBN 2": "08X537"
+    "Column1": "Ty Cesene"
   },
   {
     "DBN": "09X403",
     "Location Name": "Bronx International High School",
     "Cohort": "Cohort 2",
     "CA4A Coach": "Kim Hall",
+    "admin_id":1,
+    "coach_id": 7,
     "Location Type Description": "General Academic",
     "Building Code": "X400",
     "LCGMS Name": "Joaquin Vega Vargas",
@@ -2699,15 +2701,15 @@
     "2017-18 Allocation": "$30,000.00",
     "Note": "",
     "Principal Name (LCGMS)": "JOAQUIN VEGA VARGAS",
-    "Column1": "Joaquin Vega Vargas",
-    "Column2": "TRUE",
-    "DBN 2": "09X403"
+    "Column1": "Joaquin Vega Vargas"
   },
   {
     "DBN": "09X525",
     "Location Name": "Bronx Leadership Academy High School",
     "Cohort": "Cohort 2",
     "CA4A Coach": "Fiona Mulcahy",
+    "admin_id":1,
+    "coach_id": 4,
     "Location Type Description": "General Academic",
     "Building Code": "X876",
     "LCGMS Name": "Ivan Yip",
@@ -2725,15 +2727,15 @@
     "2017-18 Allocation": "$35,000.00",
     "Note": "Cohort 2 Invite - Opted Out - 5/16/17 - Registered 5/25/17",
     "Principal Name (LCGMS)": "IVAN YIP",
-    "Column1": "Ivan Yip",
-    "Column2": "TRUE",
-    "DBN 2": "09X525"
+    "Column1": "Ivan Yip"
   },
   {
     "DBN": "10X368",
     "Location Name": "In-Tech Academy (M.S. / High School 368)",
     "Cohort": "Cohort 2",
     "CA4A Coach": "",
+    "admin_id":1,
+    "coach_id": "",
     "Location Type Description": "General Academic",
     "Building Code": "X368",
     "LCGMS Name": "Stephen Seltzer",
@@ -2751,15 +2753,15 @@
     "2017-18 Allocation": "$30,000.00",
     "Note": "",
     "Principal Name (LCGMS)": "Stephen Seltzer",
-    "Column1": "Stephen Seltzer",
-    "Column2": "TRUE",
-    "DBN 2": "10X368"
+    "Column1": "Stephen Seltzer"
   },
   {
     "DBN": "08X561",
     "Location Name": "Bronx Compass High School",
     "Cohort": "Cohort 2",
     "CA4A Coach": "Kim Hall",
+    "admin_id":1,
+    "coach_id": 7,
     "Location Type Description": "General Academic",
     "Building Code": "X450",
     "LCGMS Name": "Brett Roer",
@@ -2777,15 +2779,15 @@
     "2017-18 Allocation": "$30,000.00",
     "Note": "",
     "Principal Name (LCGMS)": "BRETT ROER",
-    "Column1": "Brett Roer",
-    "Column2": "TRUE",
-    "DBN 2": "08X561"
+    "Column1": "Brett Roer"
   },
   {
     "DBN": "09X568",
     "Location Name": "Young Women's Leadership School of the Bronx",
     "Cohort": "Cohort 2",
     "CA4A Coach": "Zee Santiago",
+    "admin_id":1,
+    "coach_id": 13,
     "Location Type Description": "General Academic",
     "Building Code": "X117",
     "LCGMS Name": "Devon Eisenberg",
@@ -2803,15 +2805,15 @@
     "2017-18 Allocation": "$25,000.00",
     "Note": "Leadership Change - 07.02.17",
     "Principal Name (LCGMS)": "Devon Eisenberg",
-    "Column1": "Devon Eisenberg",
-    "Column2": "TRUE",
-    "DBN 2": "09X568"
+    "Column1": "Devon Eisenberg"
   },
   {
     "DBN": "09X413",
     "Location Name": "Bronx High School for Medical Science",
     "Cohort": "Cohort 2",
     "CA4A Coach": "Kim Hall",
+    "admin_id":1,
+    "coach_id": 7,
     "Location Type Description": "General Academic",
     "Building Code": "X410",
     "LCGMS Name": "William Quintana",
@@ -2829,15 +2831,15 @@
     "2017-18 Allocation": "$30,000.00",
     "Note": "",
     "Principal Name (LCGMS)": "WILLIAM QUINTANA",
-    "Column1": "William Quintana",
-    "Column2": "TRUE",
-    "DBN 2": "09X413"
+    "Column1": "William Quintana"
   },
   {
     "DBN": "09X231",
     "Location Name": "Eagle Academy for Young Men",
     "Cohort": "Cohort 2",
     "CA4A Coach": "",
+    "admin_id":1,
+    "coach_id": "",
     "Location Type Description": "General Academic",
     "Building Code": "X465",
     "LCGMS Name": "Hector Velazquez",
@@ -2855,15 +2857,15 @@
     "2017-18 Allocation": "$30,000.00",
     "Note": "",
     "Principal Name (LCGMS)": "Hector Velazquez",
-    "Column1": "Hector Velazquez",
-    "Column2": "TRUE",
-    "DBN 2": "09X231"
+    "Column1": "Hector Velazquez"
   },
   {
     "DBN": "09X297",
     "Location Name": "Morris Academy for Collaborative Studies",
     "Cohort": "Cohort 2",
     "CA4A Coach": "Kim Hall",
+    "admin_id":1,
+    "coach_id": 7,
     "Location Type Description": "General Academic",
     "Building Code": "X400",
     "LCGMS Name": "Matthew Mazzaroppi",
@@ -2881,15 +2883,15 @@
     "2017-18 Allocation": "$30,000.00",
     "Note": "",
     "Principal Name (LCGMS)": "Matthew Mazzaroppi",
-    "Column1": "Matthew Mazzaroppi",
-    "Column2": "TRUE",
-    "DBN 2": "09X297"
+    "Column1": "Matthew Mazzaroppi"
   },
   {
     "DBN": "09X241",
     "Location Name": "Urban Assembly School for Applied Math and Science, The",
     "Cohort": "Cohort 2",
     "CA4A Coach": "",
+    "admin_id":1,
+    "coach_id": "",
     "Location Type Description": "General Academic",
     "Building Code": "X970",
     "LCGMS Name": "David Krulwich",
@@ -2907,15 +2909,15 @@
     "2017-18 Allocation": "$30,000.00",
     "Note": "",
     "Principal Name (LCGMS)": "David Krulwich",
-    "Column1": "David Krulwich",
-    "Column2": "TRUE",
-    "DBN 2": "09X241"
+    "Column1": "David Krulwich"
   },
   {
     "DBN": "09X252",
     "Location Name": "Mott Hall Bronx High School",
     "Cohort": "Cohort 2",
     "CA4A Coach": "",
+    "admin_id":1,
+    "coach_id": "",
     "Location Type Description": "General Academic",
     "Building Code": "X970",
     "LCGMS Name": "Kathryn Malloy",
@@ -2933,15 +2935,15 @@
     "2017-18 Allocation": "$30,000.00",
     "Note": "",
     "Principal Name (LCGMS)": "Kathryn Malloy",
-    "Column1": "Kathryn Malloy",
-    "Column2": "TRUE",
-    "DBN 2": "09X252"
+    "Column1": "Kathryn Malloy"
   },
   {
     "DBN": "10X264",
     "Location Name": "Bronx Academy for Software Engineering (BASE)",
     "Cohort": "Cohort 2",
     "CA4A Coach": "Allison Burke",
+    "admin_id":1,
+    "coach_id": 2,
     "Location Type Description": "Career Technical",
     "Building Code": "X660",
     "LCGMS Name": "Benjamin Grossman",
@@ -2959,15 +2961,15 @@
     "2017-18 Allocation": "$30,000.00",
     "Note": "",
     "Principal Name (LCGMS)": "Benjamin Grossman",
-    "Column1": "Benjamin Grossman",
-    "Column2": "TRUE",
-    "DBN 2": "10X264"
+    "Column1": "Benjamin Grossman"
   },
   {
     "DBN": "09X412",
     "Location Name": "Bronx High School of Business",
     "Cohort": "Cohort 2",
     "CA4A Coach": "Kim Hall",
+    "admin_id":1,
+    "coach_id": 7,
     "Location Type Description": "General Academic",
     "Building Code": "X410",
     "LCGMS Name": "Alice Bajana Vega",
@@ -2985,15 +2987,15 @@
     "2017-18 Allocation": "$30,000.00",
     "Note": "",
     "Principal Name (LCGMS)": "Alice Bajana Vega",
-    "Column1": "Alice Bajana Vega",
-    "Column2": "TRUE",
-    "DBN 2": "09X412"
+    "Column1": "Alice Bajana Vega"
   },
   {
     "DBN": "09X543",
     "Location Name": "High School for Violin and Dance",
     "Cohort": "Cohort 2",
     "CA4A Coach": "Kim Hall",
+    "admin_id":1,
+    "coach_id": 7,
     "Location Type Description": "General Academic",
     "Building Code": "X400",
     "LCGMS Name": "Franklin Sim",
@@ -3011,15 +3013,15 @@
     "2017-18 Allocation": "$30,000.00",
     "Note": "",
     "Principal Name (LCGMS)": "Franklin Sim",
-    "Column1": "Franklin Sim",
-    "Column2": "TRUE",
-    "DBN 2": "09X543"
+    "Column1": "Franklin Sim"
   },
   {
     "DBN": "09X324",
     "Location Name": "Bronx Early College Academy for Teaching & Learning",
     "Cohort": "Cohort 2",
     "CA4A Coach": "",
+    "admin_id":1,
+    "coach_id": "",
     "Location Type Description": "General Academic",
     "Building Code": "X166",
     "LCGMS Name": "Yvette Rivera",
@@ -3037,15 +3039,15 @@
     "2017-18 Allocation": "$30,000.00",
     "Note": "",
     "Principal Name (LCGMS)": "Yvette Rivera",
-    "Column1": "Yvette Rivera",
-    "Column2": "TRUE",
-    "DBN 2": "09X324"
+    "Column1": "Yvette Rivera"
   },
   {
     "DBN": "09X227",
     "Location Name": "Bronx Collegiate Academy",
     "Cohort": "Cohort 2",
     "CA4A Coach": "Kim Hall",
+    "admin_id":1,
+    "coach_id": 7,
     "Location Type Description": "General Academic",
     "Building Code": "X410",
     "LCGMS Name": "D White",
@@ -3063,15 +3065,15 @@
     "2017-18 Allocation": "$30,000.00",
     "Note": "",
     "Principal Name (LCGMS)": "D White",
-    "Column1": "D White",
-    "Column2": "TRUE",
-    "DBN 2": "09X227"
+    "Column1": "D White"
   },
   {
     "DBN": "02M543",
     "Location Name": "New Design High School",
     "Cohort": "Cohort 2",
     "CA4A Coach": "Fiona Mulcahy",
+    "admin_id":1,
+    "coach_id": 4,
     "Location Type Description": "General Academic",
     "Building Code": "M445",
     "LCGMS Name": "Scott Conti",
@@ -3089,15 +3091,15 @@
     "2017-18 Allocation": "$30,000.00",
     "Note": "",
     "Principal Name (LCGMS)": "SCOTT CONTI",
-    "Column1": "Scott Conti",
-    "Column2": "TRUE",
-    "DBN 2": "02M543"
+    "Column1": "Scott Conti"
   },
   {
     "DBN": "04M680",
     "Location Name": "Heritage School, The",
     "Cohort": "Cohort 2",
     "CA4A Coach": "Fiona Mulcahy",
+    "admin_id":1,
+    "coach_id": 4,
     "Location Type Description": "General Academic",
     "Building Code": "M107",
     "LCGMS Name": "Dyanand Sugrim",
@@ -3115,15 +3117,15 @@
     "2017-18 Allocation": "$30,000.00",
     "Note": "",
     "Principal Name (LCGMS)": "Dyanand Sugrim",
-    "Column1": "Dyanand Sugrim",
-    "Column2": "TRUE",
-    "DBN 2": "04M680"
+    "Column1": "Dyanand Sugrim"
   },
   {
     "DBN": "04M610",
     "Location Name": "Young Women's Leadership School",
     "Cohort": "Cohort 2",
     "CA4A Coach": "",
+    "admin_id":1,
+    "coach_id": "",
     "Location Type Description": "General Academic",
     "Building Code": "M895",
     "LCGMS Name": "Andrew Higginbotham",
@@ -3141,15 +3143,15 @@
     "2017-18 Allocation": "$30,000.00",
     "Note": "",
     "Principal Name (LCGMS)": "Andrew Higginbotham",
-    "Column1": "Andrew Higginbotham",
-    "Column2": "TRUE",
-    "DBN 2": "04M610"
+    "Column1": "Andrew Higginbotham"
   },
   {
     "DBN": "03M860",
     "Location Name": "Frederick Douglass Academy II Secondary School",
     "Cohort": "Cohort 2",
     "CA4A Coach": "Zee Santiago",
+    "admin_id":1,
+    "coach_id": 13,
     "Location Type Description": "General Academic",
     "Building Code": "M088",
     "LCGMS Name": "Osei Owusu Afriyie",
@@ -3167,15 +3169,15 @@
     "2017-18 Allocation": "$30,000.00",
     "Note": "",
     "Principal Name (LCGMS)": "OSEI OWUSU AFRIYIE",
-    "Column1": "Osei Owusu Afriyie",
-    "Column2": "TRUE",
-    "DBN 2": "03M860"
+    "Column1": "Osei Owusu Afriyie"
   },
   {
     "DBN": "03M541",
     "Location Name": "Manhattan / Hunter Science High School",
     "Cohort": "Cohort 2",
     "CA4A Coach": "",
+    "admin_id":1,
+    "coach_id": "",
     "Location Type Description": "General Academic",
     "Building Code": "M490",
     "LCGMS Name": "Kevin Froner",
@@ -3193,15 +3195,15 @@
     "2017-18 Allocation": "$30,000.00",
     "Note": "",
     "Principal Name (LCGMS)": "Kevin Froner",
-    "Column1": "Kevin Froner",
-    "Column2": "TRUE",
-    "DBN 2": "03M541"
+    "Column1": "Kevin Froner"
   },
   {
     "DBN": "03M505",
     "Location Name": "Edward A. Reynolds West Side High School",
     "Cohort": "Cohort 2",
     "CA4A Coach": "Zee Santiago",
+    "admin_id":1,
+    "coach_id": 13,
     "Location Type Description": "Transfer School",
     "Building Code": "M506",
     "LCGMS Name": "Lilit Suffet",
@@ -3219,15 +3221,15 @@
     "2017-18 Allocation": "$30,000.00",
     "Note": "",
     "Principal Name (LCGMS)": "Lilit Suffet",
-    "Column1": "Lilit Suffet",
-    "Column2": "TRUE",
-    "DBN 2": "03M505"
+    "Column1": "Lilit Suffet"
   },
   {
     "DBN": "03M417",
     "Location Name": "Frank Mccourt High School",
     "Cohort": "Cohort 2",
     "CA4A Coach": "",
+    "admin_id":1,
+    "coach_id": "",
     "Location Type Description": "General Academic",
     "Building Code": "M470",
     "LCGMS Name": "Danielle Salzberg",
@@ -3245,15 +3247,15 @@
     "2017-18 Allocation": "$30,000.00",
     "Note": "",
     "Principal Name (LCGMS)": "Danielle Salzberg",
-    "Column1": "Danielle Salzberg",
-    "Column2": "TRUE",
-    "DBN 2": "03M417"
+    "Column1": "Danielle Salzberg"
   },
   {
     "DBN": "03M404",
     "Location Name": "Innovation Diploma Plus",
     "Cohort": "Cohort 2",
     "CA4A Coach": "Aaron Boyle",
+    "admin_id":1,
+    "coach_id": "",
     "Location Type Description": "Transfer School",
     "Building Code": "M470",
     "LCGMS Name": "Daniel Storchan",
@@ -3271,15 +3273,15 @@
     "2017-18 Allocation": "$25,000.00",
     "Note": "Eskolta Coach",
     "Principal Name (LCGMS)": "DANIEL STORCHAN",
-    "Column1": "Daniel Storchan",
-    "Column2": "TRUE",
-    "DBN 2": "03M404"
+    "Column1": "Daniel Storchan"
   },
   {
     "DBN": "02M630",
     "Location Name": "Art and Design High School",
     "Cohort": "Cohort 2",
     "CA4A Coach": "Zee Santiago",
+    "admin_id":1,
+    "coach_id": 13,
     "Location Type Description": "Career Technical",
     "Building Code": "M488",
     "LCGMS Name": "Manuel Urena",
@@ -3297,15 +3299,15 @@
     "2017-18 Allocation": "$60,000.00",
     "Note": "",
     "Principal Name (LCGMS)": "MANUEL URENA",
-    "Column1": "Manuel Urena",
-    "Column2": "TRUE",
-    "DBN 2": "02M630"
+    "Column1": "Manuel Urena"
   },
   {
     "DBN": "02M560",
     "Location Name": "High School M560 - City As School",
     "Cohort": "Cohort 2",
     "CA4A Coach": "Emily Kleinman",
+    "admin_id":1,
+    "coach_id": "",
     "Location Type Description": "Transfer School",
     "Building Code": "M641",
     "LCGMS Name": "Alan Cheng",
@@ -3323,15 +3325,15 @@
     "2017-18 Allocation": "$35,000.00",
     "Note": "Eskolta Coach",
     "Principal Name (LCGMS)": "Alan Cheng",
-    "Column1": "Alan Cheng",
-    "Column2": "TRUE",
-    "DBN 2": "02M560"
+    "Column1": "Alan Cheng"
   },
   {
     "DBN": "07X527",
     "Location Name": "Bronx Leadership Academy II High School",
     "Cohort": "Cohort 2",
     "CA4A Coach": "",
+    "admin_id":1,
+    "coach_id": "",
     "Location Type Description": "General Academic",
     "Building Code": "X790",
     "LCGMS Name": "R Lobianco",
@@ -3349,15 +3351,15 @@
     "2017-18 Allocation": "$35,000.00",
     "Note": "",
     "Principal Name (LCGMS)": "R LOBIANCO",
-    "Column1": "R Lobianco",
-    "Column2": "TRUE",
-    "DBN 2": "07X527"
+    "Column1": "R Lobianco"
   },
   {
     "DBN": "02M544",
     "Location Name": "Independence High School",
     "Cohort": "Cohort 2",
     "CA4A Coach": "Zee Santiago",
+    "admin_id":1,
+    "coach_id": 13,
     "Location Type Description": "Transfer School",
     "Building Code": "M834",
     "LCGMS Name": "Ron Smolkin",
@@ -3375,15 +3377,15 @@
     "2017-18 Allocation": "$30,000.00",
     "Note": "",
     "Principal Name (LCGMS)": "RON SMOLKIN",
-    "Column1": "Ron Smolkin",
-    "Column2": "TRUE",
-    "DBN 2": "02M544"
+    "Column1": "Ron Smolkin"
   },
   {
     "DBN": "05M692",
     "Location Name": "High School for Mathematics, Science and Engineering at City College",
     "Cohort": "Cohort 2",
     "CA4A Coach": "",
+    "admin_id":1,
+    "coach_id": "",
     "Location Type Description": "General Academic",
     "Building Code": "M812",
     "LCGMS Name": "Crystal Bonds",
@@ -3401,15 +3403,15 @@
     "2017-18 Allocation": "$30,000.00",
     "Note": "",
     "Principal Name (LCGMS)": "Crystal Bonds",
-    "Column1": "Crystal Bonds",
-    "Column2": "TRUE",
-    "DBN 2": "05M692"
+    "Column1": "Crystal Bonds"
   },
   {
     "DBN": "02M533",
     "Location Name": "Union Square Academy for Health Sciences",
     "Cohort": "Cohort 2",
     "CA4A Coach": "Zee Santiago",
+    "admin_id":1,
+    "coach_id": 13,
     "Location Type Description": "Career Technical",
     "Building Code": "M460",
     "LCGMS Name": "Bernardo Ascona",
@@ -3427,15 +3429,15 @@
     "2017-18 Allocation": "$30,000.00",
     "Note": "",
     "Principal Name (LCGMS)": "Bernardo Ascona",
-    "Column1": "Bernardo Ascona",
-    "Column2": "TRUE",
-    "DBN 2": "02M533"
+    "Column1": "Bernardo Ascona"
   },
   {
     "DBN": "02M438",
     "Location Name": "International High School at Union Square",
     "Cohort": "Cohort 2",
     "CA4A Coach": "Zee Santiago",
+    "admin_id":1,
+    "coach_id": 13,
     "Location Type Description": "General Academic",
     "Building Code": "M460",
     "LCGMS Name": "Vadewatie Ramsuchit",
@@ -3453,15 +3455,15 @@
     "2017-18 Allocation": "$30,000.00",
     "Note": "",
     "Principal Name (LCGMS)": "VADEWATIE RAMSUCHIT",
-    "Column1": "Vadewatie Ramsuchit",
-    "Column2": "TRUE",
-    "DBN 2": "02M438"
+    "Column1": "Vadewatie Ramsuchit"
   },
   {
     "DBN": "02M393",
     "Location Name": "Business Of Sports School",
     "Cohort": "Cohort 2",
     "CA4A Coach": "Zee Santiago",
+    "admin_id":1,
+    "coach_id": 13,
     "Location Type Description": "Career Technical",
     "Building Code": "M625",
     "LCGMS Name": "Joshua Solomon",
@@ -3479,15 +3481,15 @@
     "2017-18 Allocation": "$30,000.00",
     "Note": "",
     "Principal Name (LCGMS)": "JOSHUA SOLOMON",
-    "Column1": "Joshua Solomon",
-    "Column2": "TRUE",
-    "DBN 2": "02M393"
+    "Column1": "Joshua Solomon"
   },
   {
     "DBN": "02M392",
     "Location Name": "MANHATTAN BUSINESS ACADEMY",
     "Cohort": "Cohort 2",
     "CA4A Coach": "",
+    "admin_id":1,
+    "coach_id": "",
     "Location Type Description": "General Academic",
     "Building Code": "M440",
     "LCGMS Name": "Karen Polsonetti",
@@ -3505,15 +3507,15 @@
     "2017-18 Allocation": "$30,000.00",
     "Note": "",
     "Principal Name (LCGMS)": "KAREN POLSONETTI",
-    "Column1": "Karen Polsonetti",
-    "Column2": "TRUE",
-    "DBN 2": "02M392"
+    "Column1": "Karen Polsonetti"
   },
   {
     "DBN": "02M298",
     "Location Name": "Pace High School",
     "Cohort": "Cohort 2",
     "CA4A Coach": "Simone Mikolich",
+    "admin_id":1,
+    "coach_id": 12,
     "Location Type Description": "General Academic",
     "Building Code": "M131",
     "LCGMS Name": "Eric Glatz",
@@ -3531,15 +3533,15 @@
     "2017-18 Allocation": "$35,000.00",
     "Note": "",
     "Principal Name (LCGMS)": "Eric Glatz",
-    "Column1": "Eric Glatz",
-    "Column2": "TRUE",
-    "DBN 2": "02M298"
+    "Column1": "Eric Glatz"
   },
   {
     "DBN": "02M288",
     "Location Name": "Food and Finance High School",
     "Cohort": "Cohort 2",
     "CA4A Coach": "Zee Santiago",
+    "admin_id":1,
+    "coach_id": 13,
     "Location Type Description": "Career Technical",
     "Building Code": "M535",
     "LCGMS Name": "Roger Turgeon",
@@ -3557,15 +3559,15 @@
     "2017-18 Allocation": "$30,000.00",
     "Note": "",
     "Principal Name (LCGMS)": "ROGER TURGEON",
-    "Column1": "Roger Turgeon",
-    "Column2": "TRUE",
-    "DBN 2": "02M288"
+    "Column1": "Roger Turgeon"
   },
   {
     "DBN": "01M515",
     "Location Name": "Lower East Side Preparatory High School",
     "Cohort": "Cohort 2",
     "CA4A Coach": "Fiona Mulcahy",
+    "admin_id":1,
+    "coach_id": 4,
     "Location Type Description": "Transfer School",
     "Building Code": "M025",
     "LCGMS Name": "Rene Anaya",
@@ -3583,15 +3585,15 @@
     "2017-18 Allocation": "$35,000.00",
     "Note": "",
     "Principal Name (LCGMS)": "Rene Anaya",
-    "Column1": "Rene Anaya",
-    "Column2": "TRUE",
-    "DBN 2": "01M515"
+    "Column1": "Rene Anaya"
   },
   {
     "DBN": "01M450",
     "Location Name": "East Side Community School",
     "Cohort": "Cohort 2",
     "CA4A Coach": "",
+    "admin_id":1,
+    "coach_id": "",
     "Location Type Description": "General Academic",
     "Building Code": "M060",
     "LCGMS Name": "Mark Federman",
@@ -3609,15 +3611,15 @@
     "2017-18 Allocation": "$30,000.00",
     "Note": "",
     "Principal Name (LCGMS)": "MARK FEDERMAN",
-    "Column1": "Mark Federman",
-    "Column2": "TRUE",
-    "DBN 2": "01M450"
+    "Column1": "Mark Federman"
   },
   {
     "DBN": "01M448",
     "Location Name": "University Neighborhood High School",
     "Cohort": "Cohort 2",
     "CA4A Coach": "Denise Copeland",
+    "admin_id":1,
+    "coach_id": 3,
     "Location Type Description": "General Academic",
     "Building Code": "M446",
     "LCGMS Name": "Elizabeth Collins",
@@ -3635,15 +3637,15 @@
     "2017-18 Allocation": "$30,000.00",
     "Note": "",
     "Principal Name (LCGMS)": "Elizabeth Collins",
-    "Column1": "Elizabeth Collins",
-    "Column2": "TRUE",
-    "DBN 2": "01M448"
+    "Column1": "Elizabeth Collins"
   },
   {
     "DBN": "02M546",
     "Location Name": "Academy for Software Engineering",
     "Cohort": "Cohort 2",
     "CA4A Coach": "Zee Santiago",
+    "admin_id":1,
+    "coach_id": 13,
     "Location Type Description": "Career Technical",
     "Building Code": "M460",
     "LCGMS Name": "Shawn Raeke",
@@ -3661,15 +3663,15 @@
     "2017-18 Allocation": "$30,000.00",
     "Note": "",
     "Principal Name (LCGMS)": "Shawn Raeke",
-    "Column1": "Shawn Raeke",
-    "Column2": "TRUE",
-    "DBN 2": "02M546"
+    "Column1": "Shawn Raeke"
   },
   {
     "DBN": "07X600",
     "Location Name": "Alfred E. Smith Career and Technical Education High School",
     "Cohort": "Cohort 2",
     "CA4A Coach": "Allison Burke",
+    "admin_id":1,
+    "coach_id": 2,
     "Location Type Description": "Career Technical",
     "Building Code": "X600",
     "LCGMS Name": "Evan Schwartz",
@@ -3687,15 +3689,15 @@
     "2017-18 Allocation": "$30,000.00",
     "Note": "",
     "Principal Name (LCGMS)": "Evan Schwartz",
-    "Column1": "Evan Schwartz",
-    "Column2": "TRUE",
-    "DBN 2": "07X600"
+    "Column1": "Evan Schwartz"
   },
   {
     "DBN": "08X452",
     "Location Name": "Gotham Collaborative High School",
     "Cohort": "Cohort 2",
     "CA4A Coach": "Kim Hall",
+    "admin_id":1,
+    "coach_id": 7,
     "Location Type Description": "General Academic",
     "Building Code": "X450",
     "LCGMS Name": "David Liu",
@@ -3713,15 +3715,15 @@
     "2017-18 Allocation": "$35,000.00",
     "Note": "Cohort 2 Invite - Name changed from \"Bronx Guild\".  Absorbed 08X305 - Pablo Neruda Academy",
     "Principal Name (LCGMS)": "David Liu",
-    "Column1": "David Liu",
-    "Column2": "TRUE",
-    "DBN 2": "08X452"
+    "Column1": "David Liu"
   },
   {
     "DBN": "08X432",
     "Location Name": "Bronx Bridges High School",
     "Cohort": "Cohort 2",
     "CA4A Coach": "Alicia Wolcott",
+    "admin_id":1,
+    "coach_id": "",
     "Location Type Description": "General Academic",
     "Building Code": "X450",
     "LCGMS Name": "Nelsie Castillo",
@@ -3739,15 +3741,15 @@
     "2017-18 Allocation": "$30,000.00",
     "Note": "Eskolta Coach",
     "Principal Name (LCGMS)": "Nelsie Castillo",
-    "Column1": "Nelsie Castillo",
-    "Column2": "TRUE",
-    "DBN 2": "08X432"
+    "Column1": "Nelsie Castillo"
   },
   {
     "DBN": "08X405",
     "Location Name": "Herbert H. Lehman High School",
     "Cohort": "Cohort 2",
     "CA4A Coach": "",
+    "admin_id":1,
+    "coach_id": "",
     "Location Type Description": "General Academic",
     "Building Code": "X405",
     "LCGMS Name": "John Powers",
@@ -3765,15 +3767,15 @@
     "2017-18 Allocation": "$35,000.00",
     "Note": "",
     "Principal Name (LCGMS)": "John Powers",
-    "Column1": "John Powers",
-    "Column2": "TRUE",
-    "DBN 2": "08X405"
+    "Column1": "John Powers"
   },
   {
     "DBN": "08X377",
     "Location Name": "Bronx Community High School",
     "Cohort": "Cohort 2",
     "CA4A Coach": "Alicia Wolcott",
+    "admin_id":1,
+    "coach_id": "",
     "Location Type Description": "Transfer School",
     "Building Code": "X450",
     "LCGMS Name": "Flora Greenaway",
@@ -3791,15 +3793,15 @@
     "2017-18 Allocation": "$25,000.00",
     "Note": "Eskolta Coach",
     "Principal Name (LCGMS)": "Flora Greenaway",
-    "Column1": "Flora Greenaway",
-    "Column2": "TRUE",
-    "DBN 2": "08X377"
+    "Column1": "Flora Greenaway"
   },
   {
     "DBN": "08X349",
     "Location Name": "Bronx River High School",
     "Cohort": "Cohort 2",
     "CA4A Coach": "",
+    "admin_id":1,
+    "coach_id": "",
     "Location Type Description": "General Academic",
     "Building Code": "X405",
     "LCGMS Name": "Gregory Fucheck",
@@ -3817,15 +3819,15 @@
     "2017-18 Allocation": "$30,000.00",
     "Note": "",
     "Principal Name (LCGMS)": "Gregory Fucheck",
-    "Column1": "Gregory Fucheck",
-    "Column2": "TRUE",
-    "DBN 2": "08X349"
+    "Column1": "Gregory Fucheck"
   },
   {
     "DBN": "08X348",
     "Location Name": "Schuylerville Preparatory High School",
     "Cohort": "Cohort 2",
     "CA4A Coach": "",
+    "admin_id":1,
+    "coach_id": "",
     "Location Type Description": "General Academic",
     "Building Code": "X405",
     "LCGMS Name": "Melissa Ramos",
@@ -3843,15 +3845,15 @@
     "2017-18 Allocation": "$30,000.00",
     "Note": "",
     "Principal Name (LCGMS)": "Melissa Ramos",
-    "Column1": "Melissa Ramos",
-    "Column2": "TRUE",
-    "DBN 2": "08X348"
+    "Column1": "Melissa Ramos"
   },
   {
     "DBN": "08X332",
     "Location Name": "Holcombe L. Rucker School of Community Research",
     "Cohort": "Cohort 2",
     "CA4A Coach": "",
+    "admin_id":1,
+    "coach_id": "",
     "Location Type Description": "General Academic",
     "Building Code": "X039",
     "LCGMS Name": "Sharif Rucker",
@@ -3869,15 +3871,15 @@
     "2017-18 Allocation": "$25,000.00",
     "Note": "",
     "Principal Name (LCGMS)": "SHARIF RUCKER",
-    "Column1": "Sharif Rucker",
-    "Column2": "TRUE",
-    "DBN 2": "08X332"
+    "Column1": "Sharif Rucker"
   },
   {
     "DBN": "08X320",
     "Location Name": "Pelham Lab High School",
     "Cohort": "Cohort 2",
     "CA4A Coach": "",
+    "admin_id":1,
+    "coach_id": "",
     "Location Type Description": "General Academic",
     "Building Code": "X405",
     "LCGMS Name": "Jason Wagner",
@@ -3895,15 +3897,15 @@
     "2017-18 Allocation": "$30,000.00",
     "Note": "",
     "Principal Name (LCGMS)": "Jason Wagner",
-    "Column1": "Jason Wagner",
-    "Column2": "TRUE",
-    "DBN 2": "08X320"
+    "Column1": "Jason Wagner"
   },
   {
     "DBN": "08X293",
     "Location Name": "Renaissance High School for Musical Theater & Technology",
     "Cohort": "Cohort 2",
     "CA4A Coach": "",
+    "admin_id":1,
+    "coach_id": "",
     "Location Type Description": "General Academic",
     "Building Code": "X405",
     "LCGMS Name": "Maria Herrera",
@@ -3921,15 +3923,15 @@
     "2017-18 Allocation": "$30,000.00",
     "Note": "",
     "Principal Name (LCGMS)": "MARIA HERRERA",
-    "Column1": "Maria Herrera",
-    "Column2": "TRUE",
-    "DBN 2": "08X293"
+    "Column1": "Maria Herrera"
   },
   {
     "DBN": "05M362",
     "Location Name": "Columbia Secondary School",
     "Cohort": "Cohort 2",
     "CA4A Coach": "",
+    "admin_id":1,
+    "coach_id": "",
     "Location Type Description": "General Academic",
     "Building Code": "M125",
     "LCGMS Name": "Miriam Nightengale",
@@ -3947,15 +3949,15 @@
     "2017-18 Allocation": "$30,000.00",
     "Note": "",
     "Principal Name (LCGMS)": "Miriam Nightengale",
-    "Column1": "Miriam Nightengale",
-    "Column2": "TRUE",
-    "DBN 2": "05M362"
+    "Column1": "Miriam Nightengale"
   },
   {
     "DBN": "08X269",
     "Location Name": "Bronx Studio School for Writers and Artists",
     "Cohort": "Cohort 2",
     "CA4A Coach": "Kim Hall",
+    "admin_id":1,
+    "coach_id": 7,
     "Location Type Description": "General Academic",
     "Building Code": "X392",
     "LCGMS Name": "Dawn Verhille",
@@ -3973,15 +3975,15 @@
     "2017-18 Allocation": "$30,000.00",
     "Note": "",
     "Principal Name (LCGMS)": "Dawn Verhille",
-    "Column1": "Dawn Verhille",
-    "Column2": "TRUE",
-    "DBN 2": "08X269"
+    "Column1": "Dawn Verhille"
   },
   {
     "DBN": "05M367",
     "Location Name": "Academy for Social Action",
     "Cohort": "Cohort 2",
     "CA4A Coach": "Zee Santiago",
+    "admin_id":1,
+    "coach_id": 13,
     "Location Type Description": "General Academic",
     "Building Code": "M043",
     "LCGMS Name": "Kairis Cox",
@@ -3999,15 +4001,15 @@
     "2017-18 Allocation": "$25,000.00",
     "Note": "",
     "Principal Name (LCGMS)": "Kairis Cox",
-    "Column1": "Kairis Cox",
-    "Column2": "TRUE",
-    "DBN 2": "05M367"
+    "Column1": "Kairis Cox"
   },
   {
     "DBN": "07X548",
     "Location Name": "Careers in Sports High School",
     "Cohort": "Cohort 2",
     "CA4A Coach": "",
+    "admin_id":1,
+    "coach_id": "",
     "Location Type Description": "General Academic",
     "Building Code": "X790",
     "LCGMS Name": "Johanny Garcia",
@@ -4025,15 +4027,15 @@
     "2017-18 Allocation": "$35,000.00",
     "Note": "",
     "Principal Name (LCGMS)": "Johanny Garcia",
-    "Column1": "Johanny Garcia",
-    "Column2": "TRUE",
-    "DBN 2": "07X548"
+    "Column1": "Johanny Garcia"
   },
   {
     "DBN": "07X547",
     "Location Name": "New Explorers High School",
     "Cohort": "Cohort 2",
     "CA4A Coach": "",
+    "admin_id":1,
+    "coach_id": "",
     "Location Type Description": "General Academic",
     "Building Code": "X790",
     "LCGMS Name": "Lisa Grevenberg",
@@ -4051,15 +4053,15 @@
     "2017-18 Allocation": "$30,000.00",
     "Note": "",
     "Principal Name (LCGMS)": "Lisa Grevenberg",
-    "Column1": "Lisa Grevenberg",
-    "Column2": "TRUE",
-    "DBN 2": "07X547"
+    "Column1": "Lisa Grevenberg"
   },
   {
     "DBN": "07X381",
     "Location Name": "Bronx Haven High School",
     "Cohort": "Cohort 2",
     "CA4A Coach": "Nicole DeFino",
+    "admin_id":1,
+    "coach_id": "",
     "Location Type Description": "Transfer School",
     "Building Code": "X600",
     "LCGMS Name": "Jazmin Rivera-Polanco",
@@ -4077,15 +4079,15 @@
     "2017-18 Allocation": "$25,000.00",
     "Note": "Eskolta Coach",
     "Principal Name (LCGMS)": "Jazmin Rivera-Polanco",
-    "Column1": "Jazmin Rivera-Polanco",
-    "Column2": "TRUE",
-    "DBN 2": "07X381"
+    "Column1": "Jazmin Rivera-Polanco"
   },
   {
     "DBN": "07X379",
     "Location Name": "Jill Chaifetz Transfer High School",
     "Cohort": "Cohort 2",
     "CA4A Coach": "Fiona Mulcahy",
+    "admin_id":1,
+    "coach_id": 4,
     "Location Type Description": "Transfer School",
     "Building Code": "X184",
     "LCGMS Name": "Carlos Benitez",
@@ -4103,15 +4105,15 @@
     "2017-18 Allocation": "$25,000.00",
     "Note": "",
     "Principal Name (LCGMS)": "Carlos Benitez",
-    "Column1": "Carlos Benitez",
-    "Column2": "TRUE",
-    "DBN 2": "07X379"
+    "Column1": "Carlos Benitez"
   },
   {
     "DBN": "07X223",
     "Location Name": "The Laboratory School of Finance and Technology: X223",
     "Cohort": "Cohort 2",
     "CA4A Coach": "Fiona Mulcahy",
+    "admin_id":1,
+    "coach_id": 4,
     "Location Type Description": "General Academic",
     "Building Code": "X149",
     "LCGMS Name": "Dr. Ramon Gonzalez",
@@ -4129,15 +4131,15 @@
     "2017-18 Allocation": "$30,000.00",
     "Note": "",
     "Principal Name (LCGMS)": "DR. RAMON GONZALEZ",
-    "Column1": "Dr. Ramon Gonzalez",
-    "Column2": "TRUE",
-    "DBN 2": "07X223"
+    "Column1": "Dr. Ramon Gonzalez"
   },
   {
     "DBN": "06M468",
     "Location Name": "High School for Health Careers and Sciences",
     "Cohort": "Cohort 2",
     "CA4A Coach": "",
+    "admin_id":1,
+    "coach_id": "",
     "Location Type Description": "General Academic",
     "Building Code": "M465",
     "LCGMS Name": "Javier Trejo",
@@ -4155,15 +4157,15 @@
     "2017-18 Allocation": "$30,000.00",
     "Note": "",
     "Principal Name (LCGMS)": "Javier Trejo",
-    "Column1": "Javier Trejo",
-    "Column2": "TRUE",
-    "DBN 2": "06M468"
+    "Column1": "Javier Trejo"
   },
   {
     "DBN": "06M467",
     "Location Name": "High School for Law and Public Service",
     "Cohort": "Cohort 2",
     "CA4A Coach": "",
+    "admin_id":1,
+    "coach_id": "",
     "Location Type Description": "General Academic",
     "Building Code": "M465",
     "LCGMS Name": "Nicholas Politis",
@@ -4181,15 +4183,15 @@
     "2017-18 Allocation": "$35,000.00",
     "Note": "",
     "Principal Name (LCGMS)": "NICHOLAS POLITIS",
-    "Column1": "Nicholas Politis",
-    "Column2": "TRUE",
-    "DBN 2": "06M467"
+    "Column1": "Nicholas Politis"
   },
   {
     "DBN": "06M463",
     "Location Name": "High School for Media and Communications",
     "Cohort": "Cohort 2",
     "CA4A Coach": "",
+    "admin_id":1,
+    "coach_id": "",
     "Location Type Description": "General Academic",
     "Building Code": "M465",
     "LCGMS Name": "Juan Villar",
@@ -4207,15 +4209,15 @@
     "2017-18 Allocation": "$30,000.00",
     "Note": "",
     "Principal Name (LCGMS)": "JUAN VILLAR",
-    "Column1": "Juan Villar",
-    "Column2": "TRUE",
-    "DBN 2": "06M463"
+    "Column1": "Juan Villar"
   },
   {
     "DBN": "06M462",
     "Location Name": "The College Academy",
     "Cohort": "Cohort 2",
     "CA4A Coach": "",
+    "admin_id":1,
+    "coach_id": "",
     "Location Type Description": "General Academic",
     "Building Code": "M465",
     "LCGMS Name": "Timothy Sigerson",
@@ -4233,15 +4235,15 @@
     "2017-18 Allocation": "$30,000.00",
     "Note": "",
     "Principal Name (LCGMS)": "Timothy Sigerson",
-    "Column1": "Timothy Sigerson",
-    "Column2": "TRUE",
-    "DBN 2": "06M462"
+    "Column1": "Timothy Sigerson"
   },
   {
     "DBN": "08X530",
     "Location Name": "Longwood Preparatory Academy",
     "Cohort": "Cohort 2",
     "CA4A Coach": "",
+    "admin_id":1,
+    "coach_id": "",
     "Location Type Description": "General Academic",
     "Building Code": "X039",
     "LCGMS Name": "Asya Johnson",
@@ -4259,15 +4261,15 @@
     "2017-18 Allocation": "$25,000.00",
     "Note": "",
     "Principal Name (LCGMS)": "Asya Johnson",
-    "Column1": "Asya Johnson",
-    "Column2": "TRUE",
-    "DBN 2": "08X530"
+    "Column1": "Asya Johnson"
   },
   {
     "DBN": "08X282",
     "Location Name": "Women's Academy of Excellence",
     "Cohort": "Cohort 2",
     "CA4A Coach": "Simone Mikolich",
+    "admin_id":1,
+    "coach_id": 12,
     "Location Type Description": "General Academic",
     "Building Code": "X174",
     "LCGMS Name": "Arnette Crocker",
@@ -4285,15 +4287,15 @@
     "2017-18 Allocation": "$30,000.00",
     "Note": "",
     "Principal Name (LCGMS)": "ARNETTE CROCKER",
-    "Column1": "Arnette Crocker",
-    "Column2": "TRUE",
-    "DBN 2": "08X282"
+    "Column1": "Arnette Crocker"
   },
   {
     "DBN": "23K647",
     "Location Name": "Metropolitan Diploma Plus High School",
     "Cohort": "Cohort 2",
     "CA4A Coach": "Simone Mikolich",
+    "admin_id":1,
+    "coach_id": 12,
     "Location Type Description": "Transfer School",
     "Building Code": "K275",
     "LCGMS Name": "Meri Yallowitz",
@@ -4311,15 +4313,15 @@
     "2017-18 Allocation": "$25,000.00",
     "Note": "",
     "Principal Name (LCGMS)": "MERI YALLOWITZ",
-    "Column1": "Meri Yallowitz",
-    "Column2": "TRUE",
-    "DBN 2": "23K647"
+    "Column1": "Meri Yallowitz"
   },
   {
     "DBN": "18K637",
     "Location Name": "Academy for Conservation and the Environment",
     "Cohort": "Cohort 2",
     "CA4A Coach": "Raymond Johnson",
+    "admin_id":1,
+    "coach_id": 11,
     "Location Type Description": "General Academic",
     "Building Code": "K515",
     "LCGMS Name": "Eugene Mazzola",
@@ -4337,15 +4339,15 @@
     "2017-18 Allocation": "$30,000.00",
     "Note": "",
     "Principal Name (LCGMS)": "Eugene Mazzola",
-    "Column1": "Eugene Mazzola",
-    "Column2": "TRUE",
-    "DBN 2": "18K637"
+    "Column1": "Eugene Mazzola"
   },
   {
     "DBN": "27Q262",
     "Location Name": "Channel View School for Research",
     "Cohort": "Cohort 2",
     "CA4A Coach": "Norma Feriz Gordon",
+    "admin_id":1,
+    "coach_id": 10,
     "Location Type Description": "General Academic",
     "Building Code": "Q410",
     "LCGMS Name": "Denise Harper Richards",
@@ -4363,15 +4365,15 @@
     "2017-18 Allocation": "$30,000.00",
     "Note": "",
     "Principal Name (LCGMS)": "DENISE HARPER RICHARDS",
-    "Column1": "Denise Harper Richards",
-    "Column2": "TRUE",
-    "DBN 2": "27Q262"
+    "Column1": "Denise Harper Richards"
   },
   {
     "DBN": "26Q435",
     "Location Name": "Martin Van Buren High School",
     "Cohort": "Cohort 2",
     "CA4A Coach": "Norma Feriz Gordon",
+    "admin_id":1,
+    "coach_id": 10,
     "Location Type Description": "General Academic",
     "Building Code": "Q435",
     "LCGMS Name": "Sam Sochet",
@@ -4389,15 +4391,15 @@
     "2017-18 Allocation": "$50,000.00",
     "Note": "",
     "Principal Name (LCGMS)": "Sam Sochet",
-    "Column1": "Sam Sochet",
-    "Column2": "TRUE",
-    "DBN 2": "26Q435"
+    "Column1": "Sam Sochet"
   },
   {
     "DBN": "25Q792",
     "Location Name": "North Queens Community High School",
     "Cohort": "Cohort 2",
     "CA4A Coach": "Jessica Furer",
+    "admin_id":1,
+    "coach_id": "",
     "Location Type Description": "Transfer School",
     "Building Code": "Q792",
     "LCGMS Name": "Winston Mccarthy",
@@ -4415,15 +4417,15 @@
     "2017-18 Allocation": "$25,000.00",
     "Note": "Eskolta Coach",
     "Principal Name (LCGMS)": "WINSTON MCCARTHY",
-    "Column1": "Winston Mccarthy",
-    "Column2": "TRUE",
-    "DBN 2": "25Q792"
+    "Column1": "Winston Mccarthy"
   },
   {
     "DBN": "25Q285",
     "Location Name": "World Journalism Preparatory: A College Board School",
     "Cohort": "Cohort 2",
     "CA4A Coach": "",
+    "admin_id":1,
+    "coach_id": "",
     "Location Type Description": "General Academic",
     "Building Code": "Q025",
     "LCGMS Name": "Janine Werner",
@@ -4441,15 +4443,15 @@
     "2017-18 Allocation": "$30,000.00",
     "Note": "",
     "Principal Name (LCGMS)": "JANINE WERNER",
-    "Column1": "Janine Werner",
-    "Column2": "TRUE",
-    "DBN 2": "25Q285"
+    "Column1": "Janine Werner"
   },
   {
     "DBN": "25Q241",
     "Location Name": "Queens High School for Language Studies",
     "Cohort": "Cohort 2",
     "CA4A Coach": "Norma Feriz Gordon",
+    "admin_id":1,
+    "coach_id": 10,
     "Location Type Description": "General Academic",
     "Building Code": "Q460",
     "LCGMS Name": "Melanie Lee",
@@ -4467,15 +4469,15 @@
     "2017-18 Allocation": "$30,000.00",
     "Note": "",
     "Principal Name (LCGMS)": "Melanie Lee",
-    "Column1": "Melanie Lee",
-    "Column2": "TRUE",
-    "DBN 2": "25Q241"
+    "Column1": "Melanie Lee"
   },
   {
     "DBN": "25Q240",
     "Location Name": "Veritas Academy",
     "Cohort": "Cohort 2",
     "CA4A Coach": "Norma Feriz Gordon",
+    "admin_id":1,
+    "coach_id": 10,
     "Location Type Description": "General Academic",
     "Building Code": "Q460",
     "LCGMS Name": "Cheryl Quatrano",
@@ -4493,15 +4495,15 @@
     "2017-18 Allocation": "$35,000.00",
     "Note": "",
     "Principal Name (LCGMS)": "Cheryl Quatrano",
-    "Column1": "Cheryl Quatrano",
-    "Column2": "TRUE",
-    "DBN 2": "25Q240"
+    "Column1": "Cheryl Quatrano"
   },
   {
     "DBN": "24Q744",
     "Location Name": "VOYAGES Preparatory",
     "Cohort": "Cohort 2",
     "CA4A Coach": "Emily Kleinman",
+    "admin_id":1,
+    "coach_id": "",
     "Location Type Description": "Transfer School",
     "Building Code": "Q744",
     "LCGMS Name": "Nicholas Bleiberg",
@@ -4519,15 +4521,15 @@
     "2017-18 Allocation": "$25,000.00",
     "Note": "Eskolta Coach",
     "Principal Name (LCGMS)": "Nicholas Bleiberg",
-    "Column1": "Nicholas Bleiberg",
-    "Column2": "TRUE",
-    "DBN 2": "24Q744"
+    "Column1": "Nicholas Bleiberg"
   },
   {
     "DBN": "24Q560",
     "Location Name": "Robert F. Wagner, Jr. Secondary School for Arts and Technology",
     "Cohort": "Cohort 2",
     "CA4A Coach": "",
+    "admin_id":1,
+    "coach_id": "",
     "Location Type Description": "General Academic",
     "Building Code": "Q891",
     "LCGMS Name": "Stephania Vu",
@@ -4545,15 +4547,15 @@
     "2017-18 Allocation": "$30,000.00",
     "Note": "",
     "Principal Name (LCGMS)": "Stephania Vu",
-    "Column1": "Stephania Vu",
-    "Column2": "TRUE",
-    "DBN 2": "24Q560"
+    "Column1": "Stephania Vu"
   },
   {
     "DBN": "24Q296",
     "Location Name": "Pan American International High School",
     "Cohort": "Cohort 2",
     "CA4A Coach": "Norma Feriz Gordon",
+    "admin_id":1,
+    "coach_id": 10,
     "Location Type Description": "General Academic",
     "Building Code": "Q744",
     "LCGMS Name": "George Badia",
@@ -4571,15 +4573,15 @@
     "2017-18 Allocation": "$35,000.00",
     "Note": "",
     "Principal Name (LCGMS)": "George Badia",
-    "Column1": "George Badia",
-    "Column2": "TRUE",
-    "DBN 2": "24Q296"
+    "Column1": "George Badia"
   },
   {
     "DBN": "27Q324",
     "Location Name": "Rockaway Park High School for Environmental Sustainability",
     "Cohort": "Cohort 2",
     "CA4A Coach": "Norma Feriz Gordon",
+    "admin_id":1,
+    "coach_id": 10,
     "Location Type Description": "General Academic",
     "Building Code": "Q410",
     "LCGMS Name": "Jennifer Connolly",
@@ -4597,15 +4599,15 @@
     "2017-18 Allocation": "$30,000.00",
     "Note": "",
     "Principal Name (LCGMS)": "JENNIFER CONNOLLY",
-    "Column1": "Jennifer Connolly",
-    "Column2": "TRUE",
-    "DBN 2": "27Q324"
+    "Column1": "Jennifer Connolly"
   },
   {
     "DBN": "24Q236",
     "Location Name": "International High School for Health Sciences",
     "Cohort": "Cohort 2",
     "CA4A Coach": "Norma Feriz Gordon",
+    "admin_id":1,
+    "coach_id": 10,
     "Location Type Description": "General Academic",
     "Building Code": "Q455",
     "LCGMS Name": "Carl Finney",
@@ -4623,15 +4625,15 @@
     "2017-18 Allocation": "$30,000.00",
     "Note": "",
     "Principal Name (LCGMS)": "Carl Finney",
-    "Column1": "Carl Finney",
-    "Column2": "TRUE",
-    "DBN 2": "24Q236"
+    "Column1": "Carl Finney"
   },
   {
     "DBN": "27Q475",
     "Location Name": "Richmond Hill High School",
     "Cohort": "Cohort 2",
     "CA4A Coach": "Norma Feriz Gordon",
+    "admin_id":1,
+    "coach_id": 10,
     "Location Type Description": "General Academic",
     "Building Code": "Q475",
     "LCGMS Name": "Neil Ganesh",
@@ -4649,15 +4651,15 @@
     "2017-18 Allocation": "$65,000.00",
     "Note": "",
     "Principal Name (LCGMS)": "Neil Ganesh",
-    "Column1": "Neil Ganesh",
-    "Column2": "TRUE",
-    "DBN 2": "27Q475"
+    "Column1": "Neil Ganesh"
   },
   {
     "DBN": "23K646",
     "Location Name": "Aspirations Diploma Plus High School",
     "Cohort": "Cohort 2",
     "CA4A Coach": "Denise Copeland",
+    "admin_id":1,
+    "coach_id": 3,
     "Location Type Description": "Transfer School",
     "Building Code": "K894",
     "LCGMS Name": "Sherma Fleming",
@@ -4675,15 +4677,15 @@
     "2017-18 Allocation": "$25,000.00",
     "Note": "",
     "Principal Name (LCGMS)": "SHERMA FLEMING",
-    "Column1": "Sherma Fleming",
-    "Column2": "TRUE",
-    "DBN 2": "23K646"
+    "Column1": "Sherma Fleming"
   },
   {
     "DBN": "23K643",
     "Location Name": "Brooklyn Democracy Academy",
     "Cohort": "Cohort 2",
     "CA4A Coach": "Simone Mikolich",
+    "admin_id":1,
+    "coach_id": 12,
     "Location Type Description": "Transfer School",
     "Building Code": "K275",
     "LCGMS Name": "Dezann Romain",
@@ -4701,15 +4703,15 @@
     "2017-18 Allocation": "$25,000.00",
     "Note": "",
     "Principal Name (LCGMS)": "Dezann Romain",
-    "Column1": "Dezann Romain",
-    "Column2": "TRUE",
-    "DBN 2": "23K643"
+    "Column1": "Dezann Romain"
   },
   {
     "DBN": "23K514",
     "Location Name": "Frederick Douglass Academy VII High School",
     "Cohort": "Cohort 2",
     "CA4A Coach": "Josh Steckel",
+    "admin_id":1,
+    "coach_id": 6,
     "Location Type Description": "General Academic",
     "Building Code": "K175",
     "LCGMS Name": "Tamika Matheson",
@@ -4727,15 +4729,15 @@
     "2017-18 Allocation": "$25,000.00",
     "Note": "",
     "Principal Name (LCGMS)": "Tamika Matheson",
-    "Column1": "Tamika Matheson",
-    "Column2": "TRUE",
-    "DBN 2": "23K514"
+    "Column1": "Tamika Matheson"
   },
   {
     "DBN": "22K611",
     "Location Name": "Origins High School",
     "Cohort": "Cohort 2",
     "CA4A Coach": "Denise Copeland",
+    "admin_id":1,
+    "coach_id": 3,
     "Location Type Description": "General Academic",
     "Building Code": "K495",
     "LCGMS Name": "John Banks",
@@ -4753,15 +4755,15 @@
     "2017-18 Allocation": "$30,000.00",
     "Note": "",
     "Principal Name (LCGMS)": "John Banks",
-    "Column1": "John Banks",
-    "Column2": "TRUE",
-    "DBN 2": "22K611"
+    "Column1": "John Banks"
   },
   {
     "DBN": "21K728",
     "Location Name": "Liberation Diploma Plus",
     "Cohort": "Cohort 2",
     "CA4A Coach": "Denise Copeland",
+    "admin_id":1,
+    "coach_id": 3,
     "Location Type Description": "Transfer School",
     "Building Code": "K728",
     "LCGMS Name": "April Leong",
@@ -4779,15 +4781,15 @@
     "2017-18 Allocation": "$25,000.00",
     "Note": "",
     "Principal Name (LCGMS)": "APRIL LEONG",
-    "Column1": "April Leong",
-    "Column2": "TRUE",
-    "DBN 2": "21K728"
+    "Column1": "April Leong"
   },
   {
     "DBN": "21K540",
     "Location Name": "John Dewey High School",
     "Cohort": "Cohort 2",
     "CA4A Coach": "Marisa Castillo",
+    "admin_id":1,
+    "coach_id": 8,
     "Location Type Description": "General Academic",
     "Building Code": "K540",
     "LCGMS Name": "Connie Hamilton",
@@ -4805,15 +4807,15 @@
     "2017-18 Allocation": "$75,000.00",
     "Note": "",
     "Principal Name (LCGMS)": "CONNIE HAMILTON",
-    "Column1": "Connie Hamilton",
-    "Column2": "TRUE",
-    "DBN 2": "21K540"
+    "Column1": "Connie Hamilton"
   },
   {
     "DBN": "21K410",
     "Location Name": "Abraham Lincoln High School",
     "Cohort": "Cohort 2",
     "CA4A Coach": "Marisa Castillo",
+    "admin_id":1,
+    "coach_id": 8,
     "Location Type Description": "General Academic",
     "Building Code": "K410",
     "LCGMS Name": "A Hoogenboom",
@@ -4831,15 +4833,15 @@
     "2017-18 Allocation": "$70,000.00",
     "Note": "",
     "Principal Name (LCGMS)": "A HOOGENBOOM",
-    "Column1": "A Hoogenboom",
-    "Column2": "TRUE",
-    "DBN 2": "21K410"
+    "Column1": "A Hoogenboom"
   },
   {
     "DBN": "21K337",
     "Location Name": "International High School at Lafayette",
     "Cohort": "Cohort 2",
     "CA4A Coach": "Marisa Castillo",
+    "admin_id":1,
+    "coach_id": 8,
     "Location Type Description": "General Academic",
     "Building Code": "K400",
     "LCGMS Name": "Jon Harriman",
@@ -4857,15 +4859,15 @@
     "2017-18 Allocation": "$30,000.00",
     "Note": "",
     "Principal Name (LCGMS)": "Jon Harriman",
-    "Column1": "Jon Harriman",
-    "Column2": "TRUE",
-    "DBN 2": "21K337"
+    "Column1": "Jon Harriman"
   },
   {
     "DBN": "19K764",
     "Location Name": "The Urban Assembly School for Collaborative Healthcare",
     "Cohort": "Cohort 2",
     "CA4A Coach": "Raymond Johnson",
+    "admin_id":1,
+    "coach_id": 11,
     "Location Type Description": "Career Technical",
     "Building Code": "K420",
     "LCGMS Name": "Candace Hugee",
@@ -4883,15 +4885,15 @@
     "2017-18 Allocation": "$30,000.00",
     "Note": "",
     "Principal Name (LCGMS)": "Candace Hugee",
-    "Column1": "Candace Hugee",
-    "Column2": "TRUE",
-    "DBN 2": "19K764"
+    "Column1": "Candace Hugee"
   },
   {
     "DBN": "19K583",
     "Location Name": "Multicultural High School",
     "Cohort": "Cohort 2",
     "CA4A Coach": "Raymond Johnson",
+    "admin_id":1,
+    "coach_id": 11,
     "Location Type Description": "General Academic",
     "Building Code": "K420",
     "LCGMS Name": "Alexandra Hernandez",
@@ -4909,15 +4911,15 @@
     "2017-18 Allocation": "$25,000.00",
     "Note": "",
     "Principal Name (LCGMS)": "ALEXANDRA HERNANDEZ",
-    "Column1": "Alexandra Hernandez",
-    "Column2": "TRUE",
-    "DBN 2": "19K583"
+    "Column1": "Alexandra Hernandez"
   },
   {
     "DBN": "12X267",
     "Location Name": "Bronx Latin",
     "Cohort": "Cohort 2",
     "CA4A Coach": "",
+    "admin_id":1,
+    "coach_id": "",
     "Location Type Description": "General Academic",
     "Building Code": "X158",
     "LCGMS Name": "Annette Fiorentino",
@@ -4935,15 +4937,15 @@
     "2017-18 Allocation": "$30,000.00",
     "Note": "",
     "Principal Name (LCGMS)": "Annette Fiorentino",
-    "Column1": "Annette Fiorentino",
-    "Column2": "TRUE",
-    "DBN 2": "12X267"
+    "Column1": "Annette Fiorentino"
   },
   {
     "DBN": "24Q293",
     "Location Name": "Civic Leadership Academy",
     "Cohort": "Cohort 2",
     "CA4A Coach": "Norma Feriz Gordon",
+    "admin_id":1,
+    "coach_id": 10,
     "Location Type Description": "General Academic",
     "Building Code": "Q744",
     "LCGMS Name": "Phuong Nguyen",
@@ -4961,15 +4963,15 @@
     "2017-18 Allocation": "$35,000.00",
     "Note": "",
     "Principal Name (LCGMS)": "PHUONG NGUYEN",
-    "Column1": "Phuong Nguyen",
-    "Column2": "TRUE",
-    "DBN 2": "24Q293"
+    "Column1": "Phuong Nguyen"
   },
   {
     "DBN": "30Q286",
     "Location Name": "Young Women's Leadership School, Astoria",
     "Cohort": "Cohort 2",
     "CA4A Coach": "",
+    "admin_id":1,
+    "coach_id": "",
     "Location Type Description": "General Academic",
     "Building Code": "Q739",
     "LCGMS Name": "Allison Persad",
@@ -4987,15 +4989,15 @@
     "2017-18 Allocation": "$30,000.00",
     "Note": "",
     "Principal Name (LCGMS)": "Allison Persad",
-    "Column1": "Allison Persad",
-    "Column2": "TRUE",
-    "DBN 2": "30Q286"
+    "Column1": "Allison Persad"
   },
   {
     "DBN": "84X395",
     "Location Name": "NYC Charter High School for Architecture, Engineering and Construction Industries (AECI)",
     "Cohort": "Cohort 2",
     "CA4A Coach": "Fiona Mulcahy",
+    "admin_id":1,
+    "coach_id": 4,
     "Location Type Description": "General Academic",
     "Building Code": "XAEU",
     "LCGMS Name": "Charles Gallo",
@@ -5013,15 +5015,15 @@
     "2017-18 Allocation": "$30,000.00",
     "Note": "",
     "Principal Name (LCGMS)": "Charles Gallo",
-    "Column1": "Charles Gallo",
-    "Column2": "TRUE",
-    "DBN 2": "84X395"
+    "Column1": "Charles Gallo"
   },
   {
     "DBN": "84K739",
     "Location Name": "New Visions Charter High School for the Humanities III",
     "Cohort": "Cohort 2",
     "CA4A Coach": "Denise Copeland",
+    "admin_id":1,
+    "coach_id": 3,
     "Location Type Description": "General Academic",
     "Building Code": "K495",
     "LCGMS Name": "Porsche Cox",
@@ -5039,15 +5041,15 @@
     "2017-18 Allocation": "$30,000.00",
     "Note": "",
     "Principal Name (LCGMS)": "Porsche Cox",
-    "Column1": "Porsche Cox",
-    "Column2": "TRUE",
-    "DBN 2": "84K739"
+    "Column1": "Porsche Cox"
   },
   {
     "DBN": "84K738",
     "Location Name": "New Visions Charter High School for Advanced Math and Science III",
     "Cohort": "Cohort 2",
     "CA4A Coach": "Denise Copeland",
+    "admin_id":1,
+    "coach_id": 3,
     "Location Type Description": "General Academic",
     "Building Code": "K495",
     "LCGMS Name": "Nissi Jonathan",
@@ -5065,15 +5067,15 @@
     "2017-18 Allocation": "$30,000.00",
     "Note": "",
     "Principal Name (LCGMS)": "Nissi Jonathan",
-    "Column1": "Nissi Jonathan",
-    "Column2": "TRUE",
-    "DBN 2": "84K738"
+    "Column1": "Nissi Jonathan"
   },
   {
     "DBN": "84K486",
     "Location Name": "New Dawn Charter High School",
     "Cohort": "Cohort 2",
     "CA4A Coach": "Simone Mikolich",
+    "admin_id":1,
+    "coach_id": 12,
     "Location Type Description": "Transfer School",
     "Building Code": "KBBA",
     "LCGMS Name": "Lisa Digaudio",
@@ -5091,15 +5093,15 @@
     "2017-18 Allocation": "$30,000.00",
     "Note": "Leadership Change - 07.02.17",
     "Principal Name (LCGMS)": "Sara M. Asmussen, Ph.D., Executive Director/Lisa D",
-    "Column1": "Lisa Digaudio",
-    "Column2": "FALSE",
-    "DBN 2": "84K486"
+    "Column1": "Lisa Digaudio"
   },
   {
     "DBN": "84K417",
     "Location Name": "Urban Dove Charter School",
     "Cohort": "Cohort 2",
     "CA4A Coach": "Nicole DeFino",
+    "admin_id":1,
+    "coach_id": "",
     "Location Type Description": "Transfer School",
     "Building Code": "KAEX",
     "LCGMS Name": "Amit Bahl",
@@ -5117,15 +5119,15 @@
     "2017-18 Allocation": "$30,000.00",
     "Note": "Eskolta Coach",
     "Principal Name (LCGMS)": "Amit Bahl",
-    "Column1": "Amit Bahl",
-    "Column2": "TRUE",
-    "DBN 2": "84K417"
+    "Column1": "Amit Bahl"
   },
   {
     "DBN": "32K564",
     "Location Name": "Bushwick Community High School",
     "Cohort": "Cohort 2",
     "CA4A Coach": "Raymond Johnson",
+    "admin_id":1,
+    "coach_id": 11,
     "Location Type Description": "Transfer School",
     "Building Code": "K291",
     "LCGMS Name": "Llermi Gonzalez",
@@ -5143,15 +5145,15 @@
     "2017-18 Allocation": "$25,000.00",
     "Note": "",
     "Principal Name (LCGMS)": "Llermi Gonzalez",
-    "Column1": "Llermi Gonzalez",
-    "Column2": "TRUE",
-    "DBN 2": "32K564"
+    "Column1": "Llermi Gonzalez"
   },
   {
     "DBN": "32K552",
     "Location Name": "The Academy of Urban Planning and Engineering",
     "Cohort": "Cohort 2",
     "CA4A Coach": "Raymond Johnson",
+    "admin_id":1,
+    "coach_id": 11,
     "Location Type Description": "General Academic",
     "Building Code": "K480",
     "LCGMS Name": "Jorge Sandoval",
@@ -5169,15 +5171,15 @@
     "2017-18 Allocation": "$25,000.00",
     "Note": "",
     "Principal Name (LCGMS)": "Jorge Sandoval",
-    "Column1": "Jorge Sandoval",
-    "Column2": "TRUE",
-    "DBN 2": "32K552"
+    "Column1": "Jorge Sandoval"
   },
   {
     "DBN": "32K549",
     "Location Name": "The Brooklyn School for Social Justice",
     "Cohort": "Cohort 2",
     "CA4A Coach": "Raymond Johnson",
+    "admin_id":1,
+    "coach_id": 11,
     "Location Type Description": "General Academic",
     "Building Code": "K480",
     "LCGMS Name": "Ana Marsh",
@@ -5195,15 +5197,15 @@
     "2017-18 Allocation": "$30,000.00",
     "Note": "",
     "Principal Name (LCGMS)": "Ana Marsh",
-    "Column1": "Ana Marsh",
-    "Column2": "TRUE",
-    "DBN 2": "32K549"
+    "Column1": "Ana Marsh"
   },
   {
     "DBN": "32K403",
     "Location Name": "Academy for Environmental Leadership",
     "Cohort": "Cohort 2",
     "CA4A Coach": "Raymond Johnson",
+    "admin_id":1,
+    "coach_id": 11,
     "Location Type Description": "General Academic",
     "Building Code": "K480",
     "LCGMS Name": "Chantandrea Blissett",
@@ -5221,15 +5223,15 @@
     "2017-18 Allocation": "$30,000.00",
     "Note": "Cohort 2 Invite - Added to invite list 05.09.17",
     "Principal Name (LCGMS)": "CHANTANDREA BLISSETT",
-    "Column1": "Chantandrea Blissett",
-    "Column2": "TRUE",
-    "DBN 2": "32K403"
+    "Column1": "Chantandrea Blissett"
   },
   {
     "DBN": "31R455",
     "Location Name": "Tottenville High School",
     "Cohort": "Cohort 2",
     "CA4A Coach": "Jen Grunin",
+    "admin_id":1,
+    "coach_id": 5,
     "Location Type Description": "General Academic",
     "Building Code": "R455",
     "LCGMS Name": "Joseph Scarmato",
@@ -5247,15 +5249,15 @@
     "2017-18 Allocation": "$80,000.00",
     "Note": "Late entry - Added on 08/02/2017",
     "Principal Name (LCGMS)": "Joseph Scarmato",
-    "Column1": "Joseph Scarmato",
-    "Column2": "TRUE",
-    "DBN 2": "31R455"
+    "Column1": "Joseph Scarmato"
   },
   {
     "DBN": "27Q309",
     "Location Name": "Academy of Medical Technology: A College Board School",
     "Cohort": "Cohort 2",
     "CA4A Coach": "Jen Grunin",
+    "admin_id":1,
+    "coach_id": 5,
     "Location Type Description": "General Academic",
     "Building Code": "Q465",
     "LCGMS Name": "William Johnson",
@@ -5273,15 +5275,15 @@
     "2017-18 Allocation": "$30,000.00",
     "Note": "",
     "Principal Name (LCGMS)": "William Johnson",
-    "Column1": "William Johnson",
-    "Column2": "TRUE",
-    "DBN 2": "27Q309"
+    "Column1": "William Johnson"
   },
   {
     "DBN": "30Q450",
     "Location Name": "Long Island City High School",
     "Cohort": "Cohort 2",
     "CA4A Coach": "Fiona Mulcahy",
+    "admin_id":1,
+    "coach_id": 4,
     "Location Type Description": "General Academic",
     "Building Code": "Q452",
     "LCGMS Name": "Vivian Selenikas",
@@ -5299,15 +5301,15 @@
     "2017-18 Allocation": "$75,000.00",
     "Note": "",
     "Principal Name (LCGMS)": "Vivian Selenikas",
-    "Column1": "Vivian Selenikas",
-    "Column2": "TRUE",
-    "DBN 2": "30Q450"
+    "Column1": "Vivian Selenikas"
   },
   {
     "DBN": "18K635",
     "Location Name": "Olympus Academy",
     "Cohort": "Cohort 2",
     "CA4A Coach": "Michael Rothman",
+    "admin_id":1,
+    "coach_id": "",
     "Location Type Description": "Transfer School",
     "Building Code": "K242",
     "LCGMS Name": "Bruce Gonzales",
@@ -5325,15 +5327,15 @@
     "2017-18 Allocation": "$25,000.00",
     "Note": "Eskolta Coach",
     "Principal Name (LCGMS)": "Bruce Gonzales",
-    "Column1": "Bruce Gonzales",
-    "Column2": "TRUE",
-    "DBN 2": "18K635"
+    "Column1": "Bruce Gonzales"
   },
   {
     "DBN": "30Q258",
     "Location Name": "Energy Tech High School",
     "Cohort": "Cohort 2",
     "CA4A Coach": "",
+    "admin_id":1,
+    "coach_id": "",
     "Location Type Description": "Career Technical",
     "Building Code": "Q204",
     "LCGMS Name": "Hope Barter",
@@ -5351,15 +5353,15 @@
     "2017-18 Allocation": "$30,000.00",
     "Note": "",
     "Principal Name (LCGMS)": "Hope Barter",
-    "Column1": "Hope Barter",
-    "Column2": "TRUE",
-    "DBN 2": "30Q258"
+    "Column1": "Hope Barter"
   },
   {
     "DBN": "29Q327",
     "Location Name": "Eagle Academy for Young Men III",
     "Cohort": "Cohort 2",
     "CA4A Coach": "Raymond Johnson",
+    "admin_id":1,
+    "coach_id": 11,
     "Location Type Description": "General Academic",
     "Building Code": "Q633",
     "LCGMS Name": "Cedric Hall",
@@ -5377,15 +5379,15 @@
     "2017-18 Allocation": "$30,000.00",
     "Note": "",
     "Principal Name (LCGMS)": "Cedric Hall",
-    "Column1": "Cedric Hall",
-    "Column2": "TRUE",
-    "DBN 2": "29Q327"
+    "Column1": "Cedric Hall"
   },
   {
     "DBN": "29Q313",
     "Location Name": "Benjamin Franklin High School for Finance & Information Technology",
     "Cohort": "Cohort 2",
     "CA4A Coach": "Denise Copeland",
+    "admin_id":1,
+    "coach_id": 3,
     "Location Type Description": "Career Technical",
     "Building Code": "Q490",
     "LCGMS Name": "Carla Theodorou",
@@ -5403,15 +5405,15 @@
     "2017-18 Allocation": "$30,000.00",
     "Note": "",
     "Principal Name (LCGMS)": "CARLA THEODOROU",
-    "Column1": "Carla Theodorou",
-    "Column2": "TRUE",
-    "DBN 2": "29Q313"
+    "Column1": "Carla Theodorou"
   },
   {
     "DBN": "29Q272",
     "Location Name": "George Washington Carver High School for the Sciences",
     "Cohort": "Cohort 2",
     "CA4A Coach": "Denise Copeland",
+    "admin_id":1,
+    "coach_id": 3,
     "Location Type Description": "General Academic",
     "Building Code": "Q420",
     "LCGMS Name": "Janice Sutton",
@@ -5429,15 +5431,15 @@
     "2017-18 Allocation": "$30,000.00",
     "Note": "",
     "Principal Name (LCGMS)": "JANICE SUTTON",
-    "Column1": "Janice Sutton",
-    "Column2": "TRUE",
-    "DBN 2": "29Q272"
+    "Column1": "Janice Sutton"
   },
   {
     "DBN": "29Q243",
     "Location Name": "Institute for Health Professions at Cambria Heights",
     "Cohort": "Cohort 2",
     "CA4A Coach": "Denise Copeland",
+    "admin_id":1,
+    "coach_id": 3,
     "Location Type Description": "Career Technical",
     "Building Code": "Q490",
     "LCGMS Name": "Gareth Robinson",
@@ -5455,15 +5457,15 @@
     "2017-18 Allocation": "$30,000.00",
     "Note": "",
     "Principal Name (LCGMS)": "Gareth Robinson",
-    "Column1": "Gareth Robinson",
-    "Column2": "TRUE",
-    "DBN 2": "29Q243"
+    "Column1": "Gareth Robinson"
   },
   {
     "DBN": "28Q896",
     "Location Name": "Young Women's Leadership School, Queens",
     "Cohort": "Cohort 2",
     "CA4A Coach": "",
+    "admin_id":1,
+    "coach_id": "",
     "Location Type Description": "General Academic",
     "Building Code": "Q680",
     "LCGMS Name": "Mala Panday",
@@ -5481,15 +5483,15 @@
     "2017-18 Allocation": "$30,000.00",
     "Note": "",
     "Principal Name (LCGMS)": "Mala Panday",
-    "Column1": "Mala Panday",
-    "Column2": "TRUE",
-    "DBN 2": "28Q896"
+    "Column1": "Mala Panday"
   },
   {
     "DBN": "28Q686",
     "Location Name": "Queens Metropolitan High School",
     "Cohort": "Cohort 2",
     "CA4A Coach": "Norma Feriz Gordon",
+    "admin_id":1,
+    "coach_id": 10,
     "Location Type Description": "General Academic",
     "Building Code": "Q686",
     "LCGMS Name": "Saida Rodriguez-Tabone",
@@ -5507,15 +5509,15 @@
     "2017-18 Allocation": "$50,000.00",
     "Note": "Leadership Change - 07.02.17",
     "Principal Name (LCGMS)": "SAIDA RODRIGUEZTABONE",
-    "Column1": "Saida Rodriguez-Tabone",
-    "Column2": "FALSE",
-    "DBN 2": "28Q686"
+    "Column1": "Saida Rodriguez-Tabone"
   },
   {
     "DBN": "28Q620",
     "Location Name": "Thomas A. Edison Career and Technical Education High School",
     "Cohort": "Cohort 2",
     "CA4A Coach": "",
+    "admin_id":1,
+    "coach_id": "",
     "Location Type Description": "Career Technical",
     "Building Code": "Q620",
     "LCGMS Name": "Moses Ojeda",
@@ -5533,15 +5535,15 @@
     "2017-18 Allocation": "$75,000.00",
     "Note": "",
     "Principal Name (LCGMS)": "Moses Ojeda",
-    "Column1": "Moses Ojeda",
-    "Column2": "TRUE",
-    "DBN 2": "28Q620"
+    "Column1": "Moses Ojeda"
   },
   {
     "DBN": "28Q284",
     "Location Name": "York Early College Academy",
     "Cohort": "Cohort 2",
     "CA4A Coach": "",
+    "admin_id":1,
+    "coach_id": "",
     "Location Type Description": "General Academic",
     "Building Code": "Q008",
     "LCGMS Name": "Noah Angeles",
@@ -5559,15 +5561,15 @@
     "2017-18 Allocation": "$30,000.00",
     "Note": "Late entry - Added on 06/15/17",
     "Principal Name (LCGMS)": "Noah Angeles",
-    "Column1": "Noah Angeles",
-    "Column2": "TRUE",
-    "DBN 2": "28Q284"
+    "Column1": "Noah Angeles"
   },
   {
     "DBN": "27Q650",
     "Location Name": "High School for Construction Trades, Engineering and Architecture",
     "Cohort": "Cohort 2",
     "CA4A Coach": "",
+    "admin_id":1,
+    "coach_id": "",
     "Location Type Description": "Career Technical",
     "Building Code": "Q650",
     "LCGMS Name": "Lakeisha Gordon",
@@ -5585,15 +5587,15 @@
     "2017-18 Allocation": "$45,000.00",
     "Note": "",
     "Principal Name (LCGMS)": "Lakeisha Gordon",
-    "Column1": "Lakeisha Gordon",
-    "Column2": "TRUE",
-    "DBN 2": "27Q650"
+    "Column1": "Lakeisha Gordon"
   },
   {
     "DBN": "27Q480",
     "Location Name": "John Adams High School",
     "Cohort": "Cohort 2",
     "CA4A Coach": "Norma Feriz Gordon",
+    "admin_id":1,
+    "coach_id": 10,
     "Location Type Description": "General Academic",
     "Building Code": "Q480",
     "LCGMS Name": "Daniel Scanlon",
@@ -5611,15 +5613,15 @@
     "2017-18 Allocation": "$75,000.00",
     "Note": "",
     "Principal Name (LCGMS)": "Daniel Scanlon",
-    "Column1": "Daniel Scanlon",
-    "Column2": "TRUE",
-    "DBN 2": "27Q480"
+    "Column1": "Daniel Scanlon"
   },
   {
     "DBN": "31R450",
     "Location Name": "Curtis High School",
     "Cohort": "Cohort 2",
     "CA4A Coach": "Jen Grunin",
+    "admin_id":1,
+    "coach_id": 5,
     "Location Type Description": "General Academic",
     "Building Code": "R450",
     "LCGMS Name": "Gregory Jaenicke",
@@ -5637,15 +5639,15 @@
     "2017-18 Allocation": "$75,000.00",
     "Note": "",
     "Principal Name (LCGMS)": "Gregory Jaenicke",
-    "Column1": "Gregory Jaenicke",
-    "Column2": "TRUE",
-    "DBN 2": "31R450"
+    "Column1": "Gregory Jaenicke"
   },
   {
     "DBN": "11X513",
     "Location Name": "New World High School",
     "Cohort": "Cohort 2",
     "CA4A Coach": "",
+    "admin_id":1,
+    "coach_id": "",
     "Location Type Description": "General Academic",
     "Building Code": "X362",
     "LCGMS Name": "Mithat Gashi",
@@ -5663,15 +5665,15 @@
     "2017-18 Allocation": "$30,000.00",
     "Note": "",
     "Principal Name (LCGMS)": "MITHAT GASHI",
-    "Column1": "Mithat Gashi",
-    "Column2": "TRUE",
-    "DBN 2": "11X513"
+    "Column1": "Mithat Gashi"
   },
   {
     "DBN": "18K673",
     "Location Name": "East Brooklyn Community High School",
     "Cohort": "Cohort 2",
     "CA4A Coach": "Simone Mikolich",
+    "admin_id":1,
+    "coach_id": 12,
     "Location Type Description": "Transfer School",
     "Building Code": "K860",
     "LCGMS Name": "Patrick Mcgillicuddy",
@@ -5689,15 +5691,15 @@
     "2017-18 Allocation": "$25,000.00",
     "Note": "",
     "Principal Name (LCGMS)": "PATRICK MCGILLICUDDY",
-    "Column1": "Patrick Mcgillicuddy",
-    "Column2": "TRUE",
-    "DBN 2": "18K673"
+    "Column1": "Patrick Mcgillicuddy"
   },
   {
     "DBN": "13K527",
     "Location Name": "Urban Assembly Institute of Math and Science for Young Women",
     "Cohort": "Cohort 2",
     "CA4A Coach": "Jen Grunin",
+    "admin_id":1,
+    "coach_id": 5,
     "Location Type Description": "General Academic",
     "Building Code": "K313",
     "LCGMS Name": "Kiri Soares",
@@ -5715,15 +5717,15 @@
     "2017-18 Allocation": "$30,000.00",
     "Note": "",
     "Principal Name (LCGMS)": "Kiri Soares",
-    "Column1": "Kiri Soares",
-    "Column2": "TRUE",
-    "DBN 2": "13K527"
+    "Column1": "Kiri Soares"
   },
   {
     "DBN": "13K499",
     "Location Name": "ACORN Community High School",
     "Cohort": "Cohort 2",
     "CA4A Coach": "Simone Mikolich",
+    "admin_id":1,
+    "coach_id": 12,
     "Location Type Description": "General Academic",
     "Building Code": "K909",
     "LCGMS Name": "Andrea Piper",
@@ -5741,15 +5743,15 @@
     "2017-18 Allocation": "$25,000.00",
     "Note": "",
     "Principal Name (LCGMS)": "Andrea Piper",
-    "Column1": "Andrea Piper",
-    "Column2": "TRUE",
-    "DBN 2": "13K499"
+    "Column1": "Andrea Piper"
   },
   {
     "DBN": "13K350",
     "Location Name": "Urban Assembly School for Music and Art",
     "Cohort": "Cohort 2",
     "CA4A Coach": "Marisa Castillo",
+    "admin_id":1,
+    "coach_id": 8,
     "Location Type Description": "General Academic",
     "Building Code": "K805",
     "LCGMS Name": "Josephine Tucker",
@@ -5767,15 +5769,15 @@
     "2017-18 Allocation": "$30,000.00",
     "Note": "",
     "Principal Name (LCGMS)": "JOSEPHINE TUCKER",
-    "Column1": "Josephine Tucker",
-    "Column2": "TRUE",
-    "DBN 2": "13K350"
+    "Column1": "Josephine Tucker"
   },
   {
     "DBN": "12X682",
     "Location Name": "Fannie Lou Hamer Freedom High School",
     "Cohort": "Cohort 2",
     "CA4A Coach": "Jamie Ferrel",
+    "admin_id":1,
+    "coach_id": "",
     "Location Type Description": "General Academic",
     "Building Code": "X878",
     "LCGMS Name": "Jeffrey Palladino",
@@ -5793,15 +5795,15 @@
     "2017-18 Allocation": "$30,000.00",
     "Note": "Eskolta Coach",
     "Principal Name (LCGMS)": "Jeffrey Palladino",
-    "Column1": "Jeffrey Palladino",
-    "Column2": "TRUE",
-    "DBN 2": "12X682"
+    "Column1": "Jeffrey Palladino"
   },
   {
     "DBN": "12X511",
     "Location Name": "Bronx Envision Academy",
     "Cohort": "Cohort 2",
     "CA4A Coach": "Simone Mikolich",
+    "admin_id":1,
+    "coach_id": 12,
     "Location Type Description": "General Academic",
     "Building Code": "X098",
     "LCGMS Name": "Emily Shu",
@@ -5819,15 +5821,15 @@
     "2017-18 Allocation": "$30,000.00",
     "Note": "",
     "Principal Name (LCGMS)": "Emily Shu",
-    "Column1": "Emily Shu",
-    "Column2": "TRUE",
-    "DBN 2": "12X511"
+    "Column1": "Emily Shu"
   },
   {
     "DBN": "12X446",
     "Location Name": "Arturo A. Schomburg Satellite Academy Bronx",
     "Cohort": "Cohort 2",
     "CA4A Coach": "Kim Hall",
+    "admin_id":1,
+    "coach_id": 7,
     "Location Type Description": "Transfer School",
     "Building Code": "X401",
     "LCGMS Name": "Marsha Vernon",
@@ -5845,15 +5847,15 @@
     "2017-18 Allocation": "$25,000.00",
     "Note": "",
     "Principal Name (LCGMS)": "MARSHA VERNON",
-    "Column1": "Marsha Vernon",
-    "Column2": "TRUE",
-    "DBN 2": "12X446"
+    "Column1": "Marsha Vernon"
   },
   {
     "DBN": "84X553",
     "Location Name": "New Visions Charter High School for the Humanities",
     "Cohort": "Cohort 2",
     "CA4A Coach": "Kim Hall",
+    "admin_id":1,
+    "coach_id": 7,
     "Location Type Description": "General Academic",
     "Building Code": "X475",
     "LCGMS Name": "Magaly I Hicks",
@@ -5871,15 +5873,15 @@
     "2017-18 Allocation": "$35,000.00",
     "Note": "",
     "Principal Name (LCGMS)": "Magaly I Hicks",
-    "Column1": "Magaly I Hicks",
-    "Column2": "TRUE",
-    "DBN 2": "84X553"
+    "Column1": "Magaly I Hicks"
   },
   {
     "DBN": "12X321",
     "Location Name": "Crotona Academy High School",
     "Cohort": "Cohort 2",
     "CA4A Coach": "Fiona Mulcahy",
+    "admin_id":1,
+    "coach_id": 4,
     "Location Type Description": "Transfer School",
     "Building Code": "X358",
     "LCGMS Name": "Patricia Williams",
@@ -5897,15 +5899,15 @@
     "2017-18 Allocation": "$25,000.00",
     "Note": "",
     "Principal Name (LCGMS)": "Patricia Williams",
-    "Column1": "Patricia Williams",
-    "Column2": "TRUE",
-    "DBN 2": "12X321"
+    "Column1": "Patricia Williams"
   },
   {
     "DBN": "12X242",
     "Location Name": "Mott Hall V",
     "Cohort": "Cohort 2",
     "CA4A Coach": "",
+    "admin_id":1,
+    "coach_id": "",
     "Location Type Description": "General Academic",
     "Building Code": "X423",
     "LCGMS Name": "Peter Oroszlany",
@@ -5923,15 +5925,15 @@
     "2017-18 Allocation": "$30,000.00",
     "Note": "",
     "Principal Name (LCGMS)": "PETER OROSZLANY",
-    "Column1": "Peter Oroszlany",
-    "Column2": "TRUE",
-    "DBN 2": "12X242"
+    "Column1": "Peter Oroszlany"
   },
   {
     "DBN": "13K575",
     "Location Name": "Bedford Stuyvesant Preparatory High School",
     "Cohort": "Cohort 2",
     "CA4A Coach": "Jen Grunin",
+    "admin_id":1,
+    "coach_id": 5,
     "Location Type Description": "Transfer School",
     "Building Code": "K458",
     "LCGMS Name": "Darryl Rascoe",
@@ -5949,15 +5951,15 @@
     "2017-18 Allocation": "$25,000.00",
     "Note": "",
     "Principal Name (LCGMS)": "DARRYL RASCOE",
-    "Column1": "Darryl Rascoe",
-    "Column2": "TRUE",
-    "DBN 2": "13K575"
+    "Column1": "Darryl Rascoe"
   },
   {
     "DBN": "11X544",
     "Location Name": "High School for Contemporary Arts",
     "Cohort": "Cohort 2",
     "CA4A Coach": "Allison Burke",
+    "admin_id":1,
+    "coach_id": 2,
     "Location Type Description": "General Academic",
     "Building Code": "X425",
     "LCGMS Name": "Pedro Cubero",
@@ -5975,15 +5977,15 @@
     "2017-18 Allocation": "$30,000.00",
     "Note": "",
     "Principal Name (LCGMS)": "Pedro Cubero",
-    "Column1": "Pedro Cubero",
-    "Column2": "TRUE",
-    "DBN 2": "11X544"
+    "Column1": "Pedro Cubero"
   },
   {
     "DBN": "13K616",
     "Location Name": "Brooklyn High School for Leadership and Community Service",
     "Cohort": "Cohort 2",
     "CA4A Coach": "Raymond Johnson",
+    "admin_id":1,
+    "coach_id": 11,
     "Location Type Description": "Transfer School",
     "Building Code": "K117",
     "LCGMS Name": "Georgia Kouriampalis",
@@ -6001,15 +6003,15 @@
     "2017-18 Allocation": "$25,000.00",
     "Note": "",
     "Principal Name (LCGMS)": "GEORGIA KOURIAMPALIS",
-    "Column1": "Georgia Kouriampalis",
-    "Column2": "TRUE",
-    "DBN 2": "13K616"
+    "Column1": "Georgia Kouriampalis"
   },
   {
     "DBN": "11X508",
     "Location Name": "Bronxdale High School",
     "Cohort": "Cohort 2",
     "CA4A Coach": "",
+    "admin_id":1,
+    "coach_id": "",
     "Location Type Description": "General Academic",
     "Building Code": "X415",
     "LCGMS Name": "Carolyne Quintana",
@@ -6027,15 +6029,15 @@
     "2017-18 Allocation": "$30,000.00",
     "Note": "",
     "Principal Name (LCGMS)": "Carolyne Quintana",
-    "Column1": "Carolyne Quintana",
-    "Column2": "TRUE",
-    "DBN 2": "11X508"
+    "Column1": "Carolyne Quintana"
   },
   {
     "DBN": "11X418",
     "Location Name": "Bronx High School for the Visual Arts",
     "Cohort": "Cohort 2",
     "CA4A Coach": "Fiona Mulcahy",
+    "admin_id":1,
+    "coach_id": 4,
     "Location Type Description": "General Academic",
     "Building Code": "X839",
     "LCGMS Name": "Iris Witherspoon",
@@ -6053,15 +6055,15 @@
     "2017-18 Allocation": "$30,000.00",
     "Note": "",
     "Principal Name (LCGMS)": "IRIS WITHERSPOON",
-    "Column1": "Iris Witherspoon",
-    "Column2": "TRUE",
-    "DBN 2": "11X418"
+    "Column1": "Iris Witherspoon"
   },
   {
     "DBN": "11X288",
     "Location Name": "Collegiate Institute for Math and Science",
     "Cohort": "Cohort 2",
     "CA4A Coach": "",
+    "admin_id":1,
+    "coach_id": "",
     "Location Type Description": "General Academic",
     "Building Code": "X415",
     "LCGMS Name": "Fredrick Nelson",
@@ -6079,15 +6081,15 @@
     "2017-18 Allocation": "$35,000.00",
     "Note": "",
     "Principal Name (LCGMS)": "Fredrick Nelson",
-    "Column1": "Fredrick Nelson",
-    "Column2": "TRUE",
-    "DBN 2": "11X288"
+    "Column1": "Fredrick Nelson"
   },
   {
     "DBN": "11X265",
     "Location Name": "Bronx Lab School",
     "Cohort": "Cohort 2",
     "CA4A Coach": "Allison Burke",
+    "admin_id":1,
+    "coach_id": 2,
     "Location Type Description": "General Academic",
     "Building Code": "X425",
     "LCGMS Name": "Sarah Marcy",
@@ -6105,15 +6107,15 @@
     "2017-18 Allocation": "$30,000.00",
     "Note": "",
     "Principal Name (LCGMS)": "Sarah Marcy",
-    "Column1": "Sarah Marcy",
-    "Column2": "TRUE",
-    "DBN 2": "11X265"
+    "Column1": "Sarah Marcy"
   },
   {
     "DBN": "11X253",
     "Location Name": "Bronx High School for Writing and Communication Arts",
     "Cohort": "Cohort 2",
     "CA4A Coach": "Allison Burke",
+    "admin_id":1,
+    "coach_id": 2,
     "Location Type Description": "General Academic",
     "Building Code": "X425",
     "LCGMS Name": "Terri Grey",
@@ -6131,15 +6133,15 @@
     "2017-18 Allocation": "$30,000.00",
     "Note": "",
     "Principal Name (LCGMS)": "Terri Grey",
-    "Column1": "Terri Grey",
-    "Column2": "TRUE",
-    "DBN 2": "11X253"
+    "Column1": "Terri Grey"
   },
   {
     "DBN": "10X565",
     "Location Name": "High School for Energy and Technology",
     "Cohort": "Cohort 2",
     "CA4A Coach": "Allison Burke",
+    "admin_id":1,
+    "coach_id": 2,
     "Location Type Description": "Career Technical",
     "Building Code": "X660",
     "LCGMS Name": "Marie Guillaume",
@@ -6157,15 +6159,15 @@
     "2017-18 Allocation": "$30,000.00",
     "Note": "",
     "Principal Name (LCGMS)": "Marie Guillaume",
-    "Column1": "Marie Guillaume",
-    "Column2": "TRUE",
-    "DBN 2": "10X565"
+    "Column1": "Marie Guillaume"
   },
   {
     "DBN": "10X546",
     "Location Name": "Bronx Theatre High School",
     "Cohort": "Cohort 2",
     "CA4A Coach": "Kim Hall",
+    "admin_id":1,
+    "coach_id": 7,
     "Location Type Description": "General Academic",
     "Building Code": "X475",
     "LCGMS Name": "Daniel Albetta",
@@ -6183,15 +6185,15 @@
     "2017-18 Allocation": "$30,000.00",
     "Note": "",
     "Principal Name (LCGMS)": "Daniel Albetta",
-    "Column1": "Daniel Albetta",
-    "Column2": "TRUE",
-    "DBN 2": "10X546"
+    "Column1": "Daniel Albetta"
   },
   {
     "DBN": "10X477",
     "Location Name": "Marble Hill High School for International Studies",
     "Cohort": "Cohort 2",
     "CA4A Coach": "",
+    "admin_id":1,
+    "coach_id": "",
     "Location Type Description": "General Academic",
     "Building Code": "X475",
     "LCGMS Name": "Kirsten Larson",
@@ -6209,15 +6211,15 @@
     "2017-18 Allocation": "$30,000.00",
     "Note": "",
     "Principal Name (LCGMS)": "KIRSTEN LARSON",
-    "Column1": "Kirsten Larson",
-    "Column2": "TRUE",
-    "DBN 2": "10X477"
+    "Column1": "Kirsten Larson"
   },
   {
     "DBN": "10X442",
     "Location Name": "Celia Cruz Bronx High School of Music, The",
     "Cohort": "Cohort 2",
     "CA4A Coach": "",
+    "admin_id":1,
+    "coach_id": "",
     "Location Type Description": "General Academic",
     "Building Code": "X430",
     "LCGMS Name": "Jerrod Mabry",
@@ -6235,15 +6237,15 @@
     "2017-18 Allocation": "$30,000.00",
     "Note": "",
     "Principal Name (LCGMS)": "Jerrod Mabry",
-    "Column1": "Jerrod Mabry",
-    "Column2": "TRUE",
-    "DBN 2": "10X442"
+    "Column1": "Jerrod Mabry"
   },
   {
     "DBN": "10X439",
     "Location Name": "Bronx High School for Law and Community Service",
     "Cohort": "Cohort 2",
     "CA4A Coach": "Allison Burke",
+    "admin_id":1,
+    "coach_id": 2,
     "Location Type Description": "General Academic",
     "Building Code": "X435",
     "LCGMS Name": "Michael Barakat",
@@ -6261,15 +6263,15 @@
     "2017-18 Allocation": "$30,000.00",
     "Note": "",
     "Principal Name (LCGMS)": "Michael Barakat",
-    "Column1": "Michael Barakat",
-    "Column2": "TRUE",
-    "DBN 2": "10X439"
+    "Column1": "Michael Barakat"
   },
   {
     "DBN": "10X437",
     "Location Name": "Fordham High School for the Arts",
     "Cohort": "Cohort 2",
     "CA4A Coach": "Allison Burke",
+    "admin_id":1,
+    "coach_id": 2,
     "Location Type Description": "General Academic",
     "Building Code": "X435",
     "LCGMS Name": "Iris Blige",
@@ -6287,15 +6289,15 @@
     "2017-18 Allocation": "$30,000.00",
     "Note": "",
     "Principal Name (LCGMS)": "IRIS BLIGE",
-    "Column1": "Iris Blige",
-    "Column2": "TRUE",
-    "DBN 2": "10X437"
+    "Column1": "Iris Blige"
   },
   {
     "DBN": "11X545",
     "Location Name": "Bronx Aerospace High School",
     "Cohort": "Cohort 2",
     "CA4A Coach": "Allison Burke",
+    "admin_id":1,
+    "coach_id": 2,
     "Location Type Description": "General Academic",
     "Building Code": "X425",
     "LCGMS Name": "Erika Hurtado",
@@ -6313,15 +6315,15 @@
     "2017-18 Allocation": "$30,000.00",
     "Note": "",
     "Principal Name (LCGMS)": "Erika Hurtado",
-    "Column1": "Erika Hurtado",
-    "Column2": "TRUE",
-    "DBN 2": "11X545"
+    "Column1": "Erika Hurtado"
   },
   {
     "DBN": "15K497",
     "Location Name": "The Boerum Hill School for International Studies",
     "Cohort": "Cohort 2",
     "CA4A Coach": "Simone Mikolich",
+    "admin_id":1,
+    "coach_id": 12,
     "Location Type Description": "General Academic",
     "Building Code": "K293",
     "LCGMS Name": "Nicole Lanzillotto",
@@ -6339,15 +6341,15 @@
     "2017-18 Allocation": "$30,000.00",
     "Note": "",
     "Principal Name (LCGMS)": "NICOLE LANZILLOTTO",
-    "Column1": "Nicole Lanzillotto",
-    "Column2": "TRUE",
-    "DBN 2": "15K497"
+    "Column1": "Nicole Lanzillotto"
   },
   {
     "DBN": "18K578",
     "Location Name": "Brooklyn Bridge Academy",
     "Cohort": "Cohort 2",
     "CA4A Coach": "Raymond Johnson",
+    "admin_id":1,
+    "coach_id": 11,
     "Location Type Description": "Transfer School",
     "Building Code": "K515",
     "LCGMS Name": "Max Jean Paul",
@@ -6365,15 +6367,15 @@
     "2017-18 Allocation": "$25,000.00",
     "Note": "",
     "Principal Name (LCGMS)": "Max Jean Paul",
-    "Column1": "Max Jean Paul",
-    "Column2": "TRUE",
-    "DBN 2": "18K578"
+    "Column1": "Max Jean Paul"
   },
   {
     "DBN": "18K566",
     "Location Name": "Brooklyn Generation School",
     "Cohort": "Cohort 2",
     "CA4A Coach": "Raymond Johnson",
+    "admin_id":1,
+    "coach_id": 11,
     "Location Type Description": "General Academic",
     "Building Code": "K515",
     "LCGMS Name": "Luis Garcia",
@@ -6391,15 +6393,15 @@
     "2017-18 Allocation": "$30,000.00",
     "Note": "Leadership Change 12.13.17",
     "Principal Name (LCGMS)": "Lydia Colon Bomani",
-    "Column1": "Luis Garcia",
-    "Column2": "FALSE",
-    "DBN 2": "18K566"
+    "Column1": "Luis Garcia"
   },
   {
     "DBN": "18K563",
     "Location Name": "It Takes a Village Academy",
     "Cohort": "Cohort 2",
     "CA4A Coach": "Marisa Castillo",
+    "admin_id":1,
+    "coach_id": 8,
     "Location Type Description": "General Academic",
     "Building Code": "K415",
     "LCGMS Name": "M Vinitskaya",
@@ -6417,15 +6419,15 @@
     "2017-18 Allocation": "$35,000.00",
     "Note": "Late entry - Added on 06/27/17",
     "Principal Name (LCGMS)": "Marina Vinitskaya",
-    "Column1": "M Vinitskaya",
-    "Column2": "FALSE",
-    "DBN 2": "18K563"
+    "Column1": "M Vinitskaya"
   },
   {
     "DBN": "17K548",
     "Location Name": "Brooklyn School for Music & Theatre",
     "Cohort": "Cohort 2",
     "CA4A Coach": "Marisa Castillo",
+    "admin_id":1,
+    "coach_id": 8,
     "Location Type Description": "General Academic",
     "Building Code": "K440",
     "LCGMS Name": "Pamela Randazzo",
@@ -6443,15 +6445,15 @@
     "2017-18 Allocation": "$30,000.00",
     "Note": "",
     "Principal Name (LCGMS)": "PAMELA RANDAZZO",
-    "Column1": "Pamela Randazzo",
-    "Column2": "TRUE",
-    "DBN 2": "17K548"
+    "Column1": "Pamela Randazzo"
   },
   {
     "DBN": "17K531",
     "Location Name": "School for Human Rights, The",
     "Cohort": "Cohort 2",
     "CA4A Coach": "Simone Mikolich",
+    "admin_id":1,
+    "coach_id": 12,
     "Location Type Description": "General Academic",
     "Building Code": "K470",
     "LCGMS Name": "Michael Alexander",
@@ -6469,15 +6471,15 @@
     "2017-18 Allocation": "$30,000.00",
     "Note": "Cohort 2 Invite - Truncating from a 6-12 to a 9-12 by phasing out one grade per year",
     "Principal Name (LCGMS)": "MICHAEL ALEXANDER",
-    "Column1": "Michael Alexander",
-    "Column2": "TRUE",
-    "DBN 2": "17K531"
+    "Column1": "Michael Alexander"
   },
   {
     "DBN": "17K524",
     "Location Name": "International High School at Prospect Heights",
     "Cohort": "Cohort 2",
     "CA4A Coach": "Marisa Castillo",
+    "admin_id":1,
+    "coach_id": 8,
     "Location Type Description": "General Academic",
     "Building Code": "K440",
     "LCGMS Name": "Nedda De Castro",
@@ -6495,15 +6497,15 @@
     "2017-18 Allocation": "$30,000.00",
     "Note": "",
     "Principal Name (LCGMS)": "Nedda De Castro",
-    "Column1": "Nedda De Castro",
-    "Column2": "TRUE",
-    "DBN 2": "17K524"
+    "Column1": "Nedda De Castro"
   },
   {
     "DBN": "17K489",
     "Location Name": "W.E.B. Dubois Academic High School",
     "Cohort": "Cohort 2",
     "CA4A Coach": "Marisa Castillo",
+    "admin_id":1,
+    "coach_id": 8,
     "Location Type Description": "Transfer School",
     "Building Code": "K824",
     "LCGMS Name": "Catherine Hartnett",
@@ -6521,15 +6523,15 @@
     "2017-18 Allocation": "$25,000.00",
     "Note": "",
     "Principal Name (LCGMS)": "Catherine Hartnett",
-    "Column1": "Catherine Hartnett",
-    "Column2": "TRUE",
-    "DBN 2": "17K489"
+    "Column1": "Catherine Hartnett"
   },
   {
     "DBN": "17K382",
     "Location Name": "Academy for College Preparation and Career Exploration: A College Board School",
     "Cohort": "Cohort 2",
     "CA4A Coach": "Marisa Castillo",
+    "admin_id":1,
+    "coach_id": 8,
     "Location Type Description": "General Academic",
     "Building Code": "K465",
     "LCGMS Name": "Joan Mosely",
@@ -6547,15 +6549,15 @@
     "2017-18 Allocation": "$30,000.00",
     "Note": "",
     "Principal Name (LCGMS)": "Joan Mosely",
-    "Column1": "Joan Mosely",
-    "Column2": "TRUE",
-    "DBN 2": "17K382"
+    "Column1": "Joan Mosely"
   },
   {
     "DBN": "16K669",
     "Location Name": "Research and Service High School",
     "Cohort": "Cohort 2",
     "CA4A Coach": "Jen Grunin",
+    "admin_id":1,
+    "coach_id": 5,
     "Location Type Description": "Transfer School",
     "Building Code": "K455",
     "LCGMS Name": "Allison Farrington",
@@ -6573,15 +6575,15 @@
     "2017-18 Allocation": "$25,000.00",
     "Note": "",
     "Principal Name (LCGMS)": "Allison Farrington",
-    "Column1": "Allison Farrington",
-    "Column2": "TRUE",
-    "DBN 2": "16K669"
+    "Column1": "Allison Farrington"
   },
   {
     "DBN": "16K594",
     "Location Name": "Gotham Professional Arts Academy",
     "Cohort": "Cohort 2",
     "CA4A Coach": "Denise Copeland",
+    "admin_id":1,
+    "coach_id": 3,
     "Location Type Description": "General Academic",
     "Building Code": "K040",
     "LCGMS Name": "Alexander White",
@@ -6599,15 +6601,15 @@
     "2017-18 Allocation": "$25,000.00",
     "Note": "",
     "Principal Name (LCGMS)": "ALEXANDER WHITE",
-    "Column1": "Alexander White",
-    "Column2": "TRUE",
-    "DBN 2": "16K594"
+    "Column1": "Alexander White"
   },
   {
     "DBN": "13K553",
     "Location Name": "Brooklyn Academy High School",
     "Cohort": "Cohort 2",
     "CA4A Coach": "Jen Grunin",
+    "admin_id":1,
+    "coach_id": 5,
     "Location Type Description": "Transfer School",
     "Building Code": "K458",
     "LCGMS Name": "Charon Hall",
@@ -6625,15 +6627,15 @@
     "2017-18 Allocation": "$25,000.00",
     "Note": "",
     "Principal Name (LCGMS)": "Charon Hall",
-    "Column1": "Charon Hall",
-    "Column2": "TRUE",
-    "DBN 2": "13K553"
+    "Column1": "Charon Hall"
   },
   {
     "DBN": "15K529",
     "Location Name": "West Brooklyn Community High School",
     "Cohort": "Cohort 2",
     "CA4A Coach": "Denise Copeland",
+    "admin_id":1,
+    "coach_id": 3,
     "Location Type Description": "Transfer School",
     "Building Code": "K781",
     "LCGMS Name": "Gloria Rosario",
@@ -6651,15 +6653,15 @@
     "2017-18 Allocation": "$25,000.00",
     "Note": "",
     "Principal Name (LCGMS)": "Gloria Rosario",
-    "Column1": "Gloria Rosario",
-    "Column2": "TRUE",
-    "DBN 2": "15K529"
+    "Column1": "Gloria Rosario"
   },
   {
     "DBN": "10X434",
     "Location Name": "Belmont Preparatory High School",
     "Cohort": "Cohort 2",
     "CA4A Coach": "Allison Burke",
+    "admin_id":1,
+    "coach_id": 2,
     "Location Type Description": "General Academic",
     "Building Code": "X435",
     "LCGMS Name": "Stephen Gumbs",
@@ -6677,15 +6679,15 @@
     "2017-18 Allocation": "$30,000.00",
     "Note": "",
     "Principal Name (LCGMS)": "STEPHEN GUMBS",
-    "Column1": "Stephen Gumbs",
-    "Column2": "TRUE",
-    "DBN 2": "10X434"
+    "Column1": "Stephen Gumbs"
   },
   {
     "DBN": "15K464",
     "Location Name": "Park Slope Collegiate",
     "Cohort": "Cohort 2",
     "CA4A Coach": "Marisa Castillo",
+    "admin_id":1,
+    "coach_id": 8,
     "Location Type Description": "General Academic",
     "Building Code": "K460",
     "LCGMS Name": "Jill Bloomberg",
@@ -6703,15 +6705,15 @@
     "2017-18 Allocation": "$30,000.00",
     "Note": "",
     "Principal Name (LCGMS)": "JILL BLOOMBERG",
-    "Column1": "Jill Bloomberg",
-    "Column2": "TRUE",
-    "DBN 2": "15K464"
+    "Column1": "Jill Bloomberg"
   },
   {
     "DBN": "15K463",
     "Location Name": "Secondary School for Journalism",
     "Cohort": "Cohort 2",
     "CA4A Coach": "Marisa Castillo",
+    "admin_id":1,
+    "coach_id": 8,
     "Location Type Description": "General Academic",
     "Building Code": "K460",
     "LCGMS Name": "Livingstone Hilaire",
@@ -6729,15 +6731,15 @@
     "2017-18 Allocation": "$25,000.00",
     "Note": "School exited Cohort 1 on 10.05.16 - Coach Marisa Castillo - Cohort 2 Invite",
     "Principal Name (LCGMS)": "Livingston Hilaire",
-    "Column1": "Livingstone Hilaire",
-    "Column2": "FALSE",
-    "DBN 2": "15K463"
+    "Column1": "Livingstone Hilaire"
   },
   {
     "DBN": "15K429",
     "Location Name": "Digital Arts and Cinema Technology High School",
     "Cohort": "Cohort 2",
     "CA4A Coach": "Simone Mikolich",
+    "admin_id":1,
+    "coach_id": 12,
     "Location Type Description": "General Academic",
     "Building Code": "K293",
     "LCGMS Name": "Dawn Meconi",
@@ -6755,15 +6757,15 @@
     "2017-18 Allocation": "$25,000.00",
     "Note": "School exited Cohort 1 on 09.14.16 - Marisa Castillo - Cohort 2 Invite",
     "Principal Name (LCGMS)": "Dawn Meconi",
-    "Column1": "Dawn Meconi",
-    "Column2": "TRUE",
-    "DBN 2": "15K429"
+    "Column1": "Dawn Meconi"
   },
   {
     "DBN": "14K614",
     "Location Name": "Young Women's Leadership School of Brooklyn",
     "Cohort": "Cohort 2",
     "CA4A Coach": "",
+    "admin_id":1,
+    "coach_id": "",
     "Location Type Description": "General Academic",
     "Building Code": "K147",
     "LCGMS Name": "Catherine Mitchell",
@@ -6781,15 +6783,15 @@
     "2017-18 Allocation": "$25,000.00",
     "Note": "",
     "Principal Name (LCGMS)": "Catherine Mitchell",
-    "Column1": "Catherine Mitchell",
-    "Column2": "TRUE",
-    "DBN 2": "14K614"
+    "Column1": "Catherine Mitchell"
   },
   {
     "DBN": "14K561",
     "Location Name": "Williamsburg Preparatory School",
     "Cohort": "Cohort 2",
     "CA4A Coach": "",
+    "admin_id":1,
+    "coach_id": "",
     "Location Type Description": "General Academic",
     "Building Code": "K650",
     "LCGMS Name": "Michael Shadrick",
@@ -6807,15 +6809,15 @@
     "2017-18 Allocation": "$35,000.00",
     "Note": "",
     "Principal Name (LCGMS)": "Michael Shadrick",
-    "Column1": "Michael Shadrick",
-    "Column2": "TRUE",
-    "DBN 2": "14K561"
+    "Column1": "Michael Shadrick"
   },
   {
     "DBN": "14K488",
     "Location Name": "Brooklyn Preparatory High School",
     "Cohort": "Cohort 2",
     "CA4A Coach": "",
+    "admin_id":1,
+    "coach_id": "",
     "Location Type Description": "General Academic",
     "Building Code": "K650",
     "LCGMS Name": "Noah Lansner",
@@ -6833,15 +6835,15 @@
     "2017-18 Allocation": "$35,000.00",
     "Note": "",
     "Principal Name (LCGMS)": "Noah Lansner",
-    "Column1": "Noah Lansner",
-    "Column2": "TRUE",
-    "DBN 2": "14K488"
+    "Column1": "Noah Lansner"
   },
   {
     "DBN": "14K478",
     "Location Name": "The High School for Enterprise, Business and Technology",
     "Cohort": "Cohort 2",
     "CA4A Coach": "Josh Steckel",
+    "admin_id":1,
+    "coach_id": 6,
     "Location Type Description": "General Academic",
     "Building Code": "K450",
     "LCGMS Name": "Holger Carrillo",
@@ -6859,15 +6861,15 @@
     "2017-18 Allocation": "$45,000.00",
     "Note": "",
     "Principal Name (LCGMS)": "Holger Carrillo",
-    "Column1": "Holger Carrillo",
-    "Column2": "TRUE",
-    "DBN 2": "14K478"
+    "Column1": "Holger Carrillo"
   },
   {
     "DBN": "14K477",
     "Location Name": "East Williamsburg Scholars Academy",
     "Cohort": "Cohort 2",
     "CA4A Coach": "Josh Steckel",
+    "admin_id":1,
+    "coach_id": 6,
     "Location Type Description": "General Academic",
     "Building Code": "K450",
     "LCGMS Name": "Rosemary Vega",
@@ -6885,15 +6887,15 @@
     "2017-18 Allocation": "$30,000.00",
     "Note": "Cohort 2 Invite - Name change on July 1st (East Williamsburg Scholars Academy)",
     "Principal Name (LCGMS)": "Rosemary Vega",
-    "Column1": "Rosemary Vega",
-    "Column2": "TRUE",
-    "DBN 2": "14K477"
+    "Column1": "Rosemary Vega"
   },
   {
     "DBN": "14K449",
     "Location Name": "Brooklyn Latin School, The",
     "Cohort": "Cohort 2",
     "CA4A Coach": "",
+    "admin_id":1,
+    "coach_id": "",
     "Location Type Description": "General Academic",
     "Building Code": "K049",
     "LCGMS Name": "Gina Mautschke",
@@ -6911,15 +6913,15 @@
     "2017-18 Allocation": "$35,000.00",
     "Note": "",
     "Principal Name (LCGMS)": "Gina Mautschke",
-    "Column1": "Gina Mautschke",
-    "Column2": "TRUE",
-    "DBN 2": "14K449"
+    "Column1": "Gina Mautschke"
   },
   {
     "DBN": "14K071",
     "Location Name": "Juan Morel Campos Secondary School",
     "Cohort": "Cohort 2",
     "CA4A Coach": "Jen Grunin",
+    "admin_id":1,
+    "coach_id": 5,
     "Location Type Description": "General Academic",
     "Building Code": "K071",
     "LCGMS Name": "Esther Shali Ogli",
@@ -6937,15 +6939,15 @@
     "2017-18 Allocation": "$30,000.00",
     "Note": "",
     "Principal Name (LCGMS)": "ESTHER SHALI OGLI",
-    "Column1": "Esther Shali Ogli",
-    "Column2": "TRUE",
-    "DBN 2": "14K071"
+    "Column1": "Esther Shali Ogli"
   },
   {
     "DBN": "13K674",
     "Location Name": "City Polytechnic High School of Engineering, Architecture, and Technology",
     "Cohort": "Cohort 2",
     "CA4A Coach": "Jen Grunin",
+    "admin_id":1,
+    "coach_id": 5,
     "Location Type Description": "Career Technical",
     "Building Code": "K580",
     "LCGMS Name": "Judie Hartmann",
@@ -6963,15 +6965,15 @@
     "2017-18 Allocation": "$30,000.00",
     "Note": "",
     "Principal Name (LCGMS)": "Judie Hartmann",
-    "Column1": "Judie Hartmann",
-    "Column2": "TRUE",
-    "DBN 2": "13K674"
+    "Column1": "Judie Hartmann"
   },
   {
     "DBN": "16K455",
     "Location Name": "Boys and Girls High School",
     "Cohort": "Cohort 2",
     "CA4A Coach": "Jen Grunin",
+    "admin_id":1,
+    "coach_id": 5,
     "Location Type Description": "General Academic",
     "Building Code": "K455",
     "LCGMS Name": "Grecian Harrison",
@@ -6989,8 +6991,6 @@
     "2017-18 Allocation": "$30,000.00",
     "Note": "",
     "Principal Name (LCGMS)": "Grecian Harrison",
-    "Column1": "Grecian Harrison",
-    "Column2": "TRUE",
-    "DBN 2": "16K455"
+    "Column1": "Grecian Harrison"
   }
 ]

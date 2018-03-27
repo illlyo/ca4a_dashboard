@@ -1,11 +1,15 @@
 'use strict';
 
 import React from 'react';
+import Auth from '../../modules/Auth';
 
 class Step5 extends React.Component {
   constructor(props){
     super(props);
     this.state = {
+      coachLogResults: null,
+      coachLogRecentResult: null,
+      coachLogResultsLoaded: false,
       supervision_lab_to_bring: props.getStore().supervision_lab_to_bring,
       highlight_planning: props.getStore().highlight_planning
     }
@@ -16,7 +20,24 @@ class Step5 extends React.Component {
     this.handleOptionChangeNo = this.handleOptionChangeNo.bind(this);
   }
 
-  componentDidMount() {}
+  componentDidMount() {
+    fetch('/profile', {
+      method: 'GET',
+      headers: {
+        token: Auth.getToken(),
+        'Authorization': `Token ${Auth.getToken()}`,
+      }
+    })
+    .then(res => res.json())
+    .then(res => {
+      this.setState({
+        coachLogResults: res.coach_logs,
+        coachLogRecentResult: [res.coach_logs[res.coach_logs.length-1]],
+        coachLogResultsLoaded: true,
+      })
+          console.log(this.state.coachLogRecentResult[0].coach_name)
+    }).catch(err => console.log(err));
+  }
 
   componentWillUnmount() {}
 
@@ -117,7 +138,7 @@ class Step5 extends React.Component {
             <div className="row content">
               <div className="col-md-12">
                 <div className="form-style-10">
-                <h1>*Coach Name Here*<span>*School Name*</span></h1>
+                  <h1>{this.state.coachLogResultsLoaded ? (this.state.coachLogRecentResult[0].coach_name) : (' ') }'s Log</h1>
                   <div className="section"><span>17</span>What's something you would like to bring to supervision or lab?</div>
                     <div className="inner-wrap">
                        <div className={notValidClasses.supervision_lab_to_bringCls}>

@@ -3,6 +3,7 @@ Rails.application.routes.draw do
   post '/login' => "sessions#create"
   delete '/logout' => "sessions#destroy"
   get '/profile' => 'coaches#profile'
+  get '/school-profile' => 'coaches#schoolprofile'
 
   resources :coaches
   resources :coach_logs

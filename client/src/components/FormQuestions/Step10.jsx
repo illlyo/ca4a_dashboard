@@ -29,8 +29,6 @@ export default class Step10 extends Component {
                   (this.state.savedToCloud)
                   ?
                     <div>
-                      <h1>Thanks!</h1>
-                        <h2>Data was successfully saved to cloud...</h2>
                         <Results />
                       </div>
                     :

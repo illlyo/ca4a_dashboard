@@ -101,10 +101,6 @@ class Step8 extends Component {
                           {this.props.getValidationMessages('emailEmergency').map(this.renderHelpText)}
                       </div>
                     </div>
-                      <div className="button-section">
-                       <input type="submit" value="Back" onClick={() => this.props.jumpToStep(6)} />
-                       <input type="submit" value="Next" onClick={() => this.props.jumpToStep(8)} />
-                      </div>
                       </form>
                     </div>
                 </form>

@@ -8,6 +8,10 @@ class ApiController < ApplicationController
       @current_coach ||= authenticate_token
     end
 
+    def current_admin
+      @current_admin ||= authenticate_token
+    end
+
     protected
 
     def render_unauthorized(message)

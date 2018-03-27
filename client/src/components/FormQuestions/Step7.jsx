@@ -148,10 +148,6 @@ export default class Step7 extends Component {
                       <div className={notValidClasses.emailValGrpCls}>{this.state.emailValMsg}</div>
                     </div>
                   </div>
-                  <div className="button-section">
-                   <input type="submit" value="Back" onClick={() => this.props.jumpToStep(8)} />
-                   <input type="submit" value="Next" onClick={() => this.props.jumpToStep(10)} />
-                  </div>
                   </form>
                 </div>
 

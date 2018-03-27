@@ -13,6 +13,13 @@ end
     render json: { coach: { username: coach.username, email: coach.email, name: coach.name }, coach_logs: coach_coach_logs, intervisitation_logs:coach_intervisitation_logs }
   end
 
+  def schoolprofile
+    coach = Coach.find_by_auth_token!(request.headers[:token])
+    coach_schools = coach.schools
+    coach_schools = coach.schools
+    render json: { coach: { username: coach.username, email: coach.email, name: coach.name }, schools: coach_schools, schools:coach_schools }
+  end
+
 private
   def coach_params
     params.require(:coach).permit(:username, :password, :email, :name)
