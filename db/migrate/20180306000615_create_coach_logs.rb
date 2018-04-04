@@ -2,7 +2,7 @@ class CreateCoachLogs < ActiveRecord::Migration[5.1]
   def change
     create_table :coach_logs do |t|
       t.string :cancelled
-      t.date :date_of_visit
+      t.datetime :date_of_visit
       t.string :length_of_visit
       t.string :objectives_of_visit
       t.string :interact_in_these_ways

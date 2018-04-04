@@ -5,7 +5,7 @@ import Pie from './TotalCharts/PieChart.jsx';
 import Bar from './TotalCharts/BarChart.jsx';
 import PieChartGoals from './TotalCharts/PieChartGoals.jsx';
 import BarChartTwo from './TotalCharts/BarChartTwo.jsx';
-
+import GroupedBarChart from './Charts/GroupedBarChart.jsx';
 
 
 import ThisPieChart from './Charts/PieChart.jsx';
@@ -13,8 +13,6 @@ import BarChartCohort from './Charts/BarChartCohort.jsx';
 import BarChartProg from './Charts/BarChartProg.jsx';
 import Speedometer from './Charts/Speedometer.jsx';
 import SpeedometerTwo from './Charts/SpeedometerTwo.jsx';
-
-
 
 class FilteredResults extends React.Component {
   constructor(props) {
@@ -120,6 +118,7 @@ class FilteredResults extends React.Component {
                     </div>
                 </div>
                 <PieChartGoals coachLogResults={this.state.coachLogResults} />
+                  <GroupedBarChart coachLogResults={this.state.coachLogResults} />
 
               </div> : <p>Loading...</p>}
 

@@ -14,6 +14,9 @@ import PieChartThree from './Charts/PieChartThree.jsx';
 import BarChartProg from './Charts/BarChartProg.jsx';
 import Speedometer from './Charts/Speedometer.jsx';
 import SpeedometerTwo from './Charts/SpeedometerTwo.jsx';
+import InterMethStackedBar from './TotalCharts/InterMethStackedBar.jsx';
+
+import GroupedBarChartCompared from './Charts/GroupedBarChartCompared.jsx';
 
 import Auth from '../modules/Auth';
 
@@ -24,6 +27,9 @@ class Results extends React.Component{
       coachLogResults: null,
       coachLogRecentResult: null,
       coachLogResultsLoaded: false,
+      allCoachLogResults: null,
+      allCoachLogRecentResult: null,
+      allCoachLogResultsLoaded: false,
     }
   }
 
@@ -42,8 +48,21 @@ class Results extends React.Component{
         coachLogRecentResult: [res.coach_logs[res.coach_logs.length-1]],
         coachLogResultsLoaded: true,
       })
-      console.log(this.state.coachLogRecentResult);
-    }).catch(err => console.log(err));
+      console.log();
+    })
+      fetch('/coachlogs', {
+        method: 'GET',
+      })
+      .then(res => res.json())
+      .then(res => {
+        this.setState({
+          allCoachLogResults: res.coachlogs,
+          allCoachLogRecentResult: [res.coachlogs[res.coachlogs.length-1]],
+          allCoachLogResultsLoaded: true,
+        })
+        console.log('during fetch');
+      })
+    .catch(err => console.log(err));
   }
 
 
@@ -115,6 +134,14 @@ class Results extends React.Component{
            <h3>Highlighting School's Work:</h3>
           </div>
            <p>{res.highlight_planning_explained}</p>
+             {(this.state.allCoachLogResultsLoaded) && (this.state.coachLogResultsLoaded) ?
+               <div>
+                <GroupedBarChartCompared allCoachLogResults={this.state.allCoachLogResults}/>
+                  <InterMethStackedBar coachLogResults={this.state.coachLogResults} />
+               </div>
+               : <p>Loading...</p>}
+
+
       </div>
     )})
   }

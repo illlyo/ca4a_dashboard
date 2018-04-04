@@ -17,7 +17,7 @@ ActiveRecord::Schema.define(version: 20180306012804) do
 
   create_table "coach_logs", force: :cascade do |t|
     t.string "cancelled"
-    t.date "date_of_visit"
+    t.datetime "date_of_visit"
     t.string "length_of_visit"
     t.string "objectives_of_visit"
     t.string "interact_in_these_ways"

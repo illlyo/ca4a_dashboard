@@ -31,7 +31,7 @@ class Pie extends Component {
         ]
       }
     }
-    console.log(this.state.data);
+    console.log(Math.round(this.state.coachLogResults.map(d => d.interact_teachers).reduce((accumulator, currentValue) => accumulator + currentValue, 0)/this.state.coachLogResults.map(d => d.interact_teachers).length));
   }
 
   render() {
