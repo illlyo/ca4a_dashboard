@@ -1,8 +1,11 @@
 import React from 'react';
 import Scatterplot from './Charts/Scatterplot.jsx';
-import Bar from './Charts/BarChart.jsx';
+
+import Bar from './Charts/Timescale/BarChart.jsx';
+import ThisPieChart from './Charts/Timescale/PieChart.jsx';
+
 import LineChartBrush from './Charts/LineChartBrush.jsx';
-import ThisPieChart from './Charts/PieChart.jsx';
+
 import GroupedBarChart from './Charts/GroupedBarChart.jsx';
 import LineBarChart from './Charts/LineBarChart.jsx';
 import ArcPie from './Charts/ArcPie.jsx';
@@ -11,12 +14,14 @@ import PieInteractive from './Charts/PieInteractive.jsx';
 import SimplePieGraph from './Charts/SimplePieGraph.jsx';
 import PieChartTwo from './Charts/PieChartTwo.jsx';
 import PieChartThree from './Charts/PieChartThree.jsx';
-import BarChartProg from './Charts/BarChartProg.jsx';
+import BarChartProg from './Charts/Timescale/BarChartProg.jsx';
 import Speedometer from './Charts/Speedometer.jsx';
 import SpeedometerTwo from './Charts/SpeedometerTwo.jsx';
 import InterMethStackedBar from './TotalCharts/InterMethStackedBar.jsx';
+import Group from './Charts/Timescale/Group.jsx';
+// import StackedBarNew from './TotalCharts/StackedBarNew.jsx';
 
-import GroupedBarChartCompared from './Charts/GroupedBarChartCompared.jsx';
+// import GroupedBarChartCompared from './Charts/GroupedBarChartCompared.jsx';
 
 import Auth from '../modules/Auth';
 
@@ -48,7 +53,7 @@ class Results extends React.Component{
         coachLogRecentResult: [res.coach_logs[res.coach_logs.length-1]],
         coachLogResultsLoaded: true,
       })
-      console.log();
+      console.log(res.coach_logs.filter(res => res.school_visited == this.props.schoolVisited));
     })
       fetch('/coachlogs', {
         method: 'GET',
@@ -60,7 +65,7 @@ class Results extends React.Component{
           allCoachLogRecentResult: [res.coachlogs[res.coachlogs.length-1]],
           allCoachLogResultsLoaded: true,
         })
-        console.log('during fetch');
+        console.log(this.state.coachLogRecentResult);
       })
     .catch(err => console.log(err));
   }
@@ -90,10 +95,13 @@ class Results extends React.Component{
               </div>
                 <div className="chart-org">
                   <div className="flex-row">
-                  <ThisPieChart coachLogResults={this.state.coachLogRecentResult} /><Bar coachLogResults={this.state.coachLogRecentResult} />
+                  <ThisPieChart coachLogResults={this.state.coachLogResults} />
+                  <Bar coachLogResults={this.state.coachLogResults} />
                   </div>
-                </div><br></br><br></br>
-                  <p>{res.next_step_notes}</p>
+                  <br></br><br></br>
+                  <p className="next-step-notes" >{res.next_step_notes}</p>
+                </div>
+
 
            <div className="mod-header-row">
             <h2>School's Engagment in Activities</h2>
@@ -101,7 +109,7 @@ class Results extends React.Component{
               <div className="chart-org">
                             <div className="flex-row">
                 <PieChartTwo coachLogResults={this.state.coachLogRecentResult} />
-                <BarChartProg coachLogResults={this.state.coachLogRecentResult} />
+                <BarChartProg coachLogResults={this.state.coachLogResults} />
                 </div>
               </div>
                   <p className="p-tag"><b>Tools Used:</b><br></br>{res.forward_work}</p>
@@ -110,7 +118,7 @@ class Results extends React.Component{
             </div>
                    <div className="chart-org">
                     <div className="flex-row">
-                    <Speedometer coachLogResults={this.state.coachLogRecentResult} />
+                    <Speedometer coachLogResults={this.state.coachLogResults} />
                     <SpeedometerTwo coachLogResults={this.state.coachLogRecentResult} />
                     </div>
                     </div>
@@ -134,21 +142,17 @@ class Results extends React.Component{
            <h3>Highlighting School's Work:</h3>
           </div>
            <p>{res.highlight_planning_explained}</p>
-             {(this.state.allCoachLogResultsLoaded) && (this.state.coachLogResultsLoaded) ?
                <div>
-                <GroupedBarChartCompared allCoachLogResults={this.state.allCoachLogResults}/>
-                  <InterMethStackedBar coachLogResults={this.state.coachLogResults} />
+                 <Group coachLogResults={this.state.coachLogResults} />
+                 <InterMethStackedBar coachLogResults={this.state.coachLogResults} />
                </div>
-               : <p>Loading...</p>}
-
-
       </div>
     )})
   }
 
   render(){
     return(
-      <div>
+      <div className="results-page" >
          {(this.state.coachLogResultsLoaded) ?
             this.renderResults() : <p>Loading...</p>}
       </div>

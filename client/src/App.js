@@ -11,6 +11,7 @@ import SchoolData from './components/SchoolData';
 import Results from './components/Results.jsx';
 import FilteredResults from './components/FilteredResults';
 
+import Step1 from './components/FormQuestions/Step1.jsx';
 import './App.css';
 
 class App extends Component {
@@ -87,27 +88,34 @@ class App extends Component {
           <div className="App">
             <Nav handleLogout={this.handleLogout} />
             <Switch>
-              <Route exact path="/" render={() => (this.state.auth) ?
-                             <Redirect to="/dash-nav" />
+              <Route exact path="/" render={() => (this.state.auth ?
+                             (<Redirect to="/dash-nav" />)
                              :
-                             <Login handleLoginSubmit={this.handleLoginSubmit}
+                             (<Login handleLoginSubmit={this.handleLoginSubmit}
                                     handleChange={this.handleChange}
                                     auth={this.state.auth}
                                     username={this.state.username}
                                     password={this.state.password}
-                                    />} />
-              <Route exact path="/dash-nav" render={() =>
-                            <DashNav />} />
-              <Route exact path="/dashboard" render={() => (this.state.auth) ?
-                             <Questionnaire />
+                                    />))} />
+              <Route exact path="/dash-nav" render={() => (this.state.auth ?
+                            (<DashNav />)
+                            :
+                            (<Login handleLoginSubmit={this.handleLoginSubmit}
+                                   handleChange={this.handleChange}
+                                   auth={this.state.auth}
+                                   username={this.state.username}
+                                   password={this.state.password}
+                                   />))} />
+              <Route exact path="/dashboard" render={() => (this.state.auth ?
+                             (<Questionnaire />)
                              :
-                             <Login handleLoginSubmit={this.handleLoginSubmit}
+                           (<Login handleLoginSubmit={this.handleLoginSubmit}
                                     handleChange={this.handleChange}
                                     auth={this.state.auth}
                                     username={this.state.username}
                                     password={this.state.password}
-                                    />} />
-                                  <Route exact path="/intervisitation-log" render={() =>
+                                    />))} />
+              <Route exact path="/intervisitation-log" render={() =>
                             <IntervisitationQuestionnaire />} />
               <Route exact path="/schools" render={() =>
                             <SchoolData />} />

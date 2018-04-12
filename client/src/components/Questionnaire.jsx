@@ -9,8 +9,6 @@ import Step6 from './FormQuestions/Step6';
 import Step7 from './FormQuestions/Step7';
 import Step8 from './FormQuestions/Step8';
 import Step9 from './FormQuestions/Step9';
-import Step10 from './FormQuestions/Step10';
-
 
 class Questionnaire extends React.Component{
   constructor(props) {
@@ -69,6 +67,7 @@ class Questionnaire extends React.Component{
       highlight_planning_explained: '',
       coach_name: '',
       school_visited: '',
+      school_id: 0
     };
 
     this.sampleStore = {
@@ -120,6 +119,7 @@ class Questionnaire extends React.Component{
       highlight_planning_explained: '',
       coach_name: '',
       school_visited: '',
+      school_id: 0
     };
   }
 
@@ -131,7 +131,6 @@ class Questionnaire extends React.Component{
 
   getStore() {
     return this.sampleStore;
-    console.log(this.sampleStore);
   }
 
   updateStore(update) {
@@ -139,7 +138,6 @@ class Questionnaire extends React.Component{
       ...this.sampleStore,
       ...update,
     }
-    console.log(this.sampleStore)
   }
 
   render() {
@@ -153,8 +151,7 @@ class Questionnaire extends React.Component{
       {name: 'Step6', component: <Step6 getStore={() => (this.getStore())} updateStore={(u) => {this.updateStore(u)}} />},
       {name: 'Step7', component: <Step7 getStore={() => (this.getStore())} updateStore={(u) => {this.updateStore(u)}} />},
       {name: 'Step8', component: <Step8 getStore={() => (this.getStore())} updateStore={(u) => {this.updateStore(u)}} />},
-      {name: 'Step9', component: <Step9 getStore={() => (this.getStore())} updateStore={(u) => {this.updateStore(u)}} />},
-      {name: 'Step10', component: <Step10 getStore={() => (this.getStore())} updateStore={(u) => {this.updateStore(u)}} />}
+      {name: 'Step9', component: <Step9 getStore={() => (this.getStore())} updateStore={(u) => {this.updateStore(u)}} />}
     ]
 
     return (

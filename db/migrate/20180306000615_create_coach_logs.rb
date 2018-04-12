@@ -34,8 +34,10 @@ class CreateCoachLogs < ActiveRecord::Migration[5.1]
       t.string :activity_synthesize
       t.string :activity_scale
       t.string :forward_work
-      t.string :goals_met
-      t.string :rate_learning_trajectory
+      t.integer :goals_met
+      t.string :goals_met_answer
+      t.integer :rate_learning_trajectory
+      t.string :rate_learning_trajectory_answer
       t.string :rate_learning_trajectory_explained
       t.string :learning_trajectory_success_challenge
       t.string :in_between_steps

@@ -6,42 +6,6 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-allschools = ActiveSupport::JSON.decode(File.read(Rails.root.join('lib', 'seeds', 'MasterlistData.json')))
-allschools.each do |key|
-  School.create!(
-    dbn: key['DBN'],
-    location_name: key['Location Name'],
-    cohort: key['Cohort'],
-    coach_name: key['CA4A Coach'],
-    coach_id: key['coach_id'],
-    location_type_description: key['Location Type Description'],
-    building_code: key['Building Code'],
-    lcgms_name: key['LCGMS Name'],
-    principal_email: key['Principal Email'],
-    principal_phone_number: key['Principal Phone Number'],
-    school_address: key['Address'],
-    superintendent: key['Superintendent'],
-    session_type: key['Session'],
-    year_attended: key['Year Attended'],
-    attendance_flag: key['Attendance Flag'],
-    allocation_2016_17: key['2016-17 Allocation'],
-    fsf_proj_enrollment_2017_18: key['FSF Proj Enroll 2017-18'],
-    allocation_2017_18: key['2017-18 Allocation'],
-    any_notes: key['Note'],
-    principal_name: ['Principal Name (LCGMS)']
-  )
-end
-
-# admin = ActiveSupport::JSON.decode(File.read(Rails.root.join('lib', 'seeds', 'admin.json')))
-# admin.each do |key|
-#     Admin.create!(
-#       username: key['login'],
-#       password: key['Password'],
-#       email: key['Email'],
-#       name: key['Name']
-#     )
-# end
-
 coaches = ActiveSupport::JSON.decode(File.read(Rails.root.join('lib', 'seeds', 'coaches.json')))
 coaches.each do |key|
     Coach.create!(
@@ -50,25 +14,6 @@ coaches.each do |key|
       email: key['Email'],
       name: key['Name']
     )
-end
-
-previousintervisitlogs = ActiveSupport::JSON.decode(File.read(Rails.root.join('lib', 'seeds', 'recentintervisitationlog.json')))
-previousintervisitlogs.each do |key|
-  IntervisitationLog.create!(
-    date_visit: key['Date of Visit'],
-    visit_type: key['Which type of visit are you logging today?'],
-    coach_visited: key['Who did you visit?'],
-    school: key['Which school did you visit?'],
-    feedback: key["The facilitating coach asked me to look for/give feedback on...."],
-    hoping_to_learn: key["I entered this visit hoping to learn more about...."],
-    areas_of_strength: key["Areas of Strength:  What were the best parts of this visit?"],
-    areas_for_growth: key["Areas for Growth:  What are some specific suggestions for development?"],
-    thinking_about: key["I'm thinking about..."],
-    plan_to_tryout: key["Something I plan to tryout is..."],
-    share_with_team: key["One thing we want to share with the whole team is..."],
-    coach_name: key["Select your name"],
-    coach_id: key["coach"]
-  )
 end
 
 previouslogs = ActiveSupport::JSON.decode(File.read(Rails.root.join('lib', 'seeds', 'recentcoachlog.json')))
@@ -106,8 +51,10 @@ previouslogs.each do |key|
     activity_synthesize: key['To what extent has this school engaged in the following activities?  [Synthesize - (Document and synthesize team learning)]'],
     activity_scale: key['To what extent has this school engaged in the following activities?  [Scale - (Share innovation with wider group)]'],
     forward_work: key["What particular tools, protocols, readings, data etc. did you use to help move this team's work forward?"],
-    goals_met: key['Were the goal(s) for todayÕs visit met?'],
-    rate_learning_trajectory: key['Rate this schoolÕs overall progress on their Learning Trajectory since your last visit.'],
+    goals_met_answer: key['Were the goal(s) for todayÕs visit met?'],
+    goals_met: key['goals_met'],
+    rate_learning_trajectory: key['rate_learning_trajectory'],
+    rate_learning_trajectory_answer: key['Rate this schoolÕs overall progress on their Learning Trajectory since your last visit.'],
     rate_learning_trajectory_explained: key['Explain your answer to the progress question above.'],
     learning_trajectory_success_challenge: key['What successes/challenges are you experiencing in moving this team through their Learning Trajectory?'],
     in_between_steps: key["What are the \"in-between\" steps you can take before your next meeting to move this team's work forward?"],
@@ -122,7 +69,53 @@ previouslogs.each do |key|
     highlight_planning: key['Would you like to highlight any work this school is doing around the College and Career Planning Calendar this month?'],
     highlight_planning_explained: key["What would you like to highlight related to the College and Career Planning Calendar and this school's work?"],
     coach_id: key["coach"],
+    school_id: key["school_id"],
     coach_name: key["Select your name"],
     school_visited: key["School Visited"]
+  )
+end
+
+allschools = ActiveSupport::JSON.decode(File.read(Rails.root.join('lib', 'seeds', 'MasterlistData.json')))
+allschools.each do |key|
+  School.create!(
+    dbn: key['DBN'],
+    location_name: key['Location Name'],
+    cohort: key['Cohort'],
+    coach_name: key['CA4A Coach'],
+    coach_id: key['coach_id'],
+    location_type_description: key['Location Type Description'],
+    building_code: key['Building Code'],
+    lcgms_name: key['LCGMS Name'],
+    principal_email: key['Principal Email'],
+    principal_phone_number: key['Principal Phone Number'],
+    school_address: key['Address'],
+    superintendent: key['Superintendent'],
+    session_type: key['Session'],
+    year_attended: key['Year Attended'],
+    attendance_flag: key['Attendance Flag'],
+    allocation_2016_17: key['2016-17 Allocation'],
+    fsf_proj_enrollment_2017_18: key['FSF Proj Enroll 2017-18'],
+    allocation_2017_18: key['2017-18 Allocation'],
+    any_notes: key['Note'],
+    principal_name: ['Principal Name (LCGMS)']
+  )
+end
+
+previousintervisitlogs = ActiveSupport::JSON.decode(File.read(Rails.root.join('lib', 'seeds', 'recentintervisitationlog.json')))
+previousintervisitlogs.each do |key|
+  IntervisitationLog.create!(
+    date_visit: key['Date of Visit'],
+    visit_type: key['Which type of visit are you logging today?'],
+    coach_visited: key['Who did you visit?'],
+    school: key['Which school did you visit?'],
+    feedback: key["The facilitating coach asked me to look for/give feedback on...."],
+    hoping_to_learn: key["I entered this visit hoping to learn more about...."],
+    areas_of_strength: key["Areas of Strength:  What were the best parts of this visit?"],
+    areas_for_growth: key["Areas for Growth:  What are some specific suggestions for development?"],
+    thinking_about: key["I'm thinking about..."],
+    plan_to_tryout: key["Something I plan to tryout is..."],
+    share_with_team: key["One thing we want to share with the whole team is..."],
+    coach_name: key["Select your name"],
+    coach_id: key["coach"]
   )
 end

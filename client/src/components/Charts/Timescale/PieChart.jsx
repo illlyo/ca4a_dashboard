@@ -1,10 +1,9 @@
-import React from 'react';
+import React, {Component} from 'react';
 import {BarChart} from 'react-d3-components';
 import {Legend} from 'react-easy-chart';
 import * as d3 from "d3";
 
-class InterMethStackedBar extends React.Component {
-  constructor(props) {
+class ThisPieChart extends Component {  constructor(props) {
     super(props);
     this.state = {
       coachLogResults: props.coachLogResults,
@@ -135,7 +134,7 @@ class InterMethStackedBar extends React.Component {
     var tooltipScatter = function(label, x, y, z) {
     return "label: " + label + " x: " + x + "y: " + y + "z: " + z ;
 }
-    return (<div><BarChart data={this.state.data} width={460} height={200} tooltipHtml={tooltipScatter} yAxis={{ tickArguments: [5], innerTickSize: 6, tickPadding: 3, outerTickSize: 2 }} margin={{
+    return (<div><BarChart data={this.state.data} width={460} height={200} tooltipHtml={tooltipScatter} margin={{
         top: 10,
         bottom: 50,
         left: 50,
@@ -146,4 +145,4 @@ class InterMethStackedBar extends React.Component {
   }
 }
 
-export default InterMethStackedBar;
+export default ThisPieChart;

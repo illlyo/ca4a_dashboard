@@ -1,5 +1,5 @@
 class CoachesController < ApiController
-  before_action :require_login, except: [:create, :profile]
+  before_action :require_login, except: [:create, :profile, :schoolprofile]
 
   def create
   coach = Coach.create!(coach_params)
@@ -10,14 +10,13 @@ end
     coach = Coach.find_by_auth_token!(request.headers[:token])
     coach_coach_logs = coach.coach_logs
     coach_intervisitation_logs = coach.intervisitation_logs
-    render json: { coach: { username: coach.username, email: coach.email, name: coach.name }, coach_logs: coach_coach_logs, intervisitation_logs:coach_intervisitation_logs }
+    coach_schools = coach.schools
+    render json: { coach: { username: coach.username, email: coach.email, name: coach.name }, coach_logs: coach_coach_logs, schools: coach_schools }
   end
 
   def schoolprofile
-    coach = Coach.find_by_auth_token!(request.headers[:token])
-    coach_schools = coach.schools
-    coach_schools = coach.schools
-    render json: { coach: { username: coach.username, email: coach.email, name: coach.name }, schools: coach_schools, schools:coach_schools }
+    coach_log = CoachLog.where(params[:school_id => 181])
+    render json: { coach_log: coach_log }
   end
 
 private

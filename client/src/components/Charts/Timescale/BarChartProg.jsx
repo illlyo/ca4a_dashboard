@@ -1,71 +1,70 @@
-import React from 'react';
+import React, {Component} from 'react';
 import {BarChart} from 'react-d3-components';
 import {Legend} from 'react-easy-chart';
 import * as d3 from "d3";
 
-class InterMethStackedBar extends React.Component {
-  constructor(props) {
+class BarChartProg extends Component {  constructor(props) {
     super(props);
     this.state = {
       coachLogResults: props.coachLogResults,
       data: [{
-            label: 'Facilitate Meeting with Team',
+            label: 'Inquiry Institute',
             values: props.coachLogResults.map(res => {
               return {
 
                 x: this.getInputMonth(res.date_of_visit),
-                y: res.interact_meeting_with_team
+                y: res.inquiry_institute
 
             }
           })}
           , {
-            label: 'Observed Practice',
+            label: 'Research',
             values: props.coachLogResults.map(res => {
               return {
 
                 x: this.getInputMonth(res.date_of_visit),
-                y: res.interact_observed_practice
+                y: res.research
 
             }
             })
           }, {
-            label: 'Checked in with Leadership',
+            label: 'Design',
             values: props.coachLogResults.map(res => {
               return {
 
                 x: this.getInputMonth(res.date_of_visit),
-                y: res.interact_with_leadership
+                y: res.design
 
             }
           })
           }, {
-            label: 'Checked in with Team Lead',
+            label: 'PDSA',
             values: props.coachLogResults.map(res => {
               return {
 
                 x: this.getInputMonth(res.date_of_visit),
-                y: res.interact_with_team_lead
+                y: res.pdsa
 
             }
             })
           }, {
-            label: 'Facilitated a PD',
+            label: 'Synthesize',
             values: props.coachLogResults.map(res => {
               return {
 
                 x: this.getInputMonth(res.date_of_visit),
-                y: res.interact_with_pd
+                y: res.synthesize
 
             }
             })
 
           }, {
-            label: 'Other',
+            label: 'Scale',
             values: props.coachLogResults.map(res => {
               return {
 
                 x: this.getInputMonth(res.date_of_visit),
-                y: res.interact_with_other
+                y: res.scale
 
             }
           })
@@ -74,8 +73,8 @@ class InterMethStackedBar extends React.Component {
     }
 
     this.getInputMonth = this.getInputMonth.bind(this);
-    console.log(this.state.data);
-    console.log(this.state.coachLogResults.filter(res => res.school_id == 186));
+    console.log();
+    console.log();
   }
 
   getInputMonth(testingthiss) {
@@ -123,6 +122,7 @@ class InterMethStackedBar extends React.Component {
   }
 
   render() {
+    var colorScale = d3.scaleOrdinal(d3.schemeCategory20);
     const customStyle = {
       '.legend': {
         backgroundColor: '#f9f9f9',
@@ -135,7 +135,7 @@ class InterMethStackedBar extends React.Component {
     var tooltipScatter = function(label, x, y, z) {
     return "label: " + label + " x: " + x + "y: " + y + "z: " + z ;
 }
-    return (<div><BarChart data={this.state.data} width={460} height={200} tooltipHtml={tooltipScatter} yAxis={{ tickArguments: [5], innerTickSize: 6, tickPadding: 3, outerTickSize: 2 }} margin={{
+    return (<div><BarChart data={this.state.data} colorScale={colorScale} width={460} height={200} tooltipHtml={tooltipScatter} margin={{
         top: 10,
         bottom: 50,
         left: 50,
@@ -146,4 +146,4 @@ class InterMethStackedBar extends React.Component {
   }
 }
 
-export default InterMethStackedBar;
+export default BarChartProg;

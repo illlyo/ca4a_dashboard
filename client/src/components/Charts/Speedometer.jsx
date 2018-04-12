@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import ReactSpeedometer from 'react-d3-speedometer';
+import {LineChart} from 'react-d3-components';
 import { Legend } from 'react-easy-chart';
 
 class Speedometer extends Component {
@@ -7,16 +8,63 @@ class Speedometer extends Component {
     super(props);
     this.state = {
       data: {
-        values: [
-          {x: 'Exceeded', y: props.coachLogResults[0].inquiry_institute},
-                   {x: 'Sufficiently Met', y: props.coachLogResults[0].research},
-                   {x: 'Somewhat Met', y: props.coachLogResults[0].design},
-                   {x: 'Not Met At All', y: props.coachLogResults[0].pdsa},
-                 {x: 'Not Defined', y: props.coachLogResults[0].synthesize}
-        ]
+        values: props.coachLogResults.map(res => {
+          return {
+
+            x: this.getInputMonth(res.date_of_visit),
+            y: res.goals_met
+
+        }
+      })
       }
       }
+      this.getInputMonth = this.getInputMonth.bind(this);
     }
+
+    getInputMonth(testingthiss) {
+      var month;
+      var day = new Date(testingthiss).getDate();
+      switch (new Date(testingthiss).getMonth()) {
+        case 0:
+          month = "01/";
+          break;
+        case 1:
+          month = "02/";
+          break;
+        case 2:
+          month = "03/";
+          break;
+        case 3:
+          month = "04/";
+          break;
+        case 4:
+          month = "05/";
+          break;
+        case 5:
+          month = "06/";
+          break;
+        case 6:
+          month = "07/";
+          break;
+        case 7:
+          month = "08/";
+          break;
+        case 8:
+          month = "09/";
+          break;
+        case 9:
+          month = "10/";
+          break;
+        case 10:
+          month = "11/";
+          break;
+        case 11:
+          month = "12/";
+
+      }
+      return month + day;
+    }
+
     render() {
       const config = [
 {color: '#6ad72d'},
@@ -35,6 +83,14 @@ class Speedometer extends Component {
         }
       }
       return (
+        <div>
+        <div className="linechart">
+          <LineChart
+                data={this.state.data}
+                width={400}
+                height={400}
+                margin={{top: 10, bottom: 50, left: 50, right: 10}}/>
+        </div>
         <div className="speedometer">
         <ReactSpeedometer
           value={2}
@@ -45,7 +101,8 @@ class Speedometer extends Component {
           currentValueText="Expectations of Goals"
         />
       <Legend data={this.state.data.values} dataId={'x'} styles={customStyle} config={config}  />
-    </div>)
+    </div>
+  </div>)
     }
 
 }

@@ -1,5 +1,4 @@
 import React from 'react';
-import logo from './nyc_doe_logo.png';
 import { Link } from 'react-router-dom';
 
 const Nav = props => {
@@ -7,10 +6,12 @@ const Nav = props => {
   return(
     <header>
     <div className="App-header">
-      <img src={logo} className="nyc-doe-logo" alt="logo" />
+      <h1 className="nyc-doe-logo">NYC Department <br></br>of Education</h1>
+    </div><div>
         <h1 className="App-title">BETA DASHBOARD</h1>
+        </div>
         <span onClick={props.handleLogout} className="logout-link" >Logout</span>
-    </div>
+
     </header>
   )
 }

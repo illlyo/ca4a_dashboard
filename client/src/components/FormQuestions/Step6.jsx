@@ -1,22 +1,58 @@
 'use strict';
 
-import React, { Component } from 'react';
+import React from 'react';
+import Auth from '../../modules/Auth';
 
-class Step6 extends Component{
-
+class Step6 extends React.Component {
   constructor(props){
     super(props);
     this.state = {
-      highlight_planning_explained: props.getStore().highlight_planning_explained,
+      coachLogResults: null,
+      coachLogRecentResult: null,
+      coachLogResultsLoaded: false,
+      supervision_lab_to_bring: props.getStore().supervision_lab_to_bring,
+      highlight_planning: props.getStore().highlight_planning
     }
     this._validateOnDemand = true; // this flag enables onBlur validation as user fills forms
     this.validationCheck = this.validationCheck.bind(this);
     this.isValidated = this.isValidated.bind(this);
+    this.handleOptionChangeYes = this.handleOptionChangeYes.bind(this);
+    this.handleOptionChangeNo = this.handleOptionChangeNo.bind(this);
   }
 
-  componentDidMount() {}
+  componentDidMount() {
+    fetch('/profile', {
+      method: 'GET',
+      headers: {
+        token: Auth.getToken(),
+        'Authorization': `Token ${Auth.getToken()}`,
+      }
+    })
+    .then(res => res.json())
+    .then(res => {
+      this.setState({
+        coachLogResults: res.coach_logs,
+        coachLogRecentResult: [res.coach_logs[res.coach_logs.length-1]],
+        coachLogResultsLoaded: true,
+      })
+          console.log(this.state.coachLogRecentResult[0].coach_name)
+    }).catch(err => console.log(err));
+  }
 
   componentWillUnmount() {}
+
+  handleOptionChangeYes(e){
+    this.setState({
+      highlight_planning: 'yes'
+  });
+  }
+
+  handleOptionChangeNo(e){
+    this.setState({
+      highlight_planning: 'no'
+  });
+  console.log(e.target.value)
+  }
 
   isValidated() {
     const userInput = this._grabUserInput(); // grab user entered vals
@@ -25,7 +61,8 @@ class Step6 extends Component{
 
     // if full validation passes then save to store and pass as valid
     if (Object.keys(validateNewInput).every((k) => { return validateNewInput[k] === true })) {
-        if (this.props.getStore().highlight_planning_explained != userInput.highlight_planning_explained ) { // only update store of something changed
+        if (this.props.getStore().supervision_lab_to_bring != userInput.supervision_lab_to_bring ||
+            this.props.getStore().highlight_planning != userInput.highlight_planning ) { // only update store of something changed
           this.props.updateStore({
             ...userInput,
             savedToCloud: false // use this to notify step4 that some changes took place and prompt the user to save again
@@ -51,13 +88,15 @@ class Step6 extends Component{
 
   _validateData(data) {
    return  {
-     highlight_planning_explainedVal: (data.highlight_planning_explained != 0)
+     supervision_lab_to_bringVal: (data.supervision_lab_to_bring != 0),
+     highlight_planningVal: (data.highlight_planning != 0)
    }
  }
 
  _validationErrors(val) {
    const errMsgs = {
-     highlight_planning_explainedValMsg: val.highlight_planning_explainedVal ? '' : 'Response required'
+     supervision_lab_to_bringValMsg: val.supervision_lab_to_bringVal ? '' : 'Response required',
+     highlight_planningValMsg: val.highlight_planningVal ? '' : 'Response required'
    }
    console.log(errMsgs)
    return errMsgs;
@@ -65,7 +104,8 @@ class Step6 extends Component{
 
  _grabUserInput() {
    return {
-     highlight_planning_explained: this.refs.highlight_planning_explained.value
+     supervision_lab_to_bring: this.refs.supervision_lab_to_bring.value,
+     highlight_planning: this.refs.highlight_planning.value
    };
  }
 
@@ -73,38 +113,65 @@ class Step6 extends Component{
 
        let notValidClasses = {};
 
-       if (typeof this.state.highlight_planning_explainedVal == 'undefined' || this.state.highlight_planning_explainedVal) {
-         notValidClasses.highlight_planning_explainedCls = 'no-error col-md-8';
-       }
-       else {
-          notValidClasses.highlight_planning_explainedCls = 'has-error col-md-8';
-          notValidClasses.highlight_planning_explainedValGrpCls = 'val-err-tooltip';
-       }
-
-return(
+   if (typeof this.state.supervision_lab_to_bringVal == 'undefined' || this.state.supervision_lab_to_bringVal) {
+     notValidClasses.supervision_lab_to_bringCls = 'no-error col-md-8';
+   }
+   else {
+      notValidClasses.supervision_lab_to_bringCls = 'has-error col-md-8';
+      notValidClasses.supervision_lab_to_bringValGrpCls = 'val-err-tooltip';
+   }
+   if (typeof this.state.highlight_planningVal == 'undefined' || this.state.highlight_planningVal) {
+     notValidClasses.highlight_planningCls = 'no-error col-md-8';
+   }
+   else {
+      notValidClasses.highlight_planningCls = 'has-error col-md-8';
+      notValidClasses.highlight_planningValGrpCls = 'val-err-tooltip';
+   }
+   return(
     <div className="step step2">
       <div className="row">
         <form id="Form" className="form-horizontal">
           <div className="form-group">
             <label className="col-md-12 control-label">
-              <h1>Highlighting this School's work</h1>
+              <h1>Thinking Ahead Continued</h1>
             </label>
             <div className="row content">
               <div className="col-md-12">
                 <div className="form-style-10">
-                <h1>*Coach Name Here*<span>*School Name*</span></h1>
-                  <div className="section"><span>19</span>What would you like to highlight related to the College and Career Planning Calendar and this school's work?</div>
+                  <h1>{this.state.coachLogResultsLoaded ? (this.state.coachLogRecentResult[0].coach_name) : (' ') }'s Log</h1>
+                  <div className="section"><span>19</span>What's something you would like to bring to supervision or lab?</div>
                     <div className="inner-wrap">
-                      <div className={notValidClasses.highlight_planning_explainedCls}>
+                       <div className={notValidClasses.supervision_lab_to_bringCls}>
                         <textarea type="string"
                                   name="field3"
                                   className="form-control"
-                                  ref="highlight_planning_explained"
-                                  defaultValue={this.state.highlight_planning_explained}
+                                  ref="supervision_lab_to_bring"
+                                  defaultValue={this.state.supervision_lab_to_bring}
                                   onBlur={this.validationCheck} />
-                          <div className={notValidClasses.highlight_planning_explainedValGrpCls}>{this.state.highlight_planning_explainedValMsg}</div>
+                       <div className={notValidClasses.supervision_lab_to_bringValGrpCls}>{this.state.supervision_lab_to_bringValMsg}</div>
                       </div>
                     </div>
+                    <div className="section"><span>20</span>Would you like to highlight any work this school is doing around the College and Career Planning Calendar this month?</div>
+                      <div className="inner-wrap">
+                        <div className={notValidClasses.highlight_planningCls}>
+                          <input type="radio"
+                                 name="field1"
+                                 className="form-control"
+                                 ref="highlight_planning"
+                                 defaultValue={this.state.highlight_planning}
+                                 onChange={this.handleOptionChangeYes}
+                                 onBlur={this.validationCheck} />Yes
+                          <input type="radio"
+                                 name="field1"
+                                 className="form-control"
+                                 ref="highlight_planning"
+                                 defaultValue={this.state.highlight_planning}
+                                 onChange={this.handleOptionChangeNo}
+                                 onBlur={this.validationCheck} />No
+                            <div className={notValidClasses.highlight_planningValGrpCls}>{this.state.highlight_planningValMsg}</div>
+                        </div>
+                      </div>
+
                 </div>
               </div>
             </div>
@@ -112,7 +179,7 @@ return(
         </form>
       </div>
     </div>
-  )}
+)
 }
-
+}
 export default Step6;

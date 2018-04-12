@@ -3,58 +3,58 @@ import {BarChart} from 'react-d3-components';
 import {Legend} from 'react-easy-chart';
 import * as d3 from "d3";
 
-class InterMethStackedBar extends React.Component {
+class Bar extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
       coachLogResults: props.coachLogResults,
       data: [{
-            label: 'Facilitate Meeting with Team',
+            label: 'Teachers',
             values: props.coachLogResults.map(res => {
               return {
 
                 x: this.getInputMonth(res.date_of_visit),
-                y: res.interact_meeting_with_team
+                y: res.interact_teachers
 
             }
           })}
           , {
-            label: 'Observed Practice',
+            label: 'Guidance Councelors',
             values: props.coachLogResults.map(res => {
               return {
 
                 x: this.getInputMonth(res.date_of_visit),
-                y: res.interact_observed_practice
+                y: res.guidance_counselors
 
             }
             })
           }, {
-            label: 'Checked in with Leadership',
+            label: 'College Counselors',
             values: props.coachLogResults.map(res => {
               return {
 
                 x: this.getInputMonth(res.date_of_visit),
-                y: res.interact_with_leadership
+                y: res.college_counselors
 
             }
           })
           }, {
-            label: 'Checked in with Team Lead',
+            label: 'Assistant Principals',
             values: props.coachLogResults.map(res => {
               return {
 
                 x: this.getInputMonth(res.date_of_visit),
-                y: res.interact_with_team_lead
+                y: res.assistant_principals
 
             }
             })
           }, {
-            label: 'Facilitated a PD',
+            label: 'Principals',
             values: props.coachLogResults.map(res => {
               return {
 
                 x: this.getInputMonth(res.date_of_visit),
-                y: res.interact_with_pd
+                y: res.interact_principals
 
             }
             })
@@ -123,6 +123,7 @@ class InterMethStackedBar extends React.Component {
   }
 
   render() {
+    var colorScale = d3.scaleOrdinal(d3.schemeCategory20c);
     const customStyle = {
       '.legend': {
         backgroundColor: '#f9f9f9',
@@ -135,7 +136,7 @@ class InterMethStackedBar extends React.Component {
     var tooltipScatter = function(label, x, y, z) {
     return "label: " + label + " x: " + x + "y: " + y + "z: " + z ;
 }
-    return (<div><BarChart data={this.state.data} width={460} height={200} tooltipHtml={tooltipScatter} yAxis={{ tickArguments: [5], innerTickSize: 6, tickPadding: 3, outerTickSize: 2 }} margin={{
+    return (<div><BarChart data={this.state.data} colorScale={colorScale} width={460} height={250} tooltipHtml={tooltipScatter}  margin={{
         top: 10,
         bottom: 50,
         left: 50,
@@ -146,4 +147,4 @@ class InterMethStackedBar extends React.Component {
   }
 }
 
-export default InterMethStackedBar;
+export default Bar;
