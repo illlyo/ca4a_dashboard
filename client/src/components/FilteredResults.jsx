@@ -1,23 +1,13 @@
 import React from 'react';
 import Auth from '../modules/Auth';
-
-import Pie from './TotalCharts/PieChart.jsx';
-import Bar from './TotalCharts/BarChart.jsx';
-import PieChartGoals from './TotalCharts/PieChartGoals.jsx';
-import BarChartTwo from './TotalCharts/BarChartTwo.jsx';
-import GroupedBarChart from './Charts/GroupedBarChart.jsx';
-
-
-import ThisPieChart from './Charts/PieChart.jsx';
-import BarChartCohort from './Charts/BarChartCohort.jsx';
-import BarChartProg from './Charts/BarChartProg.jsx';
-import Speedometer from './Charts/Speedometer.jsx';
-import SpeedometerTwo from './Charts/SpeedometerTwo.jsx';
+import FilteredResultsComp from './FilteredResultsComp.jsx';
+import CalendarHeatmap from './Charts/CalendarMap.jsx';
 
 class FilteredResults extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
+      coach_id: null,
       coachLogResults: null,
       coachLogRecentResult: null,
       coachLogResultsLoaded: false,
@@ -25,6 +15,7 @@ class FilteredResults extends React.Component {
       schoolData: null,
       schoolDataLoaded:false,
     }
+    this.handleCoachSelect = this.handleCoachSelect.bind(this);
   }
   componentDidMount(){
     fetch('/coachlogs', {
@@ -34,13 +25,24 @@ class FilteredResults extends React.Component {
     .then(res => {
       this.setState({
         coachLogResults: res.coachlogs,
+        coachLogResultsFiltered: res.coachlogs,
         coachLogRecentResult: [res.coachlogs[res.coachlogs.length-1]],
         coachLogResultsLoaded: true,
+        data: res.coachlogs.map(res => {
+          return{
+             "date": res.date_of_visit,
+             "total": 17164,
+             "details": [{
+               "name": res.coach_name + res.school_visited,
+               "date": res.date_of_visit,
+               "value": 9192
+             }]
+           }})
       })
       console.log(this.state.coachLogResults.map(d => d.interact_meeting_with_team).reduce(
   ( accumulator, currentValue ) => accumulator + currentValue,
   0
-));
+)); console.log(this.state.coachLogResults)
     })
       fetch('/schools', {
         method: 'GET',
@@ -59,20 +61,15 @@ class FilteredResults extends React.Component {
     console.log(e.target.value)
   }
 
-  filterResults(){
-    return(
-      <div>
-        <p>Search By School:</p>
-      <select onChange={this.handleOptionBySchool}>
-        {this.state.coachLogResults.map(res => {
-          return(
-            <option>{res.school_visited}</option>
-          )
-        })}
-      </select>
-    </div>
-    )
+  handleCoachSelect(e){
+    this.setState({
+      coach_id: e.target.value,
+      coachLogResultsFiltered: this.state.coachLogResults.filter(res => res.coach_id == e.target.value),
+      coachLogResultsFilteredLoaded: true
+  });
+    console.log(this.state.coachLogResultsFiltered)
   }
+
 
   render(){
     return(
@@ -80,11 +77,13 @@ class FilteredResults extends React.Component {
         {(this.state.coachLogResultsLoaded) ?
              <div className="filterResults-chart-org">
                <h1>Total Results</h1>
+                 <CalendarHeatmap data={this.state.data} />
                  <div className="search-div">
                  <p>Search By Coach:</p>
-                 <select>{this.state.coachLogResults.map(res => {
+                 <select onChange={this.handleCoachSelect} >
+                   {this.state.coachLogResults.map(res => {
                    return(
-                     <option>{res.coach_name}</option>
+                     <option value={res.coach_id}>{res.coach_name}</option>
                    )
                  })}
                    </select>
@@ -97,34 +96,12 @@ class FilteredResults extends React.Component {
                    })}
                      </select>
                    </div>
-                 <div className="filterResults-chart-org-div">
-                   <div className="filterResults-chart-org-div-each">
-                     <h2>Cohorts</h2>
-                  <BarChartCohort schoolData={this.state.schoolData} />
-                  </div>
-                  <div className="filterResults-chart-org-div-each">
-                    <h3>Total number of staff engaged</h3>
-                    <Pie coachLogResults={this.state.coachLogResults} />
-                  </div>
-                </div>
-                <div className="filterResults-chart-org-div">
-                  <div className="filterResults-chart-org-div-each">
-                  <h3>College and Career domains</h3>
-                    <BarChartTwo coachLogResults={this.state.coachLogResults} />
-                  </div>
-                    <div className="filterResults-chart-org-div-each">
-                  <h3>Schools were engaged in the following activities:</h3>
-                    <Bar coachLogResults={this.state.coachLogResults} />
-                    </div>
-                </div>
-                <PieChartGoals coachLogResults={this.state.coachLogResults} />
-                  <GroupedBarChart coachLogResults={this.state.coachLogResults} />
-
-              </div> : <p>Loading...</p>}
-
-
-
-      </div>
+                  </div> : <p>Loading...</p>}
+                  {(this.state.coachLogResultsFilteredLoaded) ?
+                <FilteredResultsComp schoolData={this.state.schoolData}
+                                    coachLogResultsFiltered={this.state.coachLogResultsFiltered} /> :
+                '' }
+        </div>
     )
   }
 

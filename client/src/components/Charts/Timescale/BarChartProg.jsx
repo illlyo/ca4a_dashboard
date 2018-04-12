@@ -1,79 +1,40 @@
 import React, {Component} from 'react';
-import {BarChart} from 'react-d3-components';
-import {Legend} from 'react-easy-chart';
+import {Legend, LineChart} from 'react-easy-chart';
 import * as d3 from "d3";
 
 class BarChartProg extends Component {  constructor(props) {
     super(props);
     this.state = {
       coachLogResults: props.coachLogResults,
-      data: [{
-            label: 'Inquiry Institute',
-            values: props.coachLogResults.map(res => {
-              return {
+      data: [[
+                {x: 'Inquiry Institute',
+                y: props.coachLogResults[0].activity_inquiry_institute
 
-                x: this.getInputMonth(res.date_of_visit),
-                y: res.inquiry_institute
+            },{
+                x: 'Research',
+                y: props.coachLogResults[0].activity_research
 
-            }
-          })}
-          , {
-            label: 'Research',
-            values: props.coachLogResults.map(res => {
-              return {
+            },{
+                x: 'Design',
+                y: props.coachLogResults[0].activity_design
 
-                x: this.getInputMonth(res.date_of_visit),
-                y: res.research
+            },{
+                x: 'PDSA',
+                y: props.coachLogResults[0].activity_pdsa
 
-            }
-            })
+            },{
+                x: 'Synthesize',
+                y: props.coachLogResults[0].activity_synthesize
           }, {
-            label: 'Design',
-            values: props.coachLogResults.map(res => {
-              return {
-
-                x: this.getInputMonth(res.date_of_visit),
-                y: res.design
+                x: 'Scale',
+                y: props.coachLogResults[0].activity_scale
 
             }
-          })
-          }, {
-            label: 'PDSA',
-            values: props.coachLogResults.map(res => {
-              return {
-
-                x: this.getInputMonth(res.date_of_visit),
-                y: res.pdsa
-
-            }
-            })
-          }, {
-            label: 'Synthesize',
-            values: props.coachLogResults.map(res => {
-              return {
-
-                x: this.getInputMonth(res.date_of_visit),
-                y: res.synthesize
-
-            }
-            })
-
-          }, {
-            label: 'Scale',
-            values: props.coachLogResults.map(res => {
-              return {
-
-                x: this.getInputMonth(res.date_of_visit),
-                y: res.scale
-
-            }
-          })
-          }
-]
+          ]]
     }
 
     this.getInputMonth = this.getInputMonth.bind(this);
-    console.log();
+    console.log(this.state.data);
     console.log();
   }
 
@@ -135,13 +96,19 @@ class BarChartProg extends Component {  constructor(props) {
     var tooltipScatter = function(label, x, y, z) {
     return "label: " + label + " x: " + x + "y: " + y + "z: " + z ;
 }
-    return (<div><BarChart data={this.state.data} colorScale={colorScale} width={460} height={200} tooltipHtml={tooltipScatter} margin={{
-        top: 10,
-        bottom: 50,
-        left: 50,
-        right: 10,
-      }}/>
-      <Legend data={this.state.data} dataId={'label'} styles={customStyle}  />
+    return (<div>
+      <LineChart
+          yType={'text'}
+          xType={'text'}
+          axes
+          grid
+          margin={{top: 0, right: 0, bottom: 100, left: 100}}
+          yDomainRange={['Completed', 'In the process of completing', 'Have not reached yet']}
+          interpolate={'cardinal'}
+          width={350}
+          height={300}
+          data={this.state.data}
+        />
       </div>)
   }
 }

@@ -24,7 +24,10 @@ h1{
   position: absolute;
   letter-spacing: -1px;
 }
-
+.p-tag-div{
+  width: 350px;
+  font-size: 17px;
+}
 .logout-link{
   right: 0;
   top: 0;
@@ -715,7 +718,9 @@ margin: auto;
   font-size: 15px;
   margin: auto;
 }
-
 .next-step-notes{
   font-size: 11px;
+}
+.review-text{
+  text-align: left;
 }

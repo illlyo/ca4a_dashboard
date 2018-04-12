@@ -76,6 +76,8 @@ export default class Step8 extends Component {
                 </div>
                 <div className="col-md-12 txt">
                   <div className="col-md-4">
+                    <div className="form-style-10">
+                      <div className="review-text">
                     <h3>Which school did you visit today?</h3>
                       {this.props.getStore().school_visited}<br></br>
                     <h3>Date of visit</h3>
@@ -83,17 +85,17 @@ export default class Step8 extends Component {
                     <h3>Was today's meeting cancelled?</h3>
                       {this.props.getStore().cancelled}<br></br>
                     <h3>How long was your visit?</h3>
-                      {this.props.getStore().length_of_visit}<br></br>
+                      {this.props.getStore().length_of_visit} minutes<br></br>
                     <h3>What were the objectives of today's visit?</h3>
                       {this.props.getStore().objectives_of_visit}<br></br>
                     <h3>During today's visit I interacted with my school in the following ways:</h3>
-                      {this.props.getStore().interact_meeting_with_team}<br></br>
-                      {this.props.getStore().interact_observed_practice}<br></br>
-                      {this.props.getStore().interact_with_leadership}<br></br>
-                      {this.props.getStore().interact_with_team_lead}<br></br>
-                      {this.props.getStore().interact_with_pd}<br></br>
-                      {this.props.getStore().interact_with_other}<br></br>
-                      {this.props.getStore().interact_other_explained}<br></br>
+                      interact_meeting_with_team:{this.props.getStore().interact_meeting_with_team}<br></br>
+                      interact_meeting_with_team:{this.props.getStore().interact_meeting_with_team}<br></br>
+                      interact_with_leadership:{this.props.getStore().interact_with_leadership}<br></br>
+                      interact_with_team_lead:{this.props.getStore().interact_with_team_lead}<br></br>
+                      interact_with_pd:{this.props.getStore().interact_with_pd}<br></br>
+                      interact_with_other:{this.props.getStore().interact_with_other}<br></br>
+                      interact_other_explained:{this.props.getStore().interact_other_explained}<br></br>
                     <h3>Thinking about today's visit, how many of each role did you interact with?</h3>
                       Teachers:{this.props.getStore().interact_teachers}<br></br>
                       Guidance Counselors:{this.props.getStore().interact_guidance_counselors}<br></br>
@@ -143,14 +145,10 @@ export default class Step8 extends Component {
                       {this.props.getStore().highlight_planning}<br></br>
                       {this.props.getStore().highlight_planning_explained}
                   </div>
+                 </div>
                 </div>
-                <div className="col-md-12 txt">
-                  <div className="col-md-4">
-                    {this.props.getStore().emailEmergency}
-                  </div>
-                </div>
-                <h3 className={savingCls}>Saving to Cloud, pls wait</h3>
               </div>
+            </div>
             </div>
           </form>
         </div>

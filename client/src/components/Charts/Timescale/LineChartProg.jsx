@@ -1,21 +1,25 @@
 import React, {Component} from 'react';
-import ReactSpeedometer from 'react-d3-speedometer';
+import { Legend, LineChart } from 'react-easy-chart';
 
-class Speedometer extends Component {
+class LineChartProg extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      data: {
-        values: props.coachLogResults.map(res => {
+      data: [
+          props.coachLogResults.map(res => {
           return {
 
             x: this.getInputMonth(res.date_of_visit),
             y: res.goals_met
 
         }
-      })
+      }),
+      props.coachLogResults.map(res => {
+      return {
+        x: this.getInputMonth(res.date_of_visit),
+        y: res.rate_learning_trajectory
       }
-      }
+    })]}
       this.getInputMonth = this.getInputMonth.bind(this);
       console.log(this.state.data)
     }
@@ -83,21 +87,22 @@ class Speedometer extends Component {
       }
       return (
         <div>
-        <div className="speedometer">
-        <ReactSpeedometer
-          value={this.state.data.values[0].y}
-          minValue={0}
-          maxValue={5}
-          startColor={"#FF6347"}
-          endColor={"#FF6347"}
-          needleTransitionDuration={4000}
-          needleTransition="easeElastic"
-          currentValueText="Expectations of Goals"
-        />
-    </div>
+        <div className="linechart">
+          <LineChart
+            xType={'text'}
+            lineColors={['tomato', '#47FFE3']}
+            yTicks={6}
+            yDomainRange={[0, 5]}
+            axes
+            dataPoints
+            grid
+            data={this.state.data}
+            width={400}
+            height={400} />
+        </div>
   </div>)
     }
 
 }
 
-export default Speedometer;
+export default LineChartProg;
