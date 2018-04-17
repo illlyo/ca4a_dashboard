@@ -123,26 +123,34 @@ class Bar extends React.Component {
   }
 
   render() {
-    var colorScale = d3.scaleOrdinal(d3.schemeCategory20c);
+    var colorScale = d3.scaleOrdinal(d3.schemeCategory20);
     const customStyle = {
       '.legend': {
         backgroundColor: '#f9f9f9',
         border: '1px solid #e5e5e5',
         borderRadius: '12px',
-        fontSize: '.9em',
-        maxWidth: '180px',
-        padding: '3px'
+        fontSize: '9px',
+        maxWidth: '360px',
+        maxHeight: '180px',
+        padding: '3px',
+        textAlign: 'left'
       }}
     var tooltipScatter = function(label, x, y, z) {
     return "label: " + label + " x: " + x + "y: " + y + "z: " + z ;
 }
-    return (<div><BarChart data={this.state.data} colorScale={colorScale} width={460} height={250} tooltipHtml={tooltipScatter}  margin={{
-        top: 10,
-        bottom: 50,
-        left: 50,
-        right: 10,
+    return (<div><BarChart data={this.state.data}
+                           colorScale={colorScale}
+                           width={460}
+                           height={250}
+                           tooltipHtml={tooltipScatter}
+                           yAxis={{tickArguments: [15], tickValues: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15] }}
+                           margin={{
+                                top: 10,
+                                bottom: 50,
+                                left: 50,
+                                right: 10,
       }}/>
-      <Legend data={this.state.data} dataId={'label'} styles={customStyle}  />
+      <Legend horizontal data={this.state.data} dataId={'label'} styles={customStyle}  />
       </div>)
   }
 }

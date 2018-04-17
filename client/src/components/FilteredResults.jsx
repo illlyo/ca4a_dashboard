@@ -8,6 +8,7 @@ class FilteredResults extends React.Component {
     super(props);
     this.state = {
       coach_id: null,
+      coachesData: null,
       coachLogResults: null,
       coachLogRecentResult: null,
       coachLogResultsLoaded: false,
@@ -16,6 +17,7 @@ class FilteredResults extends React.Component {
       schoolDataLoaded:false,
     }
     this.handleCoachSelect = this.handleCoachSelect.bind(this);
+    this.handleUnselect = this.handleUnselect.bind(this);
   }
   componentDidMount(){
     fetch('/coachlogs', {
@@ -33,7 +35,7 @@ class FilteredResults extends React.Component {
              "date": res.date_of_visit,
              "total": 17164,
              "details": [{
-               "name": res.coach_name + res.school_visited,
+               "name": res.coach_name +" visited " + res.school_visited,
                "date": res.date_of_visit,
                "value": 9192
              }]
@@ -54,22 +56,39 @@ class FilteredResults extends React.Component {
           schoolDataLoaded:true,
         })
         console.log(this.state.schoolData);
-    }).catch(err => console.log(err));
+    })
+    .catch(err => console.log(err));
 }
 
   handleOptionBySchool(e){
     console.log(e.target.value)
   }
 
+  componentWillUnmount() {}
+
   handleCoachSelect(e){
+
     this.setState({
       coach_id: e.target.value,
       coachLogResultsFiltered: this.state.coachLogResults.filter(res => res.coach_id == e.target.value),
       coachLogResultsFilteredLoaded: true
-  });
+  })
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      this.setState({
+        coachLogResultsFilteredLoaded: true
+    })
+    resolve();
+      }
+  , 1000)})
     console.log(this.state.coachLogResultsFiltered)
   }
 
+handleUnselect(e){
+  this.setState({
+    coachLogResultsFilteredLoaded: false
+  })
+}
 
   render(){
     return(
@@ -77,10 +96,10 @@ class FilteredResults extends React.Component {
         {(this.state.coachLogResultsLoaded) ?
              <div className="filterResults-chart-org">
                <h1>Total Results</h1>
-                 <CalendarHeatmap data={this.state.data} />
                  <div className="search-div">
                  <p>Search By Coach:</p>
-                 <select onChange={this.handleCoachSelect} >
+                 <select onChange={this.handleCoachSelect} onMouseDown={this.handleUnselect} >
+                   <option value='' >All </option>
                    {this.state.coachLogResults.map(res => {
                    return(
                      <option value={res.coach_id}>{res.coach_name}</option>
@@ -94,8 +113,9 @@ class FilteredResults extends React.Component {
                        <option>{res.school_visited}</option>
                      )
                    })}
-                     </select>
+                 </select>
                    </div>
+                   <CalendarHeatmap data={this.state.data} />
                   </div> : <p>Loading...</p>}
                   {(this.state.coachLogResultsFilteredLoaded) ?
                 <FilteredResultsComp schoolData={this.state.schoolData}

@@ -1,74 +1,53 @@
-import React from 'react';
+import React, {Component} from 'react';
 import {BarChart} from 'react-d3-components';
 import {Legend} from 'react-easy-chart';
 import * as d3 from "d3";
 
-class BarChartThinkingAhead extends React.Component {
+class GroupedEngagementBar extends Component {
   constructor(props) {
     super(props);
     this.state = {
       coachLogResults: props.coachLogResults,
       data: [{
-            label: 'Inquiry Institute',
+            label: 'Academic Skills',
             values: props.coachLogResults.map(res => {
               return {
 
                 x: this.getInputMonth(res.date_of_visit),
-                y: res.inquiry_institute
+                y: res.academic_skills
 
             }
           })}
           , {
-            label: 'Research',
+            label: 'Academic & Personal Behaviors',
             values: props.coachLogResults.map(res => {
               return {
 
                 x: this.getInputMonth(res.date_of_visit),
-                y: res.research
+                y: res.academic_personal_behavior
 
             }
             })
           }, {
-            label: 'Design',
+            label: 'Academic Programming',
             values: props.coachLogResults.map(res => {
               return {
 
                 x: this.getInputMonth(res.date_of_visit),
-                y: res.design
+                y: res.academic_programming
 
             }
           })
           }, {
-            label: 'PDSA',
+            label: 'College & Career Access',
             values: props.coachLogResults.map(res => {
               return {
 
                 x: this.getInputMonth(res.date_of_visit),
-                y: res.pdsa
+                y: res.college_career_access
 
             }
             })
-          }, {
-            label: 'Synthesize',
-            values: props.coachLogResults.map(res => {
-              return {
-
-                x: this.getInputMonth(res.date_of_visit),
-                y: res.synthesize
-
-            }
-            })
-
-          }, {
-            label: 'Scale',
-            values: props.coachLogResults.map(res => {
-              return {
-
-                x: this.getInputMonth(res.date_of_visit),
-                y: res.scale
-
-            }
-          })
           }
 ]
     }
@@ -129,22 +108,30 @@ class BarChartThinkingAhead extends React.Component {
         backgroundColor: '#f9f9f9',
         border: '1px solid #e5e5e5',
         borderRadius: '12px',
-        fontSize: '.9em',
-        maxWidth: '400px',
-        padding: '3px'
+        fontSize: '9px',
+        maxWidth: '180px',
+        maxHeight: '180px',
+        padding: '3px',
+        textAlign: 'left'
       }}
     var tooltipScatter = function(label, x, y, z) {
     return "label: " + label + " x: " + x + "y: " + y + "z: " + z ;
 }
-    return (<div><BarChart data={this.state.data} colorScale={colorScale} width={460} height={250} tooltipHtml={tooltipScatter}  margin={{
-        top: 10,
-        bottom: 50,
-        left: 50,
-        right: 10,
+    return (<div><BarChart data={this.state.data}
+                           colorScale={colorScale}
+                           width={460}
+                           height={200}
+                           tooltipHtml={tooltipScatter}
+                           yAxis={{tickArguments: [6], tickValues: [0, 1, 2, 3, 4, 5, 6] }}
+                           margin={{
+                              top: 10,
+                              bottom: 50,
+                              left: 50,
+                              right: 10,
       }}/>
       <Legend horizontal data={this.state.data} dataId={'label'} styles={customStyle}  />
       </div>)
   }
 }
 
-export default BarChartThinkingAhead;
+export default GroupedEngagementBar;

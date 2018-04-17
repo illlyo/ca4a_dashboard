@@ -1,5 +1,10 @@
 class CoachesController < ApiController
-  before_action :require_login, except: [:create, :profile, :schoolprofile]
+  before_action :require_login, except: [:create, :profile, :schoolprofile, :index]
+
+  def index
+    coaches = Coach.all
+    render json: { coaches: coaches }
+  end
 
   def create
   coach = Coach.create!(coach_params)

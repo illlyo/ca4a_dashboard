@@ -1,7 +1,6 @@
 .App {
   margin: 0 auto;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-background-color: #F5F5F5;
 }
 h1{
   text-align: center;
@@ -562,6 +561,7 @@ input[type="checkbox"]:hover {
 
 .top-div-dash{
   display: flex;
+  font-size: 12px;
   flex-direction: row;
   height: auto;
   margin: 10px 10px;
@@ -650,10 +650,20 @@ a{
   text-align: left;
   max-width: 600px;
   margin: 10px auto;
+  padding-left: 20px;
+  line-height: 20px;
 }
 .school-visit-info{
   text-align: left;
     width: 200px;
+    padding-right: 20px;
+    line-height: 15px;
+}
+.filter-results{
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 .filterResults-chart-org{
 display: flex;

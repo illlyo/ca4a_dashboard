@@ -25,7 +25,7 @@ class FilteredResultsComp extends React.Component{
 
   render(){
     return(
-      <div>
+      <div className="filter-results">
        <div className="filterResults-chart-org-div">
          <div className="filterResults-chart-org-div-each">
            <h2>Cohorts</h2>
@@ -46,7 +46,6 @@ class FilteredResultsComp extends React.Component{
           <Bar coachLogResults={this.props.coachLogResultsFiltered} />
           </div>
       </div>
-      <PieChartGoals coachLogResults={this.props.coachLogResultsFiltered} />
         <GroupedBarChart coachLogResults={this.props.coachLogResultsFiltered} />
         </div>
     )
