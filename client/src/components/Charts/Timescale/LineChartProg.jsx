@@ -90,15 +90,15 @@ class LineChartProg extends Component {
         <div className="linechart">
           <LineChart
             xType={'text'}
-            lineColors={['tomato', '#47FFE3']}
+            lineColors={['#ffbb78', '#1f77b4']}
             yTicks={6}
             yDomainRange={[0, 5]}
             axes
             dataPoints
             grid
             data={this.state.data}
-            width={400}
-            height={400} />
+            width={300}
+            height={300} />
         </div>
   </div>)
     }

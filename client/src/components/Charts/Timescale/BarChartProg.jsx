@@ -102,11 +102,13 @@ class BarChartProg extends Component {  constructor(props) {
           xType={'text'}
           axes
           grid
-          margin={{top: 20, right: 0, bottom: 100, left: 100}}
+          verticalGrid
+          dataPoints
+          margin={{top: 20, right: 10, bottom: 100, left: 100}}
           yDomainRange={['Completed', 'In the process of completing', 'Have not reached yet']}
           interpolate={'cardinal'}
-          width={350}
-          height={300}
+          width={330}
+          height={280}
           data={this.state.data}
         />
       </div>)

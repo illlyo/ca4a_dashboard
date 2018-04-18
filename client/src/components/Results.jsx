@@ -102,11 +102,11 @@ class Results extends React.Component {
           <div className="flex-row">
             <GroupedEngagementBar coachLogResults={this.state.coachLogResults}/>
             <BarChartProg coachLogResults={this.state.coachLogRecentResult}/>
+              <p className="p-tag">
+                <b>Tools Used:</b>
+                <br></br>{res.forward_work}</p>
           </div>
        </div>
-          <p className="p-tag">
-            <b>Tools Used:</b>
-            <br></br>{res.forward_work}</p>
         <div className="mod-header-row">
           <h2>Goals, Preparation & Progress:</h2>
         </div>
@@ -129,6 +129,7 @@ class Results extends React.Component {
           <h2>Thinking Ahead:</h2>
         </div>
         <div className="flex-row">
+          <div className="chart-org">
           <div className="sometext">
             <h3>What successes/challenges are you experiencing in moving this team through their Learning Trajectory?</h3>
             <br></br>
@@ -136,7 +137,6 @@ class Results extends React.Component {
             <h3>What are the "in-between" steps you can take before your next meeting to move this team's work forward?</h3>
             <p>{res.in_between_steps}</p>
           </div>
-          <div className="chart-org">
             <BarChartThinkingAhead coachLogResults={this.state.coachLogResults}/>
           </div>
         </div>

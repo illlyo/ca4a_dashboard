@@ -534,8 +534,10 @@ input[type="checkbox"]:hover {
   display: flex;
   flex-wrap: wrap;
   font-size: 1vw;
+  width: 680px;
   height: auto;
-  margin: 10px 10px;
+  margin: 0;
+  margin-bottom: 5px;
   background: #FFF;
   background-color: white;
   border-radius: 10px;
@@ -545,11 +547,10 @@ input[type="checkbox"]:hover {
   -moz-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.13);
   -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.13);
   border-radius: 5px;
-
 }
 /*  Dashboard result desgin */
 .result{
-  max-width: 990px;
+  max-width: 680px;
   margin: 0 auto;
 }
 
@@ -557,6 +558,7 @@ input[type="checkbox"]:hover {
   background-color: #163761;
   color: white;
   font-size: 14px;
+  border-radius: 5px 5px 0 0;
 }
 
 .top-div-dash{
@@ -604,7 +606,8 @@ svg.speedometer{
 }
 
 .sometext{
-  max-width: 400px;
+  max-width: 300px;
+  text-align: left;
 }
 .dash-nav-div{
   display: flex;
@@ -648,7 +651,7 @@ a{
 .p-tag{
   height: auto;
   text-align: left;
-  max-width: 600px;
+  max-width: 300px;
   margin: 10px auto;
   padding-left: 20px;
   line-height: 20px;
@@ -733,4 +736,16 @@ margin: auto;
 }
 .review-text{
   text-align: left;
+}
+.legend-container-816b9a9aefe428223b40d2dc7e59d84bdaca10da{
+  float: right;
+}
+.legend-container-b8e39d8e6339d0c98bf7d7801227057e8d247c80{
+  float: right;
+}
+.legend-container-049bd3b00fdb1f41cd049c7cdf5d588d181462a3{
+    float: right;
+}
+h2{
+  margin: 0;
 }

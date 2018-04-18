@@ -108,9 +108,9 @@ class GroupedEngagementBar extends Component {
         backgroundColor: '#f9f9f9',
         border: '1px solid #e5e5e5',
         borderRadius: '12px',
-        fontSize: '9px',
-        maxWidth: '180px',
-        maxHeight: '180px',
+        fontSize: '8px',
+        maxWidth: '275px',
+        maxHeight: '150px',
         padding: '3px',
         textAlign: 'left'
       }}
@@ -119,7 +119,7 @@ class GroupedEngagementBar extends Component {
 }
     return (<div><BarChart data={this.state.data}
                            colorScale={colorScale}
-                           width={460}
+                           width={300}
                            height={200}
                            tooltipHtml={tooltipScatter}
                            yAxis={{tickArguments: [6], tickValues: [0, 1, 2, 3, 4, 5, 6] }}

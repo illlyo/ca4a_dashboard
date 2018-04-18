@@ -91,8 +91,8 @@ class SpeedometerTwo extends Component {
           value={this.state.data.values[0].y}
           minValue={0}
           maxValue={5}
-          startColor={"#47FFE3"}
-          endColor={"#47FFE3"}
+          startColor={"#2d98bf"}
+          endColor={"#2d98bf"}
           needleTransitionDuration={4000}
           needleTransition="easeElastic"
           currentValueText="School's Overall Progress"

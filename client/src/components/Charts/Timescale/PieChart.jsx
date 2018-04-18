@@ -127,17 +127,17 @@ class ThisPieChart extends Component {  constructor(props) {
         backgroundColor: '#f9f9f9',
         border: '1px solid #e5e5e5',
         borderRadius: '12px',
-        fontSize: '9px',
-        maxWidth: '460px',
-        maxHeight: '180px',
-        padding: '3px',
+        fontSize: '8px',
+        maxWidth: '290px',
+        maxHeight: '200px',
+        // padding: '3px, 3px',
         textAlign: 'left'
       }}
     var tooltipScatter = function(label, x, y, z) {
     return "label: " + label + " x: " + x + "y: " + y + "z: " + z ;
 }
     return (<div><BarChart data={this.state.data}
-                           width={460}
+                           width={300}
                            height={250}
                            tooltipHtml={tooltipScatter}
                            yAxis={{tickArguments: [6], tickValues: [0, 1, 2, 3, 4, 5, 6] }}

@@ -129,14 +129,21 @@ class BarChartThinkingAhead extends React.Component {
         backgroundColor: '#f9f9f9',
         border: '1px solid #e5e5e5',
         borderRadius: '12px',
-        fontSize: '.9em',
-        maxWidth: '400px',
-        padding: '3px'
+        fontSize: '9px',
+        maxWidth: '300px',
+        padding: '3px',
+        textAlign: 'center'
       }}
     var tooltipScatter = function(label, x, y, z) {
     return "label: " + label + " x: " + x + "y: " + y + "z: " + z ;
 }
-    return (<div><BarChart data={this.state.data} colorScale={colorScale} width={460} height={250} tooltipHtml={tooltipScatter}  margin={{
+    return (<div><BarChart data={this.state.data}
+                           colorScale={colorScale}
+                           width={330}
+                           height={250}
+                           tooltipHtml={tooltipScatter}
+                           yAxis={{tickArguments: [6], tickValues: [0, 1, 2, 3, 4, 5, 6] }}
+                           margin={{
         top: 10,
         bottom: 50,
         left: 50,

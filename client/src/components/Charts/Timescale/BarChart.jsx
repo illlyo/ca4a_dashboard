@@ -129,10 +129,10 @@ class Bar extends React.Component {
         backgroundColor: '#f9f9f9',
         border: '1px solid #e5e5e5',
         borderRadius: '12px',
-        fontSize: '9px',
-        maxWidth: '360px',
-        maxHeight: '180px',
-        padding: '3px',
+        fontSize: '8px',
+        maxWidth: '290px',
+        maxHeight: '200px',
+        // padding: '3px, 3px',
         textAlign: 'left'
       }}
     var tooltipScatter = function(label, x, y, z) {
@@ -140,7 +140,7 @@ class Bar extends React.Component {
 }
     return (<div><BarChart data={this.state.data}
                            colorScale={colorScale}
-                           width={460}
+                           width={300}
                            height={250}
                            tooltipHtml={tooltipScatter}
                            yAxis={{tickArguments: [15], tickValues: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15] }}
