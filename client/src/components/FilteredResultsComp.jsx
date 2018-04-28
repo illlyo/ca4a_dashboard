@@ -27,26 +27,25 @@ class FilteredResultsComp extends React.Component{
     return(
       <div className="filter-results">
        <div className="filterResults-chart-org-div">
+         <div className="mod-header-row"><h2>Cohorts</h2></div>
          <div className="filterResults-chart-org-div-each">
-           <h2>Cohorts</h2>
         <BarChartCohort schoolData={this.props.schoolData} />
         </div>
+        <div className="mod-header-row"><h2>Total number of staff engaged</h2></div>
         <div className="filterResults-chart-org-div-each">
-          <h3>Total number of staff engaged</h3>
           <Pie coachLogResults={this.props.coachLogResultsFiltered} />
         </div>
       </div>
       <div className="filterResults-chart-org-div">
+        <div className="mod-header-row"><h2>College and Career domains</h2></div>
         <div className="filterResults-chart-org-div-each">
-        <h3>College and Career domains</h3>
           <BarChartTwo coachLogResults={this.props.coachLogResultsFiltered} />
         </div>
+        <div className="mod-header-row"><h2>Schools were engaged in the following activities:</h2></div>
           <div className="filterResults-chart-org-div-each">
-        <h3>Schools were engaged in the following activities:</h3>
           <Bar coachLogResults={this.props.coachLogResultsFiltered} />
           </div>
       </div>
-        <GroupedBarChart coachLogResults={this.props.coachLogResultsFiltered} />
         </div>
     )
   }

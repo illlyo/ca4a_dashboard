@@ -130,17 +130,21 @@ class Bar extends React.Component {
         border: '1px solid #e5e5e5',
         borderRadius: '12px',
         fontSize: '8px',
-        maxWidth: '290px',
-        maxHeight: '200px',
-        // padding: '3px, 3px',
+        maxWidth: '260px',
+        height: '85px',
+        padding: '3px',
         textAlign: 'left'
-      }}
+      },
+    '.legend li': {
+      lineHeight: '20px'
+    }
+  }
     var tooltipScatter = function(label, x, y, z) {
     return "label: " + label + " x: " + x + "y: " + y + "z: " + z ;
 }
     return (<div><BarChart data={this.state.data}
                            colorScale={colorScale}
-                           width={300}
+                           width={330}
                            height={250}
                            tooltipHtml={tooltipScatter}
                            yAxis={{tickArguments: [15], tickValues: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15] }}
@@ -150,7 +154,8 @@ class Bar extends React.Component {
                                 left: 50,
                                 right: 10,
       }}/>
-      <Legend horizontal data={this.state.data} dataId={'label'} styles={customStyle}  />
+      <div className="all-legends">
+      <Legend horizontal data={this.state.data} dataId={'label'} styles={customStyle}  /></div>
       </div>)
   }
 }

@@ -2,6 +2,7 @@ import React from 'react';
 import Auth from '../modules/Auth';
 import FilteredResultsComp from './FilteredResultsComp.jsx';
 import CalendarHeatmap from './Charts/CalendarMap.jsx';
+import * as d3 from 'd3';
 
 class FilteredResults extends React.Component {
   constructor(props) {
@@ -12,6 +13,7 @@ class FilteredResults extends React.Component {
       coachLogResults: null,
       coachLogRecentResult: null,
       coachLogResultsLoaded: false,
+      coachLogResultsFiltered:null,
       filterBySchool: null,
       schoolData: null,
       schoolDataLoaded:false,
@@ -28,6 +30,7 @@ class FilteredResults extends React.Component {
       this.setState({
         coachLogResults: res.coachlogs,
         coachLogResultsFiltered: res.coachlogs,
+        coachLogCoachNameFiltered: res.coachlogs.map(res => res.coach_name),
         coachLogRecentResult: [res.coachlogs[res.coachlogs.length-1]],
         coachLogResultsLoaded: true,
         data: res.coachlogs.map(res => {
@@ -41,10 +44,7 @@ class FilteredResults extends React.Component {
              }]
            }})
       })
-      console.log(this.state.coachLogResults.map(d => d.interact_meeting_with_team).reduce(
-  ( accumulator, currentValue ) => accumulator + currentValue,
-  0
-)); console.log(this.state.coachLogResults)
+      console.log();
     })
       fetch('/schools', {
         method: 'GET',
@@ -55,7 +55,7 @@ class FilteredResults extends React.Component {
           schoolData: res.schools,
           schoolDataLoaded:true,
         })
-        console.log(this.state.schoolData);
+        console.log();
     })
     .catch(err => console.log(err));
 }
@@ -67,26 +67,44 @@ class FilteredResults extends React.Component {
   componentWillUnmount() {}
 
   handleCoachSelect(e){
-
+    if (e.target.value == ''){
+      this.setState({
+      coachLogResultsFiltered: this.state.coachLogResults,
+      coachLogResultsFilteredLoaded: true
+      })
+    }
     this.setState({
       coach_id: e.target.value,
       coachLogResultsFiltered: this.state.coachLogResults.filter(res => res.coach_id == e.target.value),
+      coachLogResultsFilteredTwo: this.state.coachLogResults.filter(res => res.coach_id == e.target.value),
+      schoolData: this.state.schoolData.filter(res => res.coach_id == e.target.value),
+      schoolDataLoaded:true,
       coachLogResultsFilteredLoaded: true
   })
+  console.log((this.state.coachLogResultsFiltered.filter(res => res.coach_id == e.target.value)).filter(res => res.school_visited == "Abraham Lincoln High School - 21K410"));
   return new Promise((resolve, reject) => {
     setTimeout(() => {
       this.setState({
-        coachLogResultsFilteredLoaded: true
+        coachLogResultsFilteredLoaded: true,
+        schoolDataLoaded:true
     })
     resolve();
       }
   , 1000)})
-    console.log(this.state.coachLogResultsFiltered)
+  }
+
+  handleSchoolSelect(e){
+    e.preventdefault();
+    // this.setState({
+    //   coachLogResultsFiltered: this.state.coachLogResultsFilteredTwo.filter(res => res.school_visited == e.target.value)
+    // })
+    console.log(this.state.coachLogResultsFilteredTwo.filter(res => res.school_visited == e.target.value))
   }
 
 handleUnselect(e){
   this.setState({
-    coachLogResultsFilteredLoaded: false
+    coachLogResultsFilteredLoaded: false,
+    schoolDataLoaded:false
   })
 }
 
@@ -97,23 +115,25 @@ handleUnselect(e){
              <div className="filterResults-chart-org">
                <h1>Total Results</h1>
                  <div className="search-div">
+                   <form>
                  <p>Search By Coach:</p>
                  <select onChange={this.handleCoachSelect} onMouseDown={this.handleUnselect} >
                    <option value='' >All </option>
-                   {this.state.coachLogResults.map(res => {
-                   return(
-                     <option value={res.coach_id}>{res.coach_name}</option>
-                   )
-                 })}
+                    {this.state.coachLogResults.map(res => {
+                      return (
+                        <option value={res.coach_id}>{res.coach_name}</option>
+                      )})}
                    </select>
                    <p>Search By School:</p>
-                   <select>
-                   {this.state.coachLogResults.map(res => {
+                   <select onSubmit={this.handleSchoolSelect} >
+                   {this.state.coachLogResultsFiltered.map(res => {
                      return(
-                       <option>{res.school_visited}</option>
+                       <option value={res.school_visited}>{res.school_visited}</option>
                      )
                    })}
                  </select>
+                 <input type="submit" value="Submit" />
+               </form>
                    </div>
                    <CalendarHeatmap data={this.state.data} />
                   </div> : <p>Loading...</p>}

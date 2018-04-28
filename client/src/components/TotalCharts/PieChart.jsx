@@ -40,16 +40,18 @@ class Pie extends Component {
         backgroundColor: '#f9f9f9',
         border: '1px solid #e5e5e5',
         borderRadius: '12px',
-        fontSize: '.9em',
-        maxWidth: '200px',
-        padding: '3px'
+        fontSize: '.3em',
+        maxWidth: '150px'
       }
     }
-    return (<div>
-      <PieChart size={250} data={this.state.data.values}
+    return (
+      <div>
+        <div className="filtered-results-comp">
+      <PieChart size={150} data={this.state.data.values}
         clickHandler={(d) => this.setState({dataDisplay: `Total number of ${d.value} ${d.data.key} were engaged.`})
 } padding={10} styles={this.styles}/>
       <Legend data={this.state.data.values} dataId={'key'} styles={customStyle}/>
+      </div>
       <div>
         {
           this.state.dataDisplay

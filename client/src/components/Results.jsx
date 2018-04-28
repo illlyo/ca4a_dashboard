@@ -33,7 +33,7 @@ class Results extends React.Component {
       }
     }).then(res => res.json()).then(res => {
       this.setState({
-        coachLogResults: res.coach_logs,
+        coachLogResults: res.coach_logs.filter(res => res.school_visited == this.props.schoolVisited),
         coachLogRecentResult: [res.coach_logs[res.coach_logs.length - 1]],
         coachLogResultsLoaded: true
       })

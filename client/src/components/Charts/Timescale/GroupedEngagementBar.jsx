@@ -129,7 +129,8 @@ class GroupedEngagementBar extends Component {
                               left: 50,
                               right: 10,
       }}/>
-      <Legend horizontal data={this.state.data} dataId={'label'} styles={customStyle}  />
+      <div className="all-legends">
+      <Legend horizontal data={this.state.data} dataId={'label'} styles={customStyle}  /></div>
       </div>)
   }
 }

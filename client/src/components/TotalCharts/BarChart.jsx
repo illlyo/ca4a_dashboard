@@ -74,22 +74,23 @@ class Bar extends React.Component {
         backgroundColor: '#f9f9f9',
         border: '1px solid #e5e5e5',
         borderRadius: '12px',
-        fontSize: '.9em',
-        maxWidth: '180px',
-        padding: '3px'
+        fontSize: '.6em',
+        maxWidth: '90px'
       }
     }
     return (<div>
+      <div className="filtered-results-comp">
       <BarChart axes="axes"
                 grid="grid"
                 colorBars="colorBars"
                 height={250}
-                width={460}
+                width={300}
                 data={this.state.data[0].values}
                 clickHandler={(d) => this.setState({dataDisplay: `${d.x} was engaged ${d.y} times.`})
           }
                 />
       <Legend data={this.state.data[0].values} dataId={'x'} styles={customStyle}/>
+      </div>
         <div>
           {
             this.state.dataDisplay

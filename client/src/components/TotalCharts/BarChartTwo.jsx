@@ -8,6 +8,9 @@ class BarChartTwo extends React.Component {
     this.state = {
       coachLogResults: props.coachLogResults,
       dataDisplay: '',
+      coachLogResultsGrid: [ props.coachLogResults.map( d => d.school_visited + " , " + d.academic_skills + " , " +  d.academic_personal_behavior + " , " +  d.academic_programming + " , " +  d.college_career_access + " , " +  d.college_career_readiness + " , ").reduceRight(
+  (previousValue, currentValue) => previousValue.concat(currentValue)
+).split(",") ],
       data: [
         {
           values: [
@@ -30,7 +33,8 @@ class BarChartTwo extends React.Component {
           ]
         }
       ]
-    }; console.log(this.state.data[0].values.map(d => d.x))
+    }; console.log(this.state.data[0].values.map(d => d.x));
+    console.log(this.state.coachLogResultsGrid)
   }
 
   componentDidMount() {}
@@ -46,7 +50,7 @@ class BarChartTwo extends React.Component {
       },
       '.legend li': {
         display: 'block',
-        lineHeight: '24px',
+        lineHeight: '13px',
         marginRight: '24px',
         marginBottom: '6px',
         paddingLeft: '24px',
@@ -71,28 +75,51 @@ class BarChartTwo extends React.Component {
         backgroundColor: '#f9f9f9',
         border: '1px solid #e5e5e5',
         borderRadius: '12px',
-        fontSize: '.9em',
-        maxWidth: '180px',
+        fontSize: '.5em',
+        maxWidth: '130px',
         padding: '3px'
+      },
+      '.legend li': {
+        display: 'block',
+        lineHeight: '13px',
+        marginRight: '24px',
+        marginBottom: '6px',
+        paddingLeft: '24px',
+        position: 'relative'
       }
     }
     return (<div>
+      <div className="filtered-results-comp">
       <BarChart axes="axes"
                 grid="grid"
                 colorBars="colorBars"
                 height={250}
-                width={460}
+                width={300}
                 data={this.state.data[0].values}
                 clickHandler={(d) => this.setState({dataDisplay: `${d.x} was engaged ${d.y} times.`})
           }
                 />
       <Legend data={this.state.data[0].values} dataId={'x'} styles={customStyle}/>
+      </div>
         <div>
           {
             this.state.dataDisplay
               ? this.state.dataDisplay
               : 'Click on a segment to show the value'
           }
+        </div>
+        <div className="grid-container-college-career-domains">
+            <div class="item1">School</div>
+            <div class="item2">Academic Skills</div>
+            <div class="item3">Academic & Personal Behavior</div>
+            <div class="item4">Academic Programming</div>
+            <div class="item5">College & Career Access</div>
+            <div class="item6">College & Career Readiness</div>
+              {
+                this.state.coachLogResultsGrid[0].map((res) =>
+                  <div>{res}</div>
+                )
+              }
         </div>
     </div>)
 
