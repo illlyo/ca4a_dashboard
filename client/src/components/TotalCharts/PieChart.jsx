@@ -6,6 +6,9 @@ class Pie extends Component {
     super(props);
     this.state = {
       coachLogResults: props.coachLogResults,
+      coachLogResultsGrid: [ props.coachLogResults.map( d => d.school_visited + " , " + d.interact_teachers + " , " +  d.interact_assistant_principals + " , " +  d.interact_guidance_counselors + " , " +  d.interact_principals + " , " +  d.interact_college_couselors + " , " +  d.interact_other + " , ").reduceRight(
+  (previousValue, currentValue) => previousValue.concat(currentValue)
+).split(",") ],
       dataDisplay: '',
       data: {
         values: [
@@ -20,7 +23,7 @@ class Pie extends Component {
             value: props.coachLogResults.map(d => d.interact_guidance_counselors).reduce((accumulator, currentValue) => accumulator + currentValue, 0)
           }, {
             key: 'Principals',
-            value: props.coachLogResults.map(d => d.interact_guidance_counselors).reduce((accumulator, currentValue) => accumulator + currentValue, 0)
+            value: props.coachLogResults.map(d => d.interact_principals).reduce((accumulator, currentValue) => accumulator + currentValue, 0)
           }, {
             key: 'College Counselors',
             value: props.coachLogResults.map(d => d.interact_college_couselors).reduce((accumulator, currentValue) => accumulator + currentValue, 0)
@@ -47,7 +50,7 @@ class Pie extends Component {
     return (
       <div>
         <div className="filtered-results-comp">
-      <PieChart size={150} data={this.state.data.values}
+      <PieChart size={250} data={this.state.data.values}
         clickHandler={(d) => this.setState({dataDisplay: `Total number of ${d.value} ${d.data.key} were engaged.`})
 } padding={10} styles={this.styles}/>
       <Legend data={this.state.data.values} dataId={'key'} styles={customStyle}/>
@@ -58,6 +61,20 @@ class Pie extends Component {
             ? this.state.dataDisplay
             : 'Click on a segment to show the value'
         }
+      </div>
+      <div className="grid-container-staff-engaged">
+          <div class="item">School</div>
+          <div class="item">Teachers</div>
+          <div class="item">Assitant Principals</div>
+          <div class="item">Guidance Counselors</div>
+          <div class="item">Principals</div>
+          <div class="item">College Counselors</div>
+          <div class="item">Other</div>
+            {
+              this.state.coachLogResultsGrid[0].map((res) =>
+                <div>{res}</div>
+              )
+            }
       </div>
     </div>)
   }

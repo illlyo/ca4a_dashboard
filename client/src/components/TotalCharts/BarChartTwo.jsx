@@ -48,14 +48,6 @@ class BarChartTwo extends React.Component {
         margin: 0,
         padding: 0
       },
-      '.legend li': {
-        display: 'block',
-        lineHeight: '13px',
-        marginRight: '24px',
-        marginBottom: '6px',
-        paddingLeft: '24px',
-        position: 'relative'
-      },
       '.legend li.horizontal': {
         display: 'inline-block'
       },
@@ -86,6 +78,16 @@ class BarChartTwo extends React.Component {
         marginBottom: '6px',
         paddingLeft: '24px',
         position: 'relative'
+      },
+      '.legend .icon': {
+        width: '12px',
+        height: '12px',
+        background: 'red',
+        borderRadius: '6px',
+        position: 'absolute',
+        left: '0',
+        top: '50%',
+        marginTop: '-6px'
       }
     }
     return (<div>
@@ -94,14 +96,14 @@ class BarChartTwo extends React.Component {
                 grid="grid"
                 colorBars="colorBars"
                 height={250}
-                width={300}
+                width={350}
                 data={this.state.data[0].values}
                 clickHandler={(d) => this.setState({dataDisplay: `${d.x} was engaged ${d.y} times.`})
           }
                 />
       <Legend data={this.state.data[0].values} dataId={'x'} styles={customStyle}/>
       </div>
-        <div>
+        <div className="filtered-results-comp">
           {
             this.state.dataDisplay
               ? this.state.dataDisplay
@@ -109,12 +111,12 @@ class BarChartTwo extends React.Component {
           }
         </div>
         <div className="grid-container-college-career-domains">
-            <div class="item1">School</div>
-            <div class="item2">Academic Skills</div>
-            <div class="item3">Academic & Personal Behavior</div>
-            <div class="item4">Academic Programming</div>
-            <div class="item5">College & Career Access</div>
-            <div class="item6">College & Career Readiness</div>
+            <div class="item">School</div>
+            <div class="item">Academic Skills</div>
+            <div class="item">Academic & Personal Behavior</div>
+            <div class="item">Academic Programming</div>
+            <div class="item">College & Career Access</div>
+            <div class="item">College & Career Readiness</div>
               {
                 this.state.coachLogResultsGrid[0].map((res) =>
                   <div>{res}</div>

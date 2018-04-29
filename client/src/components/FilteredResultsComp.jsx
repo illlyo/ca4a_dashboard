@@ -27,25 +27,23 @@ class FilteredResultsComp extends React.Component{
     return(
       <div className="filter-results">
        <div className="filterResults-chart-org-div">
-         <div className="mod-header-row"><h2>Cohorts</h2></div>
          <div className="filterResults-chart-org-div-each">
+         <div className="mod-header-row-filtered"><h2>Cohorts</h2></div>
         <BarChartCohort schoolData={this.props.schoolData} />
         </div>
-        <div className="mod-header-row"><h2>Total number of staff engaged</h2></div>
         <div className="filterResults-chart-org-div-each">
+        <div className="mod-header-row-filtered"><h2>Total number of staff engaged</h2></div>
           <Pie coachLogResults={this.props.coachLogResultsFiltered} />
         </div>
-      </div>
-      <div className="filterResults-chart-org-div">
-        <div className="mod-header-row"><h2>College and Career domains</h2></div>
         <div className="filterResults-chart-org-div-each">
+        <div className="mod-header-row-filtered"><h2>College and Career domains</h2></div>
           <BarChartTwo coachLogResults={this.props.coachLogResultsFiltered} />
         </div>
-        <div className="mod-header-row"><h2>Schools were engaged in the following activities:</h2></div>
-          <div className="filterResults-chart-org-div-each">
+        <div className="filterResults-chart-org-div-each">
+        <div className="mod-header-row-filtered"><h2>Schools were engaged in these activities:</h2></div>
           <Bar coachLogResults={this.props.coachLogResultsFiltered} />
           </div>
-      </div>
+          </div>
         </div>
     )
   }

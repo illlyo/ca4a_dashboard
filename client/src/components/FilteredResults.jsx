@@ -115,7 +115,6 @@ handleUnselect(e){
              <div className="filterResults-chart-org">
                <h1>Total Results</h1>
                  <div className="search-div">
-                   <form>
                  <p>Search By Coach:</p>
                  <select onChange={this.handleCoachSelect} onMouseDown={this.handleUnselect} >
                    <option value='' >All </option>
@@ -124,16 +123,6 @@ handleUnselect(e){
                         <option value={res.coach_id}>{res.coach_name}</option>
                       )})}
                    </select>
-                   <p>Search By School:</p>
-                   <select onSubmit={this.handleSchoolSelect} >
-                   {this.state.coachLogResultsFiltered.map(res => {
-                     return(
-                       <option value={res.school_visited}>{res.school_visited}</option>
-                     )
-                   })}
-                 </select>
-                 <input type="submit" value="Submit" />
-               </form>
                    </div>
                    <CalendarHeatmap data={this.state.data} />
                   </div> : <p>Loading...</p>}
