@@ -103,7 +103,7 @@ class Results extends React.Component {
             <GroupedEngagementBar coachLogResults={this.state.coachLogResults}/>
             <BarChartProg coachLogResults={this.state.coachLogRecentResult}/>
               <p className="p-tag">
-                <b>Tools Used:</b>
+                <b>What particular tools, protocols, readings, data etc. did you use to help move this team's work forward?</b>
                 <br></br>{res.forward_work}</p>
           </div>
        </div>

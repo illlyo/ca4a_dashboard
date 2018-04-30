@@ -825,7 +825,7 @@ ul{
   display: grid;
   grid-template-columns: auto auto auto auto auto auto;
   grid-gap: 1px;
-  background-color: #2196F3;
+  background-color: grey;
   padding: 1px;
   width: 439px;
   height: 300px;
@@ -838,18 +838,30 @@ ul{
   padding:2px 1px;
   font-size: 11px;
 }
-.item{
-  font-weight: bold;
-  vertical-align: -10px;
+.grid-container-college-career-domains>div:nth-child(12n+1),
+.grid-container-college-career-domains>div:nth-child(12n+2),
+.grid-container-college-career-domains>div:nth-child(12n+3),
+.grid-container-college-career-domains>div:nth-child(12n+4),
+.grid-container-college-career-domains>div:nth-child(12n+5),
+.grid-container-college-career-domains>div:nth-child(12n+6){
+  background-color: #eee;
+}
+.grid-container-college-career-domains>.item:nth-child(12n+1),
+.grid-container-college-career-domains>.item:nth-child(12n+2),
+.grid-container-college-career-domains>.item:nth-child(12n+3),
+.grid-container-college-career-domains>.item:nth-child(12n+4),
+.grid-container-college-career-domains>.item:nth-child(12n+5),
+.grid-container-college-career-domains>.item:nth-child(12n+6){
+  background-color: grey;
 }
 .grid-container-college-career-domains>div:nth-child(6n+1){
-  width: 150px;
+  width: 100px;
 }
 .grid-container-staff-engaged{
   display: grid;
   grid-template-columns: auto auto auto auto auto auto auto;
   grid-gap: 1px;
-  background-color: #2196F3;
+  background-color: grey;
   padding: 1px;
   width: 439px;
   height: 300px;
@@ -863,7 +875,83 @@ ul{
   font-size: 11px;
 }
 .grid-container-staff-engaged>div:nth-child(7n+1){
-  width: 150px;
+  width: 104px;
+}
+.grid-container-staff-engaged>div:nth-child(7n+2){
+  width: 50px;
+}
+.grid-container-staff-engaged>div:nth-child(14n+1),
+.grid-container-staff-engaged>div:nth-child(14n+2),
+.grid-container-staff-engaged>div:nth-child(14n+3),
+.grid-container-staff-engaged>div:nth-child(14n+4),
+.grid-container-staff-engaged>div:nth-child(14n+5),
+.grid-container-staff-engaged>div:nth-child(14n+6),
+.grid-container-staff-engaged>div:nth-child(14n+7){
+  background-color: #eee;
+}
+.grid-container-staff-engaged>.item:nth-child(14n+1),
+.grid-container-staff-engaged>.item:nth-child(14n+2),
+.grid-container-staff-engaged>.item:nth-child(14n+3),
+.grid-container-staff-engaged>.item:nth-child(14n+4),
+.grid-container-staff-engaged>.item:nth-child(14n+5),
+.grid-container-staff-engaged>.item:nth-child(14n+6),
+.grid-container-staff-engaged>.item:nth-child(14n+7){
+  background-color: grey;
+}
+
+.grid-container-school-engaged{
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto auto;
+  grid-gap: 1px;
+  background-color: grey;
+  padding: 1px;
+  width: 439px;
+  height: 300px;
+  margin-left: 4px;
+  overflow: scroll;
+}
+.grid-container-school-engaged>div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: left;
+  padding:2px 1px;
+  font-size: 11px;
+}
+.grid-container-school-engaged>div:nth-child(7n+1){
+  width: 104px;
+}
+.grid-container-school-engaged>div:nth-child(7n+2){
+  width: 50px;
+}
+.grid-container-school-engaged>div:nth-child(7n+3){
+  width: 50px;
+}
+.grid-container-school-engaged>div:nth-child(7n+4){
+  width: 40px;
+}
+.grid-container-school-engaged>div:nth-child(7n+4){
+  width: 35px;
+}
+.grid-container-school-engaged>div:nth-child(14n+1),
+.grid-container-school-engaged>div:nth-child(14n+2),
+.grid-container-school-engaged>div:nth-child(14n+3),
+.grid-container-school-engaged>div:nth-child(14n+4),
+.grid-container-school-engaged>div:nth-child(14n+5),
+.grid-container-school-engaged>div:nth-child(14n+6),
+.grid-container-school-engaged>div:nth-child(14n+7){
+  background-color: #eee;
+}
+.grid-container-school-engaged>.item:nth-child(14n+1),
+.grid-container-school-engaged>.item:nth-child(14n+2),
+.grid-container-school-engaged>.item:nth-child(14n+3),
+.grid-container-school-engaged>.item:nth-child(14n+4),
+.grid-container-school-engaged>.item:nth-child(14n+5),
+.grid-container-school-engaged>.item:nth-child(14n+6),
+.grid-container-school-engaged>.item:nth-child(14n+7){
+  background-color: grey;
+}
+.item{
+  font-weight: bold;
+  vertical-align: -10px;
 }
 .x .tick>text{
   transform: rotate(-18deg);
