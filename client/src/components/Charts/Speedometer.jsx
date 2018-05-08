@@ -17,7 +17,7 @@ class Speedometer extends Component {
       }
       }
       this.getInputMonth = this.getInputMonth.bind(this);
-      console.log(this.state.data)
+      console.log("this.state.data")
     }
 
     getInputMonth(testingthiss) {

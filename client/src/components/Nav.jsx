@@ -4,13 +4,15 @@ import { Link } from 'react-router-dom';
 const Nav = props => {
 
   return(
-    <header>
-    <div className="App-header">
-      <h1 className="nyc-doe-logo">NYC Department <br></br>of Education</h1>
-    </div><div>
+    <header className="App-header">
+
+
+      <Link to="/dash-nav"> <h1 className="nyc-doe-logo">NYC Department <br></br> of Education</h1> </Link>
+        <button onClick={props.handleLogout} className="logout-button" >Logout</button>
         <h1 className="App-title">BETA DASHBOARD</h1>
-        </div>
-        <span onClick={props.handleLogout} className="logout-link" >Logout</span>
+
+
+
 
     </header>
   )

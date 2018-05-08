@@ -14,7 +14,7 @@ class DashNav extends React.Component {
 
   render() {
     return (
-      <Router>
+
           <div className="dash-nav-div">
             <Link to="/dashboard">
               <div className="select-dash-nav">
@@ -28,7 +28,7 @@ class DashNav extends React.Component {
               <div className="select-dash-nav">View Previous Logs</div>
             </Link>
           </div>
-      </Router>
+
     );
   }
 }

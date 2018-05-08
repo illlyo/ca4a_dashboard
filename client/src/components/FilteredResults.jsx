@@ -30,7 +30,7 @@ class FilteredResults extends React.Component {
       this.setState({
         coachLogResults: res.coachlogs,
         coachLogResultsFiltered: res.coachlogs,
-        coachLogCoachNameFiltered: res.coachlogs.map(res => res.coach_name),
+        coachLogCoachNameFiltered: d3.set(res.coachlogs.map( d => d.coach_name + "," + d.coach_id)).values().map(res => res.split(",")),
         coachLogRecentResult: [res.coachlogs[res.coachlogs.length-1]],
         coachLogResultsLoaded: true,
         data: res.coachlogs.map(res => {
@@ -44,7 +44,7 @@ class FilteredResults extends React.Component {
              }]
            }})
       })
-      console.log();
+      console.log(this.state.coachLogCoachNameFiltered);
     })
       fetch('/schools', {
         method: 'GET',
@@ -118,9 +118,9 @@ handleUnselect(e){
                  <p>Search By Coach:</p>
                  <select onChange={this.handleCoachSelect} onMouseDown={this.handleUnselect} >
                    <option value='' >All </option>
-                    {this.state.coachLogResults.map(res => {
+                    {this.state.coachLogCoachNameFiltered.map(res => {
                       return (
-                        <option value={res.coach_id}>{res.coach_name}</option>
+                        <option value={res[1]}>{res[0]}</option>
                       )})}
                    </select>
                    </div>

@@ -11,16 +11,15 @@ h1{
 }
 
 .App-header {
-  height: 50px;
-  width: 150px;
-  margin-top: -20px;
-  padding: 0 20px;
+  display: inline-block;
+  height: auto;
+  width: 100%;
+  padding: 20px 20px;
   color: black;
 }
 .nyc-doe-logo{
-  float: left;
   text-align: left;
-  position: absolute;
+  display: inline-block;
   letter-spacing: -1px;
 }
 .p-tag-div{
@@ -28,13 +27,13 @@ h1{
   font-size: 12px;
 
 }
-.logout-link{
-  right: 0;
-  top: 0;
-  position: absolute;
+.logout-button{
+  display: inline-block;
   cursor: pointer;
+  float: right;
+  font-size: 15px;
   background-color: #2A88AD;
-  padding: 4px 5px;
+  padding: 7px 10px;
   border: 1px solid black;
   border-radius: 5px;
   margin: 5px;
@@ -43,6 +42,8 @@ h1{
 
 .App-title {
   font-size: 1.5em;
+  display: block;
+
 }
 
 .App-intro {
@@ -825,7 +826,7 @@ ul{
   display: grid;
   grid-template-columns: auto auto auto auto auto auto;
   grid-gap: 1px;
-  background-color: grey;
+  background-color: rgb(24,24,24);
   padding: 1px;
   width: 439px;
   height: 300px;
@@ -861,7 +862,7 @@ ul{
   display: grid;
   grid-template-columns: auto auto auto auto auto auto auto;
   grid-gap: 1px;
-  background-color: grey;
+  background-color: rgb(24,24,24);
   padding: 1px;
   width: 439px;
   height: 300px;
@@ -903,7 +904,7 @@ ul{
   display: grid;
   grid-template-columns: auto auto auto auto auto auto auto;
   grid-gap: 1px;
-  background-color: grey;
+  background-color: rgb(24,24,24);
   padding: 1px;
   width: 439px;
   height: 300px;
@@ -917,7 +918,7 @@ ul{
   font-size: 11px;
 }
 .grid-container-school-engaged>div:nth-child(7n+1){
-  width: 104px;
+  width: 165px;
 }
 .grid-container-school-engaged>div:nth-child(7n+2){
   width: 50px;
@@ -926,10 +927,16 @@ ul{
   width: 50px;
 }
 .grid-container-school-engaged>div:nth-child(7n+4){
-  width: 40px;
+  width: 41px;
 }
-.grid-container-school-engaged>div:nth-child(7n+4){
-  width: 35px;
+.grid-container-school-engaged>div:nth-child(7n+5){
+  width: 31px;
+}
+.grid-container-school-engaged>div:nth-child(7n+6){
+  width: 51px;
+}
+.grid-container-school-engaged>div:nth-child(7n+7){
+  width: 31px;
 }
 .grid-container-school-engaged>div:nth-child(14n+1),
 .grid-container-school-engaged>div:nth-child(14n+2),
