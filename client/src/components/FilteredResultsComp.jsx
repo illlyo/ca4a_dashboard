@@ -20,7 +20,7 @@ class FilteredResultsComp extends React.Component{
     this.state = {
 
     }
-
+console.log()
   }
 
   render(){

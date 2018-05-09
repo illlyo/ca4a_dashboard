@@ -32,7 +32,7 @@ class BarChartCohort extends React.Component {
     this.mouseOverHandler = this.mouseOverHandler.bind(this);
     this.mouseMoveHandler = this.mouseMoveHandler.bind(this);
     this.mouseOutHandler = this.mouseOutHandler.bind(this);
-    console.log(this.state.schoolData.filter(res => res.cohort == "Cohort 2").length);
+    console.log(this.state.schoolData);
   }
 
   componentDidMount() {}
