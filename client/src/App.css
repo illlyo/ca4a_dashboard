@@ -843,7 +843,7 @@ ul{
 .grid-container-college-career-domains>div:nth-child(12n+4),
 .grid-container-college-career-domains>div:nth-child(12n+5),
 .grid-container-college-career-domains>div:nth-child(12n+6){
-  background-color: #eee;
+  background-color: white;
 }
 .grid-container-college-career-domains>.item:nth-child(12n+1),
 .grid-container-college-career-domains>.item:nth-child(12n+2),
@@ -886,7 +886,7 @@ ul{
 .grid-container-staff-engaged>div:nth-child(14n+5),
 .grid-container-staff-engaged>div:nth-child(14n+6),
 .grid-container-staff-engaged>div:nth-child(14n+7){
-  background-color: #eee;
+  background-color: white;
 }
 .grid-container-staff-engaged>.item:nth-child(14n+1),
 .grid-container-staff-engaged>.item:nth-child(14n+2),
@@ -943,7 +943,7 @@ ul{
 .grid-container-school-engaged>div:nth-child(14n+5),
 .grid-container-school-engaged>div:nth-child(14n+6),
 .grid-container-school-engaged>div:nth-child(14n+7){
-  background-color: #eee;
+  background-color: white;
 }
 .grid-container-school-engaged>.item:nth-child(14n+1),
 .grid-container-school-engaged>.item:nth-child(14n+2),

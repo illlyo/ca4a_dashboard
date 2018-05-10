@@ -80,7 +80,7 @@ export default class Step8 extends Component {
                       <div className="review-text">
                         <div className="review-intro-card">
                           <div className="review-intro-card-header">
-                            <h4 className="intro-card-headers">Coach:</h4> <span className="review-response">John Doe</span>
+                            <h4 className="intro-card-headers">Coach:</h4> <span className="review-response">{this.props.getStore().coach_name}</span>
                             <h4 className="intro-card-headers" style={{"float":"right"}}>Date of visit: <span className="review-response" style={{"font-weight":300}}>{this.props.getStore().date_of_visit}</span></h4>
                               </div>
                               <div style={{"padding":10}}>
@@ -100,13 +100,13 @@ export default class Step8 extends Component {
                         <div className="review-div-border-right">
                         <h3 className="review-header-question">During today's visit I interacted with my school in the following ways:</h3>
                           <div className="review-response">
-                          interact_meeting_with_team:{this.props.getStore().interact_meeting_with_team}<br></br>
-                          interact_meeting_with_team:{this.props.getStore().interact_meeting_with_team}<br></br>
-                          interact_with_leadership:{this.props.getStore().interact_with_leadership}<br></br>
-                          interact_with_team_lead:{this.props.getStore().interact_with_team_lead}<br></br>
-                          interact_with_pd:{this.props.getStore().interact_with_pd}<br></br>
-                          interact_with_other:{this.props.getStore().interact_with_other}<br></br>
-                          interact_other_explained:{this.props.getStore().interact_other_explained}<br></br>
+                          Facilitated meeting with team:{(this.props.getStore().interact_meeting_with_team == 1) ? <span>&#10003;</span> : ''}<br></br>
+                          Observed Practice:{(this.props.getStore().interact_observed_practice == 1) ? <span>&#10003;</span> : ''}<br></br>
+                          Checked in with leadership:{(this.props.getStore().interact_with_leadership == 1) ? <span>&#10003;</span> : ''}<br></br>
+                          Checked in with Team Lead:{(this.props.getStore().interact_with_team_lead == 1) ? <span>&#10003;</span> : ''}<br></br>
+                          Facilitated a PD:{(this.props.getStore().interact_with_pd == 1) ? <span>&#10003;</span> : ''}<br></br>
+                          Other:{(this.props.getStore().interact_with_other == 1) ? <span>&#10003;</span> : ''}<br></br>
+                          Other explained:{this.props.getStore().interact_other_explained}<br></br>
                         </div>
                         </div>
                         <div>
@@ -129,11 +129,10 @@ export default class Step8 extends Component {
                         <div className="review-div-border-right">
                         <h3 className="review-header-question">In general, under which College and Career readiness domain(s) did today's visit fall?</h3>
                           <div className="review-response">
-                          Academic Skills:{this.props.getStore().academic_skills}<br></br>
-                          Academic Personal Behavior:{this.props.getStore().academic_personal_behavior}<br></br>
-                          Academic Programming:{this.props.getStore().academic_programming}<br></br>
-                          College Career Access:{this.props.getStore().college_career_access}<br></br>
-                        ? : {this.props.getStore().college_career_readiness_domains}<br></br>
+                          Academic Skills:{(this.props.getStore().academic_skills == 1) ? <span>&#10003;</span> : ''}<br></br>
+                          Academic Personal Behavior:{(this.props.getStore().academic_personal_behavior == 1) ? <span>&#10003;</span> : ''}<br></br>
+                          Academic Programming:{(this.props.getStore().academic_programming == 1) ? <span>&#10003;</span> : ''}<br></br>
+                          College Career Access:{(this.props.getStore().college_career_access == 1) ? <span>&#10003;</span> : ''}<br></br>
                       </div>
                       </div>
 
@@ -166,15 +165,27 @@ export default class Step8 extends Component {
 
 
                     <div className="review-div" style={{"boxShadow":"none"}}>
-                      <div>
+                      <div style={{"width":"50%"}}>
 
                       <h3 className="review-header-question">Were the goal(s) for today's visit met?</h3>
-                        <div className="review-response">{this.props.getStore().goals_met}</div>
+                        <div className="review-response">
+                          {(this.props.getStore().goals_met == 1) ? <span>Goals were not defined</span> : ''}
+                          {(this.props.getStore().goals_met == 2) ? <span>Goals were not at all met</span> : ''}
+                          {(this.props.getStore().goals_met == 3) ? <span>Goals were somewhat met</span> : ''}
+                          {(this.props.getStore().goals_met == 4) ? <span>Goals were sufficiently met</span> : ''}
+                          {(this.props.getStore().goals_met == 5) ? <span>Goals were exceeded</span> : ''}
+                        </div>
                       </div>
 
-                      <div>
+                      <div style={{"width":"50%"}}>
                         <h3 className="review-header-question">Rate this school's overall progress on their Learning Trajectory since your last visit.</h3>
-                          <div className="review-response">{this.props.getStore().rate_learning_trajectory}</div>
+                          <div className="review-response">
+                            {(this.props.getStore().rate_learning_trajectory == 1) ? <span>N/A</span> : ''}
+                            {(this.props.getStore().rate_learning_trajectory == 2) ? <span>No progress</span> : ''}
+                            {(this.props.getStore().rate_learning_trajectory == 3) ? <span>A little</span> : ''}
+                            {(this.props.getStore().rate_learning_trajectory == 4) ? <span>Some</span> : ''}
+                            {(this.props.getStore().rate_learning_trajectory == 5) ? <span>Substantial</span> : ''}
+                          </div>
                         </div>
                     </div>
                     <div className="review-div">
@@ -203,13 +214,12 @@ export default class Step8 extends Component {
                       <div>
                         <h3 className="review-header-question">Where do you see the team going in their Learning Trajectory in your next meeting?</h3>
                           <div className="review-response">
-                            Inquiry Institute: {this.props.getStore().inquiry_institute}<br></br>
-                            Research: {this.props.getStore().research}<br></br>
-                            Design: {this.props.getStore().design}<br></br>
-                            PDSA: {this.props.getStore().pdsa}<br></br>
-                            Synthesize: {this.props.getStore().synthesize}<br></br>
-                            Scale: {this.props.getStore().scale}<br></br>
-                            ? : {this.props.getStore().learning_trajectory_next_meeting}<br></br>
+                            Inquiry Institute: {(this.props.getStore().inquiry_institute == 1) ? <span>&#10003;</span> : ''}<br></br>
+                            Research: {(this.props.getStore().research == 1) ? <span>&#10003;</span> : ''}<br></br>
+                            Design: {(this.props.getStore().design == 1) ? <span>&#10003;</span> : ''}<br></br>
+                            PDSA: {(this.props.getStore().pdsa == 1) ? <span>&#10003;</span> : ''}<br></br>
+                            Synthesize: {(this.props.getStore().synthesize == 1) ? <span>&#10003;</span> : ''}<br></br>
+                            Scale: {(this.props.getStore().scale == 1) ? <span>&#10003;</span> : ''}<br></br>
                           </div>
                       </div>
                     </div>
