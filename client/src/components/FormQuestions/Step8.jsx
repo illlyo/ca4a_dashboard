@@ -78,72 +78,159 @@ export default class Step8 extends Component {
                   <div className="col-md-4">
                     <div className="form-style-10">
                       <div className="review-text">
-                    <h3>Which school did you visit today?</h3>
-                      {this.props.getStore().school_visited}<br></br>
-                    <h3>Date of visit</h3>
-                      {this.props.getStore().date_of_visit}<br></br>
-                    <h3>Was today's meeting cancelled?</h3>
-                      {this.props.getStore().cancelled}<br></br>
-                    <h3>How long was your visit?</h3>
-                      {this.props.getStore().length_of_visit} minutes<br></br>
-                    <h3>What were the objectives of today's visit?</h3>
-                      {this.props.getStore().objectives_of_visit}<br></br>
-                    <h3>During today's visit I interacted with my school in the following ways:</h3>
-                      interact_meeting_with_team:{this.props.getStore().interact_meeting_with_team}<br></br>
-                      interact_meeting_with_team:{this.props.getStore().interact_meeting_with_team}<br></br>
-                      interact_with_leadership:{this.props.getStore().interact_with_leadership}<br></br>
-                      interact_with_team_lead:{this.props.getStore().interact_with_team_lead}<br></br>
-                      interact_with_pd:{this.props.getStore().interact_with_pd}<br></br>
-                      interact_with_other:{this.props.getStore().interact_with_other}<br></br>
-                      interact_other_explained:{this.props.getStore().interact_other_explained}<br></br>
-                    <h3>Thinking about today's visit, how many of each role did you interact with?</h3>
-                      Teachers:{this.props.getStore().interact_teachers}<br></br>
-                      Guidance Counselors:{this.props.getStore().interact_guidance_counselors}<br></br>
-                      College Counselors:{this.props.getStore().interact_college_couselors}<br></br>
-                      Assitant Principals:{this.props.getStore().interact_assistant_principals}<br></br>
-                      Principals:{this.props.getStore().interact_principals}<br></br>
-                      Other:{this.props.getStore().interact_other}<br></br>
-                    <h3>Next steps or notes from this visit:</h3>
-                      {this.props.getStore().next_step_notes}<br></br>
-                    <h3>In general, under which College and Career readiness domain(s) did today's visit fall?</h3>
-                      Academic Skills:{this.props.getStore().academic_skills}<br></br>
-                      Academic Personal Behavior:{this.props.getStore().academic_personal_behavior}<br></br>
-                      Academic Programming:{this.props.getStore().academic_programming}<br></br>
-                      College Career Access:{this.props.getStore().college_career_access}<br></br>
-                    ? : {this.props.getStore().college_career_readiness_domains}<br></br>
-                    <h3>Did this school discuss their Learning Trajectory in this meeting?</h3>
-                      {this.props.getStore().learning_trajectory_discussion}<br></br>
-                    <h3>To what extent has this school engaged in the following activities?</h3>
-                      Inquiry Institute: {this.props.getStore().activity_inquiry_institute}<br></br>
-                      Research: {this.props.getStore().activity_research}<br></br>
-                      Design: {this.props.getStore().activity_design}<br></br>
-                      PDSA: {this.props.getStore().activity_pdsa}<br></br>
-                      Synthesize: {this.props.getStore().activity_synthesize}<br></br>
-                      Scale: {this.props.getStore().activity_scale}<br></br>
-                    <h3>What particular tools, protocols, readings, data etc. did you use to help move this team's work forward?</h3>
-                      {this.props.getStore().forward_work}<br></br>
-                    <h3>Were the goal(s) for today's visit met?</h3>
-                      {this.props.getStore().goals_met}<br></br>
-                    <h3>Rate this school's overall progress on their Learning Trajectory since your last visit.</h3>
-                      {this.props.getStore().rate_learning_trajectory}<br></br>
+                        <div className="review-intro-card">
+                          <div className="review-intro-card-header">
+                            <h4 className="intro-card-headers">Coach:</h4> <span className="review-response">Bobby Smith</span>
+                            <h4 className="intro-card-headers" style={{"float":"right"}}>Date of visit: <span className="review-response">{this.props.getStore().date_of_visit}</span></h4>
+                              </div>
+                              <div style={{"padding":10}}>
+                                <div><h3 className="review-header-question">School:</h3><span className="review-response">{this.props.getStore().school_visited}</span></div>
+                                <h3 className="review-header-question">What were the objectives of today's visit?</h3>
+                                <h5 className="review-response">{this.props.getStore().objectives_of_visit}</h5>
+
+
+                            <div className="related-content">
+                              <h3 className="intro-card-headers">Length of visit: <span className="review-response">{this.props.getStore().length_of_visit} minutes</span> </h3>
+                              <h3 className="intro-card-headers" style={{"float":"right"}}>Was today's meeting cancelled?: <span className="review-response" >{this.props.getStore().cancelled}</span></h3>
+                            </div>
+                            </div>
+                        </div>
+
+                      <div className="review-div">
+                        <div className="review-div-border-right">
+                        <h3 className="review-header-question">During today's visit I interacted with my school in the following ways:</h3>
+                          <div className="review-response">
+                          interact_meeting_with_team:{this.props.getStore().interact_meeting_with_team}<br></br>
+                          interact_meeting_with_team:{this.props.getStore().interact_meeting_with_team}<br></br>
+                          interact_with_leadership:{this.props.getStore().interact_with_leadership}<br></br>
+                          interact_with_team_lead:{this.props.getStore().interact_with_team_lead}<br></br>
+                          interact_with_pd:{this.props.getStore().interact_with_pd}<br></br>
+                          interact_with_other:{this.props.getStore().interact_with_other}<br></br>
+                          interact_other_explained:{this.props.getStore().interact_other_explained}<br></br>
+                        </div>
+                        </div>
+                        <div>
+                          <h3 className="review-header-question">Thinking about today's visit, how many of each role did you interact with?</h3>
+                            <div className="review-response">
+                            Teachers:{this.props.getStore().interact_teachers}<br></br>
+                            Guidance Counselors:{this.props.getStore().interact_guidance_counselors}<br></br>
+                            College Counselors:{this.props.getStore().interact_college_couselors}<br></br>
+                            Assitant Principals:{this.props.getStore().interact_assistant_principals}<br></br>
+                            Principals:{this.props.getStore().interact_principals}<br></br>
+                            Other:{this.props.getStore().interact_other}<br></br>
+                          </div>
+                        </div>
+                    </div>
+
+                    <h3 className="review-header-question">Next steps or notes from this visit:</h3>
+                      <div className="review-response">{this.props.getStore().next_step_notes}</div>
+
+                      <div className="review-div">
+                        <div className="review-div-border-right">
+                        <h3 className="review-header-question">In general, under which College and Career readiness domain(s) did today's visit fall?</h3>
+                          <div className="review-response">
+                          Academic Skills:{this.props.getStore().academic_skills}<br></br>
+                          Academic Personal Behavior:{this.props.getStore().academic_personal_behavior}<br></br>
+                          Academic Programming:{this.props.getStore().academic_programming}<br></br>
+                          College Career Access:{this.props.getStore().college_career_access}<br></br>
+                        ? : {this.props.getStore().college_career_readiness_domains}<br></br>
+                      </div>
+                      </div>
+
+                      <div>
+                      <h3 className="review-header-question">Did this school discuss their Learning Trajectory in this meeting?</h3>
+                        <div className="review-response">{this.props.getStore().learning_trajectory_discussion}</div>
+                      </div>
+                    </div>
+
+                    <div className="review-div">
+                      <div>
+                      <h3 className="review-header-question">To what extent has this school engaged in the following activities?</h3>
+                        <div className="review-response">
+                        Inquiry Institute: {this.props.getStore().activity_inquiry_institute}<br></br>
+                        Research: {this.props.getStore().activity_research}<br></br>
+                        Design: {this.props.getStore().activity_design}<br></br>
+                        PDSA: {this.props.getStore().activity_pdsa}<br></br>
+                        Synthesize: {this.props.getStore().activity_synthesize}<br></br>
+                        Scale: {this.props.getStore().activity_scale}<br></br>
+                      </div>
+                      </div>
+                      </div>
+
+                    <div className="review-div">
+                      <div>
+                        <h3 className="review-header-question">What particular tools, protocols, readings, data etc. did you use to help move this team's work forward?</h3>
+                        <div className="review-response">{this.props.getStore().forward_work}</div>
+                        </div>
+                      </div>
+
+
+                    <div className="review-div" style={{"boxShadow":"none"}}>
+                      <div>
+
+                      <h3 className="review-header-question">Were the goal(s) for today's visit met?</h3>
+                        <div className="review-response">{this.props.getStore().goals_met}</div>
+                      </div>
+
+                      <div>
+                        <h3 className="review-header-question">Rate this school's overall progress on their Learning Trajectory since your last visit.</h3>
+                          <div className="review-response">{this.props.getStore().rate_learning_trajectory}</div>
+                        </div>
+                    </div>
+                    <div className="review-div">
+                    <div className="review-response" style={{"display":"block"}}>
                       {this.props.getStore().rate_learning_trajectory_explained}<br></br>
-                    <h3>What successes/challenges are you experiencing in moving this team through their Learning Trajectory?</h3>
-                      {this.props.getStore().learning_trajectory_success_challenge}<br></br>
-                    <h3>What are the "in-between" steps you can take before your next meeting to move this team's work forward?</h3>
-                      {this.props.getStore().in_between_steps}<br></br>
-                    <h3>Where do you see the team going in their Learning Trajectory in your next meeting?</h3>
-                      Inquiry Institute: {this.props.getStore().inquiry_institute}<br></br>
-                      Research: {this.props.getStore().research}<br></br>
-                      Design: {this.props.getStore().design}<br></br>
-                      PDSA: {this.props.getStore().pdsa}<br></br>
-                      Synthesize: {this.props.getStore().synthesize}<br></br>
-                      Scale: {this.props.getStore().scale}<br></br>
-                      ? : {this.props.getStore().learning_trajectory_next_meeting}<br></br>
-                    <h3>What's something you would like to bring to supervision or lab?</h3>
-                      {this.props.getStore().supervision_lab_to_bring}<br></br>
-                    <h3>Would you like to highlight any work this school is doing around the College and Career Planning Calendar this month?</h3>
-                      {this.props.getStore().highlight_planning}<br></br>
-                      {this.props.getStore().highlight_planning_explained}
+                    </div>
+                  </div>
+
+
+
+                    <div className="review-div">
+                      <div>
+                        <h3 className="review-header-question">What successes/challenges are you experiencing in moving this team through their Learning Trajectory?</h3>
+                        <div className="review-response">{this.props.getStore().learning_trajectory_success_challenge}</div>
+                      </div>
+                    </div>
+
+                    <div className="review-div">
+                      <div>
+                        <h3 className="review-header-question">What are the "in-between" steps you can take before your next meeting to move this team's work forward?</h3>
+                        <div className="review-response">{this.props.getStore().in_between_steps}</div>
+                        </div>
+                    </div>
+
+                    <div className="review-div">
+                      <div>
+                        <h3 className="review-header-question">Where do you see the team going in their Learning Trajectory in your next meeting?</h3>
+                          <div className="review-response">
+                            Inquiry Institute: {this.props.getStore().inquiry_institute}<br></br>
+                            Research: {this.props.getStore().research}<br></br>
+                            Design: {this.props.getStore().design}<br></br>
+                            PDSA: {this.props.getStore().pdsa}<br></br>
+                            Synthesize: {this.props.getStore().synthesize}<br></br>
+                            Scale: {this.props.getStore().scale}<br></br>
+                            ? : {this.props.getStore().learning_trajectory_next_meeting}<br></br>
+                          </div>
+                      </div>
+                    </div>
+
+                    <div className="review-div">
+                      <div>
+                        <h3 className="review-header-question">What's something you would like to bring to supervision or lab?</h3>
+                        <div className="review-response">{this.props.getStore().supervision_lab_to_bring}</div>
+                      </div>
+                    </div>
+
+                    <div className="review-div">
+                      <div>
+                      <h3 className="review-header-question">Would you like to highlight any work this school is doing around the College and Career Planning Calendar this month?</h3>
+                        <div className="review-response">
+                        {this.props.getStore().highlight_planning}<br></br><br></br>
+                        {this.props.getStore().highlight_planning_explained}
+                      </div>
+                    </div>
+                    </div>
+
                   </div>
                  </div>
                 </div>

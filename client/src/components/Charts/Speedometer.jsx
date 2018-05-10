@@ -17,7 +17,7 @@ class Speedometer extends Component {
       }
       }
       this.getInputMonth = this.getInputMonth.bind(this);
-      console.log("this.state.data")
+      console.log(this.state.data)
     }
 
     getInputMonth(testingthiss) {
@@ -85,7 +85,7 @@ class Speedometer extends Component {
         <div>
         <div className="speedometer">
         <ReactSpeedometer
-          value={this.state.data.values[0].y}
+          value={this.state.data.values[this.state.data.values.length - 1].y}
           minValue={0}
           maxValue={5}
           startColor={"#ffbb78"}

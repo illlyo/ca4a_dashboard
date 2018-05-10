@@ -74,14 +74,6 @@ class FilteredResults extends React.Component {
     console.log(this.state.schoolData.filter(res => res.coach_id == e.target.value));
   }
 
-  handleSchoolSelect(e) {
-    e.preventdefault();
-    // this.setState({
-    //   coachLogResultsFiltered: this.state.coachLogResultsFilteredTwo.filter(res => res.school_visited == e.target.value)
-    // })
-    console.log(this.state.coachLogResultsFilteredTwo.filter(res => res.school_visited == e.target.value))
-  }
-
   handleUnselect(e) {
     this.setState({coachLogResultsFilteredLoaded: false, schoolDataLoaded: false})
   }
@@ -111,7 +103,7 @@ class FilteredResults extends React.Component {
       {
         (this.state.coachLogResultsFilteredLoaded)
           ? <FilteredResultsComp schoolData={this.state.schoolDataFiltered} coachLogResultsFiltered={this.state.coachLogResultsFiltered}/>
-          : ''
+          : " "
       }
     </div>)
   }

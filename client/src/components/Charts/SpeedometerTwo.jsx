@@ -88,7 +88,7 @@ class SpeedometerTwo extends Component {
         </div>
         <div className="speedometer">
         <ReactSpeedometer
-          value={this.state.data.values[0].y}
+          value={this.state.data.values[this.state.data.values.length - 1].y}
           minValue={0}
           maxValue={5}
           startColor={"#2d98bf"}
