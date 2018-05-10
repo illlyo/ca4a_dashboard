@@ -60,27 +60,26 @@ class Results extends React.Component {
   renderResults() {
     return this.state.coachLogRecentResult.map(res => {
       return (<div className="result" key={res.id}>
-        <span className="coach-name">
-          <h1>{res.coach_name}s Log</h1>
-        </span>
 
-        <div className="top-div-dash">
-          <div className="school-visit-info">
-            <p className="p-tag">
-              <b>School: </b> {res.school_visited}<br></br>
-              <b>Cohort: </b>
-              Insert Cohort here<br></br>
-              <b>Date: </b>{res.date_of_visit}<br></br>
-              <b>Length of visit: </b>{res.length_of_visit}<br></br>
-            </p>
-          </div>
-          <div className="school-visit-info">
-            <p>
-              <b>Objectives:</b>
-            </p>
-            <p>{res.objectives_of_visit}</p>
-          </div>
+
+        <div className="review-intro-card">
+          <div className="mod-header-row">
+            <span className="coach-name">
+              <h1 style={{"marginTop":0}}>{res.coach_name}s Log</h1>
+            </span>
+            </div>
+
+            <div style={{"padding":10}}>
+              <h3 className="review-header-question" style={{"display":"inline-block"}} >School:  </h3><span className=""> {res.school_visited}</span>
+                <br></br>
+                <h4 className="intro-card-headers">Date of visit: <span className="review-response" style={{"font-weight":300}}>{res.date_of_visit}</span></h4>
+
+              <h3 className="review-header-question">What were the objectives of today's visit?</h3>
+              <span className="review-response">{res.objectives_of_visit}</span>
         </div>
+
+      </div>
+
 
         <div className="mod-header-row">
           <h2>Interaction methods used:</h2>

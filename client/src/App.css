@@ -561,6 +561,8 @@ input[type="checkbox"]:hover {
   color: white;
   font-size: 14px;
   border-radius: 5px 5px 0 0;
+  padding: 0 10px 0 10px;
+
 }
 .mod-header-row-filtered{
   background-color: #163761;
@@ -685,32 +687,32 @@ flex-direction: column;
 justify-content: center;
 align-items: center;
 flex-wrap: wrap;
-max-width: 906px;
+max-width: 912px;
 margin: auto;
 }
 .filterResults-chart-org-div{
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  max-width: 906px;
+  max-width: 920px;
 }
 .filterResults-chart-org-div-each{
-  margin: 0;
-  padding-right: 2px;
+  margin: 2px;
   padding-bottom: 4px;
   background: #FFF;
   background-color: white;
   border-radius: 10px;
   -webkit-border-radius:10px;
   -moz-border-radius: 10px;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.13);
-  -moz-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.13);
-  -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.13);
   width: 100%;
   max-height: 600px;
   display: flex;
   flex-direction: column;
   border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  -moz-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  max-width: 450px;
 }
 
 .filtered-results-comp{
@@ -719,10 +721,6 @@ margin: auto;
   justify-content: center;
 }
 
-.filterResults-chart-org-div-each{
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    max-width: 450px;
-}
 .search-div{
   box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -972,9 +970,8 @@ ul{
   box-sizing: border-box;
   box-shadow: 0px 8px 12px -10px rgba(0,0,0,0.4);
   color: rgb(80,80,80);
+  text-align: left;
 }
-
-
 
 .review-intro-card-header{
   display: block;
