@@ -161,7 +161,7 @@ class Step3 extends Component {
                   <h1>*Coach Name Here*<span>*School Name*</span>
                   </h1>
                   <div className="section">
-                    <span>7</span>I'm thinking about...</div>
+                    <span>8</span>I'm thinking about...</div>
                   <div className="inner-wrap">
                     <div className={notValidClasses.thinking_aboutCls}>
                       <textarea type="string" name="field3" ref="thinking_about" defaultValue={this.state.thinking_about} onBlur={this.validationCheck} />
@@ -169,7 +169,7 @@ class Step3 extends Component {
                     </div>
                   </div>
                   <div className="section">
-                    <span>8</span>Something I plan to tryout is...</div>
+                    <span>9</span>Something I plan to tryout is...</div>
                   <div className="inner-wrap">
                     <div className={notValidClasses.plan_to_tryoutCls}>
                       <textarea type="string" name="field3" ref="plan_to_tryout" defaultValue={this.state.plan_to_tryout} onBlur={this.validationCheck} />
@@ -177,7 +177,7 @@ class Step3 extends Component {
                     </div>
                   </div>
                   <div className="section">
-                    <span>9</span>One thing we want to share with the whole team is...</div>
+                    <span>10</span>One thing we want to share with the whole team is...</div>
                   <div className="inner-wrap">
                     <div className={notValidClasses.share_with_teamCls}>
                       <textarea type="string" name="field3" ref="share_with_team" defaultValue={this.state.share_with_team} onBlur={this.validationCheck} />

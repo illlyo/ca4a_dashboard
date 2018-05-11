@@ -62,20 +62,6 @@ class Pie extends Component {
             : 'Click on a segment to show the value'
         }
       </div>
-      <div className="grid-container-staff-engaged">
-          <div class="item">School</div>
-          <div class="item">Teachers</div>
-          <div class="item">Assitant Principals</div>
-          <div class="item">Guidance Counselors</div>
-          <div class="item">Principals</div>
-          <div class="item">College Counselors</div>
-          <div class="item">Other</div>
-            {
-              this.state.coachLogResultsGrid[0].map((res) =>
-                <div>{res}</div>
-              )
-            }
-      </div>
     </div>)
   }
 };

@@ -61,7 +61,7 @@ class FilteredResults extends React.Component {
 
   handleCoachSelect(e) {
     if (e.target.value == '0') {
-      this.setState({coachLogResultsFiltered: this.state.coachLogResults, coachLogResultsFilteredLoaded: true, schoolDataLoaded: true})
+      this.setState({coachLogResultsFiltered: this.state.coachLogResults,schoolDataFiltered:this.state.schoolData, coachLogResultsFilteredLoaded: true, schoolDataLoaded: true})
     } else
     this.setState({
       coach_id: e.target.value,

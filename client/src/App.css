@@ -557,16 +557,16 @@ input[type="checkbox"]:hover {
 }
 
 .mod-header-row{
-  background-color: #163761;
-  color: white;
+  background-color: rgba(80, 80, 80, 0.2);
+  color: rgb(80,80,80);
   font-size: 14px;
   border-radius: 5px 5px 0 0;
   padding: 0 10px 0 10px;
 
 }
 .mod-header-row-filtered{
-  background-color: #163761;
-  color: white;
+  background-color: rgba(80, 80, 80, 0.2);
+  color: rgb(80,80,80);
   font-size: 14px;
   border-radius: 5px 5px 0 0;
   max-width: 452px;
@@ -616,7 +616,7 @@ svg.speedometer{
 }
 
 .sometext{
-  max-width: 300px;
+  max-width: 100%;
   text-align: left;
   padding-left: 25px;
   font-size: 12px;
@@ -968,7 +968,7 @@ ul{
   width: 100%;
   border-radius: 7px;
   box-sizing: border-box;
-  box-shadow: 0px 8px 12px -10px rgba(0,0,0,0.4);
+  box-shadow: 0px 8px 6px -10px rgba(0,0,0,0.4);
   color: rgb(80,80,80);
   text-align: left;
 }
@@ -1012,9 +1012,16 @@ ul{
   display: inline-block;
 }
 
+.interaction-method-barchart .y .tick>text{
+  display: none;
+}
+.interaction-method-barchart .y .tick>line{
+  display: none;
+}
 
-
-
+.interaction-method-barchart .y .domain{
+  stroke: white;
+}
 
 
 

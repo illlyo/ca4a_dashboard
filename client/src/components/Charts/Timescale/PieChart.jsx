@@ -140,7 +140,7 @@ class ThisPieChart extends Component {  constructor(props) {
     var tooltipScatter = function(label, x, y, z) {
     return "label: " + label + " x: " + x + "y: " + y + "z: " + z ;
 }
-    return (<div><BarChart data={this.state.data}
+    return (<div className="interaction-method-barchart" ><BarChart data={this.state.data}
                            width={330}
                            height={250}
                            tooltipHtml={tooltipScatter}

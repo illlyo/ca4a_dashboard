@@ -101,20 +101,6 @@ class Bar extends React.Component {
               : 'Click on a segment to show the value'
           }
         </div>
-        <div className="grid-container-school-engaged">
-            <div class="item">School</div>
-            <div class="item">Inquiry Institute</div>
-            <div class="item">Research</div>
-            <div class="item">Design</div>
-            <div class="item">PDSA</div>
-            <div class="item">Synthesis</div>
-            <div class="item">Scale</div>
-              {
-                this.state.coachLogResultsGrid[0].map((res) =>
-                  <div>{res}</div>
-                )
-              }
-        </div>
     </div>)
 
   }

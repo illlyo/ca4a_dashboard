@@ -110,19 +110,7 @@ class BarChartTwo extends React.Component {
               : 'Click on a segment to show the value'
           }
         </div>
-        <div className="grid-container-college-career-domains">
-            <div class="item">School</div>
-            <div class="item">Academic Skills</div>
-            <div class="item">Academic & Personal Behavior</div>
-            <div class="item">Academic Programming</div>
-            <div class="item">College & Career Access</div>
-            <div class="item">College & Career Readiness</div>
-              {
-                this.state.coachLogResultsGrid[0].map((res) =>
-                  <div>{res}</div>
-                )
-              }
-        </div>
+
     </div>)
 
   }
