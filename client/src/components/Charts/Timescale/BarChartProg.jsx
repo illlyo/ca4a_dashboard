@@ -30,7 +30,31 @@ class BarChartProg extends Component {  constructor(props) {
                 y: props.coachLogResults[0].activity_scale
 
             }
-          ]]
+          ], [
+                    {x: 'Inquiry Institute',
+                    y: 'Completed'
+
+                },{
+                    x: 'Research',
+                    y: 'Completed'
+
+                },{
+                    x: 'Design',
+                    y: 'Completed'
+
+                },{
+                    x: 'PDSA',
+                    y: 'Completed'
+
+                },{
+                    x: 'Synthesize',
+                    y: 'In the process of completing'
+              }, {
+                    x: 'Scale',
+                    y: 'In the process of completing'
+
+                }
+              ]]
     }
 
     this.getInputMonth = this.getInputMonth.bind(this);
@@ -105,8 +129,8 @@ class BarChartProg extends Component {  constructor(props) {
           verticalGrid
           dataPoints
           margin={{top: 20, right: 10, bottom: 100, left: 100}}
+          lineColors={['grey', 'green']}
           yDomainRange={['Completed', 'In the process of completing', 'Have not reached yet']}
-          interpolate={'cardinal'}
           width={330}
           height={280}
           data={this.state.data}

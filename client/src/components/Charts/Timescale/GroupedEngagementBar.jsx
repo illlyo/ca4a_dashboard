@@ -117,7 +117,7 @@ class GroupedEngagementBar extends Component {
     var tooltipScatter = function(label, x, y, z) {
     return "label: " + label + " x: " + x + "y: " + y + "z: " + z ;
 }
-    return (<div><BarChart data={this.state.data}
+    return (<div className="interaction-method-barchart" ><BarChart data={this.state.data}
                            colorScale={colorScale}
                            width={300}
                            height={200}
