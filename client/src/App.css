@@ -1,3 +1,47 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
 .App {
   margin: 0 auto;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
@@ -14,30 +58,23 @@ h1{
   display: inline-block;
   height: auto;
   width: 100%;
-  padding: 20px 20px;
-  color: black;
 }
 .nyc-doe-logo{
   text-align: left;
   display: inline-block;
   letter-spacing: -1px;
 }
+.ul-nav{
+  float: right;
+	margin: 5px;
+	color: green;
+}
+.ul-nav>a{
+	color: rgb(80,80,80);
+}
 .p-tag-div{
   width: 350px;
   font-size: 12px;
-
-}
-.logout-button{
-  display: inline-block;
-  cursor: pointer;
-  float: right;
-  font-size: 15px;
-  background-color: #2A88AD;
-  padding: 7px 10px;
-  border: 1px solid black;
-  border-radius: 5px;
-  margin: 5px;
-  color: white;
 }
 
 .App-title {
@@ -52,6 +89,7 @@ h1{
 
 .coach-name{
   text-align: center;
+  font-size: 20px;
 }
 
 form{
@@ -559,15 +597,17 @@ input[type="checkbox"]:hover {
 .mod-header-row{
   background-color: rgba(80, 80, 80, 0.2);
   color: rgb(80,80,80);
-  font-size: 14px;
+  font-size: 19px;
   border-radius: 5px 5px 0 0;
   padding: 0 10px 0 10px;
-
+}
+.mod-header-row>h2{
+  padding: 3px;
 }
 .mod-header-row-filtered{
   background-color: rgba(80, 80, 80, 0.2);
   color: rgb(80,80,80);
-  font-size: 14px;
+  font-size: 18px;
   border-radius: 5px 5px 0 0;
   max-width: 452px;
 }
@@ -616,11 +656,24 @@ svg.speedometer{
 }
 
 .sometext{
-  max-width: 100%;
+	display: flex;
+	flex-direction: column;
+  max-width: 45%;
   text-align: left;
-  padding-left: 25px;
   font-size: 12px;
+	margin-top: 5px;
 }
+.sometext>p{
+	margin-top: 5px;
+	margin-left: 5px;
+}
+.sometext.review-div-border-right{
+padding-right: 40px;
+}
+.sometext:first-child{
+	margin-left: 7px;
+}
+
 .dash-nav-div{
   display: flex;
   flex-direction: column;
@@ -679,7 +732,6 @@ a{
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-
 }
 .filterResults-chart-org{
 display: flex;
@@ -719,6 +771,12 @@ margin: auto;
   display: flex;
   flex-direction: row;
   justify-content: center;
+	animation: fadein 2s;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
 }
 
 .search-div{
@@ -958,8 +1016,13 @@ ul{
   font-weight: bold;
   vertical-align: -10px;
 }
-.x .tick>text{
-  transform: rotate(-18deg);
+.staff-engaged-filtered .x .tick>text{
+	display: none;
+  /* transform: rotate(-18deg); */
+}
+.college-career-domains .x .tick>text{
+	display: none;
+  /* transform: rotate(-18deg); */
 }
 
 .review-intro-card{
@@ -976,12 +1039,16 @@ ul{
 .review-intro-card-header{
   display: block;
   background: rgba(80, 80, 80, 0.2);
-  padding: 0 10px 0 10px;
+  padding: 2px 10px 2px 10px;
 }
 
 .intro-card-headers{
   display: inline-block;
+  color: rgb(80,80,80);
   font-size: 14px;
+  margin-top: 2px;
+  margin-left: 2px;
+  font-weight:bold;
 }
 
 .related-content{
@@ -1004,12 +1071,17 @@ ul{
 .review-header-question{
   color: rgb(80,80,80);
   font-size: 14px;
-
+  margin-top: 2px;
+  margin-left: 2px;
+  font-weight:bold;
 }
 
 .review-response {
   font-size: 12px;
   display: inline-block;
+  margin: 8px;
+  line-height: 15px;
+  color: rgb(80,80,80)
 }
 
 .interaction-method-barchart .y .tick>text{
@@ -1023,10 +1095,49 @@ ul{
   stroke: white;
 }
 
+b{
+  font-weight:bold;
+}
 
-
-
-
+.speedometer-legends{
+	display: flex;
+}
+.speedometer-legend:first-child{
+	height: 80px;
+	width: 190px;
+	padding: 3px;
+	text-align: left;
+	background-color: #f9f9f9;
+	border-width: 1px;
+	border-style: solid;
+	border-color: #e5e5e5;
+	border-radius: 12px;
+}
+.speedometer-legend:last-child{
+	height: 80px;
+	width: 150px;
+	padding: 3px;
+	margin-left: 5px;
+	text-align: left;
+	background-color: #f9f9f9;
+	border-width: 1px;
+	border-style: solid;
+	border-color: #e5e5e5;
+	border-radius: 12px;
+}
+.arrows{
+	color: rgb(255, 187, 120);
+	font-weight: bold;
+}
+.arrow{
+	color: rgb(45, 152, 191);
+	font-weight: bold;
+}
+.row-para{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
 
 
 /*  */

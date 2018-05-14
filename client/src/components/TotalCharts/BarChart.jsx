@@ -77,8 +77,19 @@ class Bar extends React.Component {
         backgroundColor: '#f9f9f9',
         border: '1px solid #e5e5e5',
         borderRadius: '12px',
-        fontSize: '.6em',
-        maxWidth: '90px'
+        fontSize: '.3em',
+        marginTop: '18px',
+        maxWidth: '150px'
+      },
+      '.legend li': {
+        display: 'block',
+        lineHeight: '13px',
+        marginRight: '3px',
+        marginBottom: '3px',
+        marginTop: '3px',
+        marginLeft: '3px',
+        paddingLeft: '24px',
+        position: 'relative'
       }
     }
     return (<div>
@@ -87,7 +98,7 @@ class Bar extends React.Component {
                 grid="grid"
                 colorBars="colorBars"
                 height={250}
-                width={300}
+                width={360}
                 data={this.state.data[0].values}
                 clickHandler={(d) => this.setState({dataDisplay: `${d.x} was engaged ${d.y} times.`})
           }

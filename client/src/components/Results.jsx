@@ -33,11 +33,19 @@ class Results extends React.Component {
       }
     }).then(res => res.json()).then(res => {
       this.setState({
-        coachLogResults: res.coach_logs.filter(res => res.school_visited == this.props.schoolVisited),
+        coachLogResults: res.coach_logs.filter(res => res.school_visited == this.props.schoolVisited).sort(function(a,b){
+  var c = new Date(a.date_of_visit);
+  var d = new Date(b.date_of_visit);
+  return c-d;
+  }),
         coachLogRecentResult: [res.coach_logs[res.coach_logs.length - 1]],
         coachLogResultsLoaded: true
       })
-      console.log(res.coach_logs.filter(res => res.school_visited == this.props.schoolVisited));
+      console.log(res.coach_logs.filter(res => res.school_visited == this.props.schoolVisited).sort(function(a,b){
+var c = new Date(a.date_of_visit);
+var d = new Date(b.date_of_visit);
+return c-d;
+}));
     })
     fetch('/coachlogs', {method: 'GET'}).then(res => res.json()).then(res => {
       this.setState({
@@ -77,14 +85,12 @@ class Results extends React.Component {
                 "display" : "inline-block"
               }}>School:
             </h3>
-            <span className="">
+            <span className="review-response">
               {res.school_visited}</span>
             <br></br>
-            <h4 className="intro-card-headers">Date of visit:
-              <span className="review-response" style={{
-                  "font-weight" : 300
-                }}>{res.date_of_visit}</span>
-            </h4>
+            <h4 className="review-header-question">Date of visit:</h4>
+              <span className="review-response">{res.date_of_visit}</span>
+
 
             <h3 className="review-header-question">What were the objectives of today's visit?</h3>
             <span className="review-response">{res.objectives_of_visit}</span>
@@ -112,9 +118,6 @@ class Results extends React.Component {
           <div className="flex-row">
             <GroupedEngagementBar coachLogResults={this.state.coachLogResults}/>
             <BarChartProg coachLogResults={this.state.coachLogRecentResult}/>
-            <p className="p-tag">
-              <b>What particular tools, protocols, readings, data etc. did you use to help move this team's work forward?</b>
-              <br></br>{res.forward_work}</p>
           </div>
         </div>
         <div className="mod-header-row">
@@ -126,6 +129,26 @@ class Results extends React.Component {
             <SpeedometerTwo coachLogResults={this.state.coachLogResults}/>
             <div className="flex-row">
               <div className="p-tag-div">
+                <div className="speedometer-legends">
+                <div className="speedometer-legend">
+                  <ul>
+                    <li>5 <span className="arrows">&#8596;</span> Goals were exceeded</li>
+                    <li>4 <span className="arrows">&#8596;</span> Goals were sufficiently met</li>
+                    <li>3 <span className="arrows">&#8596;</span> Goals were somewhat met</li>
+                    <li>2 <span className="arrows">&#8596;</span> Goals were not at all met</li>
+                    <li>1 <span className="arrows">&#8596;</span> Goals were not defined</li>
+                  </ul>
+                </div>
+                <div className="speedometer-legend">
+                  <ul>
+                    <li>5 <span className="arrow">&#8596;</span> Substantial</li>
+                    <li>4 <span className="arrow">&#8596;</span> Some</li>
+                    <li>3 <span className="arrow">&#8596;</span> A little</li>
+                    <li>2 <span className="arrow">&#8596;</span> No progress</li>
+                    <li>1 <span className="arrow">&#8596;</span> N/A</li>
+                  </ul>
+                </div>
+              </div>
                 <p className="p-tag">
                   <b>Progress explained:</b>
                   <br></br>{res.rate_learning_trajectory_explained}</p>
@@ -140,13 +163,16 @@ class Results extends React.Component {
         </div>
         <div className="flex-row">
           <div className="chart-org">
-            <div className="sometext">
-              <h3>What successes/challenges are you experiencing in moving this team through their Learning Trajectory?</h3>
-              <br></br>
-              <p>{res.learning_trajectory_success_challenge}</p>
-              <h3>What are the "in-between" steps you can take before your next meeting to move this team's work forward?</h3>
+            <div className="row-para">
+            <div className="sometext review-div-border-right">
+              <h3 className="review-header-question">What successes/challenges are you experiencing in moving this team through their Learning Trajectory?</h3>
+              <p>{res.learning_trajectory_success_challenge}</p><br></br>
+              </div>
+              <div className="sometext">
+              <h3 className="review-header-question">What are the "in-between" steps you can take before your next meeting to move this team's work forward?</h3>
               <p>{res.in_between_steps}</p>
             </div>
+          </div>
           </div>
         </div>
         <div className="mod-header-row">

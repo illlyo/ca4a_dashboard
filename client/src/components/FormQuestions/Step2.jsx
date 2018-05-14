@@ -337,7 +337,7 @@ render(){
                     <div className="col-md-12">
                       <div className="col-md-6">
                         <div className="form-style-10">
-                        <h1>{this.state.coachLogResultsLoaded ? (this.state.coachLogRecentResult[0].coach_name) : (' ') }s Log</h1>
+                        <h1>{this.state.coachLogResultsLoaded ? (this.state.coachLogRecentResult[0].coach_name) : (' ') }'s Log</h1>
                             <div className="section"><span>4</span>How long was your visit?</div>
                               <div className="inner-wrap">
                                 <div className={notValidClasses.length_of_visitCls}>

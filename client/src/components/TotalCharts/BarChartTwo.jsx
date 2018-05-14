@@ -18,16 +18,16 @@ class BarChartTwo extends React.Component {
               x: 'Academic Skills',
               y: props.coachLogResults.map(d => d.academic_skills).reduce((accumulator, currentValue) => accumulator + currentValue, 0)
             }, {
-              x: 'Academic and Personal Behaviors',
+              x: 'Academic & Personal Behaviors',
               y: props.coachLogResults.map(d => d.academic_personal_behavior).reduce((accumulator, currentValue) => accumulator + currentValue, 0)
             }, {
               x: 'Academic Programming',
               y: props.coachLogResults.map(d => d.academic_programming).reduce((accumulator, currentValue) => accumulator + currentValue, 0)
             }, {
-              x: 'College and Career Access',
+              x: 'College & Career Access',
               y: props.coachLogResults.map(d => d.college_career_access).reduce((accumulator, currentValue) => accumulator + currentValue, 0)
             }, {
-              x: 'College and Career Readiness',
+              x: 'College & Career Readiness',
               y: props.coachLogResults.map(d => d.college_career_readiness).reduce((accumulator, currentValue) => accumulator + currentValue, 0)
             }
           ]
@@ -68,14 +68,16 @@ class BarChartTwo extends React.Component {
         border: '1px solid #e5e5e5',
         borderRadius: '12px',
         fontSize: '.5em',
-        maxWidth: '130px',
+        maxWidth: '160px',
+        marginTop: '18px',
         padding: '3px'
       },
       '.legend li': {
         display: 'block',
         lineHeight: '13px',
-        marginRight: '24px',
-        marginBottom: '6px',
+        marginRight: '3px',
+        marginBottom: '3px',
+        marginLeft: '3px',
         paddingLeft: '24px',
         position: 'relative'
       },
@@ -91,17 +93,17 @@ class BarChartTwo extends React.Component {
       }
     }
     return (<div>
-      <div className="filtered-results-comp">
+      <div className="filtered-results-comp college-career-domains">
       <BarChart axes="axes"
                 grid="grid"
                 colorBars="colorBars"
                 height={250}
-                width={350}
+                width={282}
                 data={this.state.data[0].values}
                 clickHandler={(d) => this.setState({dataDisplay: `${d.x} was engaged ${d.y} times.`})
           }
                 />
-      <Legend data={this.state.data[0].values} dataId={'x'} styles={customStyle}/>
+      <Legend horizontal data={this.state.data[0].values} dataId={'x'} styles={customStyle}/>
       </div>
         <div className="filtered-results-comp">
           {

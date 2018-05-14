@@ -110,7 +110,7 @@ return(
             <div className="row content">
               <div className="col-md-12">
                 <div className="form-style-10">
-                  <h1>{this.state.coachLogResultsLoaded ? (this.state.coachLogRecentResult[0].coach_name) : (' ') }s Log</h1>
+                  <h1>{this.state.coachLogResultsLoaded ? (this.state.coachLogRecentResult[0].coach_name) : (' ') }'s Log</h1>
                     <div className="section"><span>21</span>What would you like to highlight related to the College and Career Planning Calendar and this school's work?</div>
                     <div className="inner-wrap">
                       <div className={notValidClasses.highlight_planning_explainedCls}>

@@ -6,6 +6,10 @@ class BarChartProg extends Component {  constructor(props) {
     super(props);
     this.state = {
       coachLogResults: props.coachLogResults,
+      customData:[{key: 'Logged', color: 'grey'},
+                  {key: 'Projected', color: '#2ca02c'}],
+      config: [{color: 'grey'},
+               {color: '#2ca02c'}],
       data: [[
                 {x: 'Inquiry Institute',
                 y: props.coachLogResults[0].activity_inquiry_institute
@@ -135,6 +139,7 @@ class BarChartProg extends Component {  constructor(props) {
           height={280}
           data={this.state.data}
         />
+        <Legend data={this.state.customData} dataId={'key'} horizontal config={this.state.config} />
       </div>)
   }
 }

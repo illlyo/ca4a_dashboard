@@ -162,7 +162,7 @@ return(
                     <div className="col-md-12">
                       <div className="col-md-6">
                         <div className="form-style-10">
-                        <h1>{this.state.coachLogResultsLoaded ? (this.state.coachLogRecentResult[0].coach_name) : (' ') }s Log</h1>
+                        <h1>{this.state.coachLogResultsLoaded ? (this.state.coachLogRecentResult[0].coach_name) : (' ') }'s Log</h1>
                           <div className="section"><span>1</span>Which school did you visit today?</div>
                             <div className="inner-wrap">
                                 <div className={notValidClasses.school_visitedCls}>

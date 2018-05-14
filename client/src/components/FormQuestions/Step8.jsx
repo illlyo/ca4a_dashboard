@@ -80,11 +80,11 @@ export default class Step8 extends Component {
                       <div className="review-text">
                         <div className="review-intro-card">
                           <div className="review-intro-card-header">
-                            <h4 className="intro-card-headers">Coach:</h4> <span className="review-response">{this.props.getStore().coach_name}</span>
-                            <h4 className="intro-card-headers" style={{"float":"right"}}>Date of visit: <span className="review-response" style={{"font-weight":300}}>{this.props.getStore().date_of_visit}</span></h4>
+                            <h4 className="intro-card-headers">Coach:</h4> <p>{this.props.getStore().coach_name}</p>
+                            <h4 className="intro-card-headers" style={{"float":"right"}}>Date of visit: <span className="review-response">{this.props.getStore().date_of_visit}</span></h4>
                               </div>
                               <div style={{"padding":10}}>
-                                <h3 className="review-header-question" style={{"display":"inline-block"}} >School: </h3><span className=""> {this.props.getStore().school_visited}</span>
+                                <h3 className="review-header-question" style={{"display":"inline-block"}} >School: </h3><span className="review-response"> {this.props.getStore().school_visited}</span>
                                 <h3 className="review-header-question">What were the objectives of today's visit?</h3>
                                 <span className="review-response">{this.props.getStore().objectives_of_visit}</span>
 
