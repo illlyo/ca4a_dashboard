@@ -20,6 +20,7 @@ class FilteredResults extends React.Component {
     }
     this.handleCoachSelect = this.handleCoachSelect.bind(this);
     this.handleUnselect = this.handleUnselect.bind(this);
+    this.printPage = this.printPage.bind(this);
   }
   componentDidMount() {
     fetch('/coachlogs', {method: 'GET'}).then(res => res.json()).then(res => {
@@ -78,12 +79,19 @@ class FilteredResults extends React.Component {
     this.setState({coachLogResultsFilteredLoaded: false, schoolDataLoaded: false})
   }
 
+  printPage(){
+    window.print()
+  }
+
   render() {
     return (<div>
       {
         (this.state.coachLogResultsLoaded)
           ? <div className="filterResults-chart-org">
-              <h1>Total Results</h1>
+              <span classname="filtered-results-total-results-title" style={{"display":"inherit", "marginTop":"5px"}}><h1>Total Results</h1>
+                <button type="button" class="btn btn-default btn-sm" onClick={this.printPage}>
+                  <span class="glyphicon glyphicon-print"></span> <i class="fa fa-print" ></i>
+                  </button></span>
               <div className="search-div">
                 <p>Search By Coach:</p>
                 <select onChange={this.handleCoachSelect} onMouseDown={this.handleUnselect}>

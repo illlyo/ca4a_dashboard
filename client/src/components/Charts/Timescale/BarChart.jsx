@@ -80,7 +80,7 @@ class Bar extends React.Component {
 
   getInputMonth(testingthiss) {
     var month;
-    var day = new Date(testingthiss).getDate();
+    var day = new Date(testingthiss).getDate()+1;
     switch (new Date(testingthiss).getMonth()) {
       case 0:
         month = "01/";
@@ -142,7 +142,7 @@ class Bar extends React.Component {
     var tooltipScatter = function(label, x, y, z) {
     return "label: " + label + " x: " + x + "y: " + y + "z: " + z ;
 }
-    return (<div><BarChart data={this.state.data}
+    return (<div className="interaction-method-barchart"><BarChart data={this.state.data}
                            colorScale={colorScale}
                            width={330}
                            height={250}

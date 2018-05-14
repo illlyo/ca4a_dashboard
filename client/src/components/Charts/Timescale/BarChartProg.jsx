@@ -119,12 +119,13 @@ class BarChartProg extends Component {  constructor(props) {
         borderRadius: '12px',
         fontSize: '.9em',
         maxWidth: '180px',
-        padding: '3px'
+        marginTop: '-50px',
+        marginLeft: '100px'
       }}
     var tooltipScatter = function(label, x, y, z) {
     return "label: " + label + " x: " + x + "y: " + y + "z: " + z ;
 }
-    return (<div>
+    return (<div className="barchart-prog">
       <LineChart
           yType={'text'}
           xType={'text'}
@@ -139,7 +140,7 @@ class BarChartProg extends Component {  constructor(props) {
           height={280}
           data={this.state.data}
         />
-        <Legend data={this.state.customData} dataId={'key'} horizontal config={this.state.config} />
+        <Legend data={this.state.customData} dataId={'key'} horizontal styles={customStyle} config={this.state.config} />
       </div>)
   }
 }

@@ -79,7 +79,7 @@ class ThisPieChart extends Component {  constructor(props) {
 
   getInputMonth(testingthiss) {
     var month;
-    var day = new Date(testingthiss).getDate();
+    var day = new Date(testingthiss).getDate()+1;
     switch (new Date(testingthiss).getMonth()) {
       case 0:
         month = "01/";

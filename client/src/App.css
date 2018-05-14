@@ -607,9 +607,13 @@ input[type="checkbox"]:hover {
 .mod-header-row-filtered{
   background-color: rgba(80, 80, 80, 0.2);
   color: rgb(80,80,80);
-  font-size: 18px;
+  font-size: 19px;
   border-radius: 5px 5px 0 0;
   max-width: 452px;
+	text-shadow: 0.5px 0.5px 1px rgb(100,100,100);
+	padding-left: 4px;
+	padding-top: 4px;
+	padding-bottom: 4px;
 }
 .top-div-dash{
   display: flex;
@@ -811,6 +815,7 @@ margin: auto;
 }
 .next-step-notes{
   font-size: 11px;
+	margin: 20px;
 }
 .review-text{
   text-align: left;
@@ -846,7 +851,7 @@ h2{
   border-color: grey;
   margin-left: 2px;
   width: 194px;
-  height: 200px;
+  height: 100px;
   overflow: auto;
   font-size: 10px;
 }
@@ -1138,6 +1143,11 @@ b{
 	flex-direction: row;
 	justify-content: space-around;
 }
-
-
+.barchart-prog .y .tick>text{
+	font-size: 7px;
+}
+.barchart-prog .x .tick>text{
+	font-size: 8px;
+	/* transform: rotate(-10deg); */
+}
 /*  */

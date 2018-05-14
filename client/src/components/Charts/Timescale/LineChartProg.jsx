@@ -26,7 +26,7 @@ class LineChartProg extends Component {
 
     getInputMonth(testingthiss) {
       var month;
-      var day = new Date(testingthiss).getDate();
+      var day = new Date(testingthiss).getDate()+1;
       switch (new Date(testingthiss).getMonth()) {
         case 0:
           month = "01/";
