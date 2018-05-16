@@ -11,7 +11,13 @@ export default class Step9 extends Component {
     this.state = {
       school_visited: props.getStore().school_visited,
       savedToCloud: props.getStore().savedToCloud,
-    };
+    }
+    // this.printPage = this.printPage.bind(this);
+  }
+
+  printPage(e){
+    e.stopPropagation();
+    window.print();
   }
 
 
@@ -25,6 +31,11 @@ export default class Step9 extends Component {
         <div className="row">
           <form id="Form" className="form-horizontal">
             <div className="form-group">
+              <span>
+              <button type="button" class="btn btn-default btn-sm" onClick={this.printPage.bind(this)} >
+                <i class="fa fa-print" ></i>
+                </button>
+              </span>
               <label className="col-md-12 control-label">
                 {
                   (this.state.savedToCloud)

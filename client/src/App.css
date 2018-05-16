@@ -311,15 +311,10 @@ select{
     font-size: 15px;
     margin: auto;
 }
-
-/* button#next-button.btn.btn-prev.btn-primary.btn-lg.pull-right{
-display: flex;
-align-self: center;
+.btn.btn-default.btn-sm{
+	float: right;
+	margin-right: 10%;
 }
-button#prev-button.btn.btn-next.btn-primary.btn-lg.pull-left{
-display: flex;
-align-self: center;
-} */
 .footer-buttons{
   display: flex;
   align-items: center;

@@ -38,14 +38,18 @@ class Results extends React.Component {
           var d = new Date(b.date_of_visit);
           return c - d;
         }),
-        coachLogRecentResult: [res.coach_logs[res.coach_logs.length - 1]],
+        coachLogRecentResult: [res.coach_logs.filter(res => res.school_visited == this.props.schoolVisited).sort(function(a, b) {
+          var c = new Date(a.date_of_visit);
+          var d = new Date(b.date_of_visit);
+          return c - d;
+        })[res.coach_logs.filter(res => res.school_visited == this.props.schoolVisited).sort(function(a, b) {
+          var c = new Date(a.date_of_visit);
+          var d = new Date(b.date_of_visit);
+          return c - d;
+        }).length - 1]],
         coachLogResultsLoaded: true
       })
-      console.log(res.coach_logs.filter(res => res.school_visited == this.props.schoolVisited).sort(function(a, b) {
-        var c = new Date(a.date_of_visit);
-        var d = new Date(b.date_of_visit);
-        return c - d;
-      }));
+      console.log([this.state.coachLogResults[this.state.coachLogResults.length-1]]);
     })
     fetch('/coachlogs', {method: 'GET'}).then(res => res.json()).then(res => {
       this.setState({
@@ -74,9 +78,8 @@ class Results extends React.Component {
             <span className="coach-name">
               <h1 style={{
                   "marginTop" : 0
-                }}>{res.coach_name}'s Log  <button type="button" class="btn btn-default btn-sm" onClick={this.printPage}>
-                  <span class="glyphicon glyphicon-print"></span> <i class="fa fa-print" ></i>
-                  </button></h1>
+                }}>{res.coach_name}s Log
+              </h1>
             </span>
           </div>
 
